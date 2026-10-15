@@ -128,7 +128,7 @@ de `move-aphrodite.mjs` / `dore-dedup-apply.mjs` (dry-run por defecto, `--apply`
 | Quiero… | Script | Notas |
 |---|---|---|
 | Agregar a 01–06 | `collect.mjs --col=<colDir COMPLETO, p.ej. 02_barroco> [--max=N] [--dry]` (+ `targets-0N.mjs`) | Sin `--col` usa la 01 en silencio. Baja salvo `--dry`. `--max` cuenta obras NUEVAS: re-correr una colección terminada agrega hasta N más |
-| Agregar canon (07–12, 16, ampliar 02/03/04/13) | `canon.mjs <colDir> --apply` (+ `canon/NN.mjs`) | Cruza dedup contra todo |
+| Agregar canon (07–12, 16, ampliar 02/03/04/13) | `canon.mjs <colDir> --apply` (+ `canon/NN.mjs`) | Cruza dedup contra todo. **¿collect o canon?** `collect.mjs` solo tiene registro para 01–06 (temáticas, por tema); para ampliar 02/03/04 con "las más famosas" se usa `canon.mjs` |
 | Agregar escultura antigua | `sculptures.mjs --apply` | Edita la lista `LIST` |
 | Agregar moderna (13–15) | `wikiart.mjs <colDir> --apply` (+ `wikiart/NN.mjs`) | Sin `sourceId`/`qid` |
 | Agregar plancha de Doré | no hay camino seguro: `dore.mjs` baja sin validar y no se re-ejecuta; escribir un script nuevo que use `downloadTo` (valida) y luego `dore-desc.mjs` | `dore-desc` renumera TODO y no tiene dry-run (copiá `_index.json` y la carpeta antes) |
