@@ -15,7 +15,8 @@ for (const it of idx.items.sort((a, b) => a.n - b.n)) {
   const small = Math.max(it.width, it.height) < MIN;
   if (small || REMOVE.has(it.n)) {
     removed.push(`#${it.n} ${(it.title_es || it.title).slice(0, 30)} (${it.width}x${it.height}${REMOVE.has(it.n) ? ', manual' : ''})`);
-    if (APPLY) { try { await fs.unlink(path.join(col, it.orientation, it.file)); } catch {} }
+    // MOVER, no borrar (las imágenes no están en git): recuperable desde <col>/_dedup_removed/
+    if (APPLY) { try { await fs.mkdir(path.join(col, '_dedup_removed'), { recursive: true }); await fs.rename(path.join(col, it.orientation, it.file), path.join(col, '_dedup_removed', it.file)); } catch {} }
   } else kept.push(it);
 }
 let k = 1;

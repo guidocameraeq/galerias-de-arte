@@ -32,7 +32,8 @@ for (const col of CANON) {
     const dup = keysOf(it).some(k => seen.has(k));
     if (tooSmall || dup) {
       removed.push({ it, why: tooSmall ? `chica ${it.width}x${it.height}` : 'dup entre colecciones' });
-      if (APPLY) { try { await fs.unlink(path.join(col, it.orientation, it.file)); } catch {} }
+      // MOVER, no borrar (las imágenes no están en git): recuperable desde <col>/_dedup_removed/
+      if (APPLY) { try { await fs.mkdir(path.join(col, '_dedup_removed'), { recursive: true }); await fs.rename(path.join(col, it.orientation, it.file), path.join(col, '_dedup_removed', it.file)); } catch {} }
     } else { kept.push(it); keysOf(it).forEach(k => seen.add(k)); }
   }
   // renumerar

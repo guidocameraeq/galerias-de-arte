@@ -110,8 +110,18 @@ export function pngSize(buf) {
   return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
 }
 
+// WebP (RIFF....WEBP): VP8X (canvas), VP8 (lossy) y VP8L (lossless). Hay obras guardadas como .jpg que son WebP.
+export function webpSize(b) {
+  if (!b || b.length < 30 || b.toString('ascii', 0, 4) !== 'RIFF' || b.toString('ascii', 8, 12) !== 'WEBP') return null;
+  const t = b.toString('ascii', 12, 16);
+  if (t === 'VP8X') return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+  if (t === 'VP8 ') return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+  if (t === 'VP8L') { const v = b.readUInt32LE(21); return { w: (v & 0x3fff) + 1, h: ((v >> 14) & 0x3fff) + 1 }; }
+  return null;
+}
+
 export function imgSize(buf) {
-  return jpegSize(buf) || pngSize(buf) || null;
+  return jpegSize(buf) || pngSize(buf) || webpSize(buf) || null;
 }
 
 // Mide una imagen remota pidiendo solo el principio (Range). Devuelve {w,h,bytesFetched,ranged}.
@@ -154,17 +164,33 @@ export async function getJSON(url, { retries = 4, ua, delay = 0 } = {}) {
   }
 }
 
-export async function downloadTo(url, destPath, { ua, preBuffer, retries = 3 } = {}) {
+// ¿El buffer empieza como una imagen real que el proyecto sabe medir? (magic bytes JPEG/PNG/WebP).
+// Una página de error HTML —p.ej. el rate-limit 429 de Wikimedia servido con HTTP 200— NO pasa.
+// TIFF queda afuera a propósito: imgSize no lo mide y audit lo marcaría F-MAGIC.
+export function looksLikeImage(buf) {
+  if (!buf || buf.length < 1000) return false;
+  const jpeg = buf[0] === 0xFF && buf[1] === 0xD8;
+  const png = buf[0] === 0x89 && buf[1] === 0x50 && buf[2] === 0x4E && buf[3] === 0x47;
+  const webp = buf.toString('ascii', 0, 4) === 'RIFF' && buf.toString('ascii', 8, 12) === 'WEBP';
+  return jpeg || png || webp;
+}
+
+// validate (default true): rechaza lo que no sea imagen. Antes solo se miraba el status HTTP y
+// una página de error con 200 se guardaba como .jpg (155 archivos de la col 17 quedaron así).
+export async function downloadTo(url, destPath, { ua, preBuffer, retries = 3, validate = true } = {}) {
   let buf = preBuffer;
+  if (buf && validate && !looksLikeImage(buf)) throw new Error('preBuffer no es una imagen (¿página de error?)');
   if (!buf) {
     let lastErr;
     for (let i = 0; i <= retries; i++) {
       try {
         const r = await fetch(url, ua ? { headers: { 'User-Agent': ua } } : undefined);
         if (!r.ok) throw new Error('download HTTP ' + r.status);
-        buf = Buffer.from(await r.arrayBuffer());
+        const b = Buffer.from(await r.arrayBuffer());
+        if (validate && !looksLikeImage(b)) throw new Error('download no es una imagen (' + b.length + ' B, ¿página de error / rate-limit?)');
+        buf = b;
         break;
-      } catch (e) { lastErr = e; if (i < retries) await sleep(600 * (i + 1)); }  // backoff ante "terminated"/red
+      } catch (e) { lastErr = e; if (i < retries) await sleep(600 * (i + 1)); }  // backoff ante "terminated"/red/rate-limit
     }
     if (!buf) throw lastErr;
   }
@@ -176,8 +202,11 @@ export async function downloadTo(url, destPath, { ua, preBuffer, retries = 3 } =
 // ---------- _index.json e idempotencia ----------
 export async function loadIndex(colDir) {
   const p = path.join(colDir, '_index.json');
-  try { return JSON.parse(await fs.readFile(p, 'utf8')); }
-  catch { return { collection: path.basename(colDir), items: [] }; }
+  let txt;
+  try { txt = await fs.readFile(p, 'utf8'); }
+  catch (e) { if (e.code === 'ENOENT') return { collection: path.basename(colDir), items: [] }; throw e; }
+  // JSON roto => LANZA. Antes devolvía un índice vacío y el siguiente saveIndex pisaba la colección entera.
+  return JSON.parse(txt);
 }
 export async function saveIndex(colDir, idx) {
   const p = path.join(colDir, '_index.json');

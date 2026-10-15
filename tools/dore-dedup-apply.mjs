@@ -44,6 +44,11 @@ const REMOVE = [
   150, 154, 155,                          // Par 31: dups Rosa Celeste (n153)
 ];
 
+// GUARDA INCONDICIONAL (script de un solo uso ya ejecutado): REMOVE usa la numeración ORIGINAL (1..155), anterior
+// al renumerado de dore-desc.mjs. Hoy la col 17 va de 1..N compacta: re-ejecutarlo movería obras EQUIVOCADAS
+// (aunque se borre _dedup_removed/). Para sacar una obra: `node tools/remove-work.mjs <col> --n=N`.
+console.log('ABORTADO: dore-dedup-apply.mjs es de un solo uso (ya aplicado; su lista usa numeración vieja). Usá tools/remove-work.mjs.');
+process.exit(1);
 const idx = await loadIndex(COL);
 const rm = new Set(REMOVE);
 const victims = idx.items.filter(it => rm.has(it.n));

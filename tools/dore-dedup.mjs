@@ -60,9 +60,11 @@ console.log(`\nA eliminar (si --apply): ${toRemove.length}. Quedarían ${idx.ite
 
 if (APPLY && toRemove.length) {
   const rm = new Set(toRemove.map(it => it.n));
+  // Regla del proyecto: NUNCA borrar. Se MUEVE a _dedup_removed/ (recuperable).
+  await fsp.mkdir(path.join(COL, '_dedup_removed'), { recursive: true });
   for (const it of toRemove) {
     const fp = path.join(COL, it.orientation, it.file);
-    if (existsSync(fp)) await fsp.rm(fp).catch(() => {});
+    if (existsSync(fp)) await fsp.rename(fp, path.join(COL, '_dedup_removed', it.file));
     await logDiscard('.', COL, { reason: 'dup_visual', n: it.n, file: it.file, sourceId: it.sourceId });
   }
   idx.items = idx.items.filter(it => !rm.has(it.n));

@@ -1,6 +1,8 @@
+✅ IMPLEMENTADO 2026-10-15 — borrador de diseño; el resultado final está en AGENTS.md, docs/ y docs/CHANGELOG.md (algunos datos de "Contexto" son los de antes de la reorganización)
+
 # SPEC: Proyecto levantable por cualquier agente + documentación de proceso — Arte
 Hacer que "Arte" arranque igual desde Claude, Gemini CLI, OpenCode u otro agente, y dejar documentado cómo se construyó y cómo se garantiza la calidad.
-- Estado: BORRADOR
+- Estado: IMPLEMENTADO (plan aprobado y ejecutado el 2026-10-15)
 - Fecha: 2026-10-15
 
 ## Por qué (el dolor)

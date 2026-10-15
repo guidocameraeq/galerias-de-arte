@@ -79,8 +79,6 @@ export default [
     d: 'Santa Cecilia, patrona de la música, toca un instrumento absorta en la melodía divina. Orazio Gentileschi, padre de Artemisia, combina el realismo caravaggesco con un color elegante y luminoso. La música como vía hacia lo sagrado.' },
   { n: 39, titulo: 'Et in Arcadia ego', escuela: 'Barroco clasicista', tipo: 'Óleo sobre lienzo',
     d: 'Unos pastores descubren una tumba en la idílica Arcadia con la inscripción "También en Arcadia estoy yo": la muerte habla incluso en el paraíso. Guercino pinta el primer gran memento mori de este tema con una calavera elocuente. La vanidad de la vida feliz.' },
-  { n: 40, titulo: 'Hombre leyendo', escuela: 'Barroco holandés', tipo: 'Óleo sobre lienzo',
-    d: 'Un hombre absorto en la lectura emerge de la penumbra, iluminado por una luz cálida. Estudio rembrandtesco de concentración y materia pictórica. La intimidad del pensamiento.' },
   { n: 41, titulo: 'Retrato de un clérigo', escuela: 'Barroco holandés', tipo: 'Óleo sobre lienzo',
     d: 'Un clérigo de edad posa con sobriedad, el rostro modelado por la luz tenebrista. Retrato del círculo de Rembrandt, atento al carácter y la introspección. Dignidad y penumbra.' },
   { n: 42, titulo: 'Retrato de mujer (Susanna Lunden)', escuela: 'Barroco flamenco', tipo: 'Óleo sobre tabla',

@@ -4,6 +4,12 @@ import { promises as fs } from 'node:fs';
 import path from 'node:path';
 import { loadIndex, saveIndex } from './lib.mjs';
 
+// GUARDA (parche puntual ya aplicado): no tiene dry-run, pega las fichas POR n (el índice se renumeró desde
+// entonces) y borra el archivo de 07 #50. Re-ejecutarlo pondría fichas en obras equivocadas.
+// Para fichar obras nuevas: tools/desc/<col>.mjs + apply-desc.mjs (docs/DESCRIPCIONES.md).
+console.log('ABORTADO: gap-desc.mjs es un parche de un solo uso ya aplicado. Ver docs/DESCRIPCIONES.md §2.B.');
+process.exit(1);
+
 const SRC = 'Síntesis (Claude, fundada en Wikipedia/curatoría)';
 const DATA = {
   '16_neoclasicismo': [
