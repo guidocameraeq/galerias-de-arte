@@ -1,0 +1,13 @@
+# Binarios de imagen: 6,5 GB, no se versionan (se reconstruyen desde sourceId/URL; backup aparte)
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.tif
+*.tiff
+_dedup_removed/
+_inspect/
+node_modules/
+# Config local de agentes (no se comparte)
+.claude/settings.local.json
+.claude/launch.json
