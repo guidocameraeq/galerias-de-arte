@@ -10,7 +10,7 @@ Ver también: `AGENTS.md`, `docs/METODO.md`, `docs/FUENTES.md`, `docs/DESCRIPCIO
 
 ```
 <raíz>/
-├── NN_nombre/                  colecciones 01..17
+├── NN_nombre/                  colecciones 01..21
 │   ├── _index.json             LA fuente de verdad de la colección: {collection, items:[...]}
 │   ├── landscape/  portrait/   los JPG; carpeta = campo `orientation` de cada obra
 │   ├── _targets.md             SOLO 01–06: tabla curada de objetivos (la genera gen-targets-md.mjs desde targets-0N.mjs)
@@ -22,7 +22,7 @@ Ver también: `AGENTS.md`, `docs/METODO.md`, `docs/FUENTES.md`, `docs/DESCRIPCIO
 
 | Colección | Qué es / cómo entró |
 |---|---|
-| `01_mitologia_griega_romana` | **LA prioritaria.** Hazañas de dioses y héroes, batallas, escenas mitológicas: arte antiguo (Met dept 13: vasos, escultura, frescos) + pintura europea de tema mitológico (Renacimiento→s.XIX). Targets curados + barrido Met/Wikimedia (`collect.mjs`) + esculturas (`sculptures.mjs`) |
+| `01_mitologia_griega_romana` | **LA prioritaria (100 obras).** Pinacoteca mitológica de referencia: pintura europea de tema mitológico clásico (Renacimiento→s.XIX: Botticelli, Tiziano, Tintoretto, Rubens, Velázquez, Poussin, David, Cabanel, Waterhouse, Moreau) + *Loba capitolina*. Las 9 esculturas clásicas migraron a la colección 18. Fichas curadas en `tools/desc/01_mitologia_griega_romana.mjs` |
 | `02_barroco`, `03_gotico`, `04_romanticismo` | 02 pintura barroca dramática, de claroscuro · 03 gótico, medieval tardío · 04 paisajes sublimes y lo épico romántico. Targets + barrido (`collect.mjs`) y luego ampliadas con canon por fama (`canon.mjs`) |
 | `05_egipcio` | Met "Egyptian Art" (dept 10): arte y artefactos del antiguo Egipto. Met + Wikimedia (`collect.mjs`), + esculturas canon |
 | `06_macabro_memento_mori` | Memento mori, vanitas, danza de la muerte, muerte mitológica, brujería, lo siniestro **secular**; época barroca/semi-renacentista/clásica. **Sin temática cristiana** (exclusión dura). `collect.mjs` |
@@ -32,6 +32,10 @@ El alcance fino de 01–06 (qué obras son targets y por qué) vive en `<col>/_t
 | `13_vanguardias` | Mixto: parte canon PD (`canon.mjs`) + parte WikiArt con copyright (`wikiart.mjs`) |
 | `14_surrealismo`, `15_pop_americano` | Modernas con copyright, uso personal (`wikiart.mjs`) |
 | `17_dore_divina_comedia` | Grabados de Doré, standalone (`dore.mjs`, `dore-desc.mjs`, `sharp`) |
+| `18_escultura_griega` | Galería dedicada a la escultura griega y arqueología clásica (64 obras maestras): 9 migradas de 01 (Laocoonte, Venus de Milo, Samotracia, Riace, Discóbolo, Apolo Belvedere, Gálata moribundo, Augusto, Afrodita de Siracusa) + 55 cosechadas de museos de Grecia (Atenas NAMA, Acrópolis, Delfos, Olimpia, Heraklion) e internacionales (Louvre, Vaticano, MANN Nápoles, Roma Terme/Capitolinos). Fichas curadas en `tools/desc/18_escultura_griega.mjs` |
+| `19_marcelo_canevari` | Retrospectiva y selección curada del pintor y naturalista argentino contemporáneo Marcelo Canevari (25 obras): series *La fiesta del fuego*, *Fuerza Mayor*, colaboraciones (*Post Mortem* con Pocetti / tapa de Dillom, *Iberá* y *Las ofrendas* con su padre) y escenas de fauna/realismo mágico. Fichas curadas en `tools/desc/19_marcelo_canevari.mjs` |
+| `20_alfred_kubin` | Monográfica curada del dibujante, ilustrador y escritor austríaco Alfred Kubin (41 obras maestras): visiones de pesadilla, alegorías de la muerte, quimeras abisales, sátiras grotescas e ilustraciones apocalípticas y literarias (*Der Krieg*, *Die andere Seite*, *Das Feuerpferd*). Fuentes: Leopold Museum (35 obras a 3500 px), Lenbachhaus (4 obras a 2000 px) y MoMA/Commons (2 obras). Fichas curadas en `tools/desc/20_alfred_kubin.mjs` |
+| `21_rob_gonsalves` | Retrospectiva y selección curada del maestro canadiense del realismo mágico e ilusionismo Rob Gonsalves (25 obras maestras): transformaciones arquitectónicas, marinas y oníricas (*El sol zarpa*, *Islas que zarpan*, *Aquí llega la marea*, *Gótico salvaje*, *Rompecabezas inacabado*). Fuentes: Estate oficial de Rob Gonsalves (Squarespace CDN), Marcus Ashley Gallery (Lake Tahoe) y escaneos de alta resolución (≥1000 px). Fichas curadas en `tools/desc/21_rob_gonsalves.mjs` |
 
 ## 2. Convención de nombres de archivo
 
@@ -132,6 +136,10 @@ de `move-aphrodite.mjs` / `dore-dedup-apply.mjs` (dry-run por defecto, `--apply`
 | Agregar escultura antigua | `sculptures.mjs --apply` | Edita la lista `LIST` |
 | Agregar moderna (13–15) | `wikiart.mjs <colDir> --apply` (+ `wikiart/NN.mjs`) | Sin `sourceId`/`qid` |
 | Agregar plancha de Doré | no hay camino seguro: `dore.mjs` baja sin validar y no se re-ejecuta; escribir un script nuevo que use `downloadTo` (valida) y luego `dore-desc.mjs` | `dore-desc` renumera TODO y no tiene dry-run (copiá `_index.json` y la carpeta antes) |
+| Agregar/cosechar escultura griega (18) | `harvest-18-sculptures.mjs [--apply]` (+ `targets-18-sculptures.mjs`) | Valida piso ≥1000px, orientación y licencias. Dry-run por defecto |
+| Agregar/cosechar Marcelo Canevari (19) | `harvest-19-canevari.mjs [--apply]` (+ `targets-19-canevari.mjs`) | Valida piso ≥1000px, orientación y magic bytes. Dry-run por defecto |
+| Agregar/cosechar Alfred Kubin (20) | `harvest-20-kubin.mjs [--apply]` (+ `targets-20-kubin.mjs`) | Valida piso ≥1000px, orientación y magic bytes. Dry-run por defecto |
+| Agregar/cosechar Rob Gonsalves (21) | `harvest-21-gonsalves.mjs [--apply]` (+ `targets-21-gonsalves.mjs`) | Valida piso ≥1000px, orientación y magic bytes. Dry-run por defecto |
 | Completar `qid`/museo/escuela | `wikidata-enrich.mjs <colDir> --apply` | Corre antes que `enrich-es`/`prune-canon` |
 | Completar ficha | `apply-desc.mjs` (`tools/desc/NN.mjs`) o `enrich-es.mjs` | Editá `tools/desc/NN.mjs`, no el índice |
 | Corregir dims/orientación | `fix-dims.mjs <colDir> --apply` | Re-mide del disco; mueve entre `landscape/`↔`portrait/` |

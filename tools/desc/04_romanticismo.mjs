@@ -126,4 +126,6 @@ export default [
     d: 'Barcas y orillas se difuminan en una niebla matinal sobre el río. Friedrich disuelve el paisaje en pura atmósfera y silencio. Lo inasible hecho pintura.' },
   { n: 63, titulo: 'Ruinas del monasterio de Eldena', escuela: 'Romanticismo alemán', tipo: 'Óleo sobre lienzo',
     d: 'Las ruinas góticas de la abadía de Eldena, cerca de Greifswald, asoman entre la vegetación. Friedrich amaba estos restos como símbolo del paso del tiempo y la fe perdida. Melancolía de las ruinas.' },
+  { n: 102, titulo: 'Pandemonium', anio: '1841', museo: 'Museo del Louvre, París', escuela: 'Romanticismo', tipo: 'Óleo sobre lienzo',
+    d: 'Inspirada en el poema El paraíso perdido de John Milton, la pintura representa la construcción del palacio de Satanás en el corazón del Infierno. Satanás se alza con armadura y espada al borde de un abismo sobre ríos de lava y magma candente, arengando a incontables legiones de ángeles caídos. Martin despliega su deslumbrante estética de lo sublime, combinando una arquitectura colosal con una escala cósmica y cataclísmica.' },
 ];

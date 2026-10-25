@@ -2581,6 +2581,31 @@
       "kind": "canon",
       "description": "Un orfebre en su taller es un óleo sobre tabla de roble pintado por Petrus Christus. Data del año 1449 y tiene unas medidas de 98 cm de alto y 85,2 cm de ancho. Se conserva en el Museo Metropolitano de Arte, Nueva York. Es una de las obras más destacadas de la época prerrenacentista en el norte de Europa.",
       "description_source": "Wikipedia-es: Un orfebre en su taller"
+    },
+    {
+      "n": 102,
+      "file": "102_La_caida_de_los_angeles_rebeldes_Pieter_Bruegel_the_Elder_1562.jpg",
+      "orientation": "landscape",
+      "title": "La caída de los ángeles rebeldes",
+      "title_es": "La caída de los ángeles rebeldes",
+      "artist": "Pieter Bruegel the Elder",
+      "year": "1562",
+      "museum": "Wikimedia",
+      "holding_museum": "Museos Reales de Bellas Artes de Bélgica, Bruselas",
+      "museum_confidence": "wikidata",
+      "license": "Dominio público",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_Bruegel_the_Elder_-_The_Fall_of_the_Rebel_Angels_-_Google_Art_Project.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Pieter_Bruegel_the_Elder_-_The_Fall_of_the_Rebel_Angels_-_Google_Art_Project.jpg",
+      "width": 10000,
+      "height": 7218,
+      "bytes": 18616510,
+      "sourceId": "File:Pieter Bruegel the Elder - The Fall of the Rebel Angels - Google Art Project.jpg",
+      "kind": "named",
+      "school": "Renacimiento flamenco",
+      "type": "Óleo sobre tabla",
+      "qid": "Q594406",
+      "description": "El arcángel san Miguel, envuelto en una brillante armadura dorada, comanda a las huestes celestiales contra Lucifer y los ángeles sublevados. Los rebeldes se precipitan al abismo transformándose en un enjambre grotesco de monstruos zoomorfos, peces viscosos, insectos y quimeras demoníacas. Con una inventiva que homenajea a El Bosco, Bruegel compone una vorágine cósmica sobre la soberbia y el triunfo del orden divino.",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)"
     }
   ]
 }

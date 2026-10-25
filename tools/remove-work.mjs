@@ -36,11 +36,19 @@ if (existsSync(dest)) dest = path.join(destDir, `n${it.n}__${it.file}`);   // no
 
 // ---- entrada de tools/desc/<col>.mjs (por n) ----
 const descPath = path.join(ROOT, 'tools', 'desc', `${colDir}.mjs`);
-const START = /^  \{ n: (\d+),/;
 let descPlan = null;
 if (existsSync(descPath)) {
   const lines = (await fsp.readFile(descPath, 'utf8')).split('\n');
-  const starts = []; lines.forEach((l, i) => { const m = l.match(START); if (m) starts.push({ n: +m[1], from: i }); });
+  const starts = [];
+  lines.forEach((l, i) => {
+    const m = l.match(/^  \{\s*"?n"?:\s*(\d+),/);
+    if (m) {
+      starts.push({ n: +m[1], from: i });
+    } else if (/^  \{/.test(l) && i + 1 < lines.length) {
+      const mNext = lines[i + 1].match(/^\s*"?n"?:\s*(\d+),/);
+      if (mNext) starts.push({ n: +mNext[1], from: i });
+    }
+  });
   const end = lines.findIndex(l => l.startsWith('];'));
   const k = starts.findIndex(s => s.n === it.n);
   if (k >= 0) { const to = (k + 1 < starts.length ? starts[k + 1].from : end) - 1; descPlan = { lines, from: starts[k].from, to, total: starts.length }; }

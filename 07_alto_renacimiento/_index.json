@@ -2343,6 +2343,31 @@
       "kind": "canon",
       "description": "Leda con el cisne es un cuadro del pintor italiano Antonio Allegri da Correggio. Está realizado en óleo sobre lienzo, y fue pintado hacia 1531-1532, encontrándose actualmente en la Gemäldegalerie de los Staatliche Museen zu Berlin - Preussischer Kulturbesitz.",
       "description_source": "Wikipedia-es: Leda con el cisne"
+    },
+    {
+      "n": 95,
+      "file": "95_Los_condenados_al_infierno_Luca_Signorelli_1502.jpg",
+      "orientation": "landscape",
+      "title": "Los condenados al infierno",
+      "title_es": "Los condenados al infierno",
+      "artist": "Luca Signorelli",
+      "year": "1502",
+      "museum": "Wikimedia",
+      "holding_museum": "Capilla de San Brizio, Catedral de Orvieto",
+      "museum_confidence": "wikidata",
+      "license": "Dominio público",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Signorelli_-_I_dannati_all%27Inferno.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Signorelli_-_I_dannati_all%27Inferno.jpg",
+      "width": 2592,
+      "height": 1952,
+      "bytes": 1584369,
+      "sourceId": "File:Signorelli - I dannati all'Inferno.jpg",
+      "kind": "named",
+      "school": "Alto Renacimiento",
+      "type": "Fresco",
+      "qid": "Q97377044",
+      "description": "Parte del monumental ciclo sobre el Juicio Final en la capilla de San Brizio, el fresco muestra a una masa de almas torturadas por demonios polícromos bajo la mirada de arcángeles armados. Signorelli realiza un audaz estudio anatómico del desnudo masculino en movimiento y escorzos extremos. Su potencia dramática y crudeza influyeron directamente en el Juicio Final de Miguel Ángel.",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)"
     }
   ]
 }

@@ -2,6 +2,26 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-10-25 — Expansión masiva: 4 nuevas colecciones (18, 19, 20, 21), mitología épica y unificación de dark_art
+
+### Added
+- **Colección 18 (Escultura Griega y Arqueología Antigua, 64 obras maestras):** Bipolaridad de colecciones para slideshows de TV (escultura separada de pintura). Migradas 9 esculturas de 01 e ingresadas 55 obras en alta resolución de museos griegos (Atenas, Acrópolis, Delfos, Olimpia, Heraclión) e internacionales.
+- **Colección 19 (Marcelo Canevari, 25 obras maestras):** Monografía de arte contemporáneo argentino y "Gótico rioplatense" (*La fiesta del fuego* bifaz de 5400 px, *La hora de las brujas*, *Iberá*, *Diecisiete fantasmas*, y la tapa original de *Post Mortem* de Dillom).
+- **Colección 20 (Alfred Kubin, 41 obras maestras):** Monografía de simbolismo oscuro y expresionismo austríaco. 35 obras en 3500 px del Leopold Museum (descartando 33 placeholders vacíos) + 4 del Lenbachhaus de Múnich (*Der Krieg*, *Die andere Seite*, *Nach der Schlacht*) y 2 de MoMA/Commons.
+- **Colección 21 (Rob Gonsalves, 25 obras maestras):** Monografía del pintor canadiense de realismo mágico e ilusiones ópticas (*The Sun Sets Sail*, *Sailing Islands*, *Wilderness Gothic*, *Here Comes the Flood*, *Musical Chairs*, etc.) en resoluciones de 1000 a 3000 px.
+- **Expansión Épica en Colección 01 (+77 pinturas mitológicas):** La colección 01 pasa a 142 pinturas puras, incorporando 35 obras maestras generales y 42 obras de hazañas épicas (Zeus y la Titanomaquia, los 8 trabajos de Hércules de Zurbarán del Prado, Perseo petrificando a Fineo de Luca Giordano, Prometeo encadenado de Rubens, el Tártaro de Tiziano, la Ilíada y la Odisea).
+- **Ingreso de 8 obras nuevas de `dark_art`:** Goya *Dos viejos comiendo sopa*, El Bosco *Panel del Infierno*, Bruegel *Caída de los ángeles rebeldes* (10.000 px), Caravaggio *La sepultura de Cristo* (13.000 px / 115 MP), *Cristo a la columna* y *Salomé*, John Martin *Pandemonium*, Luca Signorelli *Los condenados al infierno*.
+- **Tooling nuevo:** `tools/migrate-greek-sculptures.mjs`, `tools/integrate-dark-art.mjs`, `tools/harvest-{18-sculptures,01-paintings,01-epic-myths,19-canevari,20-kubin,21-gonsalves}.mjs`, `tools/targets-*.mjs`, `tools/desc/{18,19,20,21}.mjs`.
+
+### Changed
+- **8 Upgrades masivos de resolución:** Aplicados sobre obras existentes desde `dark_art` (destacando la corrección histórica de Goya *Saturno devorando a su hijo*, sustituyendo el boceto a tiza por el óleo mural del Prado; Friedrich *Monje junto al mar* a 3500 px; Caravaggio *Crucifixión de San Pedro* a 10.537 px; Bruegel *El triunfo de la Muerte* en master del Prado; Rubens *Matanza de los inocentes* en 7120 px).
+- `tools/remove-work.mjs`: Adaptado para parsear y remover limpiamente fichas formateadas en multilínea sin desfasar `tools/desc/`.
+- `tools/apply-desc.mjs`: Adaptado para aceptar prefijos numéricos de colección (`01`, `18`, etc.).
+- Contratos actualizados en `AGENTS.md` (rango 01–15, 18–21), `docs/INVENTARIO.md`, `docs/DESCRIPCIONES.md` y `docs/METODO.md`.
+
+### Removed
+- Carpeta externa `C:\Users\Usuario\Desktop\Draco\dark_art` enviada de forma segura a la Papelera de Reciclaje de Windows tras verificar la ingesta íntegra.
+
 ## 2026-10-15 — Proyecto levantable por cualquier agente (AGENTS.md + docs + audit)
 
 ### Added

@@ -1,10 +1,19 @@
 // Vuelca descripciones AUTORADAS (archivo tools/desc/<colDir>.mjs) al _index.json.
 // Setea description (es), holding_museum, school, type cuando el dato venga curado.
 // Uso: node tools/apply-desc.mjs <colDir> [--apply]
+import { readdirSync, statSync } from 'node:fs';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 import { loadIndex, saveIndex } from './lib.mjs';
 
-const colDir = process.argv[2];
+const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const arg = process.argv[2];
 const APPLY = process.argv.includes('--apply');
+
+// Resuelve prefijo numérico (p.ej. '01' -> '01_mitologia_griega_romana') o nombre completo
+const match = arg ? readdirSync(ROOT).find(d => statSync(path.join(ROOT, d)).isDirectory() && (d === arg || d.startsWith(arg + '_'))) : null;
+const colDir = match || arg;
+
 const mod = await import(`./desc/${colDir}.mjs`);
 const data = mod.default || Object.values(mod)[0];
 const idx = await loadIndex(colDir);

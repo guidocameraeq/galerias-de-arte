@@ -6,7 +6,7 @@ export default [
     d: 'Una mujer enloquecida, armada y cargada de botín, marcha hacia la boca del Infierno entre un caos de monstruos y saqueo. Bruegel crea una alegoría feroz de la codicia y la locura humanas. Una pesadilla de furia y avaricia.' },
   { n: 3, titulo: 'El jardín de las delicias', escuela: 'Renacimiento flamenco', tipo: 'Óleo sobre tabla',
     d: 'Un tríptico despliega el Paraíso, un delirante jardín de placeres carnales y un Infierno de tormentos surrealistas. Bosco inventa un universo de criaturas imposibles cinco siglos antes del surrealismo. El pecado, el goce y su castigo.' },
-  { n: 4, titulo: 'Saturno devorando a su hijo', escuela: 'Romanticismo (España)', tipo: 'Óleo (pintura negra)',
+  { n: 4, titulo: 'Saturno devorando a su hijo', anio: '1823', museo: 'Museo del Prado, Madrid', escuela: 'Romanticismo (España)', tipo: 'Óleo sobre revoco trasladado a lienzo',
     d: 'El titán Saturno devora a uno de sus hijos para escapar a la profecía de ser destronado por ellos. Goya lo pintó directo en los muros de su casa, sin encargo ni público: una imagen brutal del miedo y el poder que se devora a sí mismo. Cumbre de las Pinturas Negras.' },
   { n: 5, titulo: 'El aquelarre (El gran cabrón)', museo: 'Museo del Prado, Madrid', escuela: 'Romanticismo (España)', tipo: 'Óleo (pintura negra)',
     d: 'El Diablo en forma de macho cabrío preside un aquelarre de brujas viejas y deformes en la noche. Goya satiriza la superstición y el fanatismo con una masa oscura y grotesca. El terror y la sinrazón de las Pinturas Negras.' },
@@ -78,4 +78,8 @@ export default [
     d: 'La Muerte, esqueleto danzante, arrastra a los vivos en una versión decimonónica del viejo tema medieval. Guérard retoma el macabro con ironía finisecular. El baile que a todos alcanza.' },
   { n: 39, titulo: 'Diálogo entre la Muerte y una dama hermosa', escuela: 'Grabado (s. XVIII)', tipo: 'Grabado',
     d: 'Página de un diálogo moral en que la Muerte conversa con una joven bella, recordándole que la hermosura no la salvará. Tópico literario del memento mori popular. La belleza ante su fin.' },
+  { n: 40, titulo: 'Dos viejos comiendo sopa', anio: '1823', museo: 'Museo del Prado, Madrid', escuela: 'Romanticismo (España)', tipo: 'Óleo sobre revoco trasladado a lienzo',
+    d: 'Dos figuras cadavéricas y grotescas comparten un cuenco: una sostiene una cuchara con mueca macabra mientras la otra, con aspecto de calavera encapuchada, parece susurrarle o vigilarla. Goya pintó esta sobrecogedora escena sobre el dintel de la puerta de su Quinta del Sordo, convirtiendo un acto cotidiano en una pesadilla espectral sobre la decrepitud y la senectud. Obra cumbre de las Pinturas Negras.' },
+  { n: 41, titulo: 'El jardín de las delicias (Panel del Infierno)', anio: '1505', museo: 'Museo del Prado, Madrid', escuela: 'Renacimiento flamenco', tipo: 'Óleo sobre tabla',
+    d: 'El panel derecho del célebre tríptico de El Bosco retrata la condenación eterna como una noche en llamas poblada de monstruos, máquinas de tortura e instrumentos musicales convertidos en suplicio. En el centro domina el enigmático hombre-árbol sobre un lago congelado, rodeado de pecadores sometidos a castigos acordes a sus vicios. Es una de las visiones más aterradoras y visionarias del tormento infernal en toda la historia del arte occidental.' },
 ];

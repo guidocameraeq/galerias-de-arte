@@ -120,4 +120,6 @@ export default [
     d: 'Dios Padre sostiene a Cristo crucificado con la paloma del Espíritu Santo (el "Trono de Gracia"). Jan Polack, maestro de Múnich, trata el tema con expresividad germánica. El misterio trinitario en imagen.' },
   { n: 60, titulo: 'Virgen con el Niño y seis ángeles', escuela: 'Gótico (escuela sienesa)', tipo: 'Temple y oro sobre tabla',
     d: 'La Virgen con el Niño rodeada de seis ángeles, sobre el característico oro sienés. Del círculo de Duccio, funde el icono bizantino con una ternura nueva. Devoción dorada del Trecento.' },
+  { n: 102, titulo: 'La caída de los ángeles rebeldes', anio: '1562', museo: 'Museos Reales de Bellas Artes de Bélgica, Bruselas', escuela: 'Renacimiento flamenco', tipo: 'Óleo sobre tabla',
+    d: 'El arcángel san Miguel, envuelto en una brillante armadura dorada, comanda a las huestes celestiales contra Lucifer y los ángeles sublevados. Los rebeldes se precipitan al abismo transformándose en un enjambre grotesco de monstruos zoomorfos, peces viscosos, insectos y quimeras demoníacas. Con una inventiva que homenajea a El Bosco, Bruegel compone una vorágine cósmica sobre la soberbia y el triunfo del orden divino.' },
 ];

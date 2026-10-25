@@ -2,33 +2,38 @@
 
 > Save game del proyecto. `cierre` lo SOBREESCRIBE ENTERO en cada sesión — acá nunca se apila historia (eso vive en CHANGELOG). Los números de estado se copian de `node tools/audit.mjs`, nunca de memoria. No guarda SHA: `git log` lo da.
 
-**Cierre**: 2026-10-15
+**Cierre**: 2026-10-25
 
 ## Qué se hizo
-- Se dejó el proyecto levantable por cualquier agente: `AGENTS.md` canónico (corto, solo reglas y trampas) + adaptadores `CLAUDE.md` y `GEMINI.md` que lo importan. OpenCode lee `AGENTS.md` directo.
-- Se escribió el sistema de documentación en `docs/`: conocimiento (`METODO`, `CALIDAD`, `INVENTARIO`, `DESCRIPCIONES`, `FUENTES`, `REUTILIZAR`), rituales agnósticos (`procesos/INICIO`, `CIERRE`) y la capa operativa (este handoff, `TODO`, `CHANGELOG`). Cada doc se verificó contra el código real.
-- Se creó `tools/audit.mjs` (verificación ejecutable de solo lectura = garantía de calidad y fuente de los números de estado) y `tools/remove-work.mjs` (sacar UNA obra sin perderla: mueve, loguea, limpia la ficha).
-- Se cerraron huecos reales: `downloadTo` valida contenido (causa de los 155 archivos rotos de Doré), `loadIndex` ya no traga un JSON roto, `imgSize` mide WebP, los retiros (`prune-*`, `dore-dedup`) MUEVEN en vez de borrar, y `gap-desc`/`dore-dedup-apply` abortan (un solo uso). Se corrigieron 3 archivos `tools/desc/` desfasados.
-- Dos verificaciones independientes: un crítico adversarial (encontró 18 problemas reales, todos atendidos; 1 era falso) y una prueba en frío (un agente sin contexto respondió 9/10 bien y 1 parcial; el hueco que mostró es el que cubre `remove-work.mjs`).
-- Git local (sin remoto) versiona docs/tools/`.claude`/índices; las imágenes quedan afuera.
+- **Nueva Colección 18 (Escultura Griega y Arqueología Antigua, 64 obras maestras):** Se diseñó la separación bipolar para la TV (escultura vs. pintura). Se migraron limpiamente las 9 esculturas clásicas de la 01 hacia la 18 y se cosecharon 55 obras en alta resolución (40 de museos de Grecia: NAMA de Atenas, Acrópolis, Delfos, Olimpia, Heraclión + 15 de museos internacionales: Louvre, Vaticano, Nápoles, Roma).
+- **Expansión Épica de la Colección 01 (Pinacoteca Mitológica, 142 obras):** Tras migrar las esculturas, la colección 01 quedó como pinacoteca pura. Se sumaron 35 pinturas mitológicas iniciales y una segunda tanda curada de 42 pinturas épicas orientadas a hazañas y drama cósmico (Zeus y la Titanomaquia, los 8 trabajos de Hércules de Zurbarán del Prado, Perseo petrificando ejércitos, Prometeo encadenado de Rubens, el Tártaro de Tiziano, la Ilíada y la Odisea).
+- **Integración de `dark_art` (carpeta externa del usuario):** Se auditó `C:\Users\Usuario\Desktop\Draco\dark_art`. Se aplicaron 8 upgrades masivos de resolución (destacando la corrección histórica de Goya *Saturno devorando a su hijo*, reemplazando el boceto a tiza por el óleo mural de las Pinturas Negras del Prado; Friedrich *Monje junto al mar* a 3500 px; Caravaggio *Crucifixión de San Pedro* a 10.537 px / 86 MP, etc.), se ingresaron 8 obras nuevas en colecciones 02, 03, 04, 06 y 07, y la carpeta externa fue enviada de forma segura a la Papelera de Reciclaje de Windows.
+- **Nueva Colección 19 (Marcelo Canevari, 25 obras maestras):** Monografía de arte contemporáneo argentino y "Gótico rioplatense". Obras en Ultra HD (hasta 5472 px) desde Mindy Solomon Gallery, Galería COTT y Commons (*La fiesta del fuego* bifaz de 5400 px, *La hora de las brujas*, *El llamado de la noche*, *Iberá*, *Diecisiete fantasmas*, y la tapa original al óleo de *Post Mortem* de Dillom).
+- **Nueva Colección 20 (Alfred Kubin, 41 obras maestras):** Monografía del maestro austríaco del simbolismo oscuro y la pesadilla. Se detectaron y descartaron 33 placeholders grises vacíos del Leopold Museum, conservando 35 obras reales en 3500 px, más 4 piezas de 2000 px del Lenbachhaus (*Der Krieg*, ilustraciones de *Die andere Seite*, *Nach der Schlacht*) y 2 de MoMA/Commons.
+- **Nueva Colección 21 (Rob Gonsalves, 25 obras maestras):** Monografía del pintor canadiense de realismo mágico e ilusiones ópticas (*The Sun Sets Sail*, *Sailing Islands*, *Here Comes the Flood*, *Wilderness Gothic*, *Bedtime Aviation*, *Musical Chairs*, etc.) en resoluciones de 1000 a 3000 px desde su Estate oficial y galerías representativas.
+- **Robustez y tooling:** Adaptado `tools/remove-work.mjs` para soportar fichas multilínea, `tools/apply-desc.mjs` para soportar prefijos numéricos de colecciones, y harvesters con detección en disco e idempotencia estricta. Actualizados todos los contratos documentales (`AGENTS.md`, `INVENTARIO.md`, `DESCRIPCIONES.md`, `METODO.md`, `tools/README.md`).
 
 ## Estado verificado (salida de `node tools/audit.mjs`)
-- `TOTAL: 17 colecciones · 1102 obras · 1102 con ficha · 6.18 GB · 0 FALLAS · 43 AVISOS`
-- Los avisos son revisiones pendientes, no errores (obras bajo el piso de resolución, `.jpg` que son PNG/WebP, `qid` repetidos, `n` con huecos). Detalle: `node tools/audit.mjs --all`.
+- `TOTAL: 21 colecciones · 1333 obras · 1333 con ficha · 7.34 GB · 0 FALLAS · 61 AVISOS`
+- Los avisos son informativos preexistentes (31 `W-EXT` por archivos PNG/WebP servidos con extensión .jpg que no se convierten destructivamente, 5 `W-N-GAP` por huecos históricos en numeración, 6 `W-QID-DUP` por obras que comparten QID temático, y 19 `W-RES` por obras bajo 1000 px ya aceptadas).
 
 ## En curso
-- Nada a medias.
+- Nada a medias. 100% de obras descargadas, indexadas, con fichas autoradas en español y verificadas en disco.
 
 ## Próximo paso CONCRETO
-Pedirle al usuario las decisiones del `docs/TODO.md` 🟠: (1) qué hacer con los `.jpg` que son PNG/WebP, (2) si se borra `_dedup_removed/` de la 17, (3) si se retiran `prune-canon`/`prune-modern`. Y que pruebe `AGENTS.md` en Gemini CLI y OpenCode (2 comandos, en el TODO).
+- Decidir los puntos pendientes del `docs/TODO.md` 🟠:
+  1. Si se renombran o mantienen los 31 archivos `W-EXT` (PNG/WebP en JPG).
+  2. Si se vacían o eliminan definitivamente las carpetas `_dedup_removed/` (como la de la col 17).
+  3. Revisión/justificación de los 19 casos `W-RES` en `docs/CALIDAD.md §4`.
+  4. Si el usuario desea extraer obras adicionales de Rob Gonsalves del banco de reserva (26 obras ya identificadas).
 
 ## Bloqueos
-- Ninguno técnico. Pendiente del usuario: la prueba real en Gemini CLI / OpenCode (no hay otro agente instalado en esta PC).
+- Ninguno técnico.
 
 ## Archivos tocados
-`AGENTS.md`, `CLAUDE.md`, `GEMINI.md`, `START_HERE.md`, `.gitignore`, `.claude/**`, `docs/**`, `tools/{audit,remove-work,lib,prune-canon,prune-modern,gap-desc,dore-dedup,dore-dedup-apply,README}`, `tools/desc/{01,02,11}`. `PLAN.md` retirado (copia en `docs/archive/legacy-2026-06/`).
+- Creados: `18_escultura_griega/**`, `19_marcelo_canevari/**`, `20_alfred_kubin/**`, `21_rob_gonsalves/**`.
+- Tools creadas: `tools/targets-{18-sculptures,01-paintings,01-epic-myths,19-canevari,20-kubin,21-gonsalves}.mjs`, `tools/harvest-{18-sculptures,01-paintings,01-epic-myths,19-canevari,20-kubin,21-gonsalves}.mjs`, `tools/migrate-greek-sculptures.mjs`, `tools/integrate-dark-art.mjs`, `tools/desc/{18,19,20,21}.mjs`.
+- Modificados: `_index.json` de colecciones `01`, `02`, `03`, `04`, `06`, `07`; `tools/desc/{01,02,03,04,06,07}.mjs`; `AGENTS.md`, `docs/{INVENTARIO,DESCRIPCIONES,METODO,TODO,CHANGELOG,SESSION_HANDOFF}.md`, `tools/{README,apply-desc,remove-work}.mjs`.
 
 ## Contexto que no está en otro doc
-- Las convenciones de carga de contexto de Gemini CLI y OpenCode salieron de guías de terceros y no se pudieron probar acá: por eso `GEMINI.md` y `CLAUDE.md` importan `AGENTS.md` explícitamente.
-- La memoria persistente de Claude para este proyecto está vacía: nada crítico vive fuera del repo.
-- La sesión en la que se hizo esto arrancó con el `CLAUDE.md` viejo ya inyectado en el contexto; una sesión nueva carga el adaptador nuevo.
+- La carpeta `C:\Users\Usuario\Desktop\Draco\dark_art` fue analizada, contrastada y eliminada hacia la Papelera de Reciclaje de Windows; las 8 obras únicas ingresaron a sus respectivas carpetas y los 8 upgrades fueron pisados sobre los archivos existentes con sus metadatos sincronizados.

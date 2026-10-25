@@ -43,6 +43,35 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 | `canon/07…16.mjs` | Configs (artistas + perArtist/limit/minFame). Cubren **07–12, 16** y la ampliación de **02, 03, 04, 13**. `canon/13` trae solo vanguardistas en dominio público. |
 | `sculptures.mjs` | Esculturas anónimas/antiguas (Laocoonte, Venus de Milo…): resuelve por **nombre** en Wikidata, baja P18, indexa en su época. Lista `LIST` editable. `node tools/sculptures.mjs [--apply]` |
 
+### Expansión Mitología Griega & Escultura Antigua (Colecciones 01 y 18)
+| Script | Uso |
+|---|---|
+| `migrate-greek-sculptures.mjs` | Migra las 9 esculturas clásicas de `01_mitologia_griega_romana` (Laocoonte, Venus de Milo, Samotracia, Riace, Discóbolo, Apolo Belvedere, Gálata moribundo, Augusto, Afrodita de Siracusa) a la nueva `18_escultura_griega`. Mueve archivos físicos, renumera y actualiza índices. Dry-run por defecto. `node tools/migrate-greek-sculptures.mjs [--apply]` |
+| `targets-18-sculptures.mjs` | Inventario curado de 64 obras maestras de escultura griega y arqueología: 9 migradas + 37 de museos griegos (NAMA, Acrópolis, Delfos, Olimpia, Heraklion) + 18 de museos internacionales (Louvre, Vaticano, MANN Nápoles, Roma Terme/Capitolinos, BM, Múnich, Berlín). Con fichas en español y fuentes verificadas. |
+| `harvest-18-sculptures.mjs` | Verificación remota en Wikimedia Commons y descarga/indexación para `18_escultura_griega`. Valida piso ≥1000px, orientación y licencias. Dry-run por defecto. `node tools/harvest-18-sculptures.mjs [--check] [--apply]` |
+| `targets-01-paintings.mjs` | Inventario curado de 35 pinturas mitológicas clásicas de dioses, semidioses y héroes (Botticelli, Tiziano, Tintoretto, Bronzino, Caravaggio, Annibale Carracci, Rubens, Velázquez, Poussin, Guido Reni, Rembrandt, Girodet, David, Ingres, Cabanel, Leighton, Waterhouse, Burne-Jones, De Morgan, Moreau) 100% libre de duplicados con otras colecciones, para transformar `01_mitologia_griega_romana` en una pinacoteca mitológica de referencia. |
+| `harvest-01-paintings.mjs` | Verificación remota y descarga/indexación de las pinturas mitológicas en `01_mitologia_griega_romana`. Dedup estricto. Valida piso ≥1000px y orientaciones. Dry-run por defecto. `node tools/harvest-01-paintings.mjs [--check] [--apply]` |
+| `targets-01-epic-myths.mjs` | Inventario curado de 42 pinturas mitológicas épicas (Zeus y Olimpo, Titanomaquia, serie completa de 10 Trabajos de Hércules de Zurbarán del Prado, Pollaiolo, Perseo, Teseo, Inframundo/Tártaro, Troya y la Odisea por Giulio Romano, Cornelis van Haarlem, Wtewael, Rubens, Perugino, Füger, Perino del Vaga, Zurbarán, Reni, Moreau, Giordano, Piero di Cosimo, Burne-Jones, Watts, Tiziano, Ribera, Jan Brueghel, Delacroix, Tiepolo, David, Motte, Turner, Böcklin). 0 duplicados en el repositorio, fichas completas. |
+| `harvest-01-epic-myths.mjs` | Verificación remota en Wikimedia Commons, resolución con capa WMC (8000px), descarga e indexación de las 42 pinturas épicas en `01_mitologia_griega_romana`. Actualiza `_index.json` y `tools/desc/01_mitologia_griega_romana.mjs`. Dry-run por defecto. `node tools/harvest-01-epic-myths.mjs [--check] [--apply]` |
+
+### Colección 19 — Marcelo Canevari (Arte contemporáneo / Naturalismo argentino)
+| Script | Uso |
+|---|---|
+| `targets-19-canevari.mjs` | Inventario curado de 25 obras maestras de Marcelo Canevari (Mindy Solomon Gallery, Galería COTT, Salón Nacional, Indie Hoy, JOIA, Booooooom), con fichas en español y metadatos verificados. |
+| `harvest-19-canevari.mjs` | Verificación remota, validación de contenido (magic bytes), descarga e indexación de las 25 obras en `19_marcelo_canevari`. Valida piso ≥1000px y orientaciones. Dry-run por defecto. `node tools/harvest-19-canevari.mjs [--apply]` |
+
+### Colección 20 — Alfred Kubin (Simbolismo / Expresionismo austríaco)
+| Script | Uso |
+|---|---|
+| `targets-20-kubin.mjs` | Inventario curado de 41 obras maestras de Alfred Kubin (Leopold Museum Viena, Lenbachhaus Múnich, MoMA/Commons), con fichas en español y metadatos verificados. |
+| `harvest-20-kubin.mjs` | Verificación remota, validación de contenido (magic bytes), descarga e indexación de las 41 obras en `20_alfred_kubin`. Valida piso ≥1000px y orientaciones. Dry-run por defecto. `node tools/harvest-20-kubin.mjs [--apply]` |
+
+### Colección 21 — Rob Gonsalves (Realismo mágico / Ilusionismo canadiense)
+| Script | Uso |
+|---|---|
+| `targets-21-gonsalves.mjs` | Inventario curado de 25 obras maestras de Rob Gonsalves (Estate oficial de Rob Gonsalves, Marcus Ashley Gallery), con fichas en español y metadatos verificados (≥1000 px). |
+| `harvest-21-gonsalves.mjs` | Verificación remota, validación de contenido (magic bytes), descarga e indexación de las 25 obras en `21_rob_gonsalves`. Valida piso ≥1000px y orientaciones. Dry-run por defecto. `node tools/harvest-21-gonsalves.mjs [--apply]` |
+
 ### Fase 4 — Modernas s.XX (WikiArt, copyright/uso personal)
 | Script | Uso |
 |---|---|
@@ -75,7 +104,7 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 | `wikidata-enrich.mjs` | Enriquece campos **estructurados** de Wikidata (`holding_museum` P195, `type` P186, `school` P135, `canon_rank`=sitelinks, **`qid`**). `node tools/wikidata-enrich.mjs <colDir> [--apply]` |
 | `enrich-es.mjs` | Descripción es **100% precisa**: por `qid` → sitelink exacto de es.wikipedia → resumen (sin búsqueda por título = sin mislabel). Idempotente. `node tools/enrich-es.mjs <colDir> [--apply] [--force]` |
 | `apply-desc.mjs` | Vuelca las descripciones **a mano** (`tools/desc/<col>.mjs`) al índice. **Camino principal de fichas 01-15.** `node tools/apply-desc.mjs <colDir> [--apply]` |
-| `desc/01…16.mjs` | Datos de descripciones autoradas (es) por colección (`n`, `titulo`, `escuela`, `tipo`, `d`). **Se vuelcan POR `n`**: si se poda/renumera/mueve una obra, sacá su entrada acá (`audit` avisa `W-DESC-STALE`). La 16 solo tiene 3 entradas. |
+| `desc/01…16, 18–21.mjs` | Datos de descripciones autoradas (es) por colección (`n`, `titulo`, `escuela`, `tipo`, `d`). **Se vuelcan POR `n`**: si se poda/renumera/mueve una obra, sacá su entrada acá (`audit` avisa `W-DESC-STALE`). |
 | `gen-targets-md.mjs` | Genera `_targets.md` (tabla curada de objetivos) de las colecciones 01–06 desde `targets-0N.mjs`. |
 | `dore-desc.mjs` | Pobla la **17** (Doré): título_es (Cántica + Canto en romano) + descripción por canto. Lee `_cantos.json`. `node tools/dore-desc.mjs` |
 | `enrich-desc.mjs` | *(legado fase 1)* Descripción corta en **inglés** (Cleveland→Wikipedia→Met). Superado por el flujo es; fallback. |
@@ -92,6 +121,7 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 | `gap-desc.mjs` | Polish de gap-fill (borró item basura + escribió fichas a mano, por `n`). Aplicado; **aborta si se ejecuta** (re-correrlo desfasaría fichas). |
 | `upgrade.mjs` | Mejoró ~7 obras puntuales de WikiArt con chequeo de aspecto. Aplicado; reusable editando `TARGETS`. |
 | `move-aphrodite.mjs` | Movió "Afrodita de Siracusa" 16→01 corrigiendo autor falso (Canova→anónima grecorromana). Aplicado. |
+| `integrate-dark-art.mjs` | Integración de 8 upgrades en alta resolución + 8 obras maestras oscuras nuevas desde lote externo `dark_art`. Aplicado; si se re-ejecuta verifica la integridad de las 16 obras en disco/índice. |
 
 ---
 
@@ -100,8 +130,12 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 - **Fase 3 (07–12, 16):** `canon.mjs` + `canon/*.mjs` + `sculptures.mjs`.
 - **Fase 4 (13–15):** `wikiart.mjs` + `wikiart/*.mjs`.
 - **17 Doré:** `dore.mjs` + `dore-desc.mjs` (usan `sharp`).
+- **18 Escultura griega:** `migrate-greek-sculptures.mjs` + `targets-18-sculptures.mjs` + `harvest-18-sculptures.mjs`.
+- **19 Marcelo Canevari:** `targets-19-canevari.mjs` + `harvest-19-canevari.mjs` + `desc/19_marcelo_canevari.mjs`.
+- **20 Alfred Kubin:** `targets-20-kubin.mjs` + `harvest-20-kubin.mjs` + `desc/20_alfred_kubin.mjs`.
+- **21 Rob Gonsalves:** `targets-21-gonsalves.mjs` + `harvest-21-gonsalves.mjs` + `desc/21_rob_gonsalves.mjs`.
 - **Fichas (es):** `wikidata-enrich.mjs` → `apply-desc.mjs` (`desc/*.mjs`) + `enrich-es.mjs`.
 - **Calidad:** `cleanup-names`, `fix-dims`, `prune-canon`, `prune-modern`.
-- **Auditoría:** `gap.mjs`, `dryrun.mjs`.
+- **Auditoría:** `gap.mjs`, `dryrun.mjs`, `audit.mjs`.
 
 > **Sub-proyecto futuro (sin tooling aún):** visor con globito flotante o quemado de captions (`_captioned/`) para la TV.

@@ -26,7 +26,7 @@ Es el registro de la obra en `<colDir>/_index.json` (`{collection, items:[...]}`
 ## 2. Los 3 caminos — la fuente de verdad de cada uno (TRAMPA REAL)
 Siempre correr desde la **raíz del repo** (`loadIndex` usa rutas relativas al cwd, `lib.mjs:203`). Orden histórico del flujo: `wikidata-enrich` → `enrich-es` → `apply-desc`; el curado va **último** para que gane.
 
-### A. Colecciones 01–15 (y 3 obras de la 16): AUTORADO a mano
+### A. Colecciones 01–15, 18–21 (y 3 obras de la 16): AUTORADO a mano
 - **Fuente de verdad:** `tools/desc/<colDir>.mjs` → `export default [{ n, titulo?, anio?, museo?, escuela?, tipo?, d }]`.
 - Volcar: `node tools/apply-desc.mjs <colDir>` (dry) y luego `... --apply`.
 - Escribe por entrada (`apply-desc.mjs:17-26`): `description` + `description_source` fijo (solo si hay `d`); y si vienen: `title_es`, `year`, `holding_museum`, `school`, `type`. Avisa (no corta) si `d` > 620 car. (`:18`). Reporta `#n no existe` si el `n` no está en el índice (`:16`). Nunca toca `artist`, `qid`, `museum_confidence`.
@@ -35,7 +35,7 @@ Siempre correr desde la **raíz del repo** (`loadIndex` usa rutas relativas al c
 ```
 node --input-type=module -e "import fs from 'fs';const c=process.argv[1];const d=(await import('./tools/desc/'+c+'.mjs')).default;const m=new Map(JSON.parse(fs.readFileSync(c+'/_index.json','utf8')).items.map(i=>[i.n,i]));for(const e of d){const i=m.get(e.n);if(!i)console.log('FALTA n',e.n);else if(e.d&&e.d!==i.description)console.log('DIFIERE n',e.n,i.title_es||i.title)}" 11_rococo
 ```
-- Existe `desc/16_neoclasicismo.mjs` (3 entradas) aunque `tools/README.md` dice "01…15".
+- Existen `desc/16_neoclasicismo.mjs` (3 entradas), `desc/18_escultura_griega.mjs` (64 entradas), `desc/19_marcelo_canevari.mjs` (25 entradas), `desc/20_alfred_kubin.mjs` (41 entradas) y `desc/21_rob_gonsalves.mjs` (25 entradas).
 
 ### B. 16 y gap-fill del canon (07, 10, 12, 13…): QID → es.wikipedia, + retoques
 1. `node tools/wikidata-enrich.mjs <colDir> [--apply] [--limit=N]` pobla `qid`, `holding_museum`, `type`, `school`, `canon_rank` (match **por título**, verifica autor por apellido; `:34-66`). **Con `--apply` pisa `type`/`school` de toda la colección cuando Wikidata trae valor** (`:84`, `r.type || it.type`): si había curado en `desc/`, re-aplicalo después (y ver el peligro de A).

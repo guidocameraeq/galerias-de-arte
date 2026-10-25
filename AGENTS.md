@@ -21,7 +21,7 @@ Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso person
 
 ## Trampas que rompen cosas si no las sabés
 1. **`_index.json` es un OBJETO `{collection, items:[…]}`, no un array.** Las obras están en `.items`.
-2. **Descripciones 01–15: la fuente de verdad es `tools/desc/NN.mjs`**, que se vuelca con `node tools/apply-desc.mjs <col> --apply`. Editar `description` directo en el índice se pierde en la próxima corrida. 16 y gap-fill usan `enrich-es.mjs`; la 17, `dore-desc.mjs`. (`docs/DESCRIPCIONES.md`)
+2. **Descripciones 01–15, 18–21: la fuente de verdad es `tools/desc/NN.mjs`**, que se vuelca con `node tools/apply-desc.mjs <col> --apply`. Editar `description` directo en el índice se pierde en la próxima corrida. 16 y gap-fill usan `enrich-es.mjs`; la 17, `dore-desc.mjs`. (`docs/DESCRIPCIONES.md`)
 3. **La colección 17 (Doré) es excepcional:** sin `holding_museum`/`year` por grabado, `title_es` = "Infierno · Canto N". No la valides con las reglas de ficha del resto.
 4. **Scripts de UNA pasada, NO re-ejecutar:** `dore.mjs` (baja sin validar; para Doré, `dore-redownload.mjs`), `dore-dedup-apply.mjs` y `gap-desc.mjs` (abortan solos), `move-aphrodite.mjs`, y `prune-canon.mjs`/`prune-modern.mjs` (en dry proponen sacar obras ya aceptadas y renumeran, lo que desfasa las fichas; ahora al menos MUEVEN en vez de borrar). `enrich-es --force` pisa las fichas hechas a mano.
 5. **`n` y `file` no son identificadores estables** (se renumera/renombra). Referenciá obras por `qid`/`sourceId`. `n` puede tener huecos.

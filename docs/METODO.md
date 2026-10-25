@@ -74,6 +74,8 @@ Casi todos los scripts son dry-run salvo `--apply`. Excepción: `collect.mjs` ba
 | Descripciones por QID→es.wikipedia (`enrich-es.mjs`) | Buscar el artículo por título | Búsqueda por título dio mislabels; el sitelink exacto no | 2026-06-16 |
 | Doré: average-hash 8×8 → **dHash 16×16 + revisión visual** | Quedarse con aHash (umbral 12) | aHash confundía planchas distintas por layout tonal común; calibrado dup ≤11 vs distinta ≥56 (`tools/README.md`) | 06-16 → 06-28 |
 | **Mover** a `_dedup_removed/` en vez de borrar (Doré) | Borrar | Recuperable si hubo un error de revisión. Desde 2026-10-15 **todo** retiro MUEVE (`remove-work.mjs`, `prune-*.mjs`, `dore-dedup.mjs --apply`); antes `prune-*` y `dore-dedup --apply` borraban | 2026-06-28 |
+| **Separación bipolar Pintura vs. Escultura (18_escultura_griega)** | Mezclar escultura y pintura en una sola carpeta | Slideshows independientes en la TV; 01 queda como pinacoteca pura y 18 como arqueología/escultura clásica | 2026-10-15 |
+| **Curaduría narrativa de mitos (Hazaña vs. Dios)** | Búsquedas taxonómicas genéricas ("Greek mythology") | Buscadores devuelven 80% Venus y ninfas posando; buscar por ciclo narrativo (Titanomaquia, Trabajos de Hércules, Perseo, Inframundo, Troya) trae las obras épicas | 2026-10-15 |
 
 ## 6. Lecciones duras (bugs reales)
 | Síntoma | Causa | Qué se hizo | Cómo evitarlo |
@@ -87,10 +89,12 @@ Casi todos los scripts son dry-run salvo `--apply`. Excepción: `collect.mjs` ba
 | Misma obra en dos carpetas o dos versiones (*Rokeby Venus*, *Man Reading*, *Amaranth* = copia mal titulada) | Dedup solo por id, o título distinto entre fuentes | Dedup por qid + título + dims (§4); duplicados eliminados a mano | Correr `gap.mjs`/`audit.mjs`; ojo con series homónimas (*Adele I/II*, *Sainte-Victoire*), por eso `prune-canon` no usa título |
 | Búsquedas del Met devolvían 0 | `hasImages=true` + `departmentId` en `/search` sobreconstriñe | Buscar por término con `hasImages=true` y filtrar el depto en `/objects/{id}` (`discover.mjs:17,26`) | No combinar esos filtros |
 | Item basura (07 "ética ambiental" como Rafael) | Glitch de Wikidata | Eliminado a mano | Revisar la lista en dry-run antes de `--apply` |
+| Duplicados colados por variantes ortográficas (Pollaiuolo/Pollaiolo, espacios en J. M. W. Turner, sufijos) | Comparación estricta de cadenas `===` en target vs catálogo existente | Se detectaron 3 duplicados, se retiraron a `_dedup_removed/` con `remove-work.mjs` y se reemplazaron (Reni, Moreau, Turner) | Normalización fuzzy con tokenización, remoción de stop-words y matching por raíces |
+| `remove-work.mjs` ignoraba fichas multilínea | Parser asumía regex de una sola línea `^  \{ n: (\d+),` | Fichas generadas con formateador multilínea quedaban desvinculadas | Parser ampliado para detectar tanto formato single-line como multiline |
 
 ## 7. Cronología mínima (2026)
 - **06-13** Setup + Fase 1: motor Node y colección 01; luego 02–06 (hasta 06-14) con `collect.mjs`.
 - **06-15** Fase 2 (fichas en español, `tools/desc/`); Fase 3 (canon Wikidata-first, 07–12); Fase 4 (modernas WikiArt 13–15); se relaja la licencia.
 - **06-16** Gap-fill por fama (+~330 obras, nueva 16, esculturas); sube la col 17 (Doré, 155 grabados).
 - **06-28** Rescate de la 17 (archivos HTML), dedup 155→98 por dHash + revisión visual, fichas al 100%.
-- **2026-10-15** Reorganización de docs a `AGENTS.md` + `docs/` (este doc). Diario completo: `docs/CHANGELOG.md`.
+- **2026-10-15** Reorganización de docs a `AGENTS.md` + `docs/`. Creación de `18_escultura_griega` (64 obras) y expansión épica de `01_mitologia_griega_romana` (+77 obras). Total: 1234 obras. Diario completo: `docs/CHANGELOG.md`.

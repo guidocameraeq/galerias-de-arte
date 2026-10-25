@@ -99,4 +99,6 @@ export default [
     d: 'Una joven de belleza luminosa, idealizada como Flora, diosa de la primavera, ofrece flores con el pecho semidescubierto. Tiziano celebra la sensualidad veneciana y el cabello dorado. Belleza ideal del Renacimiento.' },
   { n: 49, titulo: 'El esclavo moribundo', tipo: 'Escultura en mármol',
     d: 'Un joven cautivo se abandona en un gesto lánguido entre el sueño y la muerte, liberándose de sus ataduras. Tallado para la tumba de Julio II, encarna el alma que se libera del cuerpo. Belleza y melancolía en el mármol.' },
+  { n: 95, titulo: 'Los condenados al infierno', anio: '1502', museo: 'Capilla de San Brizio, Catedral de Orvieto', escuela: 'Alto Renacimiento', tipo: 'Fresco',
+    d: 'Parte del monumental ciclo sobre el Juicio Final en la capilla de San Brizio, el fresco muestra a una masa de almas torturadas por demonios polícromos bajo la mirada de arcángeles armados. Signorelli realiza un audaz estudio anatómico del desnudo masculino en movimiento y escorzos extremos. Su potencia dramática y crudeza influyeron directamente en el Juicio Final de Miguel Ángel.' },
 ];
