@@ -94,15 +94,6 @@ export default [
     "d": "Cadáveres apilados cubren los adoquines de una empinada calle medieval donde perros carroñeros y bandadas de cuervos se disputan los restos. Basándose en el relato de Jens Peter Jacobsen, Kubin ilustra la desolación de la ciudad lombarda arrasada por la peste negra con minuciosidad claustrofóbica. El triunfo aterrador de la epidemia sobre la civilización."
   },
   {
-    "n": 11,
-    "titulo": "La Muerte viene por el dibujante (Autorretrato)",
-    "anio": "1930",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Lápiz sobre papel",
-    "d": "En su estudio de trabajo, el artista de edad madura es abrazado por detrás por una espectral figura femenina de mirada hueca que le rodea el pecho. Con trazos arremolinados de lápiz grafito, Kubin compone un autorretrato visionario que presagia con calma lúcida su propio desenlace biográfico. El saludo sereno entre el creador de pesadillas y su musa postrera."
-  },
-  {
     "n": 12,
     "titulo": "Casco en el mar",
     "anio": "1906",
@@ -139,15 +130,6 @@ export default [
     "d": "Una hechicera desnuda de piel fosforescente nada en sincronía con una serpiente acuática de fauces abiertas en un remolino submarino. Kubin funde el erotismo decadente con el horror zoológico a través de pinceladas ligeras de gouache que brillan sobre el fondo oscuro. La comunión mágica e impía entre la brujería y el instinto salvaje."
   },
   {
-    "n": 16,
-    "titulo": "Aquelarre (Sabbath de brujas)",
-    "anio": "1925",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Lápiz sobre papel",
-    "d": "Un corro de figuras desgarbadas y demonios zoomorfos danzan frenéticamente en la cumbre de una colina azotada por el viento nocturno. Trazado a lápiz con líneas enérgicas y espasmódicas, el dibujo recrea la histeria del ritual pagano y la liberación de pulsiones reprimidas. La celebración grotesca de las fuerzas telúricas bajo el cielo negro."
-  },
-  {
     "n": 17,
     "titulo": "La casa de las ratas",
     "anio": "1902",
@@ -155,15 +137,6 @@ export default [
     "escuela": "Simbolismo / Expresionismo",
     "tipo": "Tinta china y acuarela sobre papel",
     "d": "Una modesta cabaña solitaria bajo la luz pálida de la luna se encuentra rodeada por una masa movediza de miles de roedores que avanzan hacia el portón. Kubin utiliza el claroscuro de tinta y aguada para generar una sensación sofocante de plaga y descomposición silenciosa. La fragilidad del refugio humano invadido por la ferocidad diminuta."
-  },
-  {
-    "n": 18,
-    "titulo": "El flautista de Hamelín",
-    "anio": "1943",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Pluma y tinta china sobre papel",
-    "d": "Un músico esquelético de mirada hipnótica camina tocando su instrumento seguido por una hilera de niños sonámbulos hacia la espesura. Realizado durante los años de la Segunda Guerra Mundial, el dibujo reactualiza el relato popular alemán como advertencia contra la seducción demagógica y la ceguera colectiva. La melodía fatal que conduce a la inocencia a la perdición."
   },
   {
     "n": 19,
@@ -184,15 +157,6 @@ export default [
     "d": "Bajo un denso dosel de nubes de tormenta, una ciudad amurallada de arquitectura cúbica y austera se recorta diminuta en la lejanía del horizonte. La aguada terrosa y la soledad del plano infinito anticipan la geografía imaginaria de su célebre novela 'La otra parte'. El espejismo melancólico de un imperio que se desmorona en el confín oriental."
   },
   {
-    "n": 21,
-    "titulo": "La ciencia",
-    "anio": "c1902",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Pluma, tinta china y acuarela sobre papel",
-    "d": "Un mono con ademán pensativo sostiene un grueso volumen bajo el brazo mientras pisa con indolencia el cuerpo desnudo de un ser humano derribado en el suelo. Kubin satiriza con sarcasmo nietzscheano la soberbia intelectual positivista reduciendo el afán de conocimiento a una mueca ciega de la evolución. El choque cómico y feroz entre la razón ilustrada y el instinto bruto."
-  },
-  {
     "n": 22,
     "titulo": "Fanáticos errantes",
     "anio": "c1904",
@@ -202,87 +166,6 @@ export default [
     "d": "El cuello descarnado de un reptil fósil gigantesco serpentea dinámicamente a través del espacio desértico mientras una multitud marcha ensimismada bajo sus vértebras. La yuxtaposición de fósiles antediluvianos y cortejos religiosos cuestiona los dogmas fanáticos y la ceguera de las masas. La insignificancia del fervor humano ante la inmensidad del tiempo geológico."
   },
   {
-    "n": 23,
-    "titulo": "Homenaje a mi novia fallecida en 1903",
-    "anio": "1903",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Tinta china sobre papel",
-    "d": "En el interior de una cripta abovedada, la figura yacente de una joven reposa en su féretro custodiada por espectros orantes y flores marchitas. Kubin elabora un doloroso monumento fúnebre tras la prematura muerte de su prometida Emmy Bayer a causa del tifus en Viena. La despedida desgarradora del artista convertida en elegía gráfica imperecedera."
-  },
-  {
-    "n": 24,
-    "titulo": "Madame (Luminaria moderna)",
-    "anio": "1900",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Pluma, tinta china y acuarela sobre papel",
-    "d": "El cuerpo estilizado y grotesco de una cortesana vestida a la moda finisecular se curva formando la estructura orgánica de una farola urbana. La línea sinuosa y las aguadas verdosas parodian las formas decorativas del Jugendstil vienés revelando la decadencia moral de la metrópoli. La transformación satírica del refinamiento burgués en artificio monstruoso."
-  },
-  {
-    "n": 25,
-    "titulo": "Dama con enagua de encaje",
-    "anio": "1903",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Tinta china y gouache sobre papel",
-    "d": "Una mujer sonriente ataviada únicamente con pantalones bombachos de encaje y botines negros adopta una pose afectada en medio de un páramo vacío. Kubin mezcla el erotismo kitsch con la deformación expresionista para ironizar sobre el voyeurismo y los fetiches de la burguesía austro-húngara. La risa perturbadora de la sensualidad degradada a pantomima."
-  },
-  {
-    "n": 26,
-    "titulo": "La bendecida",
-    "anio": "1902",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Lápiz de color, tinta china y acuarela sobre papel",
-    "d": "Una mujer grávida de dimensiones colosales yace como una montaña viviente en una vasta llanura bajo un cielo teñido de pálidos tonos ocres. El dibujo a tinta y lápiz de color eleva la maternidad a la categoría de cataclismo telúrico cargado de ambivalencia entre fertilidad y monstruosidad. La fuerza ciega y descomunal de la naturaleza engendrando vida."
-  },
-  {
-    "n": 27,
-    "titulo": "Campamento de gitanos",
-    "anio": "1909",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Pluma, tinta china y lápiz sobre papel",
-    "d": "Roulottes desvencijadas, carpas precarias y hogueras humeantes configuran un asentamiento nómada al margen de un bosque umbrío. Kubin retrata con empatía expresionista a los desposeídos y marginados que desafían el orden civilizado viviendo en comunión con los páramos. La libertad errante y misteriosa que resiste en los márgenes del mundo moderno."
-  },
-  {
-    "n": 28,
-    "titulo": "Estudio de ahorcado",
-    "anio": "c1920",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Lápiz sobre papel",
-    "d": "El cuerpo inerte de un hombre pende de una soga anudada a una viga en un desván oscuro bañado por una luz cenital difusa. Con trazos rápidos y sobrios de lápiz grafito, Kubin capta la pesadez de la gravedad y la quietud aterradora del suicidio sin concesiones al dramatismo efectista. El estudio crudo y despojado del último instante de la tragedia humana."
-  },
-  {
-    "n": 29,
-    "titulo": "Caronte",
-    "anio": "c1937",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Lápiz sobre papel",
-    "d": "Una silueta huesuda y encorvada empuja con su remo una barca cargada de sombras difusas a través de las aguas pantanosas de la laguna Estigia. El artista retoma la mitología clásica en vísperas de la guerra para advertir sobre la inexorabilidad del tránsito hacia el inframundo. El barquero infernal cumpliendo su eterno oficio con silenciosa fidelidad."
-  },
-  {
-    "n": 30,
-    "titulo": "El poste indicador",
-    "anio": "1901",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Pluma, tinta china y acuarela sobre papel",
-    "d": "En una encrucijada de caminos pedregosos, un poste de madera rematado por una mano esquelética señala direcciones hacia la nada más absoluta. La tinta china resalta el desamparo de una geografía donde todas las rutas desembocan en el vacío y el extravío moral. La desorientación existencial del caminante frente a las encrucijadas del destino."
-  },
-  {
-    "n": 31,
-    "titulo": "Perseguido por gusano y mariposa",
-    "anio": "1902",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Tinta china sobre papel",
-    "d": "Un hombre diminuto corre aterrorizado por una franja estrecha de tierra acorralado por una larva viscosa a sus espaldas y un insecto gigante al frente. Kubin combina el absurdo kafkiano con la pesadilla entomológica en un friso horizontal donde la escala biológica se invierte. El pánico ridículo y trágico del ser humano asediado por lo insignificante."
-  },
-  {
     "n": 32,
     "titulo": "La fertilidad (Segunda versión)",
     "anio": "1909",
@@ -290,33 +173,6 @@ export default [
     "escuela": "Simbolismo / Expresionismo",
     "tipo": "Pluma, tinta china y acuarela sobre papel",
     "d": "En el seno de una selva virgen y exuberante, una figura femenina colosal amamanta y sostiene a múltiples vástagos en un paraje primordial. En esta segunda versión del tema, Kubin modera el horror inicial hacia una visión más armónica y panteísta del ciclo reproductivo cósmico. El homenaje solemne a la fuerza germinal que regenera incesantemente la materia."
-  },
-  {
-    "n": 33,
-    "titulo": "Cartel: Exposición Libros Hans Götz",
-    "anio": "1926",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Litografía sobre papel",
-    "d": "Un monstruo quimérico de orejas puntiagudas y sonrisa sardónica se acurruca leyendo un manuscrito bajo la tipografía litográfica de la exposición. Kubin sintetiza su propia reputación como ilustrador de lo fantástico mediante una criatura que aúna la ternura y lo grotesco. La complicidad cómplice del artista con los lectores de sus mundos subterráneos."
-  },
-  {
-    "n": 34,
-    "titulo": "Cartel: Exposición Kubin (Albertina Kulturbund)",
-    "anio": "1937",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Litografía sobre papel",
-    "d": "Un rostro fantasmal de ojos penetrantes emerge de un entramado denso de grafismos litográficos anunciando la retrospectiva vienesa de 1937. La obra constituye un documento histórico fundamental donde el arte visionario de Kubin se expuso poco antes de la anexión nazi de Austria. La mirada firme y desafiante de la imaginación frente a la barbarie inminente."
-  },
-  {
-    "n": 35,
-    "titulo": "Boceto de cartel (Albertina Kulturbund)",
-    "anio": "1937",
-    "museo": "Leopold Museum, Viena",
-    "escuela": "Simbolismo / Expresionismo",
-    "tipo": "Lápiz sobre papel",
-    "d": "El diseño preliminar a lápiz exhibe las líneas de fuerza, la distribución espacial del rostro enigmático y la estructura tipográfica de la muestra. Kubin revela la espontaneidad y maestría de su proceso de trabajo previo a la impresión litográfica definitiva. El testimonio íntimo de la gestación creativa en un momento crucial de su madurez."
   },
   {
     "n": 36,
@@ -371,5 +227,140 @@ export default [
     "escuela": "Simbolismo / Expresionismo",
     "tipo": "Litografía sobre papel",
     "d": "Un corcel demoníaco envuelto en llamas y humo salta enfurecido con crines al viento entre los escombros calcinados de un castillo en ruinas. Creada para ilustrar los 'Cuentos extraordinarios' de Edgar Allan Poe, la litografía captura el clímax trágico de la venganza sobrenatural del relato. La furia arrebatadora de la némesis consumando el destino del barón maldito."
+  },
+  {
+    "n": 42,
+    "titulo": "La Bruja",
+    "anio": "1900",
+    "museo": "Schlossmuseum Linz / Colección privada",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Tinta china y aguada sobre papel",
+    "d": "Sobre una rama retorcida que domina un páramo siniestro, una anciana esquelética de cabellera erizada gesticula como una directora de orquesta macabra. Debajo de ella, múltiples cadáveres de ahorcados oscilan colgados de los árboles en medio de una penumbra espectral. La personificación del terror ciego y el destino trágico, inspirada en las visiones de Goya y las pesadillas de la mitología popular germánica."
+  },
+  {
+    "n": 43,
+    "titulo": "El Novio",
+    "anio": "1905",
+    "museo": "Colección privada (ex subasta Christie's París)",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Óleo y gouache sobre papel",
+    "d": "Una figura fantasmal vestida de gala avanza con paso rígido y rostro cadavérico a través de un paisaje onírico bañado por densas veladuras de color. Tras su matrimonio y el contacto con la Secesión vienesa, Kubin incorporó gouache y óleo para dotar a sus visiones de una fosforescencia cromática inquietante. El cortejo nupcial transformado en una marcha sonámbula hacia lo desconocido."
+  },
+  {
+    "n": 44,
+    "titulo": "Ruinas",
+    "anio": "1905",
+    "museo": "Colección privada (ex subasta Christie's París)",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Óleo y gouache sobre papel",
+    "d": "Torres y arcadas colosales en ruinas emergen entre vapores sulfurosos y celajes ocres donde vagan sombras diminutas y desamparadas. La vibrante aplicación de óleo y témpera sobre papel anticipa las arquitecturas alucinatorias y opresivas de su novela La otra parte. Una meditación expresionista sobre la decadencia ineluctable de las civilizaciones humanas."
+  },
+  {
+    "n": 45,
+    "titulo": "El ser de Marte",
+    "anio": "1906",
+    "museo": "Heidi Horten Collection, Viena",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pastel y gouache sobre cartón",
+    "d": "Una extraña entidad híbrida con ojos facetados de insecto, lomo espinado y garras de rapaz acecha agazapada sobre un páramo desértico de tonos verdosos y sepias. Kubin emplea pastel y gouache para plasmar un organismo alienígena capaz de retraer su cabeza en un collar protector blindado. Una de las primeras y más desconcertantes representaciones de la vida extraterrestre en el arte moderno europeo."
+  },
+  {
+    "n": 46,
+    "titulo": "La Epidemia",
+    "anio": "1900",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma, tinta china y aguada sobre papel catastral",
+    "d": "Un coloso esquelético y putrefacto se alza como una sombra monumental sobre una ciudad indefensa, cubriéndola con el manto negro del contagio. Mediante la técnica del salpicado y densas aguadas de tinta china, Kubin evoca el pavor ancestral ante las plagas invisibles que arrasan comunidades enteras. El desamparo absoluto de la civilización urbana frente a las fuerzas destructivas de la naturaleza."
+  },
+  {
+    "n": 47,
+    "titulo": "Vista auténtica de Perla (La otra parte)",
+    "anio": "1909",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma y tinta china sobre papel",
+    "d": "Una urbe sombría de muros medievales, chimeneas humeantes y torreones clausurados se recorta bajo un cielo plomizo donde nunca brilla el sol. La ilustración cumbre para su novela La otra parte define la capital del Reino de los Sueños fundada por el misterioso magnate Patera. La atmósfera claustrofóbica y decadente que prefiguró el universo literario de Franz Kafka y el surrealismo europeo."
+  },
+  {
+    "n": 48,
+    "titulo": "La Peste",
+    "anio": "1903",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma, tinta china y aguada sobre papel",
+    "d": "Una entidad espectral envuelta en jirones oscuros sobrevuela un poblado mientras las campanas doblan a muerto y las calles quedan desiertas. La densa trama de tinta china y aguada sobre papel catastral genera una vibración opresiva que asfixia el espacio urbano. Una alegoría implacable sobre la muerte masiva y la fragilidad del orden social frente a la infección."
+  },
+  {
+    "n": 49,
+    "titulo": "La Angustia (El Miedo)",
+    "anio": "1899",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma, tinta china y aguada sobre papel",
+    "d": "Un rostro gigante con ojos desencajados y expresión desquiciada emerge desde un abismo tenebroso para arrastrar a las figuras humanas hacia el fondo. Creada en su etapa fundacional en Múnich, esta pieza resume el interés de Kubin por el psicoanálisis y las patologías de la mente inconsciente. La encarnación más violenta y desnuda del pánico interior devorando la razón."
+  },
+  {
+    "n": 50,
+    "titulo": "Danza de la noche de Walpurgis",
+    "anio": "1923",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma y tinta china sobre papel",
+    "d": "Siluetas grotescas de brujas, demonios y sátiros ejecutan una danza desenfrenada alrededor de una hoguera mágica en la cima de una colina sombría. Inspirándose en las escenas del Fausto de Goethe, Kubin despliega un dinamismo febril donde los cuerpos se deforman en espirales de embriaguez mística. El aquelarre pagano como celebración de los instintos primordiales liberados de toda censura moral."
+  },
+  {
+    "n": 51,
+    "titulo": "El caballo fantasma (La otra parte)",
+    "anio": "1909",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma y tinta china sobre papel",
+    "d": "Un corcel espectral con crin erizada y mirada de fuego irrumpe en galope frenético por las calles empedradas de la ciudad de Perla. La lámina original para la novela La otra parte anuncia la inminente catástrofe que arrasará el reino onírico cuando la ilusión colectiva comience a desmoronarse. El presagio fantástico de la ruina apocalíptica anunciada por una fuerza indomable."
+  },
+  {
+    "n": 52,
+    "titulo": "La hora de la muerte",
+    "anio": "1900",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma, tinta china y aguada sobre papel",
+    "d": "En el interior de un aposento en penumbra, una presencia esquelética e inexorable se inclina sobre el lecho de un moribundo señalando el fin de su tiempo terrenal. Los contrastes severos entre la luz mortecina y los negros profundos de la tinta china intensifican la soledad del instante final. La tradición del memento mori centroeuropeo reinterpretada bajo la lente del expresionismo moderno."
+  },
+  {
+    "n": 53,
+    "titulo": "La dama sobre el caballo",
+    "anio": "1900",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma, tinta china y aguada sobre papel",
+    "d": "Una amazona de porte hierático y velo misterioso cabalga sobre un corcel negro que se funde con la oscuridad de un paisaje desolado. Kubin explora el arquetipo de la mujer fatal del simbolismo finisecular, fundiendo sensualidad aristocrática con una amenaza siniestra e insondable. La marcha solitaria de la belleza vinculada irremediablemente a la destrucción."
+  },
+  {
+    "n": 54,
+    "titulo": "Noche de fantasmas",
+    "anio": "1898",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Tinta china y aguada sobre papel",
+    "d": "Apariciones etéreas y formas flotantes recorren un cementerio envuelto en neblinas nocturnas mientras la luna llena ilumina las lápidas agrietadas. Es una de las creaciones más tempranas conservadas de Kubin, donde ya se manifiesta su fascinación por los relatos góticos y la permeabilidad entre el mundo de los vivos y el de los muertos. La evocación lírica y estremecedora del más allá."
+  },
+  {
+    "n": 55,
+    "titulo": "Nocturno",
+    "anio": "1899",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Aguada y tinta china sobre papel",
+    "d": "Un paisaje lacustre sumido en sombras profundas refleja los últimos destellos crepusculares mientras siluetas enigmáticas observan desde la orilla. Kubin modula las gradaciones de la aguada para crear un espacio de contemplación melancólica cargado de tensión psicológica. La quietud engañosa de la naturaleza que oculta terrores latentes en la penumbra."
+  },
+  {
+    "n": 56,
+    "titulo": "El fin de la guerra",
+    "anio": "1920",
+    "museo": "Städtische Galerie im Lenbachhaus, Múnich",
+    "escuela": "Simbolismo / Expresionismo",
+    "tipo": "Pluma y tinta china sobre papel",
+    "d": "Un soldado desharrapado contempla un horizonte de trincheras arrasadas, cruces de madera improvisadas y árboles desmochados por el fuego de artillería. Tras el colapso del Imperio Austrohúngaro y la devastación de la Primera Guerra Mundial, Kubin registró el amargo despertar de una Europa en ruinas morales y materiales. El testimonio desolador de la tragedia bélica despojada de cualquier épica triunfalista."
   }
 ];

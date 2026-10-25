@@ -91,6 +91,7 @@ Casi todos los scripts son dry-run salvo `--apply`. Excepción: `collect.mjs` ba
 | Item basura (07 "ética ambiental" como Rafael) | Glitch de Wikidata | Eliminado a mano | Revisar la lista en dry-run antes de `--apply` |
 | Duplicados colados por variantes ortográficas (Pollaiuolo/Pollaiolo, espacios en J. M. W. Turner, sufijos) | Comparación estricta de cadenas `===` en target vs catálogo existente | Se detectaron 3 duplicados, se retiraron a `_dedup_removed/` con `remove-work.mjs` y se reemplazaron (Reni, Moreau, Turner) | Normalización fuzzy con tokenización, remoción de stop-words y matching por raíces |
 | `remove-work.mjs` ignoraba fichas multilínea | Parser asumía regex de una sola línea `^  \{ n: (\d+),` | Fichas generadas con formateador multilínea quedaban desvinculadas | Parser ampliado para detectar tanto formato single-line como multiline |
+| **Colección dominada por bocetos pálidos y croquis menores (Kubin)** | Priorizar el atajo técnico de una sola API (Leopold Museum entregaba 3500 px fácil) sobre el canon artístico y la fuerza visual | Purgados 16 bocetos y afiches con `remove-work.mjs`; se invirtió el método: investigación del canon primero, recolección después; se cosecharon 15 obras maestras cumbres (color y pesadilla densa) | **Investigar y definir la lista de obras representativas del artista ANTES de salir a buscar descargas**; nunca dejar que la disponibilidad fácil de una API sesgue la curaduría |
 
 ## 7. Cronología mínima (2026)
 - **06-13** Setup + Fase 1: motor Node y colección 01; luego 02–06 (hasta 06-14) con `collect.mjs`.
