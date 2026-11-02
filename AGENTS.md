@@ -58,7 +58,7 @@ Valida forma del índice, que cada archivo exista y sea imagen real, dims reales
 Si un doc y el código discrepan, **manda el código**; corregí el doc.
 
 ## Entorno
-Windows 11. Node v18+ (fetch nativo). Sin Python. `sharp` se usa en la revisión visual de Doré (`dore*.mjs`); `jimp` está instalado y sin uso. Git local **sin remoto**: versiona docs, `tools/`, `.claude/` e `_index.json`/`_descartes`; **ignora las imágenes**. Shell: PowerShell o Git Bash; rutas con `/`.
+Windows 11. Node v18+ (fetch nativo). Sin Python. `sharp` se usa en la revisión visual de Doré (`dore*.mjs`); `jimp` está instalado y sin uso. Git con remoto privado en GitHub (`guidocameraeq/galerias-de-arte`): versiona docs, `tools/`, `.claude/` e `_index.json`/`_descartes`; **ignora las imágenes**. Shell: PowerShell o Git Bash; rutas con `/`.
 
 ## Trabajo futuro (NO empezar sin que el usuario lo pida)
 Visor/caption para la TV: capa de presentación para DESPUÉS de cerrar la curaduría (ver `docs/TODO.md` 🟢). Hoy no existe tooling.

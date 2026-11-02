@@ -35,7 +35,7 @@
 - Nada a medias. 100% verificado y commiteado.
 
 ## Próximo paso CONCRETO
-- Conectar con GitHub si el usuario lo desea: el usuario está logueado en `gh` CLI como `guidocameraeq`. Se puede crear o enlazar el remoto en GitHub y correr `git push -u origin main`.
+- Repositorio remoto conectado y sincronizado con GitHub: `https://github.com/guidocameraeq/galerias-de-arte` (privado).
 - Encapsulación de carpetas físicas: si el usuario prefiere mover las carpetas a `colecciones/`, las herramientas ya están preparadas; se puede hacer con el workspace cerrado para evitar locks de Windows (`EPERM`).
 
 ## Bloqueos
