@@ -3,9 +3,10 @@
 // Uso: node tools/fix-dims.mjs <colDir> [--apply]
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { imgSize, orientationOf } from './lib.mjs';
+import { imgSize, orientationOf, resolveColDir } from './lib.mjs';
 
-const colDir = process.argv[2] || '01_mitologia_griega_romana';
+const colArg = process.argv[2] || '01_mitologia_griega_romana';
+const colDir = resolveColDir('.', colArg);
 const APPLY = process.argv.includes('--apply');
 const idxPath = path.join(colDir, '_index.json');
 const idx = JSON.parse(await fs.readFile(idxPath, 'utf8'));

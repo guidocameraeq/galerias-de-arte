@@ -1,6 +1,6 @@
 // tools/lib.mjs — motor reutilizable del proyecto "Arte"
 // Node v18+ (usa fetch nativo). Sin dependencias externas.
-import { promises as fs } from 'node:fs';
+import { promises as fs, existsSync } from 'node:fs';
 import path from 'node:path';
 
 export const sleep = (ms) => new Promise(r => setTimeout(r, ms));
@@ -200,6 +200,16 @@ export async function downloadTo(url, destPath, { ua, preBuffer, retries = 3, va
 }
 
 // ---------- _index.json e idempotencia ----------
+export function resolveColDir(rootDir, colName) {
+  if (!colName) return rootDir;
+  if (path.isAbsolute(colName) && existsSync(colName)) return colName;
+  const inCols = path.join(rootDir, 'colecciones', colName);
+  if (existsSync(inCols)) return inCols;
+  const inRoot = path.join(rootDir, colName);
+  if (existsSync(inRoot)) return inRoot;
+  return inCols;
+}
+
 export async function loadIndex(colDir) {
   const p = path.join(colDir, '_index.json');
   let txt;

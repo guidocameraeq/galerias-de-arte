@@ -10,7 +10,7 @@ Ver también: `AGENTS.md`, `docs/METODO.md`, `docs/FUENTES.md`, `docs/DESCRIPCIO
 
 ```
 <raíz>/
-├── NN_nombre/                  colecciones 01..21
+├── NN_nombre/                  colecciones 01..23
 │   ├── _index.json             LA fuente de verdad de la colección: {collection, items:[...]}
 │   ├── landscape/  portrait/   los JPG; carpeta = campo `orientation` de cada obra
 │   ├── _targets.md             SOLO 01–06: tabla curada de objetivos (la genera gen-targets-md.mjs desde targets-0N.mjs)
@@ -36,6 +36,8 @@ El alcance fino de 01–06 (qué obras son targets y por qué) vive en `<col>/_t
 | `19_marcelo_canevari` | Retrospectiva y selección curada del pintor y naturalista argentino contemporáneo Marcelo Canevari (25 obras): series *La fiesta del fuego*, *Fuerza Mayor*, colaboraciones (*Post Mortem* con Pocetti / tapa de Dillom, *Iberá* y *Las ofrendas* con su padre) y escenas de fauna/realismo mágico. Fichas curadas en `tools/desc/19_marcelo_canevari.mjs` |
 | `20_alfred_kubin` | Monográfica curada del dibujante, ilustrador y escritor austríaco Alfred Kubin (41 obras maestras): visiones de pesadilla, alegorías de la muerte, quimeras abisales, sátiras grotescas e ilustraciones apocalípticas y literarias (*Der Krieg*, *Die andere Seite*, *Das Feuerpferd*). Fuentes: Leopold Museum (35 obras a 3500 px), Lenbachhaus (4 obras a 2000 px) y MoMA/Commons (2 obras). Fichas curadas en `tools/desc/20_alfred_kubin.mjs` |
 | `21_rob_gonsalves` | Retrospectiva y selección curada del maestro canadiense del realismo mágico e ilusionismo Rob Gonsalves (25 obras maestras): transformaciones arquitectónicas, marinas y oníricas (*El sol zarpa*, *Islas que zarpan*, *Aquí llega la marea*, *Gótico salvaje*, *Rompecabezas inacabado*). Fuentes: Estate oficial de Rob Gonsalves (Squarespace CDN), Marcus Ashley Gallery (Lake Tahoe) y escaneos de alta resolución (≥1000 px). Fichas curadas en `tools/desc/21_rob_gonsalves.mjs` |
+| `22_zdzislaw_beksinski` | Monográfica curada del maestro del surrealismo distópico polaco Zdzisław Beksiński (25 obras maestras del período fantástico 1970–1985): figuras esqueléticas, crucifixiones paganas, torres de fuego, arquitecturas óseas y paisajes apocalípticos (*Los amantes*, *AA78*, *La torre carmesí*, *El cañón de los soldados espectrales*, *El árbol de osamentas*). Fuentes: escaneos limpios sin recortar ni franjas de WikiArt (serie `untitled-584`..`606`) y Wikimedia Commons (≥1000 px, hasta 2268 px). Fichas curadas en `tools/desc/22_zdzislaw_beksinski.mjs` |
+| `23_mariusz_lewandowski` | Monográfica curada del pintor surrealista polaco contemporáneo Mariusz Lewandowski (25 obras maestras): paisajes metafísicos monumentales, deidades colosales, umbrales oceánicos y portadas célebres del doom metal (*Esencia de la libertad* / *Mirror Reaper*, *Encuentro en el otro lado*, *Amnesia*, *La gran batalla medieval*, *Acto de humildad* / *Stygian*, *El convoy de la muerte*, *El demiurgo*). Fuentes: escaneos directos de óleo sobre lienzo en alta resolución del archivo oficial del Estate / galería oficial (≥1000 px, hasta 2048 px). Fichas curadas en `tools/desc/23_mariusz_lewandowski.mjs` |
 
 ## 2. Convención de nombres de archivo
 

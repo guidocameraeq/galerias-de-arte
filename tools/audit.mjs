@@ -52,7 +52,10 @@ function inspect(fp, size) {
 }
 
 // ---- recorrido ----
-const colDirs = readdirSync(ROOT).filter(d => /^\d{2}_/.test(d) && statSync(path.join(ROOT, d)).isDirectory())
+const colsPath = path.join(ROOT, 'colecciones');
+const hasCols = existsSync(colsPath) && readdirSync(colsPath).some(d => /^\d{2}_/.test(d));
+const COLS_DIR = hasCols ? colsPath : ROOT;
+const colDirs = readdirSync(COLS_DIR).filter(d => /^\d{2}_/.test(d) && statSync(path.join(COLS_DIR, d)).isDirectory())
   .filter(d => !ONLY || d.startsWith(ONLY)).sort();
 const rows = [];
 const qidSeen = new Map();     // qid -> ["col n", ...]
@@ -62,7 +65,7 @@ for (const col of colDirs) {
   const num = col.slice(0, 2), floor = MODERN.has(num) ? FLOOR_MODERN : FLOOR_DEFAULT;
   const row = { col, obras: 0, fichas: 0, fallas: 0, avisos: 0, bytes: 0 };
   const f0 = fails.length, w0 = warns.length;
-  const ip = path.join(ROOT, col, '_index.json');
+  const ip = path.join(COLS_DIR, col, '_index.json');
   let idx;
   try { idx = JSON.parse(readFileSync(ip, 'utf8')); } catch (e) { fail('F-INDEX', col, '-', `_index.json ilegible o ausente (${e.message})`); rows.push(row); continue; }
   if (!idx || Array.isArray(idx) || !Array.isArray(idx.items)) { fail('F-INDEX', col, '-', 'forma inválida: debe ser {collection, items:[…]} (objeto, no array)'); rows.push(row); continue; }
@@ -80,10 +83,10 @@ for (const col of colDirs) {
     inIndex.add(key);
     if (!String(it.file).startsWith(String(it.n).padStart(2, '0') + '_')) warn('W-PREFIX', col, tag, `el prefijo del nombre no coincide con n: ${it.file}`);
 
-    const fp = path.join(ROOT, col, it.orientation, it.file);
+    const fp = path.join(COLS_DIR, col, it.orientation, it.file);
     if (!existsSync(fp)) {
       const other = it.orientation === 'landscape' ? 'portrait' : 'landscape';
-      fail('F-MISSING', col, tag, existsSync(path.join(ROOT, col, other, it.file)) ? `está en ${other}/ pero el índice dice ${it.orientation}/: ${it.file}` : `no existe: ${key}`);
+      fail('F-MISSING', col, tag, existsSync(path.join(COLS_DIR, col, other, it.file)) ? `está en ${other}/ pero el índice dice ${it.orientation}/: ${it.file}` : `no existe: ${key}`);
       continue;
     }
     const size = statSync(fp).size; row.bytes += size;
@@ -109,7 +112,7 @@ for (const col of colDirs) {
 
   // huérfanos: archivos en disco que el índice no referencia
   for (const o of ['landscape', 'portrait']) {
-    const d = path.join(ROOT, col, o);
+    const d = path.join(COLS_DIR, col, o);
     if (!existsSync(d)) continue;
     for (const f of readdirSync(d)) if (!inIndex.has(`${o}/${f}`)) fail('F-ORPHAN', col, '-', `en disco pero no en el índice: ${o}/${f}`);
   }
@@ -124,7 +127,7 @@ if (existsSync(descDir)) for (const col of colDirs) {
   if (!existsSync(dp)) continue;
   try {
     const entries = (await import(pathToFileURL(dp).href)).default || [];
-    const byN = new Map(JSON.parse(readFileSync(path.join(ROOT, col, '_index.json'), 'utf8')).items.map(i => [i.n, i]));
+    const byN = new Map(JSON.parse(readFileSync(path.join(COLS_DIR, col, '_index.json'), 'utf8')).items.map(i => [i.n, i]));
     let falta = 0, difiere = 0;
     for (const e of entries) { const i = byN.get(e.n); if (!i) falta++; else if (e.d && e.d !== i.description) difiere++; }
     if (falta || difiere) warn('W-DESC-STALE', col, '-', `tools/desc/${col}.mjs desfasado: ${falta} n inexistentes, ${difiere} fichas distintas del índice → NO re-correr apply-desc sin corregirlo (docs/DESCRIPCIONES.md §2.A)`);

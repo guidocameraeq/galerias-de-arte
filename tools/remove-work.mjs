@@ -22,9 +22,14 @@ const note = arg('note');
 const die = (m) => { console.error('ERROR: ' + m); process.exit(1); };
 
 if (!colDir || (!nArg && !sidArg)) die('uso: node tools/remove-work.mjs <colDir> (--n=N | --sourceId=ID) [--why=…] [--note="…"] [--apply]');
-if (!/^\d{2}_/.test(colDir) || !existsSync(path.join(ROOT, colDir, '_index.json'))) die(`no existe la colección "${colDir}" (usá el nombre completo, p.ej. 11_rococo)`);
+const COLS_DIR = existsSync(path.join(ROOT, 'colecciones')) ? path.join(ROOT, 'colecciones') : ROOT;
+const resolvedColAbs = existsSync(path.join(COLS_DIR, colDir, '_index.json'))
+  ? path.join(COLS_DIR, colDir)
+  : path.join(ROOT, colDir);
 
-const colAbs = path.join(ROOT, colDir);
+if (!/^\d{2}_/.test(colDir) || !existsSync(path.join(resolvedColAbs, '_index.json'))) die(`no existe la colección "${colDir}" (usá el nombre completo, p.ej. 11_rococo)`);
+
+const colAbs = resolvedColAbs;
 const idx = await loadIndex(colAbs);
 const hits = idx.items.filter(it => nArg ? it.n === Number(nArg) : it.sourceId === sidArg);
 if (hits.length !== 1) die(`la selección dio ${hits.length} obras (se espera exactamente 1)`);
