@@ -8,6 +8,8 @@ Ver también: `AGENTS.md`, `docs/METODO.md`, `docs/FUENTES.md`, `docs/DESCRIPCIO
 
 ## 1. Estructura de carpetas
 
+> **Desde 2026-11-02 las imágenes no viven en el repo:** `landscape/`, `portrait/` y `_dedup_removed/` de cada colección son **enlaces** (junctions de Windows) a la biblioteca local de la PC (`.arte-local.json`). El resto del árbol (índices, descartes, docs, tools) sí es del repo. Ver `docs/ALMACENAMIENTO.md`. La estructura de colecciones (por autor y por época/estilo mezcladas) es **provisoria**: se reordenará cuando la app esté pulida; por eso se referencia por `qid`/`sourceId`.
+
 ```
 <raíz>/
 ├── NN_nombre/                  colecciones 01..23

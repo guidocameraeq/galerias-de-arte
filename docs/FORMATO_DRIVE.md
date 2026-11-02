@@ -1,0 +1,75 @@
+# FORMATO_DRIVE — contrato con la app Museum Slideshow
+
+> Este repo es el **lado curaduría**. La app (**Museum Slideshow**, Android para la TCL Google TV de Guido; repo y agente aparte) lee de una carpeta pública de Google Drive. Lo único que compartimos es **este formato**. La app define el formato; este doc es la copia del lado curaduría. Si discrepan, manda el doc de la app (`docs/formato-galeria.md` en su repo) y se corrige acá. **Confirmado en la TV el 2026-11-02 con `Galerías-prueba`: formato v1 fijo.**
+
+## Reparto de trabajo
+| Quién | Hace | NO hace |
+|---|---|---|
+| **Este repo (curaduría / historiador)** | Elegir obras, conseguir imágenes buenas, escribir las fichas, exportar y dejar todo en Drive | Nada de código Android, diseño en pantalla ni instalación en la TV |
+| **Agente de la app** | Código Android, diseño, marcos, instalación | Curar ni descargar arte |
+| **Guido** | Gestiona su Drive, comparte las carpetas, carga la clave de Drive en la app, poda galerías a mano | — |
+
+Los dos agentes se avisan por mensaje entre sesiones. La clave de Drive la pone Guido del lado de la app: acá no se necesita ninguna.
+
+## Carpetas en Drive (cuenta de Guido)
+```
+Mi unidad/Galerías de arte/          PRIVADA (trabajo)
+  Galerías-prueba/                   compartida por link (Lector) — solo pruebas técnicas
+  Galerías/                          compartida por link (Lector) — la que lee la app (pendiente: exportador)
+  Respaldo/                          PRIVADA — copia de la biblioteca de imágenes (ver docs/ALMACENAMIENTO.md)
+```
+**Nunca "Editor".** Solo `Galerías` y `Galerías-prueba` se comparten por enlace; `Respaldo` jamás.
+Una colección de este repo = una subcarpeta de `Galerías/` (entera; Guido la poda a mano después). El nombre es el de la colección sin el prefijo numérico y con acentos (p. ej. `02_barroco` → `Barroco`).
+
+## `galeria.json` (formato 1)
+JSON válido UTF-8, sin comentarios ni comas sobrantes, ≤1 MB, nombre exacto `galeria.json`, en la subcarpeta de la galería.
+```json
+{
+  "formato": 1,
+  "titulo": "Impresionismo",
+  "descripcion": "París, 1860-1890: pintar la luz y el momento.",
+  "obras": [
+    { "archivo": "monet-impresion-sol-naciente.jpg", "titulo": "Impresión, sol naciente",
+      "autor": "Claude Monet", "vida_autor": "1840–1926", "anio": "1872", "movimiento": "Impresionismo",
+      "tecnica": "Óleo sobre lienzo", "medidas": "48 × 63 cm", "ubicacion": "Museo Marmottan Monet, París",
+      "forma": "rectangular", "explicacion": "Párrafo uno.\n\nPárrafo dos.",
+      "credito": "Dominio público, vía Wikimedia Commons",
+      "licencia": "Dominio público", "fuente": "https://…", "id": "Q328523" }
+  ]
+}
+```
+- **Obligatorios:** `formato` (el número 1), `titulo`, `obras`, y en cada obra `archivo` (nombre exacto de la imagen, con mayúsculas y extensión). El orden de `obras` es el orden de aparición.
+- **Opcionales (todos texto):** `titulo`, `autor`, `vida_autor`, `anio` (texto: admite "c. 1503-1519"), `movimiento`, `tecnica`, `medidas`, `ubicacion`, `credito` (texto chico que se ve en pantalla), `explicacion`, y los tres que pidió curaduría: `licencia`, `fuente` (URL; la TV no la muestra), `id` (identificador estable, **único dentro de la galería**).
+- **`forma`:** `"rectangular"` (por defecto), `"redonda"` u `"ovalada"`. **Hay que marcarla a mano en tondos y medallones**: la app no los detecta.
+- **`explicacion`:** texto plano (sin Markdown ni HTML), párrafos separados por `\n\n`. Objetivo **80–150 palabras**; más corta también vale y la app la muestra igual.
+- **`marco`:** no se usa por ahora (se define con fotos de marcos reales).
+- **Imágenes:** JPG, PNG o WebP, hasta 50 MB c/u. Ideal ≥2000 px de lado largo (mejor 4K; la TV muestra 4K real); **piso aceptado 1000 px**. Nombres sin espacios ni caracteres raros, estilo `autor-titulo-anio.jpg`.
+
+## Cómo reacciona la app a los errores (no se rompe)
+Imagen que no está en la lista → se muestra al final sin ficha. Obra cuyo archivo no existe → se saltea. JSON roto → muestra las imágenes sin ficha, con el nombre de la carpeta como título. Campos desconocidos → los ignora. Todo queda en su pantalla de Estado.
+
+## De nuestro `_index.json` al `galeria.json` (mapa para el exportador)
+| `galeria.json` | Sale de | Nota |
+|---|---|---|
+| `archivo` | slug de `artist` + `title_es`/`title` + `year`, `.ext` | **Solo en la copia exportada**; la biblioteca no se renombra (regla dura 2). Extensión real del contenido (hay `.jpg` que son PNG/WebP, `W-EXT`) — a confirmar con la app |
+| `titulo` | `title_es` \|\| `title` | |
+| `autor` / `anio` | `artist` / `year` | |
+| `movimiento` | `school` | |
+| `tecnica` | `type` | puede ser null |
+| `ubicacion` | `holding_museum` | **No** usar `museum` (= fuente de descarga) |
+| `explicacion` | `description` | ver `docs/FICHAS_APP.md` |
+| `licencia` / `credito` | `license` → texto normalizado | ver política abajo |
+| `fuente` | `source_url` \|\| `image_url` | |
+| `id` | `qid` \|\| `sourceId` | `qid` es mejor (no cambia al reemplazar la imagen). Ojo `W-QID-DUP`: en 01–06 hay `qid` genéricos repetidos → usar `sourceId` o desambiguar |
+| `forma` | lista manual de tondos | no existe en el índice |
+| `vida_autor`, `medidas` | **no existen en el índice** | omitir; completar solo donde se investigue |
+
+## Política de licencias para Drive (decisión pendiente de Guido)
+El enlace "cualquiera con el enlace" **no es privado**. Casi todo es dominio público, pero parte tiene copyright y se guarda para uso personal (valores `license` = "Con copyright (uso personal)" / "Uso personal"; cantidades: `node tools/fichas-stats.mjs` / consultar los índices). Propuesta: **esas galerías (19–23 y modernas con copyright) NO van en `Galerías/` pública**, sino compartidas solo con la cuenta de la TV, si la app lo permite. A resolver con Guido y el agente de la app antes de exportar la biblioteca real.
+
+## Chequeo antes de entregar (lo corre el exportador)
+JSON válido · cada `archivo` coincide letra por letra con una imagen y no se repite · tondos con `forma` · ningún `id` repetido · sin Markdown en los textos · orden de la lista intencional. Para la prueba: `node tools/check-prueba-json.mjs`.
+
+## Estado
+- `Galerías-prueba` (Sana, Rota-json, Rota-archivo): hecha, validada en la TV. Generada por `tools/make-prueba-drive.mjs` + `tools/make-prueba-json.mjs` (la grilla 4K `grilla-4k.png` la provee el proyecto de la app).
+- `export-drive.mjs` (biblioteca real → `Galerías/`): **pendiente.** Dry-run por defecto, sin tocar imágenes, valida con el chequeo de arriba. Avisar al agente de la app cuando exista `Galerías/`.

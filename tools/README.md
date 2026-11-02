@@ -20,6 +20,18 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 |---|---|
 | `audit.mjs` | **Garantía de calidad ejecutable. Solo lectura, sin red, ~10 s.** Valida por colección: forma de `_index.json`, que cada archivo exista y sea imagen real (magic bytes), dims reales = índice, orientación, huérfanos, fichas, duplicados y fichas autoradas desfasadas. Imprime los totales de estado (obras/fichas/GB). Exit 1 si hay FALLAS. `node tools/audit.mjs [--col=NN] [--all] [--json]`. Códigos: `docs/CALIDAD.md` §7. |
 
+## 0b. Imágenes fuera del repo, Drive y app (ver `docs/ALMACENAMIENTO.md`, `docs/FORMATO_DRIVE.md`)
+
+| Script | Uso |
+|---|---|
+| `link-images.mjs` | Conecta el repo con la biblioteca de imágenes de ESTA PC: crea enlaces (junctions Windows) `landscape/`, `portrait/`, `_dedup_removed/` en cada colección. No toca carpetas reales con archivos. Dry-run por defecto. `node tools/link-images.mjs [--dir=RUTA] [--save] [--apply]` (ruta guardada en `.arte-local.json`) |
+| `images-sync.mjs` | Respaldo/restauración contra Drive (`Galerías de arte/Respaldo`, privada). Solo copia, nunca borra; excluye `_dedup_removed`. Dry-run por defecto. `node tools/images-sync.mjs backup\|restore [--apply]`. `restore` rearma los enlaces |
+| `fichas-stats.mjs` | Solo lectura. Por colección: palabras de la explicación (la app pide 80–150), origen Wikipedia-es vs a mano, museo/técnica/año/`title_es`/`qid` completos. Es la fuente de números de `docs/FICHAS_APP.md` |
+| `make-prueba-drive.mjs` | Baja 5 obras de Commons para `_export/Galerías-prueba/Sana` (serial, valida magic bytes). Solo pruebas |
+| `make-prueba-json.mjs` | Arma los `galeria.json` de `Galerías-prueba` (Sana, Rota-json, Rota-archivo) y copia las imágenes de prueba. Incluye la grilla 4K que provee el proyecto de la app |
+| `check-prueba-json.mjs` | Valida `galeria.json` de una carpeta de galerías: JSON válido, archivos existentes, ids repetidos, imágenes sin listar. `node tools/check-prueba-json.mjs [carpeta]` |
+| *(pendiente)* `export-drive.mjs` | Biblioteca real → carpeta `Galerías/` para la app, según `docs/FORMATO_DRIVE.md` |
+
 ## 1. Motor / librería (no se ejecutan directo)
 
 | Script | Propósito |

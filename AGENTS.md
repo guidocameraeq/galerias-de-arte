@@ -6,6 +6,10 @@
 ## Qué es
 Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso personal** del usuario (las ve como slideshow/modo reposo en su TV). Colecciones `NN_nombre/` por escuela/época; cada obra = archivo en `landscape/` o `portrait/` + ficha en español dentro de `<col>/_index.json`. Motor **100% Node.js** (sin Python/Pillow). Se trabaja desde la raíz del proyecto.
 
+**Tu rol acá: historiador y curador** (investigar, elegir, descargar, fichar, documentar). La app que muestra las obras en la TV (**Museum Slideshow**, Android) es **otro proyecto con otro agente**: no se toca desde acá. Lo único compartido es el formato de carpetas + `galeria.json` en Google Drive → `docs/FORMATO_DRIVE.md`.
+
+**Las imágenes NO están en el repo ni en una ruta fija.** Viven en una *biblioteca* local por PC (ruta guardada en `.arte-local.json`, ignorado por git) y se ven dentro de cada colección vía enlaces (junctions) `landscape/`, `portrait/`, `_dedup_removed/`. Respaldo en Google Drive. Si `audit` da `F-MISSING` masivo = esta PC no tiene la biblioteca conectada → `docs/ALMACENAMIENTO.md`.
+
 ## Reglas duras (no negociables)
 1. **Pocas obras excelentes > muchas mediocres.** Calidad y relevancia mandan sobre tamaño o formato.
 2. **Las imágenes NO se editan, recortan, retocan ni convierten.** Tampoco se filtra por aspect ratio (vertical y cuadrada entran igual: `w>=h` → `landscape/`, si no `portrait/`).
@@ -21,12 +25,14 @@ Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso person
 
 ## Trampas que rompen cosas si no las sabés
 1. **`_index.json` es un OBJETO `{collection, items:[…]}`, no un array.** Las obras están en `.items`.
-2. **Descripciones 01–15, 18–21: la fuente de verdad es `tools/desc/NN.mjs`**, que se vuelca con `node tools/apply-desc.mjs <col> --apply`. Editar `description` directo en el índice se pierde en la próxima corrida. 16 y gap-fill usan `enrich-es.mjs`; la 17, `dore-desc.mjs`. (`docs/DESCRIPCIONES.md`)
+2. **Descripciones 01–15, 18–23: la fuente de verdad es `tools/desc/NN.mjs`**, que se vuelca con `node tools/apply-desc.mjs <col> --apply`. Editar `description` directo en el índice se pierde en la próxima corrida. 16 y gap-fill usan `enrich-es.mjs`; la 17, `dore-desc.mjs`. (`docs/DESCRIPCIONES.md`)
 3. **La colección 17 (Doré) es excepcional:** sin `holding_museum`/`year` por grabado, `title_es` = "Infierno · Canto N". No la valides con las reglas de ficha del resto.
 4. **Scripts de UNA pasada, NO re-ejecutar:** `dore.mjs` (baja sin validar; para Doré, `dore-redownload.mjs`), `dore-dedup-apply.mjs` y `gap-desc.mjs` (abortan solos), `move-aphrodite.mjs`, y `prune-canon.mjs`/`prune-modern.mjs` (en dry proponen sacar obras ya aceptadas y renumeran, lo que desfasa las fichas; ahora al menos MUEVEN en vez de borrar). `enrich-es --force` pisa las fichas hechas a mano.
 5. **`n` y `file` no son identificadores estables** (se renumera/renombra). Referenciá obras por `qid`/`sourceId`. `n` puede tener huecos.
 6. **`apply-desc.mjs` pega las fichas POR `n`.** Si podás/renumerás/movés una obra, sacá su entrada de `tools/desc/NN.mjs` (`remove-work` lo hace solo); si no, la ficha cae en otra obra. `audit` lo avisa como `W-DESC-STALE`: no corras `apply-desc` con ese aviso activo.
 7. Hay archivos `.jpg` cuyo contenido es PNG/WebP (`audit` los lista como `W-EXT`). No renombrar ni convertir sin pedido del usuario.
+8. **`landscape/`, `portrait/` y `_dedup_removed/` son ENLACES** a la biblioteca (Windows junctions, creados por `tools/link-images.mjs`). No los borres ni los reemplaces por carpetas reales; en una PC nueva: `node tools/link-images.mjs --dir=RUTA --save --apply`, o `node tools/images-sync.mjs restore --apply` para bajarlas de Drive. `images-sync` solo copia: nunca borra.
+9. **Drive:** `Galerías` y `Galerías-prueba` se comparten por enlace (Lector); `Respaldo` es PRIVADA. Parte de la biblioteca tiene copyright de uso personal: no va a una carpeta pública sin decisión de Guido (`docs/FORMATO_DRIVE.md`).
 
 ## Cómo verificar (hacelo antes de decir "listo")
 ```
@@ -51,6 +57,11 @@ Valida forma del índice, que cada archivo exista y sea imagen real, dims reales
 | 2 | `docs/DESCRIPCIONES.md` | Cómo se hacen las fichas en español |
 | 2 | `docs/FUENTES.md` | APIs, User-Agent, trampas de cada fuente |
 | 2 | `docs/METODO.md` | Cómo se construyó todo y por qué (decisiones, descartes, lecciones) |
+| 2 | `docs/FORMATO_DRIVE.md` | Contrato con la app Museum Slideshow: carpetas en Drive, `galeria.json` v1, mapa desde nuestro índice, licencias |
+| 2 | `docs/FICHAS_APP.md` | Qué información lleva cada obra en la app, a cuáles se les escribe ficha completa |
+| 2 | `docs/ALMACENAMIENTO.md` | Dónde viven las imágenes, enlaces, respaldo y restauración con Drive |
+| 2 | `docs/procesos/FLUJO_AGENTES.md` | Roles y flujo para salir a buscar arte; qué se registra de cada obra |
+| 2 | `docs/galerias/README.md` | Una ficha curatorial por galería (qué entró, qué se descartó, fuentes) |
 | 2 | `docs/REUTILIZAR.md` | Cómo levantar este método en otro proyecto |
 | 2 | `tools/README.md` | Índice de scripts con su comando |
 | — | `docs/CHANGELOG.md` · `docs/archive/` | Historia. `archive/legacy-2026-06/` = docs viejos (`*.legacy.md`) que pueden contradecir al código |
@@ -58,7 +69,7 @@ Valida forma del índice, que cada archivo exista y sea imagen real, dims reales
 Si un doc y el código discrepan, **manda el código**; corregí el doc.
 
 ## Entorno
-Windows 11. Node v18+ (fetch nativo). Sin Python. `sharp` se usa en la revisión visual de Doré (`dore*.mjs`); `jimp` está instalado y sin uso. Git con remoto privado en GitHub (`guidocameraeq/galerias-de-arte`): versiona docs, `tools/`, `.claude/` e `_index.json`/`_descartes`; **ignora las imágenes**. Shell: PowerShell o Git Bash; rutas con `/`.
+Windows 11. Node v18+ (fetch nativo). Sin Python. `sharp` se usa en la revisión visual de Doré (`dore*.mjs`); `jimp` está instalado y sin uso. Git con remoto privado en GitHub (`guidocameraeq/galerias-de-arte`): versiona docs, `tools/`, `.claude/` e `_index.json`/`_descartes`; **ignora las imágenes**, los enlaces y `.arte-local.json`. Los enlaces (junctions) son de Windows. Google Drive para escritorio instalado en la PC principal (unidad `I:`), sin arranque automático deseado. Shell: PowerShell o Git Bash; rutas con `/`.
 
 ## Trabajo futuro (NO empezar sin que el usuario lo pida)
 Visor/caption para la TV: capa de presentación para DESPUÉS de cerrar la curaduría (ver `docs/TODO.md` 🟢). Hoy no existe tooling.

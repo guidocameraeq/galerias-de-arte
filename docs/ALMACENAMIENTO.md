@@ -1,22 +1,36 @@
 # ALMACENAMIENTO — dónde viven las imágenes
 
-> Las imágenes (~7,4 GB) **no están en git** (`.gitignore`). Git guarda solo código, docs e `_index.json`.
+> Las imágenes (~7,4 GB) **no están en git** (`.gitignore`). Git guarda solo código, docs e `_index.json`. Formato de lo que se entrega a la app: `docs/FORMATO_DRIVE.md`.
 
-## Hoy
-- **Copia de trabajo:** carpeta local del proyecto, en la PC donde se cosecha. Al 2026-11-02 las imágenes están en *otra PC* de Guido y se traen por pendrive; en esta PC solo hay índices y docs (`node tools/audit.mjs` da `F-MISSING` hasta que lleguen).
-- **Reconstrucción:** cada ficha guarda `image_url` y `sourceId`, así que casi todo se puede volver a bajar. Pero es lento y lo ya apartado/podado no vuelve.
+## Tres copias, tres funciones
+| Copia | Dónde | Para qué |
+|---|---|---|
+| **Biblioteca local** | Una carpeta por PC, fuera del repo. En la PC principal: `E:\Guido\Fotos & Videos\Banco_Galerias_De_Arte\` (`<col>\landscape`, `portrait`, `_dedup_removed`) | Trabajar: todos los scripts la ven dentro del repo por enlaces |
+| **Respaldo en Drive** | `Mi unidad\Galerías de arte\Respaldo` (PRIVADA) | Copia espejo; si una PC no tiene la biblioteca, se restaura de acá |
+| **Galerías para la app** | `Mi unidad\Galerías de arte\Galerías` y `Galerías-prueba` (compartidas, Lector) | Lo que lee la app Museum Slideshow (otra estructura y nombres: no sirve para reconstruir la biblioteca) |
 
-## En diseño: sincronización con Google Drive
-Objetivo: además del disco local, tener las imágenes en una carpeta de Google Drive que consume la app *Museum Slideshow* (proyecto aparte, lo mantiene otro agente).
+## Cómo se conecta el repo con la biblioteca
+En cada colección, `landscape/`, `portrait/` y `_dedup_removed/` son **enlaces (junctions de Windows)** a la biblioteca, así ningún script cambió. La ruta de la PC se guarda en `.arte-local.json` (ignorado por git); el repo no fija ninguna ruta.
+```bash
+node tools/link-images.mjs --dir="RUTA" --save --apply   # una vez por PC
+```
+Una carpeta REAL con archivos nunca se toca (el script avisa). Solo funciona en Windows.
 
-- **Contrato de formato** (carpeta `Galerías/<galería>/` + `galeria.json` v1): lo define el agente de la app; este repo se ajusta. Ver el acuerdo en la conversación entre agentes y, cuando exista, `docs/FORMATO_DRIVE.md`.
-- **Plan:** `tools/export-drive.mjs` (pendiente) arma una carpeta de salida desde los `_index.json`, copia las imágenes sin tocarlas y genera cada `galeria.json`. Dry-run por defecto. Guido sube o sincroniza esa carpeta con Drive.
-- **Pendiente de decidir:** galerías grandes enteras o partidas; qué campos opcionales extra (`fuente`, `licencia`, `id`).
+## Abrir el proyecto en OTRA PC
+1. Clonar el repo (trae índices, fichas, docs, tools).
+2. Si la PC ya tiene la biblioteca (disco externo, pendrive): `link-images.mjs --dir=RUTA --save --apply`.
+3. Si no la tiene: `node tools/images-sync.mjs restore --dir=RUTA` (dry-run), luego `--apply`. Baja del Respaldo de Drive y rearma los enlaces.
+4. `node tools/audit.mjs` debe dar 0 FALLAS.
+Instalar Google Drive para escritorio en esa PC (con la cuenta de Guido) y dejar conectada solo `Galerías de arte`.
+
+## Respaldar
+`node tools/images-sync.mjs backup` (dry-run) → `--apply`. Solo copia `landscape/` y `portrait/` (no `_dedup_removed/`); **nunca borra**, ni en origen ni en Drive. Lo que se sube lo sube Drive para escritorio en segundo plano: no apagar la PC hasta que el ícono diga "al día".
 
 ## Decisiones (2026-11-02, Guido)
-- **Imágenes fuera del repo (HECHO 2026-11-02).** Viven en una biblioteca local por PC (esta PC: `E:GuidoFotos & VideosBanco_Galerias_De_Arte`, la ruta se guarda en `.arte-local.json`, ignorado por git). `node tools/link-images.mjs --apply` crea en cada colección enlaces (junctions) `landscape/`, `portrait/` y `_dedup_removed/` hacia la biblioteca, así ningún script cambia. En otra PC: `node tools/link-images.mjs --dir=RUTA --save --apply`. Si la biblioteca no está, bajar la última copia de Google Drive. Una carpeta REAL con archivos nunca se toca (el script avisa).
-- **Estructura de carpetas: se mantiene la actual** (`NN_nombre/landscape|portrait`). Hoy mezcla colecciones por autor (19–23, monográficas) y por época/estilo (el grueso). Es provisoria: se reordenará cuando la app esté pulida y se vea cómo se usan las galerías. Referenciar obras por `qid`/`sourceId`, no por carpeta o `n`, para que reorganizar sea barato.
-- **El repo debe conservar todo lo que no pesa:** índices, fichas, descartes y, por pedir, un registro de obras candidatas por colección (entró / pendiente de conseguir / descartada por criterio, con motivo). Propuesta `_candidatas.json`, piloto Barroco; falta el OK de formato.
+- **Imágenes fuera del repo** (hecho): biblioteca por PC + respaldo en Drive.
+- **Estructura de colecciones: se mantiene la actual** (`NN_nombre/landscape|portrait`). Mezcla colecciones por autor (19–23) y por época/estilo (el grueso); es provisoria y se reordenará cuando la app esté pulida. Por eso las obras se referencian por `qid`/`sourceId`, no por carpeta ni `n`.
+- **El repo conserva todo lo que no pesa:** índices, fichas, descartes. Falta un registro de obras *candidatas* (entró / pendiente de conseguir / descartada por criterio): propuesta `_candidatas.json`, ver `docs/procesos/FLUJO_AGENTES.md`.
+- **Reconstrucción:** cada ficha guarda `image_url` y `sourceId`; casi todo se puede volver a bajar, pero es lento y lo ya podado no vuelve. El Respaldo de Drive es la red de seguridad real.
 
-## Respaldo y restauración con Drive (HECHO 2026-11-02)
-`node tools/images-sync.mjs backup [--apply]` copia `landscape/` y `portrait/` de la biblioteca local a `Drive\Galerías de arte\Respaldo` (privada, NO se comparte por link). `restore [--apply]` hace lo inverso en una PC sin imágenes y rearma los enlaces con `link-images`. Solo copia (robocopy sin `/MIR`): nunca borra. Dry-run por defecto. No incluye `_dedup_removed/`. Carpetas en Drive: `Galerías-prueba` (compartida, para la app), `Galerías` (la real para la app, pendiente: `export-drive.mjs`) y `Respaldo` (privada).
+## Pendiente
+`tools/export-drive.mjs` (biblioteca → carpeta `Galerías` para la app) · política de licencias para el enlace público (ver `FORMATO_DRIVE.md`) · probar `images-sync restore` en una PC real.

@@ -2,6 +2,20 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-11-02 — Repo ordenado, imágenes fuera del repo, Drive y contrato con la app Museum Slideshow
+
+### Added
+- `README.md` con banner; `docs/FORMATO_DRIVE.md` (contrato `galeria.json` v1 con la app, validado en la TV), `docs/FICHAS_APP.md`, `docs/ALMACENAMIENTO.md`, `docs/procesos/FLUJO_AGENTES.md`.
+- Tooling: `link-images.mjs` (biblioteca de imágenes por PC vía junctions), `images-sync.mjs` (respaldo/restauración con Drive, solo copia), `fichas-stats.mjs`, `make-prueba-drive.mjs`, `make-prueba-json.mjs`, `check-prueba-json.mjs`.
+- Respaldo completo de la biblioteca en Drive (`Galerías de arte/Respaldo`, privado) y `Galerías-prueba` compartida para la app.
+
+### Changed
+- Las imágenes ya no viven dentro del repo: `landscape/`, `portrait/` y `_dedup_removed/` son enlaces a la biblioteca de cada PC. `.gitignore` ignora enlaces, `.arte-local.json` y `_export/`.
+- `AGENTS.md`: rol de historiador/curador, trampas de enlaces y de Drive/licencias, mapa de docs. `CIERRE.md` ahora incluye push.
+
+### Removed
+- `START_HERE.md` (puntero huérfano).
+
 ## 2026-10-25 — Expansión masiva: 4 nuevas colecciones (18, 19, 20, 21), mitología épica y unificación de dark_art
 
 ### Added

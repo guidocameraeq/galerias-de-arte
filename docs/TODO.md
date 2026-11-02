@@ -2,12 +2,19 @@
 
 > ÚNICA fuente de pendientes del proyecto. Completado → SE BORRA (la historia vive en CHANGELOG y git). Header de 1 línea, sin narrativa de sesión.
 
-2026-10-25 — ver SESSION_HANDOFF.md
+2026-11-02 — ver SESSION_HANDOFF.md
 
 ## 🔴 Crítico
 - [ ] Ninguno abierto. (El riesgo de pérdida irreversible por `prune-*`/`dore-dedup` se cerró: ahora mueven en vez de borrar y existe `remove-work.mjs`.)
 
 ## 🟠 Importante
+- [ ] **Decisión de Guido — licencias y link público:** ~198 obras con copyright/uso personal (19–23 y modernas). ¿Van a `Galerías/` pública, o solo compartidas con la cuenta de la TV? (`docs/FORMATO_DRIVE.md`). Bloquea el exportador.
+- [ ] **`tools/export-drive.mjs`:** biblioteca → carpeta `Galerías/` según `FORMATO_DRIVE.md` (dry-run, chequeo previo, tondos con `forma`, extensión real). Empezar con 1–2 galerías y avisar al agente de la app.
+- [ ] **Fichas para la app** (`docs/FICHAS_APP.md`, `node tools/fichas-stats.mjs`): solo una fracción llega a 80 palabras; reescribir primero las `Wikipedia-es` y las <60 palabras de las galerías que Guido elija. Decidir niveles y si se investigan `vida_autor`/`medidas`.
+- [ ] **Registro de candidatas `<col>/_candidatas.json`** (entró / pendiente de conseguir / descartada por criterio, con motivo): piloto Barroco; falta OK de formato (`docs/procesos/FLUJO_AGENTES.md`). Completar a la vez `_descartes/` (no lo loguean canon/wikiart/sculptures/prune; solo existe para 01–06, 17, 20).
+- [ ] **Decidir subagentes** (A uno solo / B lectura en paralelo / C escriben con lock): ver `FLUJO_AGENTES.md`. Recomendado B.
+- [ ] **Google Drive:** desmarcar "abrir al iniciar el sistema"; confirmar que la subida del Respaldo terminó; probar `images-sync restore` en la otra PC.
+- [ ] **Reorganizar el repo:** mover colecciones a `colecciones/` (las herramientas ya lo toleran) y agrupar `tools/` (56 scripts; varios de una sola pasada). Esperar a ver la app pulida; las obras se referencian por `qid`/`sourceId`.
 - [ ] **Decidir qué hacer con los `.jpg` que en realidad son PNG/WebP** (`node tools/audit.mjs --all` → `W-EXT`). Algunos visores/TV pueden rechazarlos. Renombrar a la extensión real no toca los píxeles pero cambia `file` y exige actualizar el índice. **Decisión del usuario.**
 - [ ] **`_dedup_removed/` de la 17 (grabados duplicados apartados, cientos de MB):** decidir si se borra definitivamente. Están fuera de git. Borrar esa carpeta es seguro ahora (el script que la usaba aborta siempre).
 - [ ] **Retirar o parametrizar `prune-canon.mjs`/`prune-modern.mjs`:** en dry proponen sacar obras ya aceptadas (excepciones de `docs/CALIDAD.md` §4) y renumeran (desfasa `tools/desc/`). Hoy son "una pasada, no re-correr"; el camino normal es `remove-work.mjs`.

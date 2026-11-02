@@ -62,8 +62,21 @@ Chequea formato del índice, existencia y validez de cada imagen, dimensiones re
 | [`docs/DESCRIPCIONES.md`](docs/DESCRIPCIONES.md) | Cómo se hacen las fichas |
 | [`docs/FUENTES.md`](docs/FUENTES.md) | APIs y trampas de cada fuente |
 | [`docs/METODO.md`](docs/METODO.md) | Cómo se construyó y por qué |
+| [`docs/FORMATO_DRIVE.md`](docs/FORMATO_DRIVE.md) | Contrato con la app Museum Slideshow (Drive + `galeria.json`) |
+| [`docs/FICHAS_APP.md`](docs/FICHAS_APP.md) | Qué información lleva cada obra en la app |
+| [`docs/ALMACENAMIENTO.md`](docs/ALMACENAMIENTO.md) | Dónde viven las imágenes y cómo respaldar/restaurar |
+| [`docs/procesos/FLUJO_AGENTES.md`](docs/procesos/FLUJO_AGENTES.md) | Quién hace qué al salir a buscar arte |
+| [`docs/galerias/README.md`](docs/galerias/README.md) | Una ficha curatorial por galería |
 | [`tools/README.md`](tools/README.md) | Índice de scripts |
 
 ## Flujo de trabajo con agentes
 
-Se trabaja con un agente (Claude Code, Gemini CLI, OpenCode…). Dos palabras clave: **"inicio"** para arrancar una sesión y **"cierre"** para dejar todo anotado. Una sesión = una misión.
+Se trabaja con un agente (Claude Code, Gemini CLI, OpenCode…). Dos palabras clave: **"inicio"** para arrancar una sesión y **"cierre"** para dejar todo anotado. Una sesión = una misión. El agente de este repo es el **historiador y curador**; la app que muestra las obras (Museum Slideshow) es otro proyecto con otro agente, y comparten solo el formato de `docs/FORMATO_DRIVE.md`.
+
+## Primeros pasos en una PC nueva
+
+```bash
+git clone https://github.com/guidocameraeq/galerias-de-arte.git && cd galerias-de-arte && npm install
+node tools/images-sync.mjs restore --dir="RUTA_BIBLIOTECA"   # dry-run; con --apply baja las imágenes de Drive y arma los enlaces
+node tools/audit.mjs
+```

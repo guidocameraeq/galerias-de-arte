@@ -19,7 +19,7 @@
 5. **Docs de referencia, solo si esta sesión cambió algo que les toca:** un gate de calidad → `docs/CALIDAD.md` · el esquema de `_index.json` → `docs/INVENTARIO.md` · una trampa nueva de una API → `docs/FUENTES.md` · el flujo de fichas → `docs/DESCRIPCIONES.md` · una decisión de método → `docs/METODO.md` · un script nuevo/borrado → `tools/README.md` · una regla dura → `AGENTS.md`.
 6. **Consistencia de números:** ningún conteo de estado (obras, colecciones, GB) duplicado fuera de `SESSION_HANDOFF.md`. Un número vive en UN archivo.
 7. **Sin cabos sueltos:** limpiar temporales (`_inspect/`); lo que se saque de una colección se saca con `node tools/remove-work.mjs` (mueve a `_dedup_removed/` y loguea), nunca se borra a mano.
-8. **Git:** `git add -A` → mostrarle `git status` al usuario y **esperar su OK** → commit `docs: cierre de sesión YYYY-MM-DD — <tema>`. El repo no tiene remoto: no hay push salvo que el usuario configure uno.
+8. **Git:** `git add -A` → mostrarle `git status` al usuario y **esperar su OK** → commit `docs: cierre de sesión YYYY-MM-DD — <tema>`. Después del commit, `git push` al remoto privado de GitHub (`origin`); si el push falla, decirlo en el reporte.
 9. **Reporte final** (5 líneas): SHA · qué cambió · próximo paso al retomar · bloqueos · **"Sesión lista para descartar — la próxima misión arranca con `inicio`."**
 
 ## Casos borde
