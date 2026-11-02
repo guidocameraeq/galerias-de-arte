@@ -14,3 +14,9 @@ node_modules/
 
 # Salida de export-drive / pruebas para la app (se regenera)
 _export/
+
+# Enlaces a la biblioteca de imágenes (ver tools/link-images.mjs) y ruta local por PC
+.arte-local.json
+*/landscape
+*/portrait
+*/_dedup_removed
