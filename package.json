@@ -1,17 +1,15 @@
 {
   "name": "arte",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Biblioteca curada de arte en alta resolución (motor de curaduría)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "audit": "node tools/audit.mjs"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "UNLICENSED",
   "type": "commonjs",
   "dependencies": {
     "jimp": "^1.6.1",
     "sharp": "^0.35.1"
-  }
+  },
+  "private": true
 }
