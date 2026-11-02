@@ -11,3 +11,6 @@ node_modules/
 # Config local de agentes (no se comparte)
 .claude/settings.local.json
 .claude/launch.json
+
+# Salida de export-drive / pruebas para la app (se regenera)
+_export/
