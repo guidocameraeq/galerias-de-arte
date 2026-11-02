@@ -28,13 +28,15 @@ const obras = [
     explicacion: 'La Virgen de la silla (Madonna della seggiola) es una pintura al óleo sobre tabla de Rafael, realizada hacia 1513-1514, en su período romano. Es un tondo de 71 centímetros de diámetro: muestra a la Virgen abrazando al Niño mientras un joven san Juan Bautista los mira con devoción.\n\nSe considera la primera obra en que se usa el formato circular por decisión del artista y no por razones prácticas ni por encargo. Se conserva en la Galería Palatina del Palacio Pitti, en Florencia.',
     licencia: 'Dominio público', fuente: C + 'Raphael_Madonna_della_seggiola.jpg', id: 'File:Raphael Madonna della seggiola.jpg' },
 ].map(o => ({ ...o, credito: cred }));
+// Prueba técnica de la app (imagen provista por el proyecto Museum Slideshow, no se genera acá): PNG 3840x2160 con rayas de 1 px.
+const grilla = { archivo: 'grilla-4k.png', titulo: 'Grilla de prueba 4K', autor: 'Museum Slideshow', anio: '2026', explicacion: 'Rayas blancas y negras de un píxel. Si de cerca se ven las rayas, la tele muestra la obra a 4K real; si se ve gris liso, la está mostrando a 1080.' };
 
 const write = (dir, text) => { fs.mkdirSync(path.join(ROOT, dir), { recursive: true }); fs.writeFileSync(path.join(ROOT, dir, 'galeria.json'), text, 'utf8'); };
 const copy = (dir, f) => { fs.mkdirSync(path.join(ROOT, dir), { recursive: true }); fs.copyFileSync(path.join(ROOT, 'Sana', f), path.join(ROOT, dir, f)); };
 const json = (o) => JSON.stringify(o, null, 2) + '\n';
 
 // 1) Sana: horizontales, verticales y un tondo con forma "redonda".
-write('Sana', json({ formato: 1, titulo: 'Prueba sana', descripcion: 'Cinco obras: dos horizontales, dos verticales y un tondo.', obras }));
+write('Sana', json({ formato: 1, titulo: 'Prueba sana', descripcion: 'Cinco obras (dos horizontales, dos verticales y un tondo) más la grilla de prueba 4K.', obras: [...obras, grilla] }));
 
 // 2) Rota-json: el galeria.json es inválido (coma sobrante + comentario). La app debe mostrar las imágenes sin ficha.
 copy('Rota-json', 'monet-impresion-sol-naciente.jpg');
