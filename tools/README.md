@@ -30,7 +30,7 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 | `make-prueba-drive.mjs` | Baja 5 obras de Commons para `_export/Galerías-prueba/Sana` (serial, valida magic bytes). Solo pruebas |
 | `make-prueba-json.mjs` | Arma los `galeria.json` de `Galerías-prueba` (Sana, Rota-json, Rota-archivo) y copia las imágenes de prueba. Incluye la grilla 4K que provee el proyecto de la app |
 | `check-prueba-json.mjs` | Valida `galeria.json` de una carpeta de galerías: JSON válido, archivos existentes, ids repetidos, imágenes sin listar. `node tools/check-prueba-json.mjs [carpeta]` |
-| *(pendiente)* `export-drive.mjs` | Biblioteca real → carpeta `Galerías/` para la app, según `docs/FORMATO_DRIVE.md` |
+| `export-drive.mjs` | Biblioteca → carpetas para la app (`docs/FORMATO_DRIVE.md`): una colección = una subcarpeta con imágenes + `galeria.json` v1. Copia las imágenes tal cual (extensión real); `--max-side=3840` hace copias reducidas (derivado; el original no se toca). Valida (archivos, ids, 50 MB, Markdown). Tondos: `tools/forma-tondos.json`. Dry-run por defecto, nunca borra. `node tools/export-drive.mjs (--col=a,b | --all) [--out=RUTA] [--max-side=N] [--apply]` |
 
 ## 1. Motor / librería (no se ejecutan directo)
 
