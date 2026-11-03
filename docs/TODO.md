@@ -9,7 +9,7 @@
 
 ## 🟠 Importante
 - [ ] **Decisión de Guido — licencias y link público:** ~198 obras con copyright/uso personal (19–23 y modernas). ¿Van a `Galerías/` pública, o solo compartidas con la cuenta de la TV? (`docs/FORMATO_DRIVE.md`). Bloquea el exportador.
-- [ ] **Exportar a Drive:** `tools/export-drive.mjs` ya existe (dry-run de las 23 OK; solo 1 archivo >50 MB: Eakins *Wrestlers*, 62 MB). Falta: OK de Guido a publicar todo por enlace público (incl. ~198 con copyright), originales vs copias a 3840 px, subir la 1ª tanda (Rococó, ya generada en `_export/Galerías/`) a `Drive/Galerías de arte/Galerías`, compartirla y avisar al agente de la app con el nombre/ID.
+- [ ] **Drive `Galerías`:** las 23 colecciones están exportadas (originales; solo Eakins *Wrestlers* reducido a 3840 px por el límite de 50 MB). Pendiente: confirmar que Drive terminó de subir a la nube y que la app muestra todas; decidir si se pasa a copias de 3840 px (`export-drive --max-side`). Fichas cortas por decisión de Guido; curaduría = él borra después.
 - [ ] **Fichas para la app** (`docs/FICHAS_APP.md`, `node tools/fichas-stats.mjs`): solo una fracción llega a 80 palabras; reescribir primero las `Wikipedia-es` y las <60 palabras de las galerías que Guido elija. Decidir niveles y si se investigan `vida_autor`/`medidas`.
 - [ ] **Registro de candidatas `<col>/_candidatas.json`** (entró / pendiente de conseguir / descartada por criterio, con motivo): piloto Barroco; falta OK de formato (`docs/procesos/FLUJO_AGENTES.md`). Completar a la vez `_descartes/` (no lo loguean canon/wikiart/sculptures/prune; solo existe para 01–06, 17, 20).
 - [ ] **Decidir subagentes** (A uno solo / B lectura en paralelo / C escriben con lock): ver `FLUJO_AGENTES.md`. Recomendado B.

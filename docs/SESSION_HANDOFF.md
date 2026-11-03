@@ -23,12 +23,12 @@ Ordenar el repo (README, docs, procesos), sacar las imágenes del repo hacia una
 - Git: commits locales de la sesión **empujados al cerrar** (ver `git status -sb`).
 
 ## En curso
-- Nada a medias. Esperando decisiones de Guido (abajo).
+- **Publicación en Drive HECHA tras el cierre:** Guido aprobó publicar todo por enlace público (incluye ~198 obras con copyright) y las 23 colecciones se exportaron a `Mi unidad/Galerías de arte/Galerías` (compartida; ID lo tiene el agente de la app). Originales, salvo Eakins *Wrestlers* a 3840 px. Rococó verificado en la TV; el resto sin verificar. La subida a la nube depende de Drive para escritorio.
 
 ## Próximo paso CONCRETO
-1. **Decisiones de Guido** que bloquean el exportador: (a) política de licencias para el link público (¿galerías con copyright solo con la cuenta de la TV?), (b) qué galerías publicar primero, (c) nivel de ficha (`docs/FICHAS_APP.md`), (d) OK al formato `_candidatas.json` (piloto Barroco).
-2. Escribir `tools/export-drive.mjs` (dry-run, valida con el chequeo de `FORMATO_DRIVE.md`), exportar **una o dos** galerías a `Galerías/` y avisar al agente de la app (sesión "Inicio").
-3. Reescribir fichas a 80–150 palabras en las galerías elegidas.
+1. Verificar con el agente de la app que aparezcan las 23 galerías en la TV (sincroniza cada 6 h o "Sincronizar ahora").
+2. Decidir con Guido: originales vs copias 3840 px; qué fichas reescribir primero (`docs/FICHAS_APP.md`); OK al formato `_candidatas.json`.
+3. Cuando Guido cure (borre obras): re-exportar la galería afectada.
 
 ## Bloqueos
 - Ninguno técnico. Pendiente que Guido: desmarcar el arranque automático de Google Drive (Preferencias), confirmar que la subida a la nube terminó, y probar `images-sync restore` en la otra PC.

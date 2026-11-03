@@ -2,7 +2,7 @@
 // Una colección = una subcarpeta <OUT>/<Título>/ con las imágenes y un galeria.json (formato 1). Las imágenes de la biblioteca
 // NO se tocan: por defecto se COPIAN tal cual (con la extensión real del contenido); con --max-side=N se escribe una copia reducida
 // (derivado de entrega; el original queda intacto). Dry-run por defecto; --apply escribe. Nunca borra nada.
-// Uso: node tools/export-drive.mjs (--col=11_rococo[,08_impresionismo] | --all) [--out=RUTA] [--max-side=3840] [--apply]
+// Uso: node tools/export-drive.mjs (--col=11_rococo[,08_impresionismo] | --all) [--out=RUTA] [--max-side=3840] [--big-max-side=3840] [--apply]
 // Tondos/medallones: tools/forma-tondos.json  { "<qid o sourceId>": "redonda" | "ovalada" }
 import fs from 'fs';
 import path from 'path';
@@ -14,6 +14,7 @@ const flag = (n) => args.find(a => a.startsWith(`--${n}=`))?.slice(n.length + 3)
 const APPLY = args.includes('--apply');
 const OUT = path.resolve(flag('out') || '_export/Galerías');
 const MAXSIDE = flag('max-side') ? Number(flag('max-side')) : 0;
+const BIGSIDE = flag('big-max-side') ? Number(flag('big-max-side')) : 0;   // reduce SOLO los archivos >50 MB (límite de la app)
 
 const TITULOS = {
   '01_mitologia_griega_romana': 'Mitología griega y romana', '02_barroco': 'Barroco', '03_gotico': 'Gótico', '04_romanticismo': 'Romanticismo',
@@ -42,7 +43,7 @@ const vacio = (d) => !d || /^\(sin /.test(d);
 const mdLike = (t) => /(\*\*|__|^#|\]\(|<[a-z/][^>]*>)/m.test(t);
 
 let sharp = null;
-if (MAXSIDE) sharp = (await import('sharp')).default;
+if (MAXSIDE || BIGSIDE) sharp = (await import('sharp')).default;
 
 console.log(`EXPORTAR · ${APPLY ? 'APPLY' : 'dry-run'} · destino ${OUT}${MAXSIDE ? ` · copias reducidas a ${MAXSIDE}px` : ' · originales tal cual'}\n`);
 let totObras = 0, totBytes = 0, totProblemas = 0;
@@ -92,10 +93,11 @@ for (const col of cols) {
   let hechos = 0;
   for (const p of plan) {
     if (fs.existsSync(p.dest)) continue;                       // idempotente: no pisa
-    if (MAXSIDE) {
+    const side = MAXSIDE || (BIGSIDE && p.size > 50e6 ? BIGSIDE : 0);
+    if (side) {
       const m = await sharp(p.src).metadata();
-      if (Math.max(m.width, m.height) > MAXSIDE) {
-        const pipe = sharp(p.src).resize({ width: MAXSIDE, height: MAXSIDE, fit: 'inside', withoutEnlargement: true });
+      if (Math.max(m.width, m.height) > side) {
+        const pipe = sharp(p.src).resize({ width: side, height: side, fit: 'inside', withoutEnlargement: true });
         await (m.format === 'png' ? pipe.png() : m.format === 'webp' ? pipe.webp({ quality: 92 }) : pipe.jpeg({ quality: 92 })).toFile(p.dest);
         hechos++; continue;
       }
