@@ -8,6 +8,7 @@
 - [ ] Ninguno abierto. (El riesgo de pérdida irreversible por `prune-*`/`dore-dedup` se cerró: ahora mueven en vez de borrar y existe `remove-work.mjs`.)
 
 ## 🟠 Importante
+- [ ] **Revisar títulos/fichas contra la imagen:** el 2026-11-02 se encontró *Los luchadores* (Eakins, 10 n34) con ficha de *Max Schmitt* (otra obra): el archivo y el `qid` eran correctos, la ficha a mano no. `audit` no detecta fichas que no corresponden a la imagen. Hacer un barrido visual (hojas de contacto) o por `qid` vs `title_es`, empezando por las galerías con fichas a mano (`desc/NN.mjs`).
 - [ ] **Decisión de Guido — licencias y link público:** ~198 obras con copyright/uso personal (19–23 y modernas). ¿Van a `Galerías/` pública, o solo compartidas con la cuenta de la TV? (`docs/FORMATO_DRIVE.md`). Bloquea el exportador.
 - [ ] **Drive `Galerías`:** las 23 colecciones están exportadas (originales; solo Eakins *Wrestlers* reducido a 3840 px por el límite de 50 MB). Pendiente: confirmar que Drive terminó de subir a la nube y que la app muestra todas; decidir si se pasa a copias de 3840 px (`export-drive --max-side`). Fichas cortas por decisión de Guido; curaduría = él borra después.
 - [ ] **Fichas para la app** (`docs/FICHAS_APP.md`, `node tools/fichas-stats.mjs`): solo una fracción llega a 80 palabras; reescribir primero las `Wikipedia-es` y las <60 palabras de las galerías que Guido elija. Decidir niveles y si se investigan `vida_autor`/`medidas`.
