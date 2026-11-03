@@ -13,6 +13,12 @@
 - Las imágenes ya no viven dentro del repo: `landscape/`, `portrait/` y `_dedup_removed/` son enlaces a la biblioteca de cada PC. `.gitignore` ignora enlaces, `.arte-local.json` y `_export/`.
 - `AGENTS.md`: rol de historiador/curador, trampas de enlaces y de Drive/licencias, mapa de docs. `CIERRE.md` ahora incluye push.
 
+### Fixed
+- `10_realismo` n30–40: fichas corridas un lugar (tras sacar una obra); reasignadas, y *El pensador* tiene ficha propia. *Los luchadores* (Eakins) tenía la ficha de *Max Schmitt*.
+
+### Added (tarde)
+- `export-drive.mjs` y publicación de las 23 galerías en Drive `Galerías` (compartida); Rococó verificada en la TV. `contact-sheets.mjs` para revisión visual.
+
 ### Removed
 - `START_HERE.md` (puntero huérfano).
 

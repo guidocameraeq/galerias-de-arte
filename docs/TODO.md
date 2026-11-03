@@ -8,6 +8,13 @@
 - [ ] Ninguno abierto. (El riesgo de pérdida irreversible por `prune-*`/`dore-dedup` se cerró: ahora mueven en vez de borrar y existe `remove-work.mjs`.)
 
 ## 🟠 Importante
+- [ ] **Resultado de la revisión visual de fichas vs imagen (547 obras sin `qid`, 2026-11-02, 3 subagentes + verificación propia; Doré excluido). Nada se modificó; decide Guido.**
+  - **Error real:** `15 n12` — la imagen es *Violet, Black, Orange, Yellow on White and Red* (1949), no *Orange Red Yellow* (1961) como dice la ficha (WikiArt, 700×865). Corregir la ficha a la obra real o conseguir la correcta.
+  - **Dato dudoso:** `04 n55` Friedrich (Turgenev/Zhukovsky): año de la ficha c1799, su archivo Commons dice 1827; la imagen no parece un retrato.
+  - **Autor con basura de metadatos (se ve en pantalla):** `01 n58` ("…and Flickr user…"), `03 n37` ("Oursana, 2022"). Revisar el campo `artist` de todo el catálogo.
+  - **Fotos rotadas 90°:** `18 n16, n27, n32, n39` (y n40 solo muestra el pedestal). No se editan imágenes: conseguir otra versión o aceptar.
+  - **Mockups / fotos de sala en vez de la obra:** `19 n11–15`, `23 n8, n18, n20`; **pósters con rótulo:** `21 n7, n22`; **portadas de libro:** `20 n38, n41`.
+  - Descartado tras verificar: `01 n56/n60` no son repetidas (dos piezas distintas del British Museum). Otras dudas del revisor (01 n47, 04 n42, 18 n27/n33) quedan sin confirmar.
 - [ ] **Drive bloqueó la 1ª sincronización masiva de la app (2026-11-02):** error 403 anti-abuso de Google en descargas por enlace público (originales de ~5 MB × 1382 obras). Lo trata el agente de la app (bajar más lento, frenar solo). Del lado curaduría: no tocar Drive por API ni links, solo por la carpeta montada; si persiste, exportar copias reducidas (`export-drive --max-side=3840`, ~3–5× más livianas) y/o galerías de a poco.
 - [ ] **Fichas vs imagen — barrido parcial hecho 2026-11-02:** se comparó `title_es` con las etiquetas de Wikidata de las 835 obras con `qid`; el único desfase real fue `10_realismo` n30–40 (fichas corridas un lugar tras sacar una obra; corregido, y la 40 *El pensador* tenía ficha de otra obra). `audit` NO detecta esto. Queda sin revisar: las ~547 obras sin `qid` (13–15, 17, 19–23 y parte de 01–06). Revisar además `holding_museum`/`type` de n40 (Rodin: quedó "Alte Nationalgalerie", dato de Wikidata sin verificar).
 - [ ] **Decisión de Guido — licencias y link público:** ~198 obras con copyright/uso personal (19–23 y modernas). ¿Van a `Galerías/` pública, o solo compartidas con la cuenta de la TV? (`docs/FORMATO_DRIVE.md`). Bloquea el exportador.

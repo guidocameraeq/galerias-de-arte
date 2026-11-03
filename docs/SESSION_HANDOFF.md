@@ -2,42 +2,41 @@
 
 > Save game del proyecto. `cierre` lo SOBREESCRIBE ENTERO en cada sesión — acá nunca se apila historia (eso vive en CHANGELOG). Los números de estado se copian de `node tools/audit.mjs`, nunca de memoria. No guarda SHA: `git log` lo da.
 
-**Cierre**: 2026-11-02
+**Cierre**: 2026-11-02 (noche)
 
 ## Misión de la sesión
-Ordenar el repo (README, docs, procesos), sacar las imágenes del repo hacia una biblioteca local + respaldo en Google Drive, y acordar con el agente de la app **Museum Slideshow** el formato de entrega.
+Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local + respaldo en Drive), acordar con el agente de la app **Museum Slideshow** el formato de entrega y publicar las galerías.
 
 ## Qué se hizo
-- **Rol aclarado:** este repo/agente = historiador y curador. La app (Android, TV de Guido) es otro proyecto con otro agente; comparten solo el formato de Drive (`docs/FORMATO_DRIVE.md`).
-- **Repo:** `README.md` con banner (`docs/assets/banner.svg`); borrado `START_HERE.md`; `package.json` limpio; `AGENTS.md` actualizado (rol, imágenes fuera del repo, enlaces, Drive, licencias); `CIERRE.md` ahora hace push.
-- **Docs nuevos:** `docs/FORMATO_DRIVE.md` (contrato v1 con la app), `docs/FICHAS_APP.md` (qué información lleva cada obra, propuesta de niveles), `docs/ALMACENAMIENTO.md` (3 copias, abrir en otra PC), `docs/procesos/FLUJO_AGENTES.md` (roles, flujo, qué se registra de cada obra).
-- **Imágenes fuera del repo:** biblioteca local `E:\Guido\Fotos & Videos\Banco_Galerias_De_Arte` en la PC principal; `tools/link-images.mjs` crea junctions `landscape/`, `portrait/`, `_dedup_removed/`; ruta en `.arte-local.json` (git la ignora). Se movieron todas las imágenes ahí (pendrive); la 01 llegó después.
-- **Drive:** Google Drive para escritorio instalado (unidad `I:`); carpeta `Mi unidad\Galerías de arte`. **Respaldo hecho** con `tools/images-sync.mjs backup --apply` (1382 archivos, 6,86 GB copiados sin errores; re-dry-run da 0 por copiar). Que Drive termine de subir a la nube **no se verificó**.
-- **Con la app:** formato `galeria.json` v1 fijo con aclaraciones de curaduría (explicación 80–150 objetivo, piso 1000 px, `forma` manual en tondos, campos opcionales `licencia`/`fuente`/`id`). `Galerías-prueba` (Sana 6 obras incl. grilla 4K, Rota-json, Rota-archivo) subida a Drive, compartida por link, **probada en la TV**: OK. Scripts: `make-prueba-drive.mjs`, `make-prueba-json.mjs`, `check-prueba-json.mjs`.
-- **Herramientas nuevas:** `link-images`, `images-sync`, `fichas-stats` (documentadas en `tools/README.md` §0b).
+- **Rol:** este repo/agente = historiador y curador; la app (Android, TV de Guido) es otro proyecto/agente. Comparten solo el formato (`docs/FORMATO_DRIVE.md`).
+- **Repo ordenado:** `README.md` con banner, `AGENTS.md` actualizado, docs nuevos (`FORMATO_DRIVE`, `FICHAS_APP`, `ALMACENAMIENTO`, `procesos/FLUJO_AGENTES`), `CIERRE.md` ahora hace push.
+- **Imágenes fuera del repo:** biblioteca `E:\Guido\Fotos & Videos\Banco_Galerias_De_Arte`; `link-images.mjs` (junctions); ruta en `.arte-local.json`. Respaldo en Drive `Galerías de arte/Respaldo` con `images-sync.mjs` (6,86 GB, sin errores).
+- **Publicación:** Guido aprobó publicar todo por enlace público (incluye ~198 obras con copyright). `export-drive.mjs` exportó las **23 colecciones** (1382 obras, originales; solo la de Eakins reducida a 3840 px por el límite de 50 MB) a `Mi unidad/Galerías de arte/Galerías`. Los 23 `galeria.json` validan. Rococó se vio bien en la TV.
+- **Errores de fichas corregidos:** `10_realismo` n30–40 estaban corridos un lugar (y *Los luchadores* tenía la ficha de otra obra); corregido en el repo y en Drive (10 archivos renombrados, sin duplicar). Barrido título-vs-Wikidata de las 835 obras con `qid`: sin otro desfase.
+- **Herramientas nuevas:** `link-images`, `images-sync`, `export-drive`, `fichas-stats`, `contact-sheets`, `make-prueba-*`, `check-prueba-json` (`tools/README.md` §0b).
 
 ## Estado verificado (salida de `node tools/audit.mjs`)
 - `TOTAL: 23 colecciones · 1382 obras · 1382 con ficha · 7.37 GB · 0 FALLAS · 62 AVISOS`
-- Fichas (`node tools/fichas-stats.mjs`): solo 38 de 1382 explicaciones llegan a 80 palabras; 293 son extracto `Wikipedia-es`; 378 sin `title_es`; 224 sin museo; 310 sin técnica; 835 con `qid`.
-- Licencias en los índices: ~198 obras "Con copyright"/"Uso personal" (no deberían ir a un enlace público sin decisión).
-- Git: commits locales de la sesión **empujados al cerrar** (ver `git status -sb`).
+- Fichas: `node tools/fichas-stats.mjs` (solo 39 de 1382 explicaciones llegan a 80 palabras; 293 son `Wikipedia-es`).
+- Drive: **no verificado** que Drive para escritorio haya terminado de subir los ~7 GB a la nube.
 
 ## En curso
-- **Publicación en Drive HECHA tras el cierre:** Guido aprobó publicar todo por enlace público (incluye ~198 obras con copyright) y las 23 colecciones se exportaron a `Mi unidad/Galerías de arte/Galerías` (compartida; ID lo tiene el agente de la app). Originales, salvo Eakins *Wrestlers* a 3840 px. Rococó verificado en la TV; el resto sin verificar. La subida a la nube depende de Drive para escritorio.
+- **Revisión visual de fichas vs imagen (obras sin `qid`): TERMINADA**, resultados en `docs/TODO.md` (error real en `15 n12` Rothko; fotos rotadas en 18; mockups en 19/23; metadatos basura en `artist`). Nada se modificó.
+- **Bloqueo de la app:** la 1ª sincronización masiva chocó con el anti-abuso de Google (403) al bajar ~7 GB por enlace público. El agente de la app la hace más lenta; si persiste, exportar copias reducidas (`export-drive --max-side=3840`).
 
 ## Próximo paso CONCRETO
-1. Verificar con el agente de la app que aparezcan las 23 galerías en la TV (sincroniza cada 6 h o "Sincronizar ahora").
-2. Decidir con Guido: originales vs copias 3840 px; qué fichas reescribir primero (`docs/FICHAS_APP.md`); OK al formato `_candidatas.json`.
-3. Cuando Guido cure (borre obras): re-exportar la galería afectada.
+1. Con Guido, decidir qué hacer con los hallazgos de la revisión visual (`docs/TODO.md` 🟠 primer ítem); corregir `15 n12` y revisar el campo `artist` de todo el catálogo; si se corrige algo, re-exportar esa galería con `export-drive.mjs`.
+2. Con el agente de la app (sesión "Galerías de arte y protector de pantalla"): confirmar que bajan las 23 galerías y si hace falta pasar a copias de 3840 px.
+3. Decidir con Guido: originales vs 3840 px; qué fichas reescribir primero (`docs/FICHAS_APP.md`); OK al formato `_candidatas.json`; qué hacer con las candidatas a sacar.
 
 ## Bloqueos
-- Ninguno técnico. Pendiente que Guido: desmarcar el arranque automático de Google Drive (Preferencias), confirmar que la subida a la nube terminó, y probar `images-sync restore` en la otra PC.
+- Ninguno técnico. De Guido: desmarcar el arranque automático de Google Drive; confirmar que la subida a la nube terminó; probar `images-sync restore` en la otra PC.
 
 ## Archivos tocados
-- Creados: `README.md`, `docs/assets/banner.svg`, `docs/FORMATO_DRIVE.md`, `docs/FICHAS_APP.md`, `docs/ALMACENAMIENTO.md`, `docs/procesos/FLUJO_AGENTES.md`, `tools/{link-images,images-sync,fichas-stats,make-prueba-drive,make-prueba-json,check-prueba-json}.mjs`.
-- Modificados: `AGENTS.md`, `docs/procesos/CIERRE.md`, `docs/INVENTARIO.md`, `tools/README.md`, `.gitignore`, `package.json`.
-- Eliminado: `START_HERE.md`. Fuera de git: `_export/Galerías-prueba/`.
+- Creados: `tools/{link-images,images-sync,export-drive,fichas-stats,contact-sheets,make-prueba-drive,make-prueba-json,check-prueba-json}.mjs`, `tools/forma-tondos.json`, `docs/{FORMATO_DRIVE,FICHAS_APP,ALMACENAMIENTO}.md`, `docs/procesos/FLUJO_AGENTES.md`, `README.md`, `docs/assets/banner.svg`.
+- Modificados: `AGENTS.md`, `docs/{INVENTARIO,TODO,CHANGELOG,SESSION_HANDOFF}.md`, `docs/procesos/CIERRE.md`, `tools/README.md`, `tools/desc/10_realismo.mjs`, `10_realismo/_index.json`, `.gitignore`, `package.json`. Eliminado: `START_HERE.md`. Fuera de git: `_export/`, `.arte-local.json`.
 
 ## Contexto que no está en otro doc
-- El agente de la app se llama "Inicio" (hubo 2 sesiones con ese nombre; verificar a quién escribir). Sus mensajes llegan solos.
-- Cifras públicas del `README.md` y del banner (23 / 1.382) están duplicadas: actualizarlas a mano si cambian.
+- El agente de la app se llama "Galerías de arte y protector de pantalla" (antes "Inicio"). Sus mensajes llegan solos.
+- La carpeta Drive `Galerías` ya está compartida (Lector) y su ID lo tiene la app. `Respaldo` es privada.
+- Las cifras del `README.md` y del banner (23 / 1.382) están duplicadas: actualizarlas a mano si cambian.
