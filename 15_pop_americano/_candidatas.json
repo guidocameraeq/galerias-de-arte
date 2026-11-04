@@ -1,0 +1,72 @@
+{
+  "collection": "15_pop_americano",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "SIN historial de descartes (el script que la armó no los registraba): solo brechas de Wikidata y lista manual",
+  "resumen": {
+    "entraron": 16,
+    "pendientes": 6,
+    "descartadas": 0
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "¡Whaam!",
+      "autor": "Roy Lichtenstein",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Copyright; sin alta resolución accesible.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Chica ahogándose (Drowning Girl)",
+      "autor": "Roy Lichtenstein",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Copyright; sin alta resolución accesible.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Cráneo de carnero (Ram Skull)",
+      "autor": "Georgia O'Keeffe",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Copyright; sin alta resolución accesible.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Marilyn (Marilyn Diptych)",
+      "autor": "Andy Warhol",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Copyright; sin alta resolución accesible.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Naranja, rojo, amarillo (1961)",
+      "autor": "Mark Rothko",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "ficha_con_imagen_equivocada",
+      "detalle": "El n12 de la colección muestra en realidad 'Violet, Black, Orange, Yellow on White and Red' (1949). Conseguir la de 1961 o corregir la ficha a la obra real (revisión visual 2026-11-02).",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Ritmo de otoño (Autumn Rhythm)",
+      "autor": "Jackson Pollock",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Copyright; sin alta resolución accesible.",
+      "origen": "manual"
+    }
+  ]
+}

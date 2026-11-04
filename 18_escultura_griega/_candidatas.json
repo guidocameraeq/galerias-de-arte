@@ -1,0 +1,122 @@
+{
+  "collection": "18_escultura_griega",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "SIN historial de descartes (el script que la armó no los registraba): solo brechas de Wikidata y lista manual",
+  "resumen": {
+    "entraron": 64,
+    "pendientes": 10,
+    "descartadas": 0
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "Alexander Sarcophagus",
+      "autor": null,
+      "qid": "Q636751",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 31 · año -380 · museo Istanbul Archaeology Museums · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q636751"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Bust of Queen Nefertiti",
+      "autor": "Thutmose",
+      "qid": "Q582172",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 43 · año -1349 · museo Egyptian Museum of Berlin · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q582172"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Lion man of the Hohlenstein Stadel",
+      "autor": null,
+      "qid": "Q702658",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 36 · año -38000 · museo Museum Ulm · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q702658"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Mesha Stele",
+      "autor": "Mesha",
+      "qid": "Q724954",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 37 · año -839 · museo Department of Near Eastern Antiquities of the Louvre · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q724954"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Serpent Column",
+      "autor": null,
+      "qid": "Q588892",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 28 · año -500 · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q588892"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Shigir Idol",
+      "autor": null,
+      "qid": "Q4523656",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 33 · año -9500 · museo Sverdlovsk Regional Natural History Museum · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q4523656"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Trundholm Sun Chariot",
+      "autor": null,
+      "qid": "Q1137682",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 36 · año -1399 · museo National Museum of Denmark · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q1137682"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Venus of Brassempouy",
+      "autor": null,
+      "qid": "Q849063",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 30 · año -25000 · museo National Archaeological Museum · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q849063"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Venus of Dolní Věstonice",
+      "autor": null,
+      "qid": "Q552113",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 38 · año -29000 · museo Q101018052 · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q552113"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Venus of Hohle Fels",
+      "autor": null,
+      "qid": "Q312522",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 30 · año -35000 · museo Museum für Urgeschichte und Eiszeitkunst · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q312522"
+    }
+  ]
+}

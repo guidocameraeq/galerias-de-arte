@@ -1,0 +1,653 @@
+{
+  "collection": "06_macabro_memento_mori",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 41,
+    "pendientes": 5,
+    "descartadas": 59
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "Death and the Miser",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "error_descarga",
+      "detalle": "error: download HTTP 500",
+      "origen": "descarte:target-nombrado",
+      "fuente": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Hieronymus_Bosch_-_Death_and_the_Miser_-_Google_Art_Project.jpg/3840px-Hieronymus_Bosch_-_Death_and_the_Miser_-_Google_Art_Project.jpg"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Still Life with a Skull",
+      "autor": "Philippe de Champaigne",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "The Nightmare",
+      "autor": "Henry Fuseli",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Two Witches",
+      "autor": "Hans Baldung Grien",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Witches Sabbath",
+      "autor": "Salvator Rosa",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:\"Don't Gamble with Death...Protect Yourself...Use all Safety Devices\" - NARA - 514143.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 1941",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Book of Hours - WGA15907.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 503px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:345 Якоб фон Віль (Швейцарія). «Танок смерті 6», частина цикла, злам 16-17 ст..jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 580px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:345 Якоб фон Віль Танок смерті 4.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 570px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:A Doomed Mission.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 817px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:A grain of gratitude- or Fleuron T035780-17.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 878px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Adriaen Pietersz. van de Venne Dancdeat.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 958px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Alle state d'mensche als geestelic en waerlic.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 507px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Allegory of death; skeleton, c.1600 Wellcome L0014669.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1584px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:An elegy on the death of the late famous Observator Fleuron N000580-2.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1836px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:An elegy on the much lamented death of Charles Earl of Sunderland, who died April, 1722. Fleuron T000402-1.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1476px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:An elegy on the much lamented death of William Duke of Devonshire; Lord Steward of the Household to the late King William; and Her present Majesty Fleuron N000619-1.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:An elegy on the sudden and much lamented death of His Grace Fleuron N000625-1.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:An elegy on the very much lamented death, of Sir Toby Buttler, Knight Barrister at Law, how (sic) departed this life this 11th of March 1720 21 Fleuron T000397-2.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1536px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:An elegy upon the death of Mr. Aaron Smith, who departed this life on the 28th of June, 1701. Fleuron N000629-3.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1630px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Annibale Carracci La Notte Museo Condé Chantilly.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 718px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:CHF1000 5 back horizontal.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1788px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Christian van den Perre (attributed to) - Allegory of Worldly Riches with the Scene of the Death of the Rich Man.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1914px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas The Cross and the World Study for -The Pilgrim of the World at the End of His Journey 1846-48.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1041px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cornelis Schut - Putto with an hourglass, blowing bubbles.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Dance-death-altzenbach-17thC.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Dance-death-ridinger-german-18thC.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Dance-of-death-german-18th.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Dance-of-death-paulus-furst-nuremberg-c1630.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1017px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Dance-of-death-wolff-18th.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 624px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse Macabre - Author.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2020",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse macabre - Livre d'heures de Catherine de Rohan et de Françoise de Dinan.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse-aveugle-death-musée-condé-ms-146-f56-15th.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse-aveugles-death-bnf-fr-1654-f171r-1466.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1779px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse-aveugles-fr-1186-f72v-death.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse-aveugles-fr-1989-f34-death.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Danse-aveugles-woodcut-1479.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1524px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ernst Barlach Der Totentanz 4.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Heidenreich Allegorical scene.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Hendrick Aerts - Allegory of Death.tiff",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 778px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Jules de Bruycker - Death tolls over Flanders again.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1084px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Philips Gjsels - Memento Mori with a skull and crossbones.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1782px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Podkowiński Fleeing skeleton.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 831px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rosa phrine&xenocrate.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 576px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - Banditti on the Bank of a River - OP91 - Aberystwyth University, School of Art Museum and Galleries.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - Christ and the Disciples on the Road to Emmaus - YORAG , 248 - York Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - Saint John the Baptist Baptising Christ in the Jordan - 2987 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - Saint John the Baptist Revealing Christ to the Disciples - 2969 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - Soldiers in a Rocky Gorge - NEWHG-OP.0050 - Hatton Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - Study of Fish - 00.1865.96 - Maidstone Museum and Bentlif Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) - The Good Samaritan - YORAG , 820 - York Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (after) - Head of an Old Man - 216.4 - Tabley House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (after) - Jacob Wrestling with the Angel - 101.0058 - Weston Park.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (after) - Mercury and the Woodman - NMW A 5048 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (after) - Pilate Washing His Hands - TWCMS , F9411 - Shipley Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (after) - The Prodigal Son Kneeling among Cattle - YORAG , 225 - York Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (attributed to) - Apollo and Marsyas - 61 - St Catharine's College.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (attributed to) - Figures by a Mountain Stream - VIS.2241 - Sheffield Galleries and Museums Trust.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (follower of) - Head of a Bearded Man - P.1966.GP.347 - Courtauld Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (follower of) - Rocky Cavern - 2004.564 - Watford Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (follower of) - Saint John Preaching in the Wilderness - WAG 2892 - Walker Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (style of) - Coast Scene - 1295-1886 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Salvator Rosa (1615-1673) (style of) - View of a Southern Fort with Figures - FA.1367 - Victoria Gallery ^ Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Walter Crane - The Bridge of Life (1884).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1749px",
+      "origen": "descarte:wmc-discovery"
+    }
+  ]
+}

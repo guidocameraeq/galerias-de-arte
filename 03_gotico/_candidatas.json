@@ -1,0 +1,723 @@
+{
+  "collection": "03_gotico",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 102,
+    "pendientes": 1,
+    "descartadas": 70
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "Theotokos of Vladimir",
+      "autor": null,
+      "qid": "Q546241",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 32 · año 1125 · museo Tretyakov Gallery · colección propuesta por época",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q546241"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:03-atl2021 arma-fogo-portatil-5 - Image 207958.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1289px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:1426 Albert Varrentrapp.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 921px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:14th-century unknown painters - Calvary of Hendrik van Rijn - WGA24014.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 900px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Book of Prayers - WGA15717.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 850px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Breviarium - WGA15954.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 850px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Breviarium - WGA16025.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 900px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Codex Heroica - WGA16000.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 503px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Codex Heroica - WGA16001.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 504px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Comments on Ptolemai - WGA15714.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 880px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Epitome Rerum Hungaricarum - WGA16002.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 511px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Festetich Codex - WGA15955.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 880px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Gradual - WGA15904.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 522px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Gradual - WGA15905.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 522px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Gradual - WGA15906.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 506px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Gradual - WGA15957.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 504px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Gradual of Vladislaus II - WGA15718.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 502px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Gradual of Vladislaus II - WGA15719.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 511px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Lectionarium - WGA15704.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 900px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Pontifical - WGA15950.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 840px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Pontifical - WGA15951.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 834px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Pontifical - WGA15952.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 510px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Pontifical - WGA15953.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 507px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Revelations of St Bridget of Sweden - WGA15984.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 980px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - South-Tyrolian Evangelistarium - WGA15706.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 501px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - South-Tyrolian Evangelistarium - WGA15707.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 514px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - South-Tyrolian Evangelistarium - WGA15708.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 514px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - South-Tyrolian Evangelistarium - WGA15709.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 503px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - South-Tyrolian Evangelistarium - WGA15710.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 510px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - South-Tyrolian Evangelistarium - WGA15711.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 514px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - St Benedict - WGA15716.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:15th-century painters - Theorica nova planetarum - WGA15949.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 900px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:190Ulrich Sonnenberger Bischof.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1443px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:319Papst Johannes XXIII Unfall am Arlberg.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1499px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:A leaf from Hafiz-i Abru's Majma 'al-tawarikh depicting the king Hormizd bin Shapur bin Ardashir.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 849px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Aaron's Flowering Rod.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 681px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Acrostichon Anthonis de Roovere.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 450px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:AEIOU Buchmalerei in der Handregistratur König Friedrichs IV 1446.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 575px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albrecht VI. (Miniatur in Gebetbuch).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1353px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Alfonso X el Sabio y su corte.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1447px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Avignon Porche de Notre-Dame des Doms Fresque de Simone Martini restaurée.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Avignon Porche de Notre-Dame des Doms fresque de Simone Martini.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Avignon Porche de Notre-Dame des Doms fresque et architecture.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Berswordtaltar aussen links Kopie.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1898px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Chur Cathedral Switzerland Altarpiece.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1197px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coeur-Meister 001.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1256px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Crónica de Juan II.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1100px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Espéculo de los legos.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Exemplario contra los engaños del mundo.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Fernando Gallego 003.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 750px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Flämischer Meister des 13. Jahrhunderts 002.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1801px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Gentile da Fabriano 075.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1188px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Gotland-Hamra kyrka 08.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Hl Gregor und hl Hieronymus mit Christus am Kreuz Mittelrhein um 1460.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 940px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Isopete.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 571px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Janskerk Haarlem in Geertgens St Bavo.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 570px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Johann Koerbecke 003.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 583px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Jörg Breu d. Ä. 002.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1576px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Jörg Breu d. Ä. 002FXD.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1576px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:King Sapor of Persia humiliating Emperor Valerian.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Libro de las claras e virtuosas mugeres.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Lorenzetti.Ugolino Nativitat FoggMuseum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 513px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Maestro di Ceneda - Coronation of the Virgin in Paradise and Donators - Gallerie dell'Accademia Venice.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1035px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Maria der Verkündigung.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 546px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Marienkirche-Gemaeldedetail-1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1571px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Marienkirche-Gemaeldedetail-Greif.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 823px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Meister der Legende der Heiligen Lucia 001.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1558px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Saint Christophe Maitre de 1499.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 512px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Taula soriguerola-detall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 750px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Templars chess libro-de-los-juegos alfons-X.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 555px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Verovering van Rhenen.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 960px",
+      "origen": "descarte:wmc-discovery"
+    }
+  ]
+}

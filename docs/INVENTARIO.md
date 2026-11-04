@@ -15,6 +15,7 @@ Ver también: `AGENTS.md`, `docs/METODO.md`, `docs/FUENTES.md`, `docs/DESCRIPCIO
 ├── NN_nombre/                  colecciones 01..23
 │   ├── _index.json             LA fuente de verdad de la colección: {collection, items:[...]}
 │   ├── landscape/  portrait/   los JPG; carpeta = campo `orientation` de cada obra
+│   ├── _candidatas.json        lo que NO entró (pendientes/descartadas con motivo); lo genera tools/candidatas.mjs
 │   ├── _targets.md             SOLO 01–06: tabla curada de objetivos (la genera gen-targets-md.mjs desde targets-0N.mjs)
 │   ├── _cantos.json            SOLO 17: mapa sourceId -> "Inferno 01" (cántica + canto); lo lee dore-desc.mjs
 │   └── _dedup_removed/         SOLO 17: planchas duplicadas MOVIDAS (recuperables); fuera del índice

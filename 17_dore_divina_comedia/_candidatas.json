@@ -1,0 +1,582 @@
+{
+  "collection": "17_dore_divina_comedia",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 98,
+    "pendientes": 0,
+    "descartadas": 57
+  },
+  "items": [
+    {
+      "estado": "descartada",
+      "titulo": "02_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Dante lost in the dark forest, illustration to Dante’s Inferno by Gustave Doré.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "03_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoDuskyWood m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "04_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoLionConfrontsDante m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "05_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618027).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "07_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618067).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "10_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Doré - Dante Alighieri - Inferno - Plate 1 (I found myself within a forest dark...).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "100_Infierno_Canto_XXIX_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148619342).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "108_Infierno_Canto_XXXIV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Inferno Canto 34 verses 20-21.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "109_Infierno_Canto_XXXIV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:The Vision of Hell, by Gustave Doré.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "11_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Doré - Dante Alighieri - Inferno - Plate 2 (the panther).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "111_Purgatorio_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Astronomy for amateurs (1904) (14783481762).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "113_Purgatorio_Canto_II_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 2, Das Fegefeuer 1871 (148974163).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "120_Purgatorio_Canto_XVI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 2, Das Fegefeuer 1871 (148974683).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "122_Purgatorio_Canto_XIX_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 2, Das Fegefeuer 1871 (148974959).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "127_Purgatorio_Canto_XXIV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 2, Das Fegefeuer 1871 (148975239).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "13_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Doré - Dante Alighieri - Inferno - Plate 4 (Dante meets Virgil).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "137_Paraiso_Canto_XII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 3, Das Paradies 1871 (148199891).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "14_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Doré - Dante Alighieri - Inferno - Plate 5 (End of Canto I).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "144_Paraiso_Canto_XXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 3, Das Paradies 1871 (148200170).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "15_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Dore Inferno1.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "150_Paraiso_Canto_XXXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 3, Das Paradies 1871 (148200393).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "154_Paraiso_Canto_XXXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Paradiso Canto 31 (no caption).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "155_Paraiso_Canto_XXXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Paradiso, Canto 31 (caption).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "16_Infierno_Canto_I_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Inferno Canto 1 - Leopard (148618051).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "17_Infierno_Canto_II_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoDarkeningSky m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "21_Infierno_Canto_III_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618170).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "22_Infierno_Canto_III_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Doré - Dante Alighieri - Inferno - Plate 10 (Canto III - Charon herds the sinners onto his boat).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "24_Infierno_Canto_III_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Inferno Canto 3 (148618170).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "25_Infierno_Canto_IV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoHomerClassicPoets m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "26_Infierno_Canto_IV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618192).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "27_Infierno_Canto_IV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618206).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "30_Infierno_Canto_V_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoPaoloFrancesca m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "44_Infierno_Canto_VI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Inferno Canto 6 - Cerberus (148618330).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "48_Infierno_Canto_VII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618401).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "51_Infierno_Canto_VIII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoFerryAcrossTheStyx m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "52_Infierno_Canto_VIII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618431).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "54_Infierno_Canto_VIII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618466).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "57_Infierno_Canto_IX_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618496).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "61_Infierno_Canto_XIII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618673).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "63_Infierno_Canto_XV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoBrunettoLatiniAccostsDante m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "64_Infierno_Canto_XV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618685).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "66_Infierno_Canto_XVII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoIntoAbyssOnGeryonsBack m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "68_Infierno_Canto_XVII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618706).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "71_Infierno_Canto_XVIII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618710).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "74_Infierno_Canto_XIX_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618716).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "75_Infierno_Canto_XXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoDemonsThreatenVirgil.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "76_Infierno_Canto_XXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618760).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "77_Infierno_Canto_XXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618780).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "78_Infierno_Canto_XXI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gustave Doré - Canto XXI., line 70 - Be None of You Outrageous.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "81_Infierno_Canto_XXII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618830).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "82_Infierno_Canto_XXII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148618853).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "86_Infierno_Canto_XXIV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:DVinfernoThievesTorturedBySerpents m.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "87_Infierno_Canto_XXIV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148619014).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "90_Infierno_Canto_XXV_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148619071).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "92_Infierno_Canto_XXVI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148619124).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "94_Infierno_Canto_XXVI_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:The Vision of Hell (Inferno) MET DP106349.jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "96_Infierno_Canto_XXVIII_Gustave_Dore_1861.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": "File:Gottliche Komodie. T. 1, Die Holle 1870 (148619179).jpg",
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:remove-work"
+    }
+  ]
+}

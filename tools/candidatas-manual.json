@@ -1,0 +1,11 @@
+[
+  { "col": "05_egipcio", "estado": "pendiente", "titulo": "Busto de Nefertiti", "autor": "Thutmose (atribuido)", "motivo": "licencia_restringida", "detalle": "La foto del Neues Museum de Berlín es de licencia restringida y Wikidata no tiene P18 usable. Buscar alternativa libre o aceptar que no entra." },
+  { "col": "14_surrealismo", "estado": "pendiente", "titulo": "Obras de Frida Kahlo (a definir)", "autor": "Frida Kahlo", "motivo": "copyright_sin_alta_res", "detalle": "Sin versión de alta resolución accesible. Best-effort con navegador, obra por obra." },
+  { "col": "14_surrealismo", "estado": "pendiente", "titulo": "Cristo de San Juan de la Cruz", "autor": "Salvador Dalí", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
+  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "¡Whaam!", "autor": "Roy Lichtenstein", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
+  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Chica ahogándose (Drowning Girl)", "autor": "Roy Lichtenstein", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
+  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Marilyn (Marilyn Diptych)", "autor": "Andy Warhol", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
+  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Ritmo de otoño (Autumn Rhythm)", "autor": "Jackson Pollock", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
+  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Cráneo de carnero (Ram Skull)", "autor": "Georgia O'Keeffe", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
+  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Naranja, rojo, amarillo (1961)", "autor": "Mark Rothko", "motivo": "ficha_con_imagen_equivocada", "detalle": "El n12 de la colección muestra en realidad 'Violet, Black, Orange, Yellow on White and Red' (1949). Conseguir la de 1961 o corregir la ficha a la obra real (revisión visual 2026-11-02)." }
+]

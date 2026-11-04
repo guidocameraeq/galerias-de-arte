@@ -1,6 +1,6 @@
 # FLUJO_AGENTES — quién hace qué cuando hay que salir a buscar arte
 
-> Agnóstico de agente (Claude, Gemini, OpenCode…). Hoy **un solo agente hace todos los roles, uno por vez** (regla dura 7: un escritor por `_index.json`). Los roles ordenan el trabajo y dejan claro qué gate corresponde a cada paso; si algún día se parten en subagentes, esta tabla es el reparto. **No hay subagentes definidos** (`.claude/agents/` no existe): decisión pendiente, ver al final.
+> Agnóstico de agente (Claude, Gemini, OpenCode…). **El paso a paso para agregar una colección está en `docs/procesos/NUEVA_COLECCION.md`** (checklist único); este doc explica los roles y qué se registra de cada obra. Un solo agente escribe por vez (regla dura 7). En Claude Code hay **3 subagentes reales** en `.claude/agents/` (`investigador-curatorial`, `verificador-visual`, `redactor-fichas`: solo leen o escriben su propio archivo) y el skill `/nueva-coleccion`; el cosechador y quien aplica cambios al índice es siempre el agente principal.
 
 ## Los roles
 | Rol | Qué hace | Herramientas | Sale con |
@@ -29,12 +29,12 @@
 | Entró | `<col>/_index.json` |
 | Se buscó y se descartó al bajar (baja resolución, no se encontró, basura) | `_descartes/<col>.jsonl` — **incompleto** (no lo loguean `canon`, `wikiart`, `sculptures`, `prune-*`; solo existe para 01–06, 17 y 20) |
 | Se sacó después (duplicada, mala calidad, fuera de tema) | `<col>/_dedup_removed/` (en la biblioteca, no en git) + línea en `_descartes/` |
-| **Importante pero no la conseguimos** (sin versión buena, copyright) | **Hoy solo en `docs/TODO.md` y `docs/galerias/NN_*.md`, a mano** |
-| **Descartada por criterio del historiador** (fuera de período, irrelevante) | **No hay registro sistemático** |
-Para cerrar los dos últimos huecos, propuesta `<col>/_candidatas.json`: por cada obra vista, `estado` (`entró` / `pendiente` / `descartada`), `motivo`, `qid`, fuente, qué se intentó. Piloto Barroco. **Falta OK de Guido sobre el formato.** Es lo que permite, al curar una galería nueva, saber qué obra importante falta y por qué.
+| **Importante pero no la conseguimos** (sin versión buena, copyright) | `<col>/_candidatas.json`, estado `pendiente` (`tools/candidatas.mjs`) |
+| **Descartada** (duplicada, baja calidad, fuera de tema/período, baja resolución al descubrir) | `<col>/_candidatas.json`, estado `descartada` (sale de `_descartes/` + `tools/candidatas-manual.json`) |
+El registro está **hecho para las 23 colecciones** (`node tools/candidatas.mjs --gap --apply`). Límite honesto: solo 8 colecciones tienen historial de descartes (los scripts viejos no los registraban); para el resto el registro tiene las brechas de Wikidata y la lista manual. Cada archivo lo dice en `cobertura`.
 
 ## Reglas que cruzan todos los roles
 Dry-run y OK de Guido antes de bajar/podar en masa · el archivo en disco es la verdad · las imágenes no se editan · `qid`/`sourceId`, no `n`, para referenciar · evidencia (`audit`) o "NO VERIFICADO" · una sesión = una misión.
 
-## Decisión pendiente: subagentes
-Opciones: **(A)** dejar un solo agente con estos roles (hoy; simple, sin riesgo de pisar índices); **(B)** subagentes de Claude solo para tareas de *lectura* en paralelo (investigar el canon de varias escuelas, revisar visualmente lotes de imágenes), manteniendo un único escritor; **(C)** subagentes que escriben, con lock. Recomendación: **B** cuando haya una galería grande para investigar; **C** descartada hasta que exista el lock técnico (`docs/TODO.md` 🟢). Los subagentes son cosa de Claude Code; Gemini/OpenCode siguen este mismo doc con un solo agente.
+## Subagentes: decisión tomada (2026-11-03)
+Se adoptó la opción **B**: subagentes solo para tareas de **lectura en paralelo** (investigar el canon, revisar a ojo hojas de contacto) y para escribir **un único archivo propio** (`tools/desc/NN.mjs`). Nunca escriben `_index.json` ni descargan: eso es del agente principal. Opción C (subagentes que escriben índices) descartada hasta que exista el lock técnico (`docs/TODO.md` 🟢). Gemini/OpenCode siguen `NUEVA_COLECCION.md` con un solo agente.

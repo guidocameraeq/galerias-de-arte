@@ -1,0 +1,172 @@
+{
+  "collection": "20_alfred_kubin",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 40,
+    "pendientes": 0,
+    "descartadas": 16
+  },
+  "items": [
+    {
+      "estado": "descartada",
+      "titulo": "Aquelarre (Sabbath de brujas)",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:894",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Boceto de cartel (Albertina Kulturbund)",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:882",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Campamento de gitanos",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:905",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Caronte",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:884",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Cartel: Exposición Kubin (Albertina Kulturbund)",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:3128",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Cartel: Exposición Libros Hans Götz",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:1090",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Dama con enagua de encaje",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:907",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "El flautista de Hamelín",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:986",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "El poste indicador",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:930",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Estudio de ahorcado",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:851",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Homenaje a mi novia fallecida en 1903",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:1051",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "La bendecida",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:1048",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "La ciencia",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:1049",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "La Muerte viene por el dibujante (Autorretrato)",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:878",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Madame (Luminaria moderna)",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:934",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Perseguido por gusano y mariposa",
+      "autor": null,
+      "qid": null,
+      "sourceId": "leopold:943",
+      "motivo": "baja_calidad",
+      "detalle": "Boceto o afiche descartado en refundacion",
+      "origen": "descarte:remove-work"
+    }
+  ]
+}

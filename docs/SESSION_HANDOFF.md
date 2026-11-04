@@ -2,7 +2,7 @@
 
 > Save game del proyecto. `cierre` lo SOBREESCRIBE ENTERO en cada sesión — acá nunca se apila historia (eso vive en CHANGELOG). Los números de estado se copian de `node tools/audit.mjs`, nunca de memoria. No guarda SHA: `git log` lo da.
 
-**Cierre**: 2026-11-02 (noche)
+**Cierre**: 2026-11-03
 
 ## Misión de la sesión
 Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local + respaldo en Drive), acordar con el agente de la app **Museum Slideshow** el formato de entrega y publicar las galerías.
@@ -15,6 +15,9 @@ Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local +
 - **Errores de fichas corregidos:** `10_realismo` n30–40 estaban corridos un lugar (y *Los luchadores* tenía la ficha de otra obra); corregido en el repo y en Drive (10 archivos renombrados, sin duplicar). Barrido título-vs-Wikidata de las 835 obras con `qid`: sin otro desfase.
 - **Herramientas nuevas:** `link-images`, `images-sync`, `export-drive`, `fichas-stats`, `contact-sheets`, `make-prueba-*`, `check-prueba-json` (`tools/README.md` §0b).
 
+- **Proceso de colección nueva (2026-11-03):** `docs/procesos/NUEVA_COLECCION.md` (checklist de 9 pasos), 3 subagentes en `.claude/agents/` (`investigador-curatorial`, `verificador-visual`, `redactor-fichas`; solo leen o escriben su propio archivo) y skill `/nueva-coleccion`. Hoy NO hay motor genérico: cada colección se arma copiando `targets-NN` + `harvest-NN`.
+- **Registro de candidatas hecho para las 23 colecciones:** `<col>/_candidatas.json` (37 pendientes importantes, 607 descartadas, con motivo) generado por `tools/candidatas.mjs --gap --apply`; decisiones manuales en `tools/candidatas-manual.json`. Solo 8 colecciones tienen historial de descartes (cada archivo lo dice en `cobertura`).
+
 ## Estado verificado (salida de `node tools/audit.mjs`)
 - `TOTAL: 23 colecciones · 1382 obras · 1382 con ficha · 7.37 GB · 0 FALLAS · 62 AVISOS`
 - Fichas: `node tools/fichas-stats.mjs` (solo 39 de 1382 explicaciones llegan a 80 palabras; 293 son `Wikipedia-es`).
@@ -25,7 +28,7 @@ Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local +
 - **Bloqueo de la app:** la 1ª sincronización masiva chocó con el anti-abuso de Google (403) al bajar ~7 GB por enlace público. El agente de la app la hace más lenta; si persiste, exportar copias reducidas (`export-drive --max-side=3840`).
 
 ## Próximo paso CONCRETO
-1. Con Guido, decidir qué hacer con los hallazgos de la revisión visual (`docs/TODO.md` 🟠 primer ítem); corregir `15 n12` y revisar el campo `artist` de todo el catálogo; si se corrige algo, re-exportar esa galería con `export-drive.mjs`.
+1. Con Guido: revisar los 37 pendientes de `_candidatas.json` y los hallazgos de la revisión visual (`docs/TODO.md`); corregir `15 n12` y el campo `artist` de todo el catálogo; si se corrige algo, re-exportar esa galería con `export-drive.mjs`.
 2. Con el agente de la app (sesión "Galerías de arte y protector de pantalla"): confirmar que bajan las 23 galerías y si hace falta pasar a copias de 3840 px.
 3. Decidir con Guido: originales vs 3840 px; qué fichas reescribir primero (`docs/FICHAS_APP.md`); OK al formato `_candidatas.json`; qué hacer con las candidatas a sacar.
 

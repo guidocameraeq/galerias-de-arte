@@ -33,7 +33,8 @@ Reglas completas y trampas conocidas: [`AGENTS.md`](AGENTS.md).
 01_…/ … 23_…/     Una carpeta por colección
   ├─ landscape/     Obras horizontales (ancho ≥ alto)
   ├─ portrait/      Obras verticales
-  └─ _index.json    Catálogo: { collection, items: [ficha por obra] }
+  ├─ _index.json    Catálogo: { collection, items: [ficha por obra] }
+  └─ _candidatas.json  Lo que NO entró: pendientes importantes y descartadas, con motivo
 _descartes/         Registro de lo rechazado y por qué
 tools/              Scripts de cosecha, validación y fichas (ver tools/README.md)
 docs/               Método, calidad, fuentes, handoff y TODO
@@ -65,7 +66,8 @@ Chequea formato del índice, existencia y validez de cada imagen, dimensiones re
 | [`docs/FORMATO_DRIVE.md`](docs/FORMATO_DRIVE.md) | Contrato con la app Museum Slideshow (Drive + `galeria.json`) |
 | [`docs/FICHAS_APP.md`](docs/FICHAS_APP.md) | Qué información lleva cada obra en la app |
 | [`docs/ALMACENAMIENTO.md`](docs/ALMACENAMIENTO.md) | Dónde viven las imágenes y cómo respaldar/restaurar |
-| [`docs/procesos/FLUJO_AGENTES.md`](docs/procesos/FLUJO_AGENTES.md) | Quién hace qué al salir a buscar arte |
+| [`docs/procesos/NUEVA_COLECCION.md`](docs/procesos/NUEVA_COLECCION.md) | Checklist para agregar una colección nueva |
+| [`docs/procesos/FLUJO_AGENTES.md`](docs/procesos/FLUJO_AGENTES.md) | Roles y subagentes; qué se registra de cada obra |
 | [`docs/galerias/README.md`](docs/galerias/README.md) | Una ficha curatorial por galería |
 | [`tools/README.md`](tools/README.md) | Índice de scripts |
 

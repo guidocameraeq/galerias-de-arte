@@ -1,0 +1,1172 @@
+{
+  "collection": "02_barroco",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 127,
+    "pendientes": 1,
+    "descartadas": 115
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "The Ecstasy of Saint Teresa",
+      "autor": "Bernini",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:1659 portrait of a man, Possibly of Anthonie Heinsius.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:1972 CPA 4158.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:A young Gentleman kneeling before two elders 2000 NYR 09318 0133 000(124250).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 667px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Abraham Bloemaert - Parable of the Wheat and the Tares - Walters 372505.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1799px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Adam Bernaert - \"Vanitas\" Still Life - Walters 37682.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Anonymous Dutch - Diogenes and Alexander.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 750px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) - Madonna and Child with Infant Saint John, 'La serrana' - PC.63 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) - Saint Thomas of Villanueva Healing the Lame Man - YORAG , 780 - York Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) - The Charity of Saint Thomas of Villanueva - P97 - The Wallace Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Beggar Boys - 67 - Royal Society of Medicine.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Beggar Boys Playing Dice - SOUAG.S438 - Beecroft Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Children with a Dog and a Basket of Fruit (after Bartolomé Esteban Murillo) - 1115 - Southampton City Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Flower Girl - 3505 - Guildhall Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Girl Drinking with a Child on Her Arm - PC.140 - Burrell Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Holy Family - A0037 - Paisley Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Mary Magdalene - FA000601 - Brighton Museum ^ Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Santa Justa - NEWHG-PCF.026 - Hatton Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Santa Justa and Santa Rufina - PC.32 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - St Joseph with the Infant Jesus - 269 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - The Baptism of Christ - TWCMS , C10034 - Laing Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - The Children of the Shell - PRSMG , P428 - Harris Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - The Flower Vendor - 1984-22 - Astley Hall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - The Immaculate Conception - 532-1882 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - The Immaculate Conception - FAC00218 - University of Exeter.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Virgin and Child - 272 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (after) - Virgin and Child - MA.514 - Calderdale Metropolitan Borough Council.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (attributed to) - Head of the Madonna - PC.23 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (attributed to) - The Presentation in the Temple - P45-76 - The New Art Gallery Walsall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (attributed to) - The Virgin and Child with a Rosary - P136 - The Wallace Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (follower of) - The Crucifixion - 1232 - Touchstones Rochdale.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (probably after) - A Spanish Boy with a Dog - 88003074 - Chiswick House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (school of) - The Mystical Marriage of Saint Catherine of Siena - A1.7 - Hepworth Wakefield.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (school of) - The Visitation - GUELI , GMAG 1973 - Guernsey Museum and Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (studio of) - Saint Augustine and the Mystery of the Trinity - PCF8 - Campion Hall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (style of) - Street Urchins Eating (diptych, left panel) - EU0541 - University of Edinburgh Art Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (style of) - Street Urchins Eating (diptych, right panel) - EU0540 - University of Edinburgh Art Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bartolomé Esteban Murillo (1617-1682) (style of) - The Virgin and Child with Saint John - 584-1870 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Brockhaus and Efron Jewish Encyclopedia e13 423-2.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 913px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Brockhaus and Efron Jewish Encyclopedia e13 425-1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 916px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Carlo perda.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Circle of Jan Lievens – Bearded Man in a Black Hat (Tronie) – c. 1630–1650 – Oil on canvas.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 204px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Diego Osorio de Escobar (cropped).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 398px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Francisco García Guerra (cropped).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 323px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Juan Antonio de Vizarrón y Eguiarreta (cropped).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 483px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Juan de Ortega Montañés (cropped).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 460px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Marcos de Torres y Rueda (cropped).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 349px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Payo Enríquez de Rivera (cropped).JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 810px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coat of arms of Pedro Moya (cropped).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 324px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Copia por José del Castillo del fresco destruido de Luca Giordano 'Hércules y las aves del Estínfalo'.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 389px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cornelis Dusart 001.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1900px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cornelis van Haarlem - Madonna and Child 1591.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Customers Conversing in a Tavern - Adriaen van Ostade (1671).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Czar Peter en route to the newly built fregate 'Peter and Paul'.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 998px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:De Wikkellkinderen.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez - Gaspar de Guzmán, Count-Duke of Olivares - A104 - Hispanic Society of America.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (after) - Philip IV of Spain (1605–1665) - CP-TR 298 - Cooper Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (after) - Queen Mariana of Spain (1634–1696) - B-1-56 - Barber Institute of Fine Arts.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (after) - The Infanta Maria Teresa (1638–1683) - 342-1878 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (follower of) - Bacchus - 75 - University of Southampton.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (school of) - Head of a Man, The Conde De Tilly, Johan 't Serclaes (1559–1632) - PC.67 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (school of) - Isabella of Bourbon (1603–1644) - PC.10 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Diego Velázquez (1599-1660) (style of) - Boy with a Flagon - NMW A 5097 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:DiegoFernandezdeCordoba.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1445px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:DiegoLopezPacheco,CabrerayBobadilla.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1431px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:DiegoOsoriodeEscobaryLlamas.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1435px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Dutch Wikibook cover Hendrik Avercamp.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:El Parian - 18th century in New Spain.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 584px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:EnriquezdeGuzman,condedeAlbadeAliste.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1418px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ex voto Guadalupano - Basilica de Guadalupe museum, Mexico city.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1023px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ferdinando Toderini.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 434px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:FernandodeAlencastre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1443px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Francesco Morosini.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 500px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Francisco Fernández de la Cueva y de la Cueva.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1438px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:FranciscoFernandezdelaCueva.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1435px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Fray Payo Enriquez de Rivera2.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1429px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:FrayGarciaGuerra.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1447px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:G-vervorn-still-life-with-turkey-pie.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 500px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Gaspar de la Cerda Sandoval Silva y Mendoza.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1454px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Georges de la Tour - Diogenes.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Gerard de Lairesse, The Clemency of Lucius Papirius Cursor, 1688, The Hague, Binnenhof.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Harmensz van Rijn Rembrandt (Rembrandt-Schule) (1606-1669) - Bildnis der Hendrickje Stoffels - 2226 - Führermuseum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 271px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Harmensz van Rijn Rembrandt (Schule) (17. Jhrdt.) - Bathseba (im Bade) - 2774 - Führermuseum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 492px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Jeune paysanne - Diego Vélasquez - Q24298454.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Joseph de Bray - Still-Life.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 970px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Portrait of a child, full length, holding a kolf stick.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1868px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Portrait of Gaspar de Guzmán, Count-Duke of Olivares (attributed to Diego Velázquez) - Hispanic Society of America.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1750px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt - Study of an Angel with the features of Titus - 300painti00gale 0185.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 717px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt (navolger van) - Hoofd van een meisje, Vrouwelijke studiekop, - 1931.0119 - Groninger Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 945px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt (navolger van) - Mannelijke tronie, Rabbi, - 1931.0120 - Groninger Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1063px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt (Rembrandt van Rijn) - A Woman in Bed - NG 827 - National Galleries of Scotland.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 716px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt 20171205.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1632px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt Artiest in zijn studio, 1629..jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 747px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - A Seated Man with a Stick - 90006943 - Brodsworth Hall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Jan Lutma, or a member of the Molins family - 45734i - Wellcome Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Jan Uytenbogaert, Preacher of the Remonstrants - 81031323 - Audley End House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Jeremiah Mourning the Destruction of Jerusalem - 305 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Nicolaes Tulp (1593–1674) - 45814i - Wellcome Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Old Scholar in a Vaulted Chamber - BIKGM-1715 - Williamson Art Gallery and Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Portrait of a Man - 90006922 - Brodsworth Hall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Portrait of a Man (The Standard Bearer, Floris Soop, 1604–1657) - 1970P265 - Birmingham Museums Trust.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Portrait of the Artist as a Young Man - A5.5 - Wigan Arts and Heritage Service.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Self Portrait - 754 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Self Portrait - CAI.163 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Self Portrait - LDS103 - Burton Constable Hall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Self Portrait - TWCMS , B8401 - Shipley Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Self-portrait - WA1845.60 - Ashmolean Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - The Anatomy of Dr Nicolaes Tulp - 44578i - Wellcome Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - The Good Samaritan* - 213 - Lamport Hall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - The Holy Family in the Evening - 98 - Glasgow Museums Resource Centre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - The Standard Bearer (Floris Soop, 1604–1657) - u.02.1997.167 - Ferens Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rembrandt van Rijn (1606-1669) (after) - Tronie of a Man with a Feathered Beret - GUELI , GMAG 5905 - Guernsey Museum and Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rixe de soldats devant l’ambassade d’Espagne - Diego Vélasquez - Q24273156.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 717px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Tavern Scene with Two Men and a Girl 4a61eaa.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 534px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Zurbarán - A young Gentleman kneeling before two elders.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 667px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Flora",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1903px",
+      "origen": "descarte:met-discovery"
+    }
+  ]
+}

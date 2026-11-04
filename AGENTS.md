@@ -32,7 +32,8 @@ Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso person
 6. **`apply-desc.mjs` pega las fichas POR `n`.** Si podás/renumerás/movés una obra, sacá su entrada de `tools/desc/NN.mjs` (`remove-work` lo hace solo); si no, la ficha cae en otra obra. `audit` lo avisa como `W-DESC-STALE`: no corras `apply-desc` con ese aviso activo.
 7. Hay archivos `.jpg` cuyo contenido es PNG/WebP (`audit` los lista como `W-EXT`). No renombrar ni convertir sin pedido del usuario.
 8. **`landscape/`, `portrait/` y `_dedup_removed/` son ENLACES** a la biblioteca (Windows junctions, creados por `tools/link-images.mjs`). No los borres ni los reemplaces por carpetas reales; en una PC nueva: `node tools/link-images.mjs --dir=RUTA --save --apply`, o `node tools/images-sync.mjs restore --apply` para bajarlas de Drive. `images-sync` solo copia: nunca borra.
-9. **Drive:** `Galerías` y `Galerías-prueba` se comparten por enlace (Lector); `Respaldo` es PRIVADA. Parte de la biblioteca tiene copyright de uso personal: no va a una carpeta pública sin decisión de Guido (`docs/FORMATO_DRIVE.md`).
+9. **`<col>/_candidatas.json`** = lo que NO entró (pendientes importantes y descartadas, con motivo). Se regenera con `node tools/candidatas.mjs --gap --apply`; las decisiones del historiador van en `tools/candidatas-manual.json`, no a mano en el JSON.
+10. **Drive:** `Galerías` y `Galerías-prueba` se comparten por enlace (Lector); `Respaldo` es PRIVADA. Parte de la biblioteca tiene copyright de uso personal: no va a una carpeta pública sin decisión de Guido (`docs/FORMATO_DRIVE.md`).
 
 ## Cómo verificar (hacelo antes de decir "listo")
 ```
@@ -44,6 +45,7 @@ Valida forma del índice, que cada archivo exista y sea imagen real, dims reales
 ## Rituales (palabras clave — funcionan en cualquier agente)
 - El usuario dice **"inicio"** (o "retomemos", "¿en qué quedamos?") → seguí `docs/procesos/INICIO.md`. No toques nada hasta su OK.
 - El usuario dice **"cierre"** (o "cierre parcial" si se llena el contexto) → seguí `docs/procesos/CIERRE.md`.
+- El usuario dice **"nueva colección"** (o "ampliar la colección N") → seguí `docs/procesos/NUEVA_COLECCION.md` (en Claude: `/nueva-coleccion`).
 - Una sesión = una misión. Si aparece otra de verdad, proponé cierre y sesión nueva.
 
 ## Mapa de docs (leé por niveles: solo lo que la tarea toque)
@@ -60,7 +62,8 @@ Valida forma del índice, que cada archivo exista y sea imagen real, dims reales
 | 2 | `docs/FORMATO_DRIVE.md` | Contrato con la app Museum Slideshow: carpetas en Drive, `galeria.json` v1, mapa desde nuestro índice, licencias |
 | 2 | `docs/FICHAS_APP.md` | Qué información lleva cada obra en la app, a cuáles se les escribe ficha completa |
 | 2 | `docs/ALMACENAMIENTO.md` | Dónde viven las imágenes, enlaces, respaldo y restauración con Drive |
-| 2 | `docs/procesos/FLUJO_AGENTES.md` | Roles y flujo para salir a buscar arte; qué se registra de cada obra |
+| 2 | `docs/procesos/NUEVA_COLECCION.md` | **Checklist para agregar una colección:** investigar, bajar, verificar, fichar, registrar candidatas, documentar, publicar |
+| 2 | `docs/procesos/FLUJO_AGENTES.md` | Roles (y subagentes de Claude); qué se registra de cada obra |
 | 2 | `docs/galerias/README.md` | Una ficha curatorial por galería (qué entró, qué se descartó, fuentes) |
 | 2 | `docs/REUTILIZAR.md` | Cómo levantar este método en otro proyecto |
 | 2 | `tools/README.md` | Índice de scripts con su comando |

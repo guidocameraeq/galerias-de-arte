@@ -2,6 +2,15 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-11-03 — Proceso de colección nueva, subagentes y registro de candidatas
+
+### Added
+- `docs/procesos/NUEVA_COLECCION.md` (checklist de 9 pasos), skill `/nueva-coleccion`, subagentes `investigador-curatorial`, `verificador-visual` y `redactor-fichas` en `.claude/agents/`.
+- `tools/candidatas.mjs` + `tools/candidatas-manual.json` y `<col>/_candidatas.json` en las 23 colecciones (lo que NO entró y por qué).
+
+### Changed
+- `FLUJO_AGENTES.md`: decisión de subagentes tomada (solo lectura en paralelo; un único escritor de índices). `AGENTS.md`, `CLAUDE.md`, `README.md`, `INVENTARIO.md`, `tools/README.md` actualizados.
+
 ## 2026-11-02 — Repo ordenado, imágenes fuera del repo, Drive y contrato con la app Museum Slideshow
 
 ### Added

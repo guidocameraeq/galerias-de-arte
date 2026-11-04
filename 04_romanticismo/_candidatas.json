@@ -1,0 +1,2133 @@
+{
+  "collection": "04_romanticismo",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 102,
+    "pendientes": 2,
+    "descartadas": 210
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "The Abbey in the Oakwood",
+      "autor": "Caspar David Friedrich",
+      "qid": "Q334360",
+      "sourceId": null,
+      "motivo": "no_conseguida",
+      "detalle": "fama 28 · año 1809 · museo Alte Nationalgalerie · colección por autor ya presente",
+      "origen": "gap-wikidata",
+      "fuente": "https://www.wikidata.org/wiki/Q334360"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Whalers",
+      "autor": "J. M. W. Turner",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:'Twilight in the Catskills' by Frederic Edwin Church, High Museum.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1824px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:\"Home in the Woods\" -- 1847.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:1846 Church View of Quebec.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1500px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:1912.1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 300px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:1996.45.81 Delacroix 'The Lamentation over Christ'.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Above the Clouds at Sunrise Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1270px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Aivasovsky Ivan Constantinovich - Chumaks in Little Russia.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Aivasovsky Ivan Constantinovich - Chumaks Waggons.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Aivasovsky Ivan Constantinovich - Ukrainian landscape with chumaks in the moonlight.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Aivazovsky Bashkir State Museum of Art.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 901px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Aivazovsky Ice on Dnipro.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1900px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ajwazowski.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 601px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Al Ayn Frederic Edwin Church 1882.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 823px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt - Cloud Study With Mountain Peak.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt - Indians Fishing - promised gift 44 indians-fishing - Crystal Bridges Museum of American Art.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1080px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt - Pioneers of the Woods.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt - Sunlight and Shadow Study.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt - Sunlight and Shadow.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2017",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt - Wharf Scene with Ship at Dock - 2010.78 - Crystal Bridges Museum of American Art.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1080px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt Icebergs.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 725px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Albert Bierstadt, \"Wharf Scene with Ship at Dock\" 2010 78v1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1080px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:AlbertBierstadt-The Shore of the Turquoise Sea 1878.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Autumn on the Hudson Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 939px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Autumn Shower Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1131px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Beacon, off Mount Desert Island Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1287px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bierstadt Albert Harbor Scene.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1001px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bierstadt Albert The Ambush.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1149px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bierstadt Albert The Wave.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 992px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bierstadt Albert Wharf Scene.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 911px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Bosporuse väin öösel. Ivan Aivazovski. 1890. Narva Muuseum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2005",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Brooklyn Museum - Ruined Castle and River - Thomas Cole - overall.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 768px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Brooklyn Museum - Study for The Cross and the World...... - Thomas Cole.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 768px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Butterfly, by Albert Bierstadt.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Camp Fire in the Maine Wilderness Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Caspar David Friedrich - Schneehügel mit Raben.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1554px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Caspar David Friedrich (Umkreis) - Romantische Küstenlandschaft.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Charter Oak Church.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 740px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:ChurchFredericEdwinNewportMountain.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 700px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coast Scene Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1359px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:COASTAL SUNSET.PNG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 670px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas A Rocky Glenn 1846.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas American Lake Scene 1844.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Angels Ministering to Christ in the Wilderness 1843.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1040px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Aqueduct near Rome 1832.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 996px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Arch of Nero 1846.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Gelyna (View near Ticonderoga) 1826-1828.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1142px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Il Penseroso 1845.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Indian Pass Tahawus 1847.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Italian Scene Composition 1833.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 956px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Landscape 1825.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Landscape Composition Saint John in the Wilderness 1827.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Landscape the Seat of Mr. Featherstonhaugh in the Distance 1826.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Morning Mist Rising Plymouth New Hampshire (A View in the United States of American in Autunm 1830.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Mount Aetna from Taormina 1844.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 915px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Mount Chocorua New Hampshire 1827.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Mount Etna 1842.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Mount Etna from Taormina 1843.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Roman Campagna 1843.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Scene from -Manfred 1833.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Schroon Lake 1838-40.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Summer Twilight.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas Sunny Morning on the Hudson River 1827.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas The Cross and the World Study 1846-48.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas The Cross and the World Study for -The Pilgrim of the World at the End of His Journey 1846-48.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1041px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas The Cross and the World Study for -The Pilgrim of the World on His Journey 1846-48.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas The Departure 1837.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 917px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole Thomas The Present 1838.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cole, Thomas - Brock's Monument - 19th century.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1091px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - A Study of the Sky, DUNUC ARTS17.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - Edge of a Wood, c. 1816, 2373.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 867px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - Hampstead Heath, c.1820–1821, 11.1901.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - Landscape with Cows, c. 1810, 61.26.1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1400px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - Malvern Hall from the South-West, 1809, K5683.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - River Stour Looking towards Manningtree, 1804, SOUAG.S1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - The Ascension, 1821-1822, St Mary's Church, 1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable - View from Golding Constable's House at East Bergholt, 131.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable 96001.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 718px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable 96003.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 576px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable 96004.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 576px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Constable altarpiece Christ Blessing the Bread and Wine 1809 in St James's Church, Nayland.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 479px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Cotopaxi (1855 with house) Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1294px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix - La Drachme du tribut, étude pour le décor de la bibliothèque de la Chambre des députés à l’Assemblée nationale, Vers 1844.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix - La Drachme du tribut, Vers 1844.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 758px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix - Le forgeron, MD2008-5.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 650px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix - Maquette pour Alexandre faisant enfermer les poèmes d’Homère dans un coffret d’or, Vers 1840-1846.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix - Orphée venant policer les Grecs et leur enseigner les arts de la paix, 1838-1847.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix - Orphée vient policer les grecs encore sauvages et leur enseigner la paix, 97-026741.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 758px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix 754.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 732px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Delacroix Kobiety przy studni.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 918px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Departure of Hiawatha by Albert Bierstadt, c. 1868 (feef8659-1dcf-44dd-8761-f8c70e328237).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 833px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Desdemona maledetta dal padre.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1024px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Donner Lake from the Summit 20080311.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 750px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Early Autumn 2015 33 12.jpeg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 750px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Emerald Sea - Albert Bierstadt.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 700px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - A Mortally Wounded Brigand Quenches his Thirst - WGA06165.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1030px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Clorinde befreit Olindo und Sophronia - 13165 - Bavarian State Painting Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1038px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Der sterbende Valentin - 14248 - Bavarian State Painting Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1024px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Die Sauhatz (nach Rubens) - 8717 - Bavarian State Painting Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1360px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Étude d'asters et balsamine - 2298 - Kunsthaus Zürich.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Indien armé d’un poignard Gurkha - 2476 - Kunsthaus Zürich.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Le Sultan du Maroc et son Entourage - 124 - Foundation E.G. Bührle Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Marchand d’oranges au Maroc - 2475 - Kunsthaus Zürich.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Milton dictant à ses filles son poème épique, « Le paradis perdu » - 1988-0028 - Kunsthaus Zürich.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Soldat à l’épée (Hiroshima Museum of Art).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 606px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Triomphe d'Amphitrite - 129 - Foundation E.G. Bührle Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix - Triomphe de Bacchus - 128 - Foundation E.G. Bührle Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix (1798-1863) - The Lion and the Snake - PCF11 - Fitzwilliam Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugene Delacroix, “A Garden Path at Augerville,” 11.81 x 16.54 in, pastel on paper, c.1855, private collection.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 859px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix, attributed to - Lion et Crocodile - 1976-0017 - Kunsthaus Zürich.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène delacroix, strada a meknes, 1832.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2016",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Eugène Delacroix, u.a. - Autoportrait - 130 - Foundation E.G. Bührle Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Figures in an Ecuadorian Landscape Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1192px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Fog off Mount Desert Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 950px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Church - Home by the Lake - 2008.16 - Crystal Bridges Museum of American Art.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1080px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Church - The Cordilleras, Sunrise.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1380px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Church La Magdalena.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Church, \"Home by the Lake\" 2008 16v1.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1080px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Edwin Church - Cayambe - 47.1237 - Museum of Fine Arts.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Edwin Church - In the Tropics.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Frederic Edwin Church - View on the Magdalena River (1857).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Friedrich, Caspar David - Zwei Wanderer am Meer - ehemals Galerie Neue Meister Dresden seit 1945 verschollen.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - Homme nu renversé sur le sol, 1817 vers.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 602px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - Retour de Russie, 1818, DC-141 (B, 1)-FOL.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1384px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - Study of a Lion (or a Lion), 13.68.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1536px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - Tête de jeune homme mort, 1819.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - The Oath of Brutus after the Death of Lucretia, ca. 1815-1816.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 719px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - The poor family, 1816-1817.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - Trumpeter of the Hussars, c. 1815–20.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault - Wounded Soldiers in a Cart, 1814–1817.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 685px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Géricault (zugeschrieben) - The raising of Lazarus, um 1820.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Gericault-deluge.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 768px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Home by the Lake by Frederic Edwin Church, Crystal Bridges Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2019",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Home by the Lake Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1287px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:I. Aivazovsky. Aiju-Dag. Tartmus collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1233px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Il cimitero nella neve, Caspar David Friedrich.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 268px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Aivazovsky - Dante Shows an Artist Some Unusual Clouds 02.png",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Aivazovsky - The Black Sea at night (1879).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan aivazovsky moonlight063516).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1481px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Constantinovich Aivazovsky - Little Russian Ox Cart in Winter.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1429px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Constantinovich Aivazovsky - Winter Scene in Little Russia.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1475px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Konstantinovič Ajvazovskij - Sea - M.Ob.1152 - National Museum in Warsaw.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Konstantinovič Ajvazovskij - The Black Sea (Marina) - O 5477 - National Gallery Prague.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ivan Konstantinovich Aivazovsky - Fishermen and their Families on the Shore of the Bay of Naples - 1981.509 - Museum of Fine Arts.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1024px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Jean-Louis-André-Théodore Géricault - Officer of the Chasseurs of the Imperial Horse Guards - 48.452 - Rhode Island School of Design Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 768px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - A Cornfield - NMW A 3871 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - A Country Road - OP24 - Aberystwyth University, School of Art Museum and Galleries.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - At East Bergholt, Colchester - NWHCM , 1940.46.1 , F - Norfolk Museums Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Branch Hill Pond, Hampstead Heath - OP25 - Aberystwyth University, School of Art Museum and Galleries.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Brighton, East Sussex - NWHCM , 1940.46.2 , F - Norfolk Museums Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Cloudy Landscape - NWHCM , 1940.46.3 , F - Norfolk Museums Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Glebe Farm - NMW A 3874 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Hadleigh Castle, the Mouth of the Thames – Morning after a Stormy Night - FAO156 - Worcester City Art Gallery and Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Hampstead Heath, Branch Hill Pond - LL 3689 - Lady Lever Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Landscape - BORGM 00008 - Russell-Cotes Art Gallery ^ Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Landscape - NMW A 3877 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Landscape near Dedham - NMW A 487 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - On the Stour - WAG 200 - Sudley House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - On the Stour near East Bergholt, Sufffolk - NCM 1909-45 - Nottingham Museums.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Rural Scene with a Cottage - DERSB , 3745 - Buxton Museum and Art Gallery.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - Summer Evening - BORGM 00525 - Russell-Cotes Art Gallery ^ Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - The Glebe Farm - NWHCM , 1948.216 , F - Norfolk Museums Collections.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - The Glebe Farm - WA1937.65 - Ashmolean Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - The Rainbow - NMW A 3876 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - The Valley Farm - BIKGM-208A - Williamson Art Gallery and Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1185px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (after) - The Weir - NMW A 3872 - National Museum Cardiff.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (attributed to) - Landscape near Norwich - 1974.475 - Calderdale Metropolitan Borough Council.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (attributed to) - Summer Sunset - WA1937.74 - Ashmolean Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:John Constable (1776-1837) (circle of) - Cloud Study - 248 - Chequers.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Kreidefelsen auf Rügen (Caspar David Friedrich)-DSC3192.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2024",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Kreidefelsen auf Rügen (Caspar David Friedrich)-WUS03298.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2024",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Kreidefelsen auf Rügen (Caspar David Friedrich)-WUS03299.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2024",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Landschaft mit See.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Le Cuirassier blessé - Géricault.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Mazeppa - Géricault, 1823.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1024px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Morgennebel im Gebirge (Caspar David Friedrich)-WUS03249.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 1908",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:New York Landscape by Frederic Edwin Church, ca. 1850's.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 984px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Rocky Mountain Landscape, by Albert Bierstadt.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Schumann-Dresden 235.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1846px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Severní moře v měsíční záři CZE NG.O 8669.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Skelette in der Tropfsteinhoehle.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 500px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Skizze Großes Gehege.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1121px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Sunlight and Shadow.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1000px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:The Landing of Columbus at San Salvador 1893 by Albert Bierstadt.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 500px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:The Urn Tomb, Silk Tomb. and Corinthian Tomb, Petra by Frederic Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 956px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Théodore Géricault (1791-1824) - A Charge of Cuirassiers - P274 - The Wallace Collection.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Théodore Géricault (1791-1824) (after) - Horses Standing in a Mews - 2007.25 - Bowes Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 024 (27956584309).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 048 (38836956605).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 054 (38836954455).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 065 (38836951655).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 097 (24865820417).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 101 (25863384798).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 103 (25863436598).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 108 (27956520219).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore Gericault 118 (39026090054).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Theodore gericault jupiter and antiope after correggio093157)(1).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 814px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Twilight by Frederick Edwin Church, 1858, oil on canvas mounted on hardboard panel - De Young Museum - DSC00930.JPG",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 2013",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:View on the Magdalena River Frederic Edwin Church.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1280px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Washington, D.C., by Albert Bierstadt.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - Adam Naming the Beasts - PC.95 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - Christ's Entry into Jerusalem - PC.86 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - Eve Naming the Birds - PC.94 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Canterbury Pilgrims - PC.89 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Christ Child Asleep on a Cross - PD.12-2011 - Fitzwilliam Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1200px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Christ Child Asleep on the Cross (Our Lady Adoring the Infant Jesus Asleep on the Cross) - P.27-1953 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Entombment - PC.91 - Pollok House.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 944px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Judgement of Solomon - PD.28-1949 - Fitzwilliam Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Spiritual Form of Nelson Guiding Leviathan - N03006 - Tate.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1112px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:William Blake (1757-1827) - The Virgin and Child in Egypt - P.25-1953 - Victoria and Albert Museum.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 800px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Иван К. Айвазовский - От Млеты до Гудаури (1868).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_tema",
+      "detalle": null,
+      "origen": "descarte:wmc-discovery"
+    }
+  ]
+}

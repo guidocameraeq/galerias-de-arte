@@ -1,0 +1,253 @@
+{
+  "collection": "05_egipcio",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
+  "resumen": {
+    "entraron": 36,
+    "pendientes": 5,
+    "descartadas": 19
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "Busto de Nefertiti",
+      "autor": "Thutmose (atribuido)",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "licencia_restringida",
+      "detalle": "La foto del Neues Museum de Berlín es de licencia restringida y Wikidata no tiene P18 usable. Buscar alternativa libre o aceptar que no entra.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Head of a Pharaoh",
+      "autor": "Anonimo",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Relief from the tomb of Bakenrenef, wall from small room with texts and niches",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": null,
+      "origen": "descarte:target-nombrado",
+      "fuente": "https://www.metmuseum.org/art/collection/search/623395"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Statue of Sahure and a Nome God",
+      "autor": "Anonimo",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Statuette of a Cat",
+      "autor": "Anonimo",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "no_encontrada",
+      "detalle": null,
+      "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Account of a Campaign of Thutmose I",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Ball-Playing Ceremony: the king before a goddess possibly Hathor",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Block of relief",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Doorjamb from a Temple of Ramesses II",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Abusir papyrus.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 896px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Ancient Egypt early Roman period Mummy portraits from Faiyum Egypt.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 711px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Astarte-Papyrus.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 858px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Block of Relief MET 09-180-135.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 993px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Block of Relief MET 09.180.38.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1579px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Brick with the Names of Tawosret MET 32.2.44 (93910tf).jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1079px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Coptos decrees p-q Met.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1590px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Funerary papyrus - Google Art Project.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "fuera_de_periodo",
+      "detalle": "año 1069",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Leipzig papyri.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 639px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "File:Loyalist Teaching-beginning.jpg",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 600px",
+      "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Fragments depicting a group of foreigners including a child",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Large Kneeling Statue of Hatshepsut",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Seal Amulet Decorated with a Hippopotamus",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "lado largo 1099px",
+      "origen": "descarte:met-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Stela of a Woman Named Niseret",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Worker Shabti of Nauny",
+      "autor": null,
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": null,
+      "origen": "descarte:dedup-content"
+    }
+  ]
+}

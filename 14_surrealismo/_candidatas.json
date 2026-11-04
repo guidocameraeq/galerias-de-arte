@@ -1,0 +1,32 @@
+{
+  "collection": "14_surrealismo",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "SIN historial de descartes (el script que la armó no los registraba): solo brechas de Wikidata y lista manual",
+  "resumen": {
+    "entraron": 21,
+    "pendientes": 2,
+    "descartadas": 0
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "Cristo de San Juan de la Cruz",
+      "autor": "Salvador Dalí",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Copyright; sin alta resolución accesible.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Obras de Frida Kahlo (a definir)",
+      "autor": "Frida Kahlo",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "copyright_sin_alta_res",
+      "detalle": "Sin versión de alta resolución accesible. Best-effort con navegador, obra por obra.",
+      "origen": "manual"
+    }
+  ]
+}
