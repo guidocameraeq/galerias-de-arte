@@ -3,6 +3,7 @@
 export default [
   {
     "n": 1,
+    "id": "Q618530",
     "titulo": "Afrodita de Siracusa",
     "anio": "200",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -12,6 +13,7 @@ export default [
   },
   {
     "n": 2,
+    "id": "Q465762",
     "titulo": "Laocoonte y sus hijos",
     "anio": "0042 a.C.",
     "museo": "Museos Vaticanos, Ciudad del Vaticano",
@@ -21,6 +23,7 @@ export default [
   },
   {
     "n": 3,
+    "id": "Q151952",
     "titulo": "Venus de Milo",
     "anio": "0140 a.C.",
     "museo": "Museo del Louvre, París",
@@ -30,6 +33,7 @@ export default [
   },
   {
     "n": 4,
+    "id": "Q216402",
     "titulo": "Victoria alada de Samotracia",
     "anio": "0175 a.C.",
     "museo": "Museo del Louvre, París",
@@ -39,6 +43,7 @@ export default [
   },
   {
     "n": 5,
+    "id": "Q205259",
     "titulo": "Bronces de Riace",
     "anio": "0460 a.C.",
     "museo": "Museo Nacional de la Magna Grecia, Regio de Calabria",
@@ -48,6 +53,7 @@ export default [
   },
   {
     "n": 6,
+    "id": "Q133732",
     "titulo": "Discóbolo de Mirón",
     "anio": "0450 a.C.",
     "museo": "Museo Nacional Romano (Palazzo Massimo), Roma",
@@ -57,6 +63,7 @@ export default [
   },
   {
     "n": 7,
+    "id": "Q667124",
     "titulo": "Augusto de Prima Porta",
     "anio": "0020 a.C.",
     "museo": "Museos Vaticanos, Ciudad del Vaticano",
@@ -66,6 +73,7 @@ export default [
   },
   {
     "n": 8,
+    "id": "Q619135",
     "titulo": "Apolo del Belvedere",
     "anio": "0120",
     "museo": "Museos Vaticanos, Ciudad del Vaticano",
@@ -75,6 +83,7 @@ export default [
   },
   {
     "n": 9,
+    "id": "Q848790",
     "titulo": "Gálata moribundo",
     "anio": "0230 a.C.",
     "museo": "Museos Capitolinos, Roma",
@@ -84,6 +93,7 @@ export default [
   },
   {
     "n": 10,
+    "id": "File:20211115 177 NAMA athens.jpg",
     "titulo": "Máscara de Agamenón",
     "anio": "c1550_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -93,6 +103,7 @@ export default [
   },
   {
     "n": 11,
+    "id": "File:Zeus or Poseidon bronze 460 BC, NAMA X 15161 102615.jpg",
     "titulo": "Dios del cabo Artemisio",
     "anio": "c460_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -102,6 +113,7 @@ export default [
   },
   {
     "n": 12,
+    "id": "File:Artemision jockey, bronze, 150 BC, NAMA X 15177, 190891.jpg",
     "titulo": "Jinete de Artemisio",
     "anio": "c140_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -111,6 +123,7 @@ export default [
   },
   {
     "n": 13,
+    "id": "File:Antikythera Ephebe, bronze, 70–60 BC, NAMA X 13396, 225684.jpg",
     "titulo": "Efebo de Anticiteras",
     "anio": "c340_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -120,6 +133,7 @@ export default [
   },
   {
     "n": 14,
+    "id": "File:Boy of Marathon, NAMA X15118 , 225678.jpg",
     "titulo": "Efebo de Maratón",
     "anio": "c330_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -129,6 +143,7 @@ export default [
   },
   {
     "n": 15,
+    "id": "File:Diadoumenos (giovane atleta che si lega i capelli con un lungo nastro), da una casa a delos, 100 dc ca, da un orig. di policleto del 450-425 ac ca. 02, n. 1826.jpg",
     "titulo": "Diadúmeno de Atenas",
     "anio": "c100_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -138,6 +153,7 @@ export default [
   },
   {
     "n": 16,
+    "id": "File:Marble statue of Poseidon from Melos. 125-100 B.C.jpg",
     "titulo": "Poseidón de Melos",
     "anio": "c120_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -147,6 +163,7 @@ export default [
   },
   {
     "n": 17,
+    "id": "File:Statuette of Athena (3rd cent. A.D.) in the National Archaeological Museum of Athens on 14 April 2018 (cropped).jpg",
     "titulo": "Atenea Varvakeion",
     "anio": "c130",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -156,6 +173,7 @@ export default [
   },
   {
     "n": 18,
+    "id": "File:The Grave Stele of Hegeso (5th cent. B.C.) at the National Archaeological Museum on 3 April 2018.jpg",
     "titulo": "Estela funeraria de Hegeso",
     "anio": "c400_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -165,6 +183,7 @@ export default [
   },
   {
     "n": 19,
+    "id": "File:Aristone di paros, kore per la tomba di phrasikleia, da merenda (myrrhinous) in attica, 550-540 ac ca. 01, n. 4889.jpg",
     "titulo": "Koré Frasiclea",
     "anio": "c540_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -174,6 +193,7 @@ export default [
   },
   {
     "n": 20,
+    "id": "File:02 2020 Grecia photo Paolo Villa FO190075 bis (Museo archeologico di Atene) Kroisos Kouros. Marmo Pario. Trovato ad Anavyssos. Statua funeraria Ca 530 a.C. NAMA 3851, con gimp.jpg",
     "titulo": "Kurós de Creso",
     "anio": "c530_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -183,6 +203,7 @@ export default [
   },
   {
     "n": 21,
+    "id": "File:Cape Sounion kouros (NAMA 2720) 2017.jpg",
     "titulo": "Kurós de Sunion",
     "anio": "c590_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -192,6 +213,7 @@ export default [
   },
   {
     "n": 22,
+    "id": "File:Statue of Aphrodite, Pan, and Eros at National Archaeological Museum in Athens.jpg",
     "titulo": "Grupo de Afrodita, Pan y Eros",
     "anio": "c100_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -201,6 +223,7 @@ export default [
   },
   {
     "n": 23,
+    "id": "File:Ancient Greece Marble Statue Head (28411776171).jpg",
     "titulo": "Cabeza de Higía de Tegea",
     "anio": "c360_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -210,6 +233,7 @@ export default [
   },
   {
     "n": 24,
+    "id": "File:Bronze Head of Boxer Satyros of Elis, Found at Olympia, c. 330-320 BC (28457687036).jpg",
     "titulo": "Cabeza de boxeador de Olimpia",
     "anio": "c330_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -219,6 +243,7 @@ export default [
   },
   {
     "n": 25,
+    "id": "File:02 2020 Grecia photo Paolo Villa FO190060 bis (Museo archeologico di Atene) Cratere dei guerrieri dipinto con soldati NAMA 1426 Acropoli di Micene. XII secolo a.C., con gimp.jpg",
     "titulo": "Vaso de los guerreros de Micenas",
     "anio": "c1200_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -228,6 +253,7 @@ export default [
   },
   {
     "n": 26,
+    "id": "File:The Dipylon Amphora (National Archaeological Museum of Athens, 1-31-2023).jpg",
     "titulo": "Ánfora de Dípilon",
     "anio": "c750_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -237,6 +263,7 @@ export default [
   },
   {
     "n": 27,
+    "id": "File:Cup of Nestor (Mycenae).jpg",
     "titulo": "Copa de Néstor de Micenas",
     "anio": "c1600_BC",
     "museo": "Museo Arqueológico Nacional de Atenas",
@@ -246,6 +273,7 @@ export default [
   },
   {
     "n": 28,
+    "id": "File:ACMA Moschophoros.jpg",
     "titulo": "El Moscóforo (El portador del ternero)",
     "anio": "c570_BC",
     "museo": "Museo de la Acrópolis, Atenas",
@@ -255,6 +283,7 @@ export default [
   },
   {
     "n": 29,
+    "id": "File:ACMA 679 Kore 1.JPG",
     "titulo": "Koré del Peplo",
     "anio": "c530_BC",
     "museo": "Museo de la Acrópolis, Atenas",
@@ -264,6 +293,7 @@ export default [
   },
   {
     "n": 30,
+    "id": "File:ACMA 698 Kritios boy 5.JPG",
     "titulo": "Muchacho de Critio",
     "anio": "c480_BC",
     "museo": "Museo de la Acrópolis, Atenas",
@@ -273,6 +303,7 @@ export default [
   },
   {
     "n": 31,
+    "id": "File:The eastern nations and Greece (1917) (14767112415).jpg",
     "titulo": "Atenea pensativa",
     "anio": "c460_BC",
     "museo": "Muse de la Acrópolis, Atenas",
@@ -282,6 +313,7 @@ export default [
   },
   {
     "n": 32,
+    "id": "File:Nike Fixing her Sandal.jpg",
     "titulo": "Niké atándose la sandalia",
     "anio": "c410_BC",
     "museo": "Museo de la Acrópolis, Atenas",
@@ -291,6 +323,7 @@ export default [
   },
   {
     "n": 33,
+    "id": "File:Caryatids of Erechtheum in the Acropolis Museum (Athens).jpg",
     "titulo": "Cariátide del Erecteón",
     "anio": "c420_BC",
     "museo": "Museo de la Acrópolis, Atenas",
@@ -300,6 +333,7 @@ export default [
   },
   {
     "n": 34,
+    "id": "File:Auriga de Delfos (474 a.C.), Museo Arqueològic de Delfos (Grècia).jpg",
     "titulo": "El Auriga de Delfos",
     "anio": "c474_BC",
     "museo": "Museo Arqueológico de Delfos",
@@ -309,6 +343,7 @@ export default [
   },
   {
     "n": 35,
+    "id": "File:Naxos Sphinx in context.jpg",
     "titulo": "Esfinge de Naxos",
     "anio": "c560_BC",
     "museo": "Museo Arqueológico de Delfos",
@@ -318,6 +353,7 @@ export default [
   },
   {
     "n": 36,
+    "id": "File:Kleobis and Biton, 580 BC, AM of Delphi, 201359.jpg",
     "titulo": "Cleobis y Bitón",
     "anio": "c580_BC",
     "museo": "Museo Arqueológico de Delfos",
@@ -327,6 +363,7 @@ export default [
   },
   {
     "n": 37,
+    "id": "File:Dancers of Delphi alias Akanthos Column, 330 BC, AM of Delphi, 201422.jpg",
     "titulo": "Columna de las bailarinas de Delfos",
     "anio": "c330_BC",
     "museo": "Museo Arqueológico de Delfos",
@@ -336,6 +373,7 @@ export default [
   },
   {
     "n": 38,
+    "id": "File:Antinous. Musée Delphes. Grèce.jpg",
     "titulo": "Antínoo de Delfos",
     "anio": "c130",
     "museo": "Museo Arqueológico de Delfos",
@@ -345,6 +383,7 @@ export default [
   },
   {
     "n": 39,
+    "id": "File:Hermes bearing the infant Dionysus, traditionally attributed to Praxiteles and dated to the 4th century BC, discovered in 1877 in the ruins of the Temple of Hera at Olympia, Archaeological Museum of Olympia (16373294135).jpg",
     "titulo": "Hermes con el niño Dioniso",
     "anio": "c340_BC",
     "museo": "Museo Arqueológico de Olimpia",
@@ -354,6 +393,7 @@ export default [
   },
   {
     "n": 40,
+    "id": "File:Olympia, Nike des Paionios, Basis 2015-10 (1).jpg",
     "titulo": "Niké de Peonio",
     "anio": "c421_BC",
     "museo": "Museo Arqueológico de Olimpia",
@@ -363,6 +403,7 @@ export default [
   },
   {
     "n": 41,
+    "id": "File:Apollo, from the west pediment of the temple of Zeus at Olympia.jpg",
     "titulo": "Apolo del Frontón Occidental de Olimpia",
     "anio": "c460_BC",
     "museo": "Museo Arqueológico de Olimpia",
@@ -372,6 +413,7 @@ export default [
   },
   {
     "n": 42,
+    "id": "File:Statue of Zeus and Ganymede - Archaeological Museum of Olympia by Joy of Museums.jpg",
     "titulo": "Zeus y Ganimedes de Olimpia",
     "anio": "c470_BC",
     "museo": "Museo Arqueológico de Olimpia",
@@ -381,6 +423,7 @@ export default [
   },
   {
     "n": 43,
+    "id": "File:Minoan snake goddess.JPG",
     "titulo": "La Diosa de las serpientes",
     "anio": "c1600_BC",
     "museo": "Museo Arqueológico de Heraklion, Creta",
@@ -390,6 +433,7 @@ export default [
   },
   {
     "n": 44,
+    "id": "File:Bull leaping fresco, Knossos, 1600-1450 BC, AMH, 258362.jpg",
     "titulo": "El fresco de la taurocatapsia",
     "anio": "c1450_BC",
     "museo": "Museo Arqueológico de Heraklion, Creta",
@@ -399,6 +443,7 @@ export default [
   },
   {
     "n": 45,
+    "id": "File:Knossos — Prince of the Lilies.jpg",
     "titulo": "El Príncipe de los lirios",
     "anio": "c1550_BC",
     "museo": "Museo Arqueológico de Heraklion, Creta",
@@ -408,6 +453,7 @@ export default [
   },
   {
     "n": 46,
+    "id": "File:Phaistos Disc - side A (top), side B (bottom).jpg",
     "titulo": "Disco de Festos",
     "anio": "c1600_BC",
     "museo": "Museo Arqueológico de Heraklion, Creta",
@@ -417,6 +463,7 @@ export default [
   },
   {
     "n": 47,
+    "id": "File:Rhyton in the form of a bulls head from Knossos 06.jpg",
     "titulo": "Ritón con cabeza de toro de Cnosos",
     "anio": "c1500_BC",
     "museo": "Museo Arqueológico de Heraklion, Creta",
@@ -426,6 +473,7 @@ export default [
   },
   {
     "n": 48,
+    "id": "File:Harvester vase from Hagia Triada 05.jpg",
     "titulo": "Vaso de los segadores",
     "anio": "c1450_BC",
     "museo": "Museo Arqueológico de Heraklion, Creta",
@@ -435,6 +483,7 @@ export default [
   },
   {
     "n": 49,
+    "id": "File:Borghese Gladiator, Louvre, 2 October 2014.jpg",
     "titulo": "Gladiador Borghese",
     "anio": "c100_BC",
     "museo": "Museo del Louvre, París",
@@ -444,6 +493,7 @@ export default [
   },
   {
     "n": 50,
+    "id": "File:Diana of Versailles.jpg",
     "titulo": "Diana de Versalles",
     "anio": "c325_BC",
     "museo": "Museo del Louvre, París",
@@ -453,6 +503,7 @@ export default [
   },
   {
     "n": 51,
+    "id": "File:Lady of Auxerre Louvre Ma3098 n2.jpg",
     "titulo": "Dama de Auxerre",
     "anio": "c630_BC",
     "museo": "Museo del Louvre, París",
@@ -462,6 +513,7 @@ export default [
   },
   {
     "n": 52,
+    "id": "File:\"Tête d'homme, dit le Cavalier Rampin\" (musée du Louvre, Paris) (51577394738).jpg",
     "titulo": "Caballero Rampin",
     "anio": "c550_BC",
     "museo": "Museo del Louvre, París",
@@ -471,6 +523,7 @@ export default [
   },
   {
     "n": 53,
+    "id": "File:Ares Borghese Louvre Ma 866 n02.jpg",
     "titulo": "Ares Borghese",
     "anio": "c420_BC",
     "museo": "Museo del Louvre, París",
@@ -480,6 +533,7 @@ export default [
   },
   {
     "n": 54,
+    "id": "File:Belvedere Torso, Hellenistic period, Vatican Museums (1) (48759379447).jpg",
     "titulo": "Torso del Belvedere",
     "anio": "c150_BC",
     "museo": "Museos Vaticanos, Ciudad del Vaticano",
@@ -489,6 +543,7 @@ export default [
   },
   {
     "n": 55,
+    "id": "File:Apoxeomenos (Vatican Museums) September 2015-1.jpg",
     "titulo": "Apoxiómeno de Lisipo",
     "anio": "c330_BC",
     "museo": "Museos Vaticanos, Ciudad del Vaticano",
@@ -498,6 +553,7 @@ export default [
   },
   {
     "n": 56,
+    "id": "File:Athena Giustiniani, Vatican Museums.jpg",
     "titulo": "Atenea Giustiniani",
     "anio": "c400_BC",
     "museo": "Museos Vaticanos, Ciudad del Vaticano",
@@ -507,6 +563,7 @@ export default [
   },
   {
     "n": 57,
+    "id": "File:Boxer of Quirinal (Mys from Taranto) - Lateral View.jpg",
     "titulo": "Púgil en reposo",
     "anio": "c100_BC",
     "museo": "Museo Nacional Romano (Palazzo Massimo alle Terme), Roma",
@@ -516,6 +573,7 @@ export default [
   },
   {
     "n": 58,
+    "id": "File:Seleucid prince (Rome).JPG",
     "titulo": "Príncipe helenístico",
     "anio": "c150_BC",
     "museo": "Museo Nacional Romano (Palazzo Massimo alle Terme), Roma",
@@ -525,6 +583,7 @@ export default [
   },
   {
     "n": 59,
+    "id": "File:Capitoline Venus - Palazzo Nuovo - Musei Capitolini - Rome 2016.jpg",
     "titulo": "Venus Capitolina",
     "anio": "c250_BC",
     "museo": "Museos Capitolinos, Roma",
@@ -534,6 +593,7 @@ export default [
   },
   {
     "n": 60,
+    "id": "File:Capitoline Spinario, upper body, Musei Capitolini.jpg",
     "titulo": "Niño de la espina (Spinario)",
     "anio": "c100_BC",
     "museo": "Museos Capitolinos, Roma",
@@ -543,6 +603,7 @@ export default [
   },
   {
     "n": 61,
+    "id": "File:Herakles Farnese MAN Napoli Inv6001 n02.jpg",
     "titulo": "Hércules Farnesio",
     "anio": "c216",
     "museo": "Museo Arqueológico Nacional de Nápoles",
@@ -552,6 +613,7 @@ export default [
   },
   {
     "n": 62,
+    "id": "File:Farnese Bull MAN Napoli Inv6002 n02.jpg",
     "titulo": "Toro Farnesio",
     "anio": "c150_BC",
     "museo": "Museo Arqueológico Nacional de Nápoles",
@@ -561,6 +623,7 @@ export default [
   },
   {
     "n": 63,
+    "id": "File:02 10 2024 Photo Paolo Villa-Napoli-mann-Museo Archeologico-FO232526tris-Arte Greca copia romana-Policleto Doriforo Polykleitos Doryphoros from Pompeii-marmo marble carrara.jpg",
     "titulo": "Doríforo de Policleto",
     "anio": "c440_BC",
     "museo": "Museo Arqueológico Nacional de Nápoles",
@@ -570,6 +633,7 @@ export default [
   },
   {
     "n": 64,
+    "id": "File:Alexandermosaic.jpg",
     "titulo": "Mosaico de Alejandro (Batalla de Issos)",
     "anio": "c100_BC",
     "museo": "Museo Arqueológico Nacional de Nápoles",

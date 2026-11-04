@@ -119,7 +119,7 @@ for (const col of colDirs) {
   row.fallas = fails.length - f0; row.avisos = warns.length - w0; totalBytes += row.bytes; rows.push(row);
 }
 for (const [q, where] of qidSeen) if (where.length > 1) warn('W-QID-DUP', where[0].split(' ')[0], '-', `qid ${q} repetido: ${where.join(' | ')}`);
-// Fichas autoradas desfasadas: tools/desc/<col>.mjs se vuelca POR n. Si el índice se podó/renumeró/movió,
+// Fichas autoradas desfasadas: tools/desc/<col>.mjs se vuelca por id (o POR n en entradas viejas sin id). Si el índice se podó/renumeró/movió,
 // re-correr apply-desc pegaría fichas en obras equivocadas (y la próxima obra con ese n heredaría el texto).
 const descDir = path.join(ROOT, 'tools', 'desc');
 if (existsSync(descDir)) for (const col of colDirs) {
@@ -127,9 +127,11 @@ if (existsSync(descDir)) for (const col of colDirs) {
   if (!existsSync(dp)) continue;
   try {
     const entries = (await import(pathToFileURL(dp).href)).default || [];
-    const byN = new Map(JSON.parse(readFileSync(path.join(COLS_DIR, col, '_index.json'), 'utf8')).items.map(i => [i.n, i]));
+    const its = JSON.parse(readFileSync(path.join(COLS_DIR, col, '_index.json'), 'utf8')).items;
+    const byN = new Map(its.map(i => [i.n, i]));
+    const byId = new Map(); for (const i of its) for (const k of ['qid', 'sourceId', 'source_url', 'image_url']) if (i[k]) byId.set(i[k], i);
     let falta = 0, difiere = 0;
-    for (const e of entries) { const i = byN.get(e.n); if (!i) falta++; else if (e.d && e.d !== i.description) difiere++; }
+    for (const e of entries) { const i = e.id ? byId.get(e.id) : byN.get(e.n); if (!i) falta++; else if (e.d && e.d !== i.description) difiere++; }
     if (falta || difiere) warn('W-DESC-STALE', col, '-', `tools/desc/${col}.mjs desfasado: ${falta} n inexistentes, ${difiere} fichas distintas del índice → NO re-correr apply-desc sin corregirlo (docs/DESCRIPCIONES.md §2.A)`);
   } catch (e) { warn('W-DESC-STALE', col, '-', `no pude comparar tools/desc/${col}.mjs: ${e.message}`); }
 }

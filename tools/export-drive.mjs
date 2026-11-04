@@ -3,10 +3,15 @@
 // NO se tocan: por defecto se COPIAN tal cual (con la extensión real del contenido); con --max-side=N se escribe una copia reducida
 // (derivado de entrega; el original queda intacto). Dry-run por defecto; --apply escribe. Nunca borra nada.
 // Uso: node tools/export-drive.mjs (--col=11_rococo[,08_impresionismo] | --all) [--out=RUTA] [--max-side=3840] [--big-max-side=3840] [--apply]
+// Respeta la curaduría hecha en Drive: si una obra estaba en el galeria.json anterior y su imagen ya no está en la carpeta,
+// se la considera BORRADA por Guido: NO se vuelve a copiar, y se sigue listando (la app la saltea) hasta que
+// tools/drive-curation.mjs la saque del repo. Freno: si falta >30% de una galería, no se toca (salvo --force).
+// Si una obra cambia de título (y de nombre de archivo), el archivo viejo se RENOMBRA en lugar de duplicarse.
 // Tondos/medallones: tools/forma-tondos.json  { "<qid o sourceId>": "redonda" | "ovalada" }
 import fs from 'fs';
 import path from 'path';
 import { slugify } from './lib.mjs';
+import { tituloDe, idsGaleria } from './galerias.mjs';
 
 const ROOT = process.cwd();
 const args = process.argv.slice(2);
@@ -14,17 +19,9 @@ const flag = (n) => args.find(a => a.startsWith(`--${n}=`))?.slice(n.length + 3)
 const APPLY = args.includes('--apply');
 const OUT = path.resolve(flag('out') || '_export/Galerías');
 const MAXSIDE = flag('max-side') ? Number(flag('max-side')) : 0;
+const FORCE = args.includes('--force');
 const BIGSIDE = flag('big-max-side') ? Number(flag('big-max-side')) : 0;   // reduce SOLO los archivos >50 MB (límite de la app)
 
-const TITULOS = {
-  '01_mitologia_griega_romana': 'Mitología griega y romana', '02_barroco': 'Barroco', '03_gotico': 'Gótico', '04_romanticismo': 'Romanticismo',
-  '05_egipcio': 'Antiguo Egipto', '06_macabro_memento_mori': 'Macabro y memento mori', '07_alto_renacimiento': 'Alto Renacimiento',
-  '08_impresionismo': 'Impresionismo', '09_postimpresionismo': 'Postimpresionismo', '10_realismo': 'Realismo', '11_rococo': 'Rococó',
-  '12_simbolismo_modernismo': 'Simbolismo y Art Nouveau', '13_vanguardias': 'Vanguardias', '14_surrealismo': 'Surrealismo',
-  '15_pop_americano': 'Pop Art americano', '16_neoclasicismo': 'Neoclasicismo', '17_dore_divina_comedia': 'Doré, La Divina Comedia',
-  '18_escultura_griega': 'Escultura griega', '19_marcelo_canevari': 'Marcelo Canevari', '20_alfred_kubin': 'Alfred Kubin',
-  '21_rob_gonsalves': 'Rob Gonsalves', '22_zdzislaw_beksinski': 'Zdzisław Beksiński', '23_mariusz_lewandowski': 'Mariusz Lewandowski',
-};
 const base = fs.existsSync(path.join(ROOT, 'colecciones')) ? path.join(ROOT, 'colecciones') : ROOT;
 const allCols = fs.readdirSync(base).filter(d => /^\d\d_/.test(d) && fs.existsSync(path.join(base, d, '_index.json')));
 const cols = args.includes('--all') ? allCols : (flag('col') || '').split(',').filter(Boolean);
@@ -51,9 +48,14 @@ for (const col of cols) {
   const colDir = path.join(base, col);
   if (!fs.existsSync(path.join(colDir, '_index.json'))) { console.log(`✗ ${col}: no existe`); totProblemas++; continue; }
   const idx = JSON.parse(fs.readFileSync(path.join(colDir, '_index.json'), 'utf8'));
-  const titulo = TITULOS[col] || col.replace(/^\d+_/, '').replace(/_/g, ' ');
+  const titulo = tituloDe(col);
   const dir = path.join(OUT, titulo);
-  const usedFiles = new Set(), usedIds = new Set(), obras = [], plan = [], problemas = [];
+  const usedFiles = new Set(), obras = [], plan = [], problemas = [], borradas = [];
+  const ids = idsGaleria(idx.items, col);
+  // Exportación anterior (si existe): id → archivo, para renombrar y para detectar lo que Guido borró
+  const prevPath = path.join(dir, 'galeria.json');
+  const prev = new Map();
+  if (fs.existsSync(prevPath)) { try { for (const o of JSON.parse(fs.readFileSync(prevPath, 'utf8')).obras || []) if (o.id) prev.set(o.id, o.archivo); } catch { problemas.push('galeria.json anterior ilegible: no se detectan borrados'); } }
   for (const it of [...idx.items].sort((a, b) => a.n - b.n)) {
     const src = path.join(colDir, it.orientation || 'landscape', it.file);
     if (!fs.existsSync(src)) { problemas.push(`n${it.n}: falta ${it.file}`); continue; }
@@ -65,17 +67,19 @@ for (const col of cols) {
     if (usedFiles.has(stem)) stem += '-' + String(it.n).padStart(3, '0');
     usedFiles.add(stem);
     const archivo = stem + ext;
-    let id = it.qid || it.sourceId || `${col}:${it.n}`;
-    if (usedIds.has(id)) id = it.sourceId && !usedIds.has(it.sourceId) ? it.sourceId : `${id}#${it.n}`;
-    usedIds.add(id);
-    const forma = formaMap[it.qid] || formaMap[it.sourceId];
+    const id = ids.get(it);
+    const prevFile = [id, it.qid, it.sourceId, it.source_url, it.image_url, `${col}:${it.n}`, `${it.qid}#${it.n}`].filter(Boolean).map(k => prev.get(k)).find(Boolean);
+    const borrada = prevFile && !fs.existsSync(path.join(dir, prevFile)) && !fs.existsSync(path.join(dir, archivo));   // Guido la borró en Drive
+    if (borrada) borradas.push(`n${it.n} ${ttl}`);
+    const forma = formaMap[it.qid] || formaMap[it.sourceId] || it.forma;
     const o = { archivo, titulo: ttl, autor: it.artist, anio: it.year ? String(it.year) : undefined, movimiento: it.school || undefined,
       tecnica: it.type || undefined, ubicacion: it.holding_museum || undefined, forma: forma || undefined,
       explicacion: vacio(it.description) ? undefined : it.description, credito: credito(it) || undefined,
       licencia: normLic(it.license) || undefined, fuente: it.source_url || it.image_url || undefined, id };
     Object.keys(o).forEach(k => o[k] === undefined && delete o[k]);
     if (o.explicacion && mdLike(o.explicacion)) problemas.push(`n${it.n}: la explicación parece tener Markdown/HTML`);
-    obras.push(o); plan.push({ src, dest: path.join(dir, archivo), size: fs.statSync(src).size });
+    if (borrada) { o.archivo = prevFile; obras.push(o); continue; }   // se sigue listando (la app la saltea) para que drive-curation la detecte; no se re-sube
+    obras.push(o); plan.push({ src, dest: path.join(dir, archivo), prev: prevFile && prevFile !== archivo ? path.join(dir, prevFile) : null, size: fs.statSync(src).size });
   }
   const gal = { formato: 1, titulo, obras };
   const json = JSON.stringify(gal, null, 2) + '\n';
@@ -87,12 +91,15 @@ for (const col of cols) {
   if (grandes) problemas.push(`${grandes} archivo(s) >50 MB (límite de la app; usar --max-side)`);
   console.log(`${problemas.length ? '⚠' : '✓'} ${col} → "${titulo}": ${obras.length}/${idx.items.length} obras · ${(bytes / 1e6).toFixed(0)} MB · sin explicación: ${sinExp} · tondos marcados: ${obras.filter(o => o.forma).length}`);
   problemas.slice(0, 8).forEach(p => console.log(`    ${p}`));
+  if (borradas.length) console.log(`    🗑 ${borradas.length} borrada(s) en Drive (no se re-suben): ${borradas.slice(0, 4).join(' · ')}${borradas.length > 4 ? ' …' : ''} → sacalas del repo con: node tools/drive-curation.mjs`);
   totObras += obras.length; totBytes += bytes; totProblemas += problemas.length;
+  if (borradas.length && borradas.length > 0.3 * idx.items.length && !FORCE) { console.log(`    ✗ faltan ${borradas.length}/${idx.items.length} imágenes en Drive (>30%): ¿Drive sincronizando? No se toca esta galería (--force si es a propósito).`); totProblemas++; continue; }
   if (!APPLY) continue;
   fs.mkdirSync(dir, { recursive: true });
-  let hechos = 0;
+  let hechos = 0, renombradas = 0;
   for (const p of plan) {
     if (fs.existsSync(p.dest)) continue;                       // idempotente: no pisa
+    if (p.prev && fs.existsSync(p.prev)) { fs.renameSync(p.prev, p.dest); renombradas++; continue; }   // cambió el título: renombrar, no duplicar
     const side = MAXSIDE || (BIGSIDE && p.size > 50e6 ? BIGSIDE : 0);
     if (side) {
       const m = await sharp(p.src).metadata();
@@ -105,6 +112,6 @@ for (const col of cols) {
     fs.copyFileSync(p.src, p.dest); hechos++;
   }
   fs.writeFileSync(path.join(dir, 'galeria.json'), json, 'utf8');
-  console.log(`    escrito: ${hechos} imágenes nuevas + galeria.json`);
+  console.log(`    escrito: ${hechos} imágenes nuevas, ${renombradas} renombradas + galeria.json`);
 }
 console.log(`\nTOTAL: ${cols.length} colección(es) · ${totObras} obras · ${(totBytes / 1e9).toFixed(2)} GB origen · problemas: ${totProblemas}${APPLY ? '' : '\nDry-run: agregá --apply para escribir.'}`);

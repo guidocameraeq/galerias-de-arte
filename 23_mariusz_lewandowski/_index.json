@@ -13,10 +13,11 @@
       "height": 1001,
       "orientation": "landscape",
       "description": "Una figura colosal y encapuchada sostiene en alto un gigantesco portal dorado y luminoso sobre la inmensidad del océano nocturno. Una multitud de siluetas humanas y una entidad cadavérica con guadaña avanzan hacia el umbral, mientras una bandada de aves asciende hacia la luz lunar. La composición simboliza el tránsito existencial del alma hacia lo desconocido, donde la muerte actúa como guardiana y el umbral promete una liberación cósmica.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:esencia_de_la_libertad_mirror_reaper"
     },
     {
       "n": 2,
@@ -30,10 +31,11 @@
       "height": 2047,
       "orientation": "portrait",
       "description": "Un ser titánico de ropajes oscuros y rostro velado emerge entre nubes carmesíes y rocas milenarias frente a diminutos viajeros que caminan sobre una pasarela. Un abismo de niebla dorada separa ambos extremos mientras astros silenciosos resplandecen en el cenit del firmamento. Alude a la comunión inevitable entre la fragilidad humana y las fuerzas eternas del más allá, planteando el umbral cósmico como un destino de recogimiento y reverencia.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:encuentro_en_el_otro_lado"
     },
     {
       "n": 3,
@@ -47,10 +49,11 @@
       "height": 1609,
       "orientation": "landscape",
       "description": "Un busto pétreo y gigantesco de rasgos borrados reposa semioculto tras murallones ciclópeos y andamios que se desmoronan en el vacío. En el fondo, un cielo incendiado por destellos dorados y cenizas ilumina la desolación de una civilización olvidada. Representa la erosión implacable de la memoria histórica y la identidad individual frente al avance silencioso de las eras geológicas y el olvido.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:amnesia"
     },
     {
       "n": 4,
@@ -64,10 +67,11 @@
       "height": 768,
       "orientation": "landscape",
       "description": "Una llanura infinita cubierta por una marea de combatientes, lanzas y estandartes se extiende bajo un cielo crepuscular hendido por una espada celestial fulgurante. Las siluetas de caballeros y caballos se desdibujan entre nubes de polvo y estelas de fuego que consumen el horizonte. Reinterpreta el choque histórico de Grunwald como un cataclismo místico donde el destino de los pueblos es juzgado por fuerzas metafísicas superiores.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:la_gran_batalla_medieval_grunwald"
     },
     {
       "n": 5,
@@ -81,10 +85,11 @@
       "height": 584,
       "orientation": "landscape",
       "description": "Un río de fuego incandescente serpentea entre monolitos ciclópeos y acantilados escarpados bajo una bóveda celeste dominada por una luna espectral. A lo largo de la ribera volcánica, figuras solitarias caminan en procesión guiadas por el reflejo de la llamarada perpetua. Evoca la persistencia irreductible de la conciencia y la esperanza humana ante la noche interminable del cosmos.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:el_fuego_que_nunca_se_apaga"
     },
     {
       "n": 6,
@@ -98,10 +103,11 @@
       "height": 594,
       "orientation": "landscape",
       "description": "Un coloso encorvado de espaldas al espectador se postra de rodillas ante un resplandor místico que brota de una profunda fosa en el desierto. Diminutas siluetas contemplan la escena desde riscos lejanos mientras un vórtice de nubes ambarinas envuelve el cielo. Simboliza el reconocimiento de la pequeñez humana y la reverencia obligada ante los misterios insondables del universo.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:acto_de_humildad_stygian"
     },
     {
       "n": 7,
@@ -115,10 +121,11 @@
       "height": 698,
       "orientation": "landscape",
       "description": "Dos monolitos ciclópeos de piedra negra flanquean un estrecho cañón marino hacia donde rema una solitaria embarcación bajo un orbe solar envuelto en bruma. El reflejo del sol dibuja un sendero dorado sobre las aguas tranquilas, invitando al navegante a internarse en lo desconocido. Plasma la eterna interrogación metafísica sobre el origen y el destino del ser humano en su periplo por la existencia.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:la_pregunta_eterna"
     },
     {
       "n": 8,
@@ -132,10 +139,11 @@
       "height": 900,
       "orientation": "landscape",
       "description": "Una comitiva fantasmal de carretas, figuras encapuchadas y estandartes fúnebres avanza lentamente a través de un valle de ceniza bajo un cielo teñido de sangre. Monolitos de geometría imposible vigilan el paso de la caravana como centinelas de una era extinguida. Constituye una elegía visual sobre la transitoriedad de la vida terrenal y la marcha inexorable de la humanidad hacia el descanso final.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:el_convoy_de_la_muerte"
     },
     {
       "n": 9,
@@ -149,10 +157,11 @@
       "height": 2047,
       "orientation": "portrait",
       "description": "Una solitaria torre gótica se alza en la cumbre de un promontorio nevado rodeado por un mar de hielo bajo una luna ártica que baña el paisaje de azul cobalto. Una pequeña lumbre dorada titila en una de las aspilleras superiores, único indicio de calor en medio de la desolación polar. Expresa el aislamiento del espíritu humano y la búsqueda de refugio interior ante la frialdad implacable del entorno.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:noche_fria"
     },
     {
       "n": 10,
@@ -166,10 +175,11 @@
       "height": 1162,
       "orientation": "portrait",
       "description": "Una efigie pétrea de proporciones titánicas parece esculpida de manera natural en los acantilados que se precipitan hacia un océano borrascoso. Sobre la frente del gigante rocoso descansa una solitaria edificación medieval acariciada por los últimos rayos del ocaso. Representa la memoria ancestral impregnada en la corteza terrestre, donde el pensamiento y la geología se fusionan en un silencio perenne.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:encantado_en_la_piedra"
     },
     {
       "n": 11,
@@ -183,10 +193,11 @@
       "height": 1237,
       "orientation": "portrait",
       "description": "Tres siluetas ciclópeas ataviadas con túnicas sacerdotales de piedra dominan una llanura estéril desde alturas sobrehumanas, proyectando sombras infinitas sobre el suelo. A sus pies, un río de almas diminutas deambula en busca de redención bajo un cielo ocre saturado de niebla. Es una crítica metafísica a los dogmas absolutos y al control moral que las estructuras de poder ejercen sobre el alma humana.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:los_amos_de_la_conciencia"
     },
     {
       "n": 12,
@@ -200,10 +211,11 @@
       "height": 2047,
       "orientation": "portrait",
       "description": "Una barca solitaria navega por aguas calmas de tono esmeralda hacia un portal en ruinas tallado en la roca viva, bañado por el resplandor de un plenilunio dorado. En las cornisas superiores se divisan arcos derruidos y columnas que parecen respirar el aire de la noche. Transmite una atmósfera de serenidad contemplativa y misterio poético ante el silencio absoluto de la naturaleza nocturna.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:nocturno"
     },
     {
       "n": 13,
@@ -217,10 +229,11 @@
       "height": 927,
       "orientation": "landscape",
       "description": "Un guerrero solitario con armadura medieval y capa raída se detiene al borde de un abismo que da paso a una ciudadela colosal suspendida en la niebla. El sendero de roca por el que ha marchado se interrumpe abruptamente sobre un vacío teñido de violeta y oro. Representa la culminación de toda búsqueda heroica o espiritual, donde la fe exige un acto final de entrega ante lo inconmensurable.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:la_cruzada_el_ultimo_paso"
     },
     {
       "n": 14,
@@ -234,10 +247,11 @@
       "height": 1327,
       "orientation": "landscape",
       "description": "Una catedral monumental con arbotantes y agujas infinitas se alza en medio de un mar tempestuoso mientras llamas voraces brotan de sus ventanales principales. En primer plano, escombros calcinados y siluetas desoladas contemplan la hoguera sagrada bajo una noche de tormenta. Funciona como una feroz metáfora sobre el fanatismo religioso y la autodestrucción de las instituciones que sacrifican la compasión en nombre de la pureza.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:los_esplendores_de_la_santa_inquisicion"
     },
     {
       "n": 15,
@@ -251,10 +265,11 @@
       "height": 1026,
       "orientation": "landscape",
       "description": "Un orbe solar de brillo cegador colapsa en el centro del horizonte, desintegrando cordilleras montañosas y estructuras arquitectónicas en una lluvia de esquirlas ardientes. Ondas de choque luminosas barren el páramo mientras el cielo se desgarra en tonalidades de azufre y carmín. Simboliza el fin de un ciclo cósmico y la inevitable disolución de la materia frente a la potencia creadora y destructora del universo.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:aniquilacion"
     },
     {
       "n": 16,
@@ -268,10 +283,11 @@
       "height": 1654,
       "orientation": "portrait",
       "description": "Una figura antropomorfa colosal despierta de un sueño milenario, incorporándose lentamente de la entraña de una montaña rocosa bajo un cielo dorado. Cascadas de polvo y escombros caen de sus hombros mientras la luz del amanecer delinea su rostro severo. Es una alegoría del despertar de la conciencia primigenia y el renacimiento espiritual que quiebra la inercia del tiempo.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:el_despertar"
     },
     {
       "n": 17,
@@ -285,10 +301,11 @@
       "height": 861,
       "orientation": "landscape",
       "description": "Una pasarela de piedra suspendida en el aire conduce hacia una grieta dimensional que desgarra la bóveda celeste, revelando un cosmos de infinitas estrellas y nebulosas. Siluetas humanas contemplan el umbral con temor y asombro desde el borde del abismo terrenal. Plantea el desafío de trascender los límites sensoriales e intelectuales para vislumbrar la realidad trascendente que yace oculta tras las apariencias.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:los_limites_de_la_percepcion"
     },
     {
       "n": 18,
@@ -302,10 +319,11 @@
       "height": 2047,
       "orientation": "portrait",
       "description": "Una figura cadavérica provista de ropajes raídos y guadaña ejecuta un movimiento grácil en medio de un páramo sombrío flanqueado por cipreses espectrales. En el horizonte, una luna baja y cenicienta proyecta un resplandor fantasmal sobre los restos de una antigua civilización. Reinterpreta el motivo renacentista de la danza macabra como un rito cósmico sereno y despojado de dramatismo moralizante.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:danza_de_la_muerte"
     },
     {
       "n": 19,
@@ -319,10 +337,11 @@
       "height": 1650,
       "orientation": "portrait",
       "description": "Un templo excavado directamente en el interior de una colosal gruta volcánica resplandece débilmente con la luz de cirios rituales y brasas subterráneas. Siluetas encapuchadas ascienden por una escalinata escarpada hacia el altar mayor rodeado de estalactitas góticas. Representa el refugio de los saberes arcanos y la comunión espiritual en los rincones más profundos y recónditos de la psique humana.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:santuario_oscuro"
     },
     {
       "n": 20,
@@ -336,10 +355,11 @@
       "height": 1247,
       "orientation": "portrait",
       "description": "Una deidad colosal de materia terrosa y ojos ígneos modela esferas planetarias y masas de luz entre sus dedos titánicos sobre un abismo estelar. La energía creadora emana de su pecho en filamentos dorados que iluminan el caos primigenio del universo en formación. Alude al mito platónico y gnóstico del creador del mundo material, artífice solitario atrapado en su propia obra monumental.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:el_demiurgo"
     },
     {
       "n": 21,
@@ -353,10 +373,11 @@
       "height": 1501,
       "orientation": "portrait",
       "description": "Un peñasco solitario coronado por una única estructura en ruinas emerge de un océano inmóvil teñido de tonos violáceos bajo un crepúsculo eterno. La bruma marina envuelve la base de la roca mientras aves marinas sobrevuelan el almenar en círculos concéntricos. Es una metáfora sobre la soledad existencial y la belleza melancólica del retiro absoluto del bullicio del mundo.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:isla_desierta"
     },
     {
       "n": 22,
@@ -370,10 +391,11 @@
       "height": 662,
       "orientation": "landscape",
       "description": "Una presencia monumental con máscara espectral extiende una mano protectora hacia una figura solitaria que camina por un desierto de dunas rojizas. Un orbe celeste incandescente desciende en el horizonte, bañando el encuentro con una luz dorada y reconfortante. Transmite un mensaje estoico de serenidad ante lo ineludible, transformando el concepto de fatalidad en una guía compasiva.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:no_temas_al_destino"
     },
     {
       "n": 23,
@@ -387,10 +409,11 @@
       "height": 1242,
       "orientation": "portrait",
       "description": "Un peregrino solitario apoyado en su cayado contempla un portal ciclópeo que se abre hacia una planicie luminosa tras cruzar un desfiladero tormentoso. Los riscos sombríos van cediendo paso a una claridad celestial que acaricia las huellas de su largo recorrido. Evoca el término del viaje vital y la llegada al remanso pacífico que aguarda tras una existencia colmada de esfuerzos.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:el_fin_del_camino"
     },
     {
       "n": 24,
@@ -404,10 +427,11 @@
       "height": 1334,
       "orientation": "portrait",
       "description": "Una silueta enigmática con túnica andrajosa camina con paso constante sobre una loma que domina un valle sumido en una densa bruma espectral. A lo lejos, torres góticas y agujas de piedra despuntan como espejismos bajo un cielo cargado de presagios. Simboliza la condición errante de la humanidad, condenada a una búsqueda perpetua de sentido a través de paisajes en constante transformación.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:el_caminante_eterno"
     },
     {
       "n": 25,
@@ -421,10 +445,11 @@
       "height": 1537,
       "orientation": "portrait",
       "description": "Dos rostros gigantescos y enfrentados se funden en una sola estructura escultórica de piedra y raíces sobre un terreno quebrado por grietas de magma. De una de las miradas brota un hilo de agua cristalina, mientras de la otra ascienden columnas de humo negro hacia un cielo tormentoso. Explora la coexistencia irreconciliable y a la vez inseparable entre la creación y la destrucción en la naturaleza humana.",
-      "description_source": "Estate of Mariusz Lewandowski / Catálogo oficial",
+      "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "license": "Uso personal",
       "school": "Surrealismo polaco contemporáneo",
-      "type": "Pintura al óleo sobre lienzo"
+      "type": "Pintura al óleo sobre lienzo",
+      "sourceId": "local:23_mariusz_lewandowski:dualidad_existencial_mordrake"
     }
   ]
 }

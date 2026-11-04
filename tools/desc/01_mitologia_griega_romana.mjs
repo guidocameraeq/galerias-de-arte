@@ -3,6 +3,7 @@
 export default [
   {
     "n": 1,
+    "id": "Q1212861",
     "titulo": "El nacimiento de Venus",
     "escuela": "Academicismo francés",
     "tipo": "Óleo sobre lienzo",
@@ -10,6 +11,7 @@ export default [
   },
   {
     "n": 2,
+    "id": "437891",
     "titulo": "Marte y Venus unidos por el amor",
     "escuela": "Renacimiento veneciano",
     "tipo": "Óleo sobre lienzo",
@@ -17,6 +19,7 @@ export default [
   },
   {
     "n": 3,
+    "id": "Q1988152",
     "titulo": "Venus y Adonis",
     "escuela": "Renacimiento veneciano",
     "tipo": "Óleo sobre lienzo",
@@ -24,6 +27,7 @@ export default [
   },
   {
     "n": 4,
+    "id": "Q19911410",
     "titulo": "El rapto de las sabinas",
     "escuela": "Clasicismo barroco francés",
     "tipo": "Óleo sobre lienzo",
@@ -31,6 +35,7 @@ export default [
   },
   {
     "n": 5,
+    "id": "Q17305067",
     "titulo": "Pigmalión y Galatea",
     "escuela": "Academicismo francés",
     "tipo": "Óleo sobre lienzo",
@@ -38,6 +43,7 @@ export default [
   },
   {
     "n": 6,
+    "id": "Q680075",
     "titulo": "Apolo Sauróctono (el Apolo de Cleveland)",
     "escuela": "Arte griego clásico",
     "tipo": "Bronce",
@@ -45,6 +51,7 @@ export default [
   },
   {
     "n": 7,
+    "id": "Q3201883",
     "titulo": "Cupido y Psique",
     "escuela": "Neoclasicismo",
     "tipo": "Óleo sobre lienzo",
@@ -52,6 +59,7 @@ export default [
   },
   {
     "n": 8,
+    "id": "Q151047",
     "titulo": "El nacimiento de Venus",
     "escuela": "Primer Renacimiento florentino",
     "tipo": "Temple sobre lienzo",
@@ -59,6 +67,7 @@ export default [
   },
   {
     "n": 9,
+    "id": "Q549847",
     "titulo": "La primavera",
     "escuela": "Primer Renacimiento florentino",
     "tipo": "Temple sobre tabla",
@@ -66,6 +75,7 @@ export default [
   },
   {
     "n": 11,
+    "id": "Q1206860",
     "titulo": "Baco y Ariadna",
     "escuela": "Renacimiento veneciano",
     "tipo": "Óleo sobre lienzo",
@@ -73,6 +83,7 @@ export default [
   },
   {
     "n": 12,
+    "id": "Q3632485",
     "titulo": "La bacanal de los andrios",
     "museo": "Museo del Prado, Madrid",
     "escuela": "Renacimiento veneciano",
@@ -81,6 +92,7 @@ export default [
   },
   {
     "n": 13,
+    "id": "Q2011510",
     "titulo": "Baco",
     "escuela": "Barroco (tenebrismo)",
     "tipo": "Óleo sobre lienzo",
@@ -88,6 +100,7 @@ export default [
   },
   {
     "n": 14,
+    "id": "Q3731236",
     "titulo": "Hércules y la Hidra",
     "escuela": "Primer Renacimiento florentino",
     "tipo": "Temple sobre tabla",
@@ -95,6 +108,7 @@ export default [
   },
   {
     "n": 15,
+    "id": "Q3731225",
     "titulo": "Hércules y Anteo",
     "museo": "Museo Nacional del Bargello, Florencia",
     "escuela": "Primer Renacimiento florentino",
@@ -103,6 +117,7 @@ export default [
   },
   {
     "n": 16,
+    "id": "Q21743202",
     "titulo": "Medusa",
     "escuela": "Barroco (tenebrismo)",
     "tipo": "Óleo sobre cuero montado en madera",
@@ -110,6 +125,7 @@ export default [
   },
   {
     "n": 17,
+    "id": "Q3900153",
     "titulo": "Perseo y Andrómeda",
     "museo": "Wallace Collection, Londres",
     "escuela": "Renacimiento veneciano",
@@ -118,6 +134,7 @@ export default [
   },
   {
     "n": 18,
+    "id": "Q2426058",
     "titulo": "Palas y el centauro",
     "escuela": "Primer Renacimiento florentino",
     "tipo": "Temple sobre lienzo",
@@ -125,6 +142,7 @@ export default [
   },
   {
     "n": 19,
+    "id": "Q2528177",
     "titulo": "Diana y Acteón",
     "escuela": "Renacimiento veneciano",
     "tipo": "Óleo sobre lienzo",
@@ -132,6 +150,7 @@ export default [
   },
   {
     "n": 20,
+    "id": "Q18761379",
     "titulo": "Diana cazadora",
     "museo": "Museo del Louvre, París",
     "escuela": "Escuela de Fontainebleau (manierismo)",
@@ -140,6 +159,7 @@ export default [
   },
   {
     "n": 21,
+    "id": "Q18002417",
     "titulo": "El rapto de Europa",
     "museo": "Isabella Stewart Gardner Museum, Boston",
     "escuela": "Renacimiento veneciano",
@@ -148,6 +168,7 @@ export default [
   },
   {
     "n": 22,
+    "id": "Q97378803",
     "titulo": "La caída de los gigantes",
     "escuela": "Manierismo",
     "tipo": "Fresco",
@@ -155,6 +176,7 @@ export default [
   },
   {
     "n": 23,
+    "id": "Q16944352",
     "titulo": "Prometeo encadenado",
     "escuela": "Barroco",
     "tipo": "Óleo sobre lienzo",
@@ -162,6 +184,7 @@ export default [
   },
   {
     "n": 24,
+    "id": "Q5332757",
     "titulo": "Eco y Narciso",
     "museo": "Walker Art Gallery, Liverpool",
     "escuela": "Prerrafaelismo tardío",
@@ -170,6 +193,7 @@ export default [
   },
   {
     "n": 25,
+    "id": "Q1247110",
     "titulo": "Paisaje con la caída de Ícaro",
     "museo": "Museos Reales de Bellas Artes, Bruselas",
     "escuela": "Renacimiento flamenco",
@@ -178,6 +202,7 @@ export default [
   },
   {
     "n": 26,
+    "id": "Q871812",
     "titulo": "El lamento por Ícaro",
     "museo": "Tate, Londres",
     "escuela": "Academicismo victoriano",
@@ -186,6 +211,7 @@ export default [
   },
   {
     "n": 27,
+    "id": "File:John William Waterhouse - Pandora, 1896.jpg",
     "titulo": "Pandora",
     "museo": "Colección privada",
     "escuela": "Prerrafaelismo tardío",
@@ -194,6 +220,7 @@ export default [
   },
   {
     "n": 28,
+    "id": "Q140053192",
     "titulo": "Dánae",
     "museo": "Museo del Prado, Madrid",
     "escuela": "Renacimiento veneciano",
@@ -202,6 +229,7 @@ export default [
   },
   {
     "n": 29,
+    "id": "Q117834559",
     "titulo": "Orfeo",
     "museo": "Museo de Orsay, París",
     "escuela": "Simbolismo",
@@ -210,6 +238,7 @@ export default [
   },
   {
     "n": 30,
+    "id": "Q3555076",
     "titulo": "Las ninfas y el sátiro",
     "escuela": "Academicismo francés",
     "tipo": "Óleo sobre lienzo",
@@ -217,6 +246,7 @@ export default [
   },
   {
     "n": 31,
+    "id": "Q599034",
     "titulo": "Perseo con la cabeza de Medusa",
     "museo": "Loggia dei Lanzi, Florencia",
     "escuela": "Manierismo",
@@ -225,6 +255,7 @@ export default [
   },
   {
     "n": 32,
+    "id": "Q945850",
     "titulo": "Apolo y Dafne",
     "escuela": "Barroco",
     "tipo": "Escultura en mármol",
@@ -232,6 +263,7 @@ export default [
   },
   {
     "n": 33,
+    "id": "Q2352789",
     "titulo": "El rapto de Proserpina",
     "escuela": "Barroco",
     "tipo": "Escultura en mármol",
@@ -239,6 +271,7 @@ export default [
   },
   {
     "n": 34,
+    "id": "File:Psyche Revived by Cupid's Kiss, Louvre 22 July 2017.jpg",
     "titulo": "Psique reanimada por el beso del Amor",
     "escuela": "Neoclasicismo",
     "tipo": "Escultura en mármol",
@@ -246,6 +279,7 @@ export default [
   },
   {
     "n": 35,
+    "id": "Q19911412",
     "titulo": "Venus y el tañedor de laúd",
     "escuela": "Renacimiento veneciano",
     "tipo": "Óleo sobre lienzo",
@@ -253,6 +287,7 @@ export default [
   },
   {
     "n": 36,
+    "id": "Q18602282",
     "titulo": "Pomona",
     "escuela": "Barroco francés",
     "tipo": "Óleo sobre lienzo",
@@ -260,6 +295,7 @@ export default [
   },
   {
     "n": 37,
+    "id": "Q116289882",
     "titulo": "Estatua de Afrodita con Eros alado",
     "escuela": "Arte griego (chipriota)",
     "tipo": "Piedra caliza",
@@ -267,6 +303,7 @@ export default [
   },
   {
     "n": 38,
+    "id": "Q43225675",
     "titulo": "Sin Ceres y Baco, Venus se hiela",
     "museo": "Nationalmuseum, Estocolmo",
     "escuela": "Barroco",
@@ -275,6 +312,7 @@ export default [
   },
   {
     "n": 39,
+    "id": "Q18572424",
     "titulo": "Hércules y Aqueloo",
     "escuela": "Barroco",
     "tipo": "Óleo sobre lienzo",
@@ -282,6 +320,7 @@ export default [
   },
   {
     "n": 40,
+    "id": "Q79173133",
     "titulo": "El encantamiento de Apolo",
     "escuela": "Academicismo británico",
     "tipo": "Óleo sobre lienzo",
@@ -289,6 +328,7 @@ export default [
   },
   {
     "n": 41,
+    "id": "204504",
     "titulo": "Hércules disparando a las aves del Estínfalo",
     "escuela": "Renacimiento (bronce)",
     "tipo": "Bronce",
@@ -296,6 +336,7 @@ export default [
   },
   {
     "n": 42,
+    "id": "File:John Flaxman - Apollo Preceding Hector with His Aegis, and Dispersing the Greeks, Fuseli's Lectures - Google Art Project.jpg",
     "titulo": "Apolo precediendo a Héctor",
     "escuela": "Neoclasicismo",
     "tipo": "Grabado",
@@ -303,6 +344,7 @@ export default [
   },
   {
     "n": 43,
+    "id": "Q19911988",
     "titulo": "Diana y Cupido",
     "escuela": "Rococó",
     "tipo": "Óleo sobre lienzo",
@@ -310,6 +352,7 @@ export default [
   },
   {
     "n": 44,
+    "id": "Q63716160",
     "titulo": "Júpiter y Mercurio en casa de Filemón y Baucis",
     "escuela": "Barroco flamenco",
     "tipo": "Óleo sobre lienzo",
@@ -317,6 +360,7 @@ export default [
   },
   {
     "n": 45,
+    "id": "208568",
     "titulo": "El reino de Júpiter",
     "escuela": "Manierismo",
     "tipo": "Óleo sobre lienzo",
@@ -324,6 +368,7 @@ export default [
   },
   {
     "n": 46,
+    "id": "Q4009580",
     "titulo": "Venus y Cupido",
     "escuela": "Academicismo británico",
     "tipo": "Óleo sobre lienzo",
@@ -331,6 +376,7 @@ export default [
   },
   {
     "n": 47,
+    "id": "761114",
     "titulo": "Mercurio y Cupido",
     "escuela": "Barroco",
     "tipo": "Bronce",
@@ -338,6 +384,7 @@ export default [
   },
   {
     "n": 48,
+    "id": "File:Apollo leads Beatrice of Burgundy as a bride to Frederick I, Holy Roman Emperor, Giovanni Battista Tiepolo, 1751, fresco - Mainfränkisches Museum - Würzburg, Germany - DSC04585.jpg",
     "titulo": "Apolo conduce a Beatriz de Borgoña",
     "museo": "Residencia de Würzburg, Alemania",
     "escuela": "Rococó",
@@ -346,6 +393,7 @@ export default [
   },
   {
     "n": 49,
+    "id": "Q655705",
     "titulo": "Los músicos",
     "escuela": "Barroco (tenebrismo)",
     "tipo": "Óleo sobre lienzo",
@@ -353,6 +401,7 @@ export default [
   },
   {
     "n": 50,
+    "id": "Q20810155",
     "titulo": "Pomona",
     "escuela": "Manierismo flamenco",
     "tipo": "Óleo sobre tabla",
@@ -360,6 +409,7 @@ export default [
   },
   {
     "n": 51,
+    "id": "Q22116969",
     "titulo": "Tritón y nereida",
     "escuela": "Renacimiento (bronce)",
     "tipo": "Bronce",
@@ -367,6 +417,7 @@ export default [
   },
   {
     "n": 52,
+    "id": "Q20179995",
     "titulo": "Paisaje con la educación de Baco",
     "escuela": "Rococó",
     "tipo": "Óleo sobre lienzo",
@@ -374,6 +425,7 @@ export default [
   },
   {
     "n": 53,
+    "id": "Q19912110",
     "titulo": "Dos tritones en el banquete de Aqueloo",
     "escuela": "Barroco flamenco",
     "tipo": "Óleo sobre lienzo",
@@ -381,6 +433,7 @@ export default [
   },
   {
     "n": 54,
+    "id": "Q17335878",
     "titulo": "Pomona recibe la cosecha de frutas",
     "escuela": "Manierismo (Haarlem)",
     "tipo": "Óleo sobre lienzo",
@@ -388,6 +441,7 @@ export default [
   },
   {
     "n": 55,
+    "id": "Q19911452",
     "titulo": "El juicio de Paris",
     "escuela": "Renacimiento alemán",
     "tipo": "Óleo sobre tabla",
@@ -395,6 +449,7 @@ export default [
   },
   {
     "n": 56,
+    "id": "File:Bacchus and Silenus BM 1899.2-15.1 n01.jpg",
     "titulo": "Baco y Sileno (relieve romano)",
     "museo": "Museo Británico, Londres",
     "escuela": "Arte romano",
@@ -403,6 +458,7 @@ export default [
   },
   {
     "n": 57,
+    "id": "361888",
     "titulo": "Cupido con las armas de Marte",
     "escuela": "Manierismo",
     "tipo": "Grabado",
@@ -410,6 +466,7 @@ export default [
   },
   {
     "n": 58,
+    "id": "File:Mercury, Flora & Dis Pater (Pluto).jpg",
     "titulo": "Mercurio, Flora y Plutón",
     "escuela": "Barroco tardío",
     "tipo": "Fresco",
@@ -417,6 +474,7 @@ export default [
   },
   {
     "n": 59,
+    "id": "257864",
     "titulo": "Cabeza de Zeus Amón",
     "escuela": "Arte romano",
     "tipo": "Mármol",
@@ -424,6 +482,7 @@ export default [
   },
   {
     "n": 60,
+    "id": "File:Bacchus and Silenus BM 1899.2-15.1 n02.jpg",
     "titulo": "Baco y Sileno (relieve romano II)",
     "museo": "Museo Británico, Londres",
     "escuela": "Arte romano",
@@ -432,6 +491,7 @@ export default [
   },
   {
     "n": 61,
+    "id": "File:Prometheus and Apollo (Hansen).jpg",
     "titulo": "Prometeo y Apolo",
     "museo": "Universidad de Copenhague",
     "escuela": "Siglo de Oro danés",
@@ -440,6 +500,7 @@ export default [
   },
   {
     "n": 62,
+    "id": "File:ChampaigneSinCerere.jpg",
     "titulo": "Sin Ceres y Baco, Venus se hiela",
     "museo": "Musée du Grand Siècle, Saint-Cloud",
     "escuela": "Clasicismo francés",
@@ -448,6 +509,7 @@ export default [
   },
   {
     "n": 63,
+    "id": "Q20267653",
     "titulo": "Apolo concede a Faetón conducir el carro del Sol",
     "escuela": "Barroco",
     "tipo": "Óleo sobre lienzo",
@@ -455,6 +517,7 @@ export default [
   },
   {
     "n": 64,
+    "id": "File:The Birth of Bacchus by Giulio Pippi, Getty Center.JPG",
     "titulo": "El nacimiento de Baco",
     "museo": "Museo J. Paul Getty, Los Ángeles",
     "escuela": "Manierismo",
@@ -463,6 +526,7 @@ export default [
   },
   {
     "n": 65,
+    "id": "File:Beneš Knüpfer, The Mermaid.jpg",
     "titulo": "La sirena",
     "escuela": "Romanticismo",
     "tipo": "Óleo sobre lienzo",
@@ -470,6 +534,7 @@ export default [
   },
   {
     "n": 70,
+    "id": "Q408623",
     "titulo": "Loba capitolina",
     "anio": "0500 a.C.",
     "museo": "Museos Capitolinos, Roma",
@@ -479,6 +544,7 @@ export default [
   },
   {
     "n": 75,
+    "id": "File:Venus and Mars National Gallery.jpg",
     "titulo": "Marte y Venus",
     "anio": "1485",
     "museo": "National Gallery, Londres",
@@ -488,6 +554,7 @@ export default [
   },
   {
     "n": 76,
+    "id": "File:Titian (Tiziano Vecellio) - Diana and Callisto - NG 6616 - National Gallery.jpg",
     "titulo": "Diana y Calisto",
     "anio": "1559",
     "museo": "National Gallery, Londres / Galerías Nacionales de Escocia",
@@ -497,6 +564,7 @@ export default [
   },
   {
     "n": 77,
+    "id": "File:Tizian - Apollón a Marsyas, zámek Kroměříž 1.jpg",
     "titulo": "El castigo de Marsias",
     "anio": "1576",
     "museo": "Palacio Arzobispal de Kroměříž, República Checa",
@@ -506,6 +574,7 @@ export default [
   },
   {
     "n": 78,
+    "id": "File:Jacopo Tintoretto - The Origin of the Milky Way - Google Art Project.jpg",
     "titulo": "El origen de la Vía Láctea",
     "anio": "1575",
     "museo": "National Gallery, Londres",
@@ -515,6 +584,7 @@ export default [
   },
   {
     "n": 79,
+    "id": "File:Angelo Bronzino - Venus, Cupid, Folly and Time - National Gallery, London.jpg",
     "titulo": "Alegoría del triunfo de Venus",
     "anio": "1545",
     "museo": "National Gallery, Londres",
@@ -524,6 +594,7 @@ export default [
   },
   {
     "n": 80,
+    "id": "File:Narcissus-Caravaggio (1594-96).jpg",
     "titulo": "Narciso",
     "anio": "1599",
     "museo": "Galleria Nazionale d'Arte Antica (Palazzo Barberini), Roma",
@@ -533,6 +604,7 @@ export default [
   },
   {
     "n": 81,
+    "id": "File:Peter Paul Rubens - The Judgement of Paris - Google Art Project.jpg",
     "titulo": "El juicio de Paris",
     "anio": "1635",
     "museo": "National Gallery, Londres",
@@ -542,6 +614,7 @@ export default [
   },
   {
     "n": 82,
+    "id": "File:Peter Paul Rubens - The Fall of Phaeton (National Gallery of Art).jpg",
     "titulo": "La caída de Faetón",
     "anio": "1605",
     "museo": "National Gallery of Art, Washington",
@@ -551,6 +624,7 @@ export default [
   },
   {
     "n": 83,
+    "id": "File:Rubens saturn.jpg",
     "titulo": "Saturno devorando a su hijo",
     "anio": "1636",
     "museo": "Museo del Prado, Madrid",
@@ -560,6 +634,7 @@ export default [
   },
   {
     "n": 84,
+    "id": "File:Velázquez - Dios Marte (Museo del Prado, 1639-41).jpg",
     "titulo": "Marte descansando",
     "anio": "1640",
     "museo": "Museo del Prado, Madrid",
@@ -569,6 +644,7 @@ export default [
   },
   {
     "n": 85,
+    "id": "File:Fábula de Mercurio y Argos, by Diego Velázquez.jpg",
     "titulo": "Mercurio y Argos",
     "anio": "1659",
     "museo": "Museo del Prado, Madrid",
@@ -578,6 +654,7 @@ export default [
   },
   {
     "n": 86,
+    "id": "File:Nicolas Poussin - The Empire of Flora - Google Art Project.jpg",
     "titulo": "El reino de Flora",
     "anio": "1631",
     "museo": "Gemäldegalerie Alte Meister, Dresde",
@@ -587,6 +664,7 @@ export default [
   },
   {
     "n": 87,
+    "id": "File:The dance to the music of time c. 1640.jpg",
     "titulo": "Una danza para la música del tiempo",
     "anio": "1636",
     "museo": "Wallace Collection, Londres",
@@ -596,6 +674,7 @@ export default [
   },
   {
     "n": 88,
+    "id": "File:Guido Reni, Atalanta e Ippomene, Madrid, Museo del Prado.jpg",
     "titulo": "Atalanta e Hipómenes",
     "anio": "1618",
     "museo": "Museo del Prado, Madrid",
@@ -605,6 +684,7 @@ export default [
   },
   {
     "n": 89,
+    "id": "File:Rembrandt - The Abduction of Ganymede - Google Art Project.jpg",
     "titulo": "El rapto de Ganimedes",
     "anio": "1635",
     "museo": "Gemäldegalerie Alte Meister, Dresde",
@@ -614,6 +694,7 @@ export default [
   },
   {
     "n": 90,
+    "id": "File:Alexandre Cabanel Phèdre.jpg",
     "titulo": "Fedra",
     "anio": "1880",
     "museo": "Musée Fabre, Montpellier",
@@ -623,6 +704,7 @@ export default [
   },
   {
     "n": 91,
+    "id": "File:Frederic Lord, Leighton - The Bath of Psyche - Google Art Project.jpg",
     "titulo": "El baño de Psique",
     "anio": "1890",
     "museo": "Tate Britain, Londres",
@@ -632,6 +714,7 @@ export default [
   },
   {
     "n": 92,
+    "id": "File:John William Waterhouse - Hylas and the Nymphs (1896).jpg",
     "titulo": "Hilas y las ninfas",
     "anio": "1896",
     "museo": "Manchester Art Gallery",
@@ -641,6 +724,7 @@ export default [
   },
   {
     "n": 93,
+    "id": "File:The Baleful Head - Edward Burne-Jones.jpg",
     "titulo": "La cabeza funesta (Serie de Perseo)",
     "anio": "1887",
     "museo": "Staatsgalerie Stuttgart",
@@ -650,6 +734,7 @@ export default [
   },
   {
     "n": 94,
+    "id": "File:Jupiter and Semele by Gustave Moreau.jpg",
     "titulo": "Júpiter y Sémele",
     "anio": "1895",
     "museo": "Musée Gustave Moreau, París",
@@ -659,6 +744,7 @@ export default [
   },
   {
     "n": 95,
+    "id": "File:Jacques-louis david, combattimento di minerva e marte, schizzo.jpg",
     "titulo": "El combate de Marte y Minerva",
     "anio": "1771",
     "museo": "Museo del Louvre, París",
@@ -668,6 +754,7 @@ export default [
   },
   {
     "n": 96,
+    "id": "File:Granet011 Ingres Jupiter & Thétis.jpg",
     "titulo": "Júpiter y Tetis",
     "anio": "1811",
     "museo": "Musée Granet, Aix-en-Provence",
@@ -677,6 +764,7 @@ export default [
   },
   {
     "n": 97,
+    "id": "File:Rubens Vía Láctea.jpg",
     "titulo": "El nacimiento de la Vía Láctea",
     "anio": "1637",
     "museo": "Museo del Prado, Madrid",
@@ -686,6 +774,7 @@ export default [
   },
   {
     "n": 98,
+    "id": "File:Caravaggio - Cupid as Victor - Google Art Project.jpg",
     "titulo": "Amor vincit omnia",
     "anio": "1602",
     "museo": "Gemäldegalerie, Berlín",
@@ -695,6 +784,7 @@ export default [
   },
   {
     "n": 99,
+    "id": "File:Annibale Carracci, Hercules at the Crossroads, brighter.jpg",
     "titulo": "Hércules en la encrucijada",
     "anio": "1596",
     "museo": "Museo de Capodimonte, Nápoles",
@@ -704,6 +794,7 @@ export default [
   },
   {
     "n": 100,
+    "id": "File:The Triumph of Bacchus and Ariadne - Annibale Carracci - 1597 - Farnese Gallery, Rome.jpg",
     "titulo": "El triunfo de Baco y Ariadna",
     "anio": "1602",
     "museo": "Palacio Farnese, Roma",
@@ -713,6 +804,7 @@ export default [
   },
   {
     "n": 101,
+    "id": "File:Mars and Venus Surprised by Vulcan - Tintoretto.jpg",
     "titulo": "Venus y Marte sorprendidos por Vulcano",
     "anio": "1551",
     "museo": "Alte Pinakothek, Múnich",
@@ -722,6 +814,7 @@ export default [
   },
   {
     "n": 102,
+    "id": "File:Nicolas Poussin - Cephalus and Aurora - Google Art Project.jpg",
     "titulo": "Céfalo y Aurora",
     "anio": "1630",
     "museo": "National Gallery, Londres",
@@ -731,6 +824,7 @@ export default [
   },
   {
     "n": 103,
+    "id": "File:The Sleep of Endymion - Girodet (Louvre INV 4935).jpg",
     "titulo": "El sueño de Endimión",
     "anio": "1791",
     "museo": "Museo del Louvre, París",
@@ -740,6 +834,7 @@ export default [
   },
   {
     "n": 104,
+    "id": "File:The Love of Paris and Helen by Jacques-Louis David.jpg",
     "titulo": "Los amores de Paris y Helena",
     "anio": "1788",
     "museo": "Museo del Louvre, París",
@@ -749,6 +844,7 @@ export default [
   },
   {
     "n": 105,
+    "id": "File:Circe Offering the Cup to Odysseus (2457 x 4023px ed.).jpg",
     "titulo": "Circe ofreciendo la copa a Ulises",
     "anio": "1891",
     "museo": "Gallery Oldham, Gran Mánchester",
@@ -758,6 +854,7 @@ export default [
   },
   {
     "n": 106,
+    "id": "File:Circe Invidiosa - John William Waterhouse.jpg",
     "titulo": "Circe Invidiosa",
     "anio": "1892",
     "museo": "Art Gallery of South Australia, Adelaida",
@@ -767,6 +864,7 @@ export default [
   },
   {
     "n": 107,
+    "id": "File:Herbert James Draper, Ulysses and the Sirens, 1909.jpg",
     "titulo": "Ulises y las sirenas",
     "anio": "1909",
     "museo": "Ferens Art Gallery, Kingston upon Hull",
@@ -776,6 +874,7 @@ export default [
   },
   {
     "n": 108,
+    "id": "File:Burne-Jones, Edward - The Mirror of Venus - 1875 - hi res.jpg",
     "titulo": "El espejo de Venus",
     "anio": "1875",
     "museo": "Museo Calouste Gulbenkian, Lisboa",
@@ -785,6 +884,7 @@ export default [
   },
   {
     "n": 109,
+    "id": "File:Helen of Troy.jpg",
     "titulo": "Helena de Troya",
     "anio": "1898",
     "museo": "The De Morgan Foundation, Londres",
@@ -794,6 +894,7 @@ export default [
   },
   {
     "n": 110,
+    "id": "File:Ceiling of the Room of the giants in Palazzo Te, Mantua.jpg",
     "titulo": "La asamblea de los dioses en el Olimpo",
     "anio": "1532-1534",
     "museo": "Palacio del Té, Mantua",
@@ -803,6 +904,7 @@ export default [
   },
   {
     "n": 111,
+    "id": "File:Cornelis Cornelisz. van Haarlem - The Fall of the Titans - Google Art Project.jpg",
     "titulo": "La caída de los Titanes",
     "anio": "1588-1590",
     "museo": "Statens Museum for Kunst, Copenhague",
@@ -812,6 +914,7 @@ export default [
   },
   {
     "n": 112,
+    "id": "File:Joachim Antonisz. Wtewael - The Battle between the Gods and the Giants - 1986.426 - Art Institute of Chicago.jpg",
     "titulo": "La batalla entre los dioses y los titanes",
     "anio": "1600",
     "museo": "Instituto de Arte de Chicago",
@@ -821,6 +924,7 @@ export default [
   },
   {
     "n": 113,
+    "id": "File:The fall of the giants by Peter Paul Rubens.jpg",
     "titulo": "La caída de los gigantes",
     "anio": "1637-1638",
     "museo": "Museos Reales de Bellas Artes de Bélgica, Bruselas",
@@ -830,6 +934,7 @@ export default [
   },
   {
     "n": 114,
+    "id": "File:Le Combat de l'Amour et de la Chasteté - Le Pérugin - Musée du Louvre Peintures INV 722 ; MR 401.jpg",
     "titulo": "El combate del Amor y la Castidad",
     "anio": "1503",
     "museo": "Museo del Louvre, París",
@@ -839,6 +944,7 @@ export default [
   },
   {
     "n": 115,
+    "id": "File:Heinrich fueger 1817 prometheus brings fire to mankindFXD.jpg",
     "titulo": "Prometeo entrega el fuego a la humanidad",
     "anio": "1817",
     "museo": "Museo Liechtenstein, Viena",
@@ -848,6 +954,7 @@ export default [
   },
   {
     "n": 116,
+    "id": "File:Perino Caida de los gigantes.jpg",
     "titulo": "La caída de los gigantes (Villa del Principe)",
     "anio": "1531-1533",
     "museo": "Villa del Principe (Palacio Doria), Génova",
@@ -857,6 +964,7 @@ export default [
   },
   {
     "n": 117,
+    "id": "File:Ingres Jupiter and Antiope.jpg",
     "titulo": "Júpiter y Antíope",
     "anio": "1851",
     "museo": "Musée d'Orsay, París / Musée Ingres-Bourdelle, Montauban",
@@ -866,6 +974,7 @@ export default [
   },
   {
     "n": 118,
+    "id": "File:Hércules lucha con el león de Nemea, por Zurbarán.jpg",
     "titulo": "Hércules y el león de Nemea",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -875,6 +984,7 @@ export default [
   },
   {
     "n": 119,
+    "id": "File:Hércules lucha con la hidra de Lerna, por Zurbarán.jpg",
     "titulo": "Hércules y la hidra de Lerna",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -884,6 +994,7 @@ export default [
   },
   {
     "n": 120,
+    "id": "File:Hércules y el jabalí de Erimanto, por Zurbarán.jpg",
     "titulo": "Hércules y el jabalí de Erimanto",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -893,6 +1004,7 @@ export default [
   },
   {
     "n": 121,
+    "id": "File:Hércules y el toro de Creta, por Zurbarán.jpg",
     "titulo": "Hércules y el toro de Creta",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -902,6 +1014,7 @@ export default [
   },
   {
     "n": 122,
+    "id": "File:Hércules desvía el curso del río Alfeo, por Zurbarán.jpg",
     "titulo": "Hércules desvía el curso del río Alfeo",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -911,6 +1024,7 @@ export default [
   },
   {
     "n": 123,
+    "id": "File:Hércules y el Cancerbero, por Zurbarán.jpg",
     "titulo": "Hércules y el can Cerbero",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -920,6 +1034,7 @@ export default [
   },
   {
     "n": 124,
+    "id": "File:Hércules separa los montes Calpe y Abyla, por Zurbarán.jpg",
     "titulo": "Hércules separa los montes Calpe y Ábila",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -929,6 +1044,7 @@ export default [
   },
   {
     "n": 125,
+    "id": "File:Hércules luchando con Anteo, por Zurbarán.jpg",
     "titulo": "Hércules y Anteo",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -938,6 +1054,7 @@ export default [
   },
   {
     "n": 126,
+    "id": "File:Hércules vence al rey Gerión, por Zurbarán.jpg",
     "titulo": "Hércules vence a Gerión",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -947,6 +1064,7 @@ export default [
   },
   {
     "n": 127,
+    "id": "File:Muerte de Hércules, por Zurbarán.jpg",
     "titulo": "La muerte de Hércules en la pira",
     "anio": "1634",
     "museo": "Museo del Prado, Madrid",
@@ -956,6 +1074,7 @@ export default [
   },
   {
     "n": 128,
+    "id": "File:Guido reni, storie di ercole,deianira rapita da nesso, 1617-21.JPG",
     "titulo": "El rapto de Deyanira por el centauro Neso",
     "anio": "1620-1621",
     "museo": "Museo del Louvre, París",
@@ -965,6 +1084,7 @@ export default [
   },
   {
     "n": 129,
+    "id": "File:Antonio del Pollaiolo - Ercole e Anteo.jpg",
     "titulo": "Hércules y Anteo (Uffizi)",
     "anio": "1475",
     "museo": "Galería de los Uffizi, Florencia",
@@ -974,6 +1094,7 @@ export default [
   },
   {
     "n": 130,
+    "id": "File:Reni - Hercule sur le bûcher, INV 538 ; MR 287.jpg",
     "titulo": "Hércules en la pira",
     "anio": "1617-1619",
     "museo": "Museo del Louvre, París",
@@ -983,6 +1104,7 @@ export default [
   },
   {
     "n": 131,
+    "id": "File:Gustave Moreau - Diomède dévoré par ses chevaux.jpg",
     "titulo": "Diomedes devorado por sus caballos",
     "anio": "1865",
     "museo": "Musée des Beaux-Arts, Ruan",
@@ -992,6 +1114,7 @@ export default [
   },
   {
     "n": 132,
+    "id": "File:Peter Paul Rubens - Perseus and Andromeda (Hermitage Museum).jpg",
     "titulo": "Perseo y Andrómeda",
     "anio": "1622",
     "museo": "Museo del Hermitage, San Petersburgo",
@@ -1001,6 +1124,7 @@ export default [
   },
   {
     "n": 133,
+    "id": "File:Peter Paul Rubens, , Kunsthistorisches Museum Wien, Gemäldegalerie - Haupt der Medusa - GG 3834 - Kunsthistorisches Museum.jpg",
     "titulo": "La cabeza de Medusa",
     "anio": "1618",
     "museo": "Kunsthistorisches Museum, Viena",
@@ -1010,6 +1134,7 @@ export default [
   },
   {
     "n": 134,
+    "id": "File:Luca giordano, perseo pietrifica phineas e i suoi seguaci, 1680-84 ca. 01.jpg",
     "titulo": "Perseo petrificando a Fineo y sus secuaces",
     "anio": "1680-1684",
     "museo": "National Gallery, Londres",
@@ -1019,6 +1144,7 @@ export default [
   },
   {
     "n": 135,
+    "id": "File:Piero di Cosimo, Perseus frees Andromeda, 1536, Uffizi-wfr.jpg",
     "titulo": "Perseo liberando a Andrómeda (Uffizi)",
     "anio": "1510-1515",
     "museo": "Galería de los Uffizi, Florencia",
@@ -1028,6 +1154,7 @@ export default [
   },
   {
     "n": 136,
+    "id": "File:Edward Burne-Jones (1833-1898) - The Doom Fulfilled - SOTAG , 106 - Southampton City Art Gallery.jpg",
     "titulo": "El destino cumplido (Perseo y el monstruo marino)",
     "anio": "1888",
     "museo": "Galería de Arte de la Ciudad de Southampton",
@@ -1037,6 +1164,7 @@ export default [
   },
   {
     "n": 137,
+    "id": "File:George Frederic Watts - The Minotaur - Google Art Project.jpg",
     "titulo": "El Minotauro",
     "anio": "1885",
     "museo": "Tate Britain, Londres",
@@ -1046,6 +1174,7 @@ export default [
   },
   {
     "n": 138,
+    "id": "File:Titian - Tityus, 1548-1549.jpg",
     "titulo": "Ticio en el Tártaro",
     "anio": "1548-1549",
     "museo": "Museo del Prado, Madrid",
@@ -1055,6 +1184,7 @@ export default [
   },
   {
     "n": 139,
+    "id": "File:Titian - Sisyphus - Madrid - Prado.jpg",
     "titulo": "Sísifo en el Tártaro",
     "anio": "1548-1549",
     "museo": "Museo del Prado, Madrid",
@@ -1064,6 +1194,7 @@ export default [
   },
   {
     "n": 140,
+    "id": "File:Ixion by Jusepe de Ribera (1632).jpg",
     "titulo": "Ixión en la rueda infernal",
     "anio": "1632",
     "museo": "Museo del Prado, Madrid",
@@ -1073,6 +1204,7 @@ export default [
   },
   {
     "n": 141,
+    "id": "File:Aeneas and the Sibyl in the Underworld MET DP234687.jpg",
     "titulo": "Eneas y la Sibila en el Inframundo",
     "anio": "1598",
     "museo": "Metropolitan Museum of Art, Nueva York",
@@ -1082,6 +1214,7 @@ export default [
   },
   {
     "n": 142,
+    "id": "File:Eugène delacroix, medea furiosa, ante 1838.jpg",
     "titulo": "Medea furiosa",
     "anio": "1838",
     "museo": "Palais des Beaux-Arts de Lille / Museo del Louvre",
@@ -1091,6 +1224,7 @@ export default [
   },
   {
     "n": 143,
+    "id": "File:Giovanni Battista Tiepolo - The Sacrifice of Iphigenia - Villa Valmarana.jpg",
     "titulo": "El sacrificio de Ifigenia",
     "anio": "1757",
     "museo": "Villa Valmarana ai Nani, Vicenza",
@@ -1100,6 +1234,7 @@ export default [
   },
   {
     "n": 144,
+    "id": "File:The Procession of the Trojan Horse in Troy by Giovanni Domenico Tiepolo (cropped).jpg",
     "titulo": "La entrada del caballo de Troya",
     "anio": "1760",
     "museo": "National Gallery, Londres",
@@ -1109,6 +1244,7 @@ export default [
   },
   {
     "n": 145,
+    "id": "File:Jacques-louis david, i funerali di patrocolo, 1778, 02.jpg",
     "titulo": "Los funerales de Patroclo",
     "anio": "1778",
     "museo": "Galería Nacional de Irlanda, Dublín",
@@ -1118,6 +1254,7 @@ export default [
   },
   {
     "n": 146,
+    "id": "File:Jacques-Louis David - The Grief of Andromache.JPG",
     "titulo": "El dolor de Andrómaca ante Héctor",
     "anio": "1783",
     "museo": "Museo del Louvre, París",
@@ -1127,6 +1264,7 @@ export default [
   },
   {
     "n": 147,
+    "id": "File:Peter Paul Rubens - The Wrath of Achilles - Google Art Project.jpg",
     "titulo": "La ira de Aquiles contra Agamenón",
     "anio": "1630-1635",
     "museo": "Museo del Prado, Madrid / Museum Boijmans Van Beuningen",
@@ -1136,6 +1274,7 @@ export default [
   },
   {
     "n": 148,
+    "id": "File:Peter Paul Rubens - Achille vainqueur d'Hector 01.jpg",
     "titulo": "La muerte de Héctor a manos de Aquiles",
     "anio": "1630-1635",
     "museo": "Musée des Beaux-Arts, Pau",
@@ -1145,6 +1284,7 @@ export default [
   },
   {
     "n": 149,
+    "id": "File:Henri-Paul Motte - Le Cheval de Troie.jpg",
     "titulo": "El caballo de Troya en la noche",
     "anio": "1874",
     "museo": "Wadsworth Atheneum, Hartford",
@@ -1154,6 +1294,7 @@ export default [
   },
   {
     "n": 150,
+    "id": "File:Joseph Mallord William Turner - Glaucus and Scylla - Google Art Project.jpg",
     "titulo": "Glauco y Escila",
     "anio": "1841",
     "museo": "Kimbell Art Museum, Fort Worth",
@@ -1163,6 +1304,7 @@ export default [
   },
   {
     "n": 151,
+    "id": "File:Arnold Böcklin 008.jpg",
     "titulo": "Odiseo y Calipso",
     "anio": "1883",
     "museo": "Kunstmuseum Basel, Basilea",

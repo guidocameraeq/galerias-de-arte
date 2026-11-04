@@ -3,6 +3,7 @@
 export default [
   {
     "n": 1,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_los_amantes_el_abrazo",
     "titulo": "Sin título (Los amantes / El abrazo)",
     "anio": "1984",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -12,6 +13,7 @@ export default [
   },
   {
     "n": 2,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_aa78_el_portal_crepuscular",
     "titulo": "Sin título (AA78 / El portal crepuscular)",
     "anio": "1978",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -21,6 +23,7 @@ export default [
   },
   {
     "n": 3,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_torre_carmesi_el_coliseo_en_llamas",
     "titulo": "Sin título (La torre carmesí / El coliseo en llamas)",
     "anio": "c. 1978",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -30,6 +33,7 @@ export default [
   },
   {
     "n": 4,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_canon_de_los_soldados_espectrales",
     "titulo": "Sin título (El cañón de los soldados espectrales)",
     "anio": "c. 1976",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -39,6 +43,7 @@ export default [
   },
   {
     "n": 5,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_cementerio_bajo_los_acantilados",
     "titulo": "Sin título (El cementerio bajo los acantilados)",
     "anio": "c. 1975",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -48,6 +53,7 @@ export default [
   },
   {
     "n": 6,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_inquisidor_de_la_gorguera_blanca",
     "titulo": "Sin título (El inquisidor de la gorguera blanca)",
     "anio": "c. 1975",
     "museo": "Colección Piotr Dmochowski",
@@ -57,6 +63,7 @@ export default [
   },
   {
     "n": 7,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_rotonda_y_la_figura_roja",
     "titulo": "Sin título (La rotonda y la figura roja)",
     "anio": "c. 1977",
     "museo": "Colección Piotr Dmochowski",
@@ -66,6 +73,7 @@ export default [
   },
   {
     "n": 8,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_arbol_de_osamentas",
     "titulo": "Sin título (El árbol de osamentas)",
     "anio": "c. 1974",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -75,6 +83,7 @@ export default [
   },
   {
     "n": 9,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_cruz_del_litoral_desolado",
     "titulo": "Sin título (La cruz del litoral desolado)",
     "anio": "c. 1976",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -84,6 +93,7 @@ export default [
   },
   {
     "n": 10,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_marcha_hacia_el_monolito",
     "titulo": "Sin título (La marcha hacia el monolito)",
     "anio": "c. 1978",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -93,6 +103,7 @@ export default [
   },
   {
     "n": 11,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_organista_azul_in_hoc_signo_vinces",
     "titulo": "Sin título (El organista azul / In Hoc Signo Vinces)",
     "anio": "c. 1979",
     "museo": "Colección Piotr Dmochowski",
@@ -102,6 +113,7 @@ export default [
   },
   {
     "n": 12,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_horca_en_el_paramo",
     "titulo": "Sin título (La horca en el páramo)",
     "anio": "c. 1975",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -111,6 +123,7 @@ export default [
   },
   {
     "n": 13,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_los_supliciados_en_los_maderos",
     "titulo": "Sin título (Los supliciados en los maderos)",
     "anio": "c. 1975",
     "museo": "Colección Piotr Dmochowski",
@@ -120,6 +133,7 @@ export default [
   },
   {
     "n": 14,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_criatura_del_craneo_y_la_criatura_en",
     "titulo": "Sin título (La criatura del cráneo y la criatura envuelta)",
     "anio": "c. 1977",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -129,6 +143,7 @@ export default [
   },
   {
     "n": 15,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_ciudadela_con_ojos",
     "titulo": "Sin título (La ciudadela con ojos)",
     "anio": "c. 1976",
     "museo": "Colección Piotr Dmochowski",
@@ -138,6 +153,7 @@ export default [
   },
   {
     "n": 16,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_crucifixion_sobre_el_osario",
     "titulo": "Sin título (La crucifixión sobre el osario)",
     "anio": "c. 1977",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -147,6 +163,7 @@ export default [
   },
   {
     "n": 17,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_cabeza_edificio_en_llamas",
     "titulo": "Sin título (La cabeza-edificio en llamas)",
     "anio": "1980",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -156,6 +173,7 @@ export default [
   },
   {
     "n": 18,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_las_hogueras_sobre_los_pilares",
     "titulo": "Sin título (Las hogueras sobre los pilares)",
     "anio": "1978",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -165,6 +183,7 @@ export default [
   },
   {
     "n": 19,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_ser_alado_tras_la_muralla",
     "titulo": "Sin título (El ser alado tras la muralla)",
     "anio": "c. 1978",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -174,6 +193,7 @@ export default [
   },
   {
     "n": 20,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_monolito_sombrio_en_el_camposanto",
     "titulo": "Sin título (El monolito sombrío en el camposanto)",
     "anio": "c. 1977",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -183,6 +203,7 @@ export default [
   },
   {
     "n": 21,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_cadalso_con_antenas_de_television",
     "titulo": "Sin título (El cadalso con antenas de televisión)",
     "anio": "c. 1976",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -192,6 +213,7 @@ export default [
   },
   {
     "n": 22,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_parca_con_vara_y_can_salvaje",
     "titulo": "Sin título (La parca con vara y can salvaje)",
     "anio": "c. 1976",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -201,6 +223,7 @@ export default [
   },
   {
     "n": 23,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_basilica_roja_de_doble_torre",
     "titulo": "Sin título (La basílica roja de doble torre)",
     "anio": "c. 1977",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -210,6 +233,7 @@ export default [
   },
   {
     "n": 24,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_la_cruz_negra_del_risco_nocturno",
     "titulo": "Sin título (La cruz negra del risco nocturno)",
     "anio": "c. 1975",
     "museo": "Muzeum Historyczne w Sanoku",
@@ -219,6 +243,7 @@ export default [
   },
   {
     "n": 25,
+    "id": "local:22_zdzislaw_beksinski:sin_titulo_el_mensajero_biomecanico",
     "titulo": "Sin título (El mensajero biomecánico)",
     "anio": "1986",
     "museo": "Colección Piotr Dmochowski",

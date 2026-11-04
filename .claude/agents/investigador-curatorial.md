@@ -19,4 +19,6 @@ Entregá, en español rioplatense y corto:
 2. **Entran:** tabla `autor · obra · año · museo · por qué importa · fuente`.
 3. **No entran y por qué** (fuera de período, réplica, boceto, ya está en colección X, copyright sin alta resolución).
 4. **Riesgos de descarga** (qué fuente es probable que falle o tenga baja resolución).
+5. **La lista lista para el motor:** un bloque JSON con el formato de `tools/targets/_ejemplo.json` (una entrada por obra que entra: `titulo`, `autor`, `anio`, `museo`, `escuela`, `tecnica`, y `qid` o `commons` o `url`, más `fuente`; `forma` en tondos). Verificá que cada `qid` sea el de esa obra (etiqueta de Wikidata) y que tenga imagen (P18); si no, decilo. El agente principal lo guarda en `tools/targets/NN_nombre.json`.
+6. **Para el registro:** las obras importantes que NO se pueden conseguir o que descartás por criterio, en el formato de `tools/candidatas-manual.json` (`col`, `estado`, `titulo`, `autor`, `motivo`, `detalle`).
 Un humano (Guido) revisa tu lista antes de bajar nada.

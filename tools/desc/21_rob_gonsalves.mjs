@@ -5,6 +5,7 @@
 export default [
   {
     "n": 1,
+    "id": "gonsalves:the-sun-sets-sail",
     "titulo": "El sol zarpa",
     "anio": "2001",
     "museo": "Colección privada",
@@ -14,6 +15,7 @@ export default [
   },
   {
     "n": 2,
+    "id": "gonsalves:sailing-islands",
     "titulo": "Islas que zarpan",
     "anio": "2016",
     "museo": "Colección privada",
@@ -23,6 +25,7 @@ export default [
   },
   {
     "n": 3,
+    "id": "gonsalves:here-comes-the-flood",
     "titulo": "Aquí llega la marea",
     "anio": "2005",
     "museo": "Colección privada",
@@ -32,6 +35,7 @@ export default [
   },
   {
     "n": 4,
+    "id": "gonsalves:wilderness-gothic",
     "titulo": "Gótico salvaje",
     "anio": "2008",
     "museo": "Colección privada",
@@ -41,6 +45,7 @@ export default [
   },
   {
     "n": 5,
+    "id": "gonsalves:bedtime-aviation",
     "titulo": "Aviación a la hora de dormir",
     "anio": "2008",
     "museo": "Colección privada",
@@ -50,6 +55,7 @@ export default [
   },
   {
     "n": 6,
+    "id": "gonsalves:a-change-of-scenery",
     "titulo": "Un cambio de escenario",
     "anio": "1996",
     "museo": "Colección privada",
@@ -59,6 +65,7 @@ export default [
   },
   {
     "n": 7,
+    "id": "gonsalves:the-phenomenon-of-floating",
     "titulo": "El fenómeno de flotar",
     "anio": "2012",
     "museo": "Colección privada",
@@ -68,6 +75,7 @@ export default [
   },
   {
     "n": 8,
+    "id": "gonsalves:the-space-between-words",
     "titulo": "El espacio entre las palabras",
     "anio": "2013",
     "museo": "Colección privada",
@@ -77,6 +85,7 @@ export default [
   },
   {
     "n": 9,
+    "id": "gonsalves:house-by-the-railroad",
     "titulo": "Casa junto al ferrocarril",
     "anio": "2004",
     "museo": "Colección privada",
@@ -86,6 +95,7 @@ export default [
   },
   {
     "n": 10,
+    "id": "gonsalves:medieval-moonlight",
     "titulo": "Luz de luna medieval",
     "anio": "2006",
     "museo": "Colección privada",
@@ -95,6 +105,7 @@ export default [
   },
   {
     "n": 11,
+    "id": "gonsalves:mosaic-moat",
     "titulo": "Foso de mosaicos",
     "anio": "2010",
     "museo": "Colección privada",
@@ -104,6 +115,7 @@ export default [
   },
   {
     "n": 12,
+    "id": "gonsalves:unfinished-puzzle",
     "titulo": "Rompecabezas inacabado",
     "anio": "2002",
     "museo": "Colección privada",
@@ -113,6 +125,7 @@ export default [
   },
   {
     "n": 13,
+    "id": "gonsalves:cathedral-bluffs",
     "titulo": "Acantilados catedralicios",
     "anio": "2008",
     "museo": "Colección privada",
@@ -122,6 +135,7 @@ export default [
   },
   {
     "n": 14,
+    "id": "gonsalves:musical-chairs",
     "titulo": "El juego de las sillas",
     "anio": "2004",
     "museo": "Colección privada",
@@ -131,6 +145,7 @@ export default [
   },
   {
     "n": 15,
+    "id": "gonsalves:stardust",
     "titulo": "Polvo de estrellas",
     "anio": "2014",
     "museo": "Colección privada",
@@ -140,6 +155,7 @@ export default [
   },
   {
     "n": 16,
+    "id": "gonsalves:arboreal-office",
     "titulo": "Oficina arbórea",
     "anio": "2003",
     "museo": "Colección privada",
@@ -149,6 +165,7 @@ export default [
   },
   {
     "n": 17,
+    "id": "gonsalves:making-waves",
     "titulo": "Haciendo olas",
     "anio": "2000",
     "museo": "Colección privada",
@@ -158,6 +175,7 @@ export default [
   },
   {
     "n": 18,
+    "id": "gonsalves:tower-of-knowledge",
     "titulo": "Torre del conocimiento",
     "anio": "2004",
     "museo": "Colección privada",
@@ -167,6 +185,7 @@ export default [
   },
   {
     "n": 19,
+    "id": "gonsalves:ladies-of-the-lake",
     "titulo": "Damas del lago",
     "anio": "2003",
     "museo": "Colección privada",
@@ -176,6 +195,7 @@ export default [
   },
   {
     "n": 20,
+    "id": "gonsalves:across-the-pond",
     "titulo": "Al otro lado del estanque",
     "anio": "2007",
     "museo": "Colección privada",
@@ -185,6 +205,7 @@ export default [
   },
   {
     "n": 21,
+    "id": "gonsalves:making-angels",
     "titulo": "Haciendo ángeles en la nieve",
     "anio": "2009",
     "museo": "Colección privada",
@@ -194,6 +215,7 @@ export default [
   },
   {
     "n": 22,
+    "id": "gonsalves:high-park-pickets",
     "titulo": "Vallas de High Park",
     "anio": "2002",
     "museo": "Colección privada",
@@ -203,6 +225,7 @@ export default [
   },
   {
     "n": 23,
+    "id": "gonsalves:white-blankets",
     "titulo": "Mantas blancas",
     "anio": "2011",
     "museo": "Colección privada",
@@ -212,6 +235,7 @@ export default [
   },
   {
     "n": 24,
+    "id": "gonsalves:the-dancing-wind",
     "titulo": "El viento bailarín",
     "anio": "2005",
     "museo": "Colección privada",
@@ -221,6 +245,7 @@ export default [
   },
   {
     "n": 25,
+    "id": "gonsalves:firefly-constellation",
     "titulo": "Constelación de luciérnagas",
     "anio": "2012",
     "museo": "Colección privada",

@@ -6,10 +6,10 @@
 | Rol | Qué hace | Herramientas | Sale con |
 |---|---|---|---|
 | **1 · Historiador** | Define qué entra en una galería: canon del tema, quién y qué obras, qué NO (y por qué). Investiga *antes* de bajar nada | Wikipedia, Wikidata, `tools/gap.mjs`, `docs/galerias/NN_*.md` | Lista de objetivos (`targets-*.mjs` o `canon/NN.mjs`) |
-| **2 · Cosechador** | Busca, verifica y baja las imágenes | `harvest-*.mjs`, `collect.mjs`, `canon.mjs`, `wikiart.mjs` (ver `tools/README.md`) | Obras en la biblioteca + `_index.json`; descartes en `_descartes/` |
+| **2 · Cosechador** | Busca, verifica y baja las imágenes | **`harvest.mjs`** (motor genérico, lista `tools/targets/NN.json`); vías específicas `collect`, `canon`, `wikiart`, `dore*` (ver `tools/README.md`) | Obras en la biblioteca + `_index.json`; descartes en `_descartes/` |
 | **3 · Verificador de calidad** | Aplica los gates; ve las imágenes si hace falta; saca lo que no sirve | `audit.mjs`, `fix-dims.mjs`, `remove-work.mjs`, `docs/CALIDAD.md` | `audit` en 0 FALLAS; sin avisos nuevos injustificados |
 | **4 · Redactor de fichas** | Escribe la ficha en español de una fuente (y la larga de la app) | `wikidata-enrich`, `enrich-es`, `tools/desc/NN.mjs` + `apply-desc` | `description` + `description_source` |
-| **5 · Exportador** | Convierte la biblioteca en carpetas para la app | `export-drive.mjs` (pendiente), `check-prueba-json.mjs`, `images-sync.mjs` | `Galerías/` en Drive + aviso al agente de la app |
+| **5 · Exportador** | Convierte la biblioteca en carpetas para la app y trae de vuelta la curaduría de Guido | `export-drive.mjs`, `drive-curation.mjs`, `images-sync.mjs` | `Galerías/` en Drive + aviso al agente de la app |
 | **6 · Archivista** | Registra lo hecho, lo descartado y lo pendiente | `cierre`, `docs/galerias/`, `_descartes/`, `docs/CHANGELOG.md` | Handoff + TODO + commit |
 
 ## Flujo para una galería nueva o una ampliación

@@ -1,79 +1,75 @@
 # NUEVA_COLECCION — proceso para agregar una colección (o ampliar una)
 
-> Agnóstico de agente (Claude, Gemini, OpenCode…). Es el **checklist único**: si mañana hay que bajar una galería nueva, se sigue esto de arriba a abajo. Reglas duras: `AGENTS.md`. Roles: `docs/procesos/FLUJO_AGENTES.md`. Gates de calidad: `docs/CALIDAD.md`. Fichas: `docs/DESCRIPCIONES.md`. Contrato con la app: `docs/FORMATO_DRIVE.md`.
-> **Una sola persona/agente escribe por vez** sobre los `_index.json` (regla 7). Los subagentes de Claude (`.claude/agents/`) solo **leen e informan** o escriben su propio archivo de fichas; el cosechador y el que aplica cambios al índice es siempre el agente principal.
+> Agnóstico de agente (Claude, Gemini, OpenCode…). Es el **checklist único**: si mañana hay que bajar una galería nueva, se sigue esto de arriba a abajo. Reglas duras: `AGENTS.md`. Roles: `docs/procesos/FLUJO_AGENTES.md`. Gates: `docs/CALIDAD.md`. Fichas: `docs/DESCRIPCIONES.md`. Contrato con la app: `docs/FORMATO_DRIVE.md`.
+> **Un solo escritor** sobre los `_index.json` (regla 7): descarga y aplica cambios el agente principal. Los subagentes de Claude (`.claude/agents/`) solo leen e informan, o escriben su propio archivo de fichas.
+> **Dos frenos con Guido:** (1) aprueba la lista de objetivos (paso 1) y (2) aprueba el dry-run de la descarga (paso 3). Todo lo demás corre solo.
 
-## Qué existe hoy y qué NO (para no hacerse ilusiones)
-- **Existe:** un motor con varias vías de descarga (`collect`, `canon`, `wikiart`, `sculptures`, `harvest-*`), el método (`docs/METODO.md` §3), los gates (`docs/CALIDAD.md`), `audit`, `remove-work`, el registro de candidatas (`tools/candidatas.mjs`) y la exportación (`export-drive.mjs`).
-- **NO existe (todavía):** un único comando "crear colección". Cada colección nueva se armó con scripts propios (`targets-NN.mjs` + `harvest-NN.mjs`, copiados de la anterior). Mientras no haya un motor genérico, **copiá el harvest de la colección más parecida** (tabla del paso 3) y adaptalo. Pendiente en `docs/TODO.md`.
-- Los "agentes" de abajo son **roles**; en Claude Code hay tres como subagentes reales y un skill `/nueva-coleccion`; en otros agentes se siguen como pasos.
+## El circuito en una línea
+`investigar → lista de objetivos (JSON) → [OK Guido] → harvest dry-run → [OK Guido] → harvest --apply → audit + revisión visual → fichas → candidatas → documentar → publicar en Drive → cierre`
 
 ## Paso 0 — Preparar el terreno
-1. `node tools/audit.mjs` en 0 FALLAS **antes** de empezar (si no, arreglá o anotá lo que ya estaba roto). Si da `F-MISSING` masivo, esta PC no tiene la biblioteca de imágenes conectada → `docs/ALMACENAMIENTO.md` (`link-images.mjs`). La ruta de las imágenes es **por PC** (`.arte-local.json`), nunca va en el repo.
-2. Crear `NN_nombre/_index.json` con `{ "collection": "NN_nombre", "items": [] }` y correr `node tools/link-images.mjs --apply` (crea las carpetas en la biblioteca de esa PC y los enlaces `landscape/`, `portrait/`, `_dedup_removed/`).
-3. Decidir con Guido **el alcance en una línea**: ¿por tema, por movimiento/época, por autor (monografía)? ¿Rango de años? ¿Exclusiones duras? ¿Cuántas obras como techo (pocas y excelentes)?
+1. `node tools/audit.mjs` en 0 FALLAS **antes** de empezar. `F-MISSING` masivo = esta PC no tiene la biblioteca de imágenes conectada → `docs/ALMACENAMIENTO.md` (`link-images.mjs`; la ruta es **por PC**, nunca va en el repo).
+2. Elegir el nombre: `NN_nombre` (siguiente número libre, minúsculas, sin acentos).
+3. Acordar con Guido el **alcance en una línea**: ¿tema, movimiento/época o autor? ¿Rango de años? ¿Exclusiones? ¿Techo de obras? (pocas y excelentes).
 
 ## Paso 1 — Historiador: investigar el canon ANTES de bajar nada
-*(subagente `investigador-curatorial`, solo lee)*
-- Armar la **lista de objetivos**: qué autores y qué obras son LAS importantes de ese tema/época, con una línea de por qué. Fuentes: Wikipedia/Wikidata (fama = sitelinks), catálogos de museos, estate oficial (monografías). Leer `docs/galerias/` de las colecciones vecinas y `<col>/_candidatas.json` de las que se solapan (qué falta, qué se descartó) para no repetir ni pisar.
-- Marcar **qué NO entra y por qué** (fuera de período, irrelevante, réplicas, bocetos). Lección de Kubin: investigar el canon primero, recolectar después; los bocetos menores no.
-- Salida: un archivo `tools/targets-NN-nombre.mjs` (o `tools/canon/NN_nombre.mjs`) con título, autor, año, museo y la ficha en español de cada obra, **con la fuente de cada dato**. Mostrárselo a Guido.
+*(subagente `investigador-curatorial`, solo lee; se pueden lanzar varios en paralelo por subtemas)*
+- Qué autores y qué obras son LAS importantes, con una línea de por qué y la fuente. Fama objetiva = sitelinks de Wikidata. Leer antes `docs/galerias/` y los `<col>/_candidatas.json` de colecciones vecinas (qué falta, qué se descartó, qué ya está) para no repetir.
+- Qué **NO** entra y por qué (fuera de período, réplica, boceto menor, ya está en otra colección). Lección Kubin: canon primero, recolección después.
+- **Salida:** `tools/targets/NN_nombre.json` (plantilla: `tools/targets/_ejemplo.json`). Una obra por entrada:
+  `{ "titulo", "autor", "anio", "museo", "escuela", "tecnica", "qid" | "commons" | "url", "fuente", "licencia", "forma", "d", "d_fuente", "aceptar_baja" }`
+  - Imagen: preferí `qid` (Wikidata → su imagen de Commons) o `commons` ("File:…"). `url` directa solo para estates/museos sin Commons (monografías, ver `docs/procesos/ADQUISICION_MONOGRAFICA.md`).
+  - `d` (ficha en español de una fuente) es opcional acá; si falta, se hace en el paso 5.
+  - `forma: "redonda"|"ovalada"` en tondos y medallones. `aceptar_baja: true` solo para una obra icónica que Guido acepta bajo el piso (anotarla en `docs/CALIDAD.md` §4).
+- Las obras que el historiador descarta por criterio o sabe que no se consiguen van a `tools/candidatas-manual.json` (paso 6).
+- **Freno 1:** mostrarle la lista a Guido y esperar su OK.
 
-## Paso 2 — Elegir la vía de descarga (`docs/METODO.md` §3)
-| Tipo de colección | Vía | Plantilla para copiar |
-|---|---|---|
-| Por **tema** (mitos, memento mori) | `collect.mjs` + `targets-0N.mjs` | `targets-01.mjs` |
-| Por **movimiento** (muchos autores famosos) | `canon.mjs` + `tools/canon/NN.mjs` | `tools/canon/08_impresionismo.mjs` |
-| **Modernas con copyright** | `wikiart.mjs` + `tools/wikiart/NN.mjs` | `tools/wikiart/14_surrealismo.mjs` |
-| **Monografía** de un artista (estate/galería/museo) | `harvest-NN-*.mjs` + `targets-NN-*.mjs` + `docs/procesos/ADQUISICION_MONOGRAFICA.md` | `harvest-22-beksinski.mjs` |
-| **Esculturas / antigüedades** | `sculptures.mjs` / `harvest-18-sculptures.mjs` | `harvest-18-sculptures.mjs` |
-| **Serie de grabados** | ver Doré (`dore*.mjs`) | — |
+## Paso 2 — Registrar la galería
+- Agregar `NN_nombre: 'Título visible'` en `tools/galerias.mjs` (nombre de la carpeta en Drive y título en la app).
 
-## Paso 3 — Cosechador: dry-run, OK de Guido, descarga
-*(el agente principal)*
-1. **Dry-run** del script (sin `--apply`); mostrarle a Guido la lista de lo que bajaría y **esperar su OK** (regla dura 5).
-2. `--apply`: descargas **seriales**, `downloadTo` con validación de magic bytes, **medir el archivo real** (no lo que promete la API), piso de lado largo ≥1000 px (≥800 en 13–15), sin editar ni convertir.
-3. Todo lo que se rechaza al bajar debe quedar registrado con `logDiscard` (`tools/lib.mjs`) en `_descartes/<col>.jsonl`. **Hoy no lo hacen** `canon`, `wikiart`, `sculptures` ni los `harvest-*`: si usás uno de ellos, anotá los rechazos a mano en `tools/candidatas-manual.json` (paso 6). (Pendiente: parchearlos.)
+## Paso 3 — Cosechador: descargar con el motor genérico
+*(agente principal)*
+1. `node tools/harvest.mjs NN_nombre` → **dry-run**: resuelve cada imagen, mide el tamaño declarado y avisa qué ya existe en otra colección, qué está bajo el piso y qué no tiene imagen. **Freno 2:** mostrárselo a Guido y esperar su OK.
+2. `node tools/harvest.mjs NN_nombre --apply`. Crea `NN_nombre/_index.json` si no existe. **Antes**, en una PC con biblioteca externa: `node tools/link-images.mjs --apply` (el motor se niega a bajar si `landscape/`/`portrait/` no son enlaces, para no meter imágenes en el repo).
+   El motor: descarga serial con validación de contenido, **mide el archivo real**, aplica el piso (1000 px; 800 en 13–15), clasifica orientación, nombra, escribe el índice incremental, **registra cada rechazo** en `_descartes/`, y si el objetivo trae `d` crea/agrega `tools/desc/NN_nombre.mjs` clavado por id. Es idempotente: se puede volver a correr tras un corte.
+3. ¿Fuente rara que el motor no cubre (WikiArt, tiles, serie de grabados)? Usar la vía específica (`docs/METODO.md` §3: `wikiart.mjs`, `canon.mjs`, `dore*.mjs`) o copiar un `harvest-NN-*.mjs`; en ese caso, anotar a mano los rechazos en `tools/candidatas-manual.json`.
 
 ## Paso 4 — Verificador de calidad
-*(`audit` + subagente `verificador-visual`)*
-1. `node tools/audit.mjs --col=NN`: 0 FALLAS; revisar cada AVISO nuevo (`W-RES`, `W-EXT`, duplicados, `W-QID-DUP`).
-2. `node tools/fix-dims.mjs <col>` (dry) si hay dudas de medidas.
-3. **Revisión visual obligatoria** (el `audit` NO ve que la ficha corresponda a la imagen): `node tools/contact-sheets.mjs --out=RUTA --col=NN_nombre --all-items` y mirar cada hoja. Buscar: otra obra distinta, **mockups o fotos de sala/pared/marco**, pósters con texto, portadas de libro, fotos rotadas, repetidas, marcas de agua grandes.
-4. Lo que no sirve se saca **solo** con `node tools/remove-work.mjs <col> --n=N --apply` (recuperable, loguea). Nunca a mano.
+1. `node tools/audit.mjs --col=NN`: 0 FALLAS; revisar cada AVISO nuevo (`W-RES`, `W-EXT`, duplicados).
+2. **Revisión visual obligatoria** (el `audit` NO ve si la ficha corresponde a la imagen): `node tools/contact-sheets.mjs --out=<carpeta temporal> --col=NN_nombre --all-items` → subagente `verificador-visual` (uno por cada 2–3 hojas, en paralelo). Busca: otra obra distinta, **mockups/fotos de sala/marcos**, pósters con texto, portadas, fotos rotadas, repetidas.
+3. **El agente principal verifica a ojo cada hallazgo** antes de actuar. Lo que no sirve sale **solo** con `node tools/remove-work.mjs NN_nombre --n=N --why=… --apply` (recuperable, loguea, limpia la ficha).
 
 ## Paso 5 — Redactor de fichas
-*(subagente `redactor-fichas` escribe SOLO `tools/desc/NN_nombre.mjs`)*
-- Español, **de una fuente** (nunca de memoria), qué muestra y qué significa, objetivo **80–150 palabras** para la app (`docs/FICHAS_APP.md`); `description_source` real.
-- Aplicar: `node tools/apply-desc.mjs <col>` (dry) → `--apply`. **Trampa:** pega por `n`; tras podar/renumerar, sacar la entrada de la obra borrada o la ficha cae en otra (`W-DESC-STALE`). Después de aplicar, repetir la revisión visual del paso 4.3 en una muestra: es donde aparecen las fichas corridas.
-- Completar campos: `node tools/wikidata-enrich.mjs <col>` (qid, museo, técnica).
+*(subagente `redactor-fichas`: escribe SOLO `tools/desc/NN_nombre.mjs`)*
+- Español, **de una fuente** (nunca de memoria), qué muestra y qué significa, **80–150 palabras** (`docs/FICHAS_APP.md`). Cada entrada lleva `id` (qid/sourceId de la obra) además de `n`: así una poda nunca corre las fichas.
+- El agente principal aplica: `node tools/apply-desc.mjs NN_nombre` (dry) → `--apply`; después `node tools/audit.mjs --col=NN` (sin `W-DESC-STALE`) y mirar una muestra en hojas de contacto.
+- Campos extra si faltan: `node tools/wikidata-enrich.mjs NN_nombre` (museo, técnica, qid).
 
 ## Paso 6 — Registro de candidatas (lo que NO entró)
-Para poder curar después sin volver a investigar:
-1. Si hubo obras importantes que no se consiguieron, o descartes por criterio, agregarlos a `tools/candidatas-manual.json` (`col`, `estado` `pendiente`|`descartada`, `titulo`, `autor`, `motivo`, `detalle`).
-2. `node tools/candidatas.mjs --gap` (dry) → `--apply`. Regenera `<col>/_candidatas.json` de todas las colecciones: pendientes (importantes no conseguidas, incluidas las famosas de Wikidata que faltan) y descartadas, cada una con motivo. Las que entraron NO se duplican: viven en `_index.json`.
-3. Revisar el resultado de la colección nueva y confirmar que `cobertura` dice que tiene historial.
+`node tools/candidatas.mjs --gap` (dry) → `--apply`. Regenera `<col>/_candidatas.json` de todas las colecciones: **pendientes** (importantes no conseguidas: targets sin imagen o bajo el piso, famosas de Wikidata que faltan, lista manual) y **descartadas** (duplicadas, baja calidad, fuera de tema, curaduría de Guido), cada una con motivo. Las que entraron NO se duplican: viven en `_index.json`.
 
 ## Paso 7 — Documentar
-- `docs/galerias/NN_nombre.md` (copiar el formato de una existente): concepto, fuentes, scripts, criterios de selección y exclusión, obras cumbre, estado técnico. Agregarla a `docs/galerias/README.md`.
-- Una ficha de colección en `docs/INVENTARIO.md` (tabla) si tiene reglas propias; scripts nuevos en `tools/README.md`.
-- Si la colección tiene reglas especiales (exclusión temática, ficha distinta), una línea en `AGENTS.md` "Trampas".
+- `docs/galerias/NN_nombre.md` (copiar el formato de una existente) + línea en `docs/galerias/README.md`.
+- Si la colección tiene reglas propias (exclusión temática, ficha distinta): una línea en `AGENTS.md` "Trampas" y en `docs/INVENTARIO.md`.
 
-## Paso 8 — Publicar a la app (solo cuando Guido decida)
-1. `node tools/export-drive.mjs --col=NN_nombre --out="<carpeta Galerías en Drive>" [--big-max-side=3840]` (dry-run primero). Valida JSON, archivos, ids, límite de 50 MB, Markdown.
-2. Tondos/medallones: marcarlos en `tools/forma-tondos.json` (`qid` o `sourceId` → `redonda`/`ovalada`).
-3. Respaldar las imágenes nuevas: `node tools/images-sync.mjs backup --apply`.
-4. Avisar al agente de la app con el nombre exacto de la carpeta. No tocar Drive por API ni por links; solo por la carpeta montada.
-5. Licencias: las obras con copyright de uso personal van por enlace público **solo con decisión expresa de Guido** (`FORMATO_DRIVE.md`).
+## Paso 8 — Publicar a la app y respaldar (cuando Guido decida)
+1. `node tools/export-drive.mjs --col=NN_nombre --out="<Drive>/Galerías de arte/Galerías" --big-max-side=3840` (dry) → `--apply`. Valida JSON, archivos, ids, 50 MB, Markdown; usa la `forma` de los tondos (`tools/forma-tondos.json` o el objetivo).
+2. Respaldo de originales: `node tools/images-sync.mjs backup --apply`.
+3. Avisar al agente de la app con el nombre exacto de la carpeta. Drive solo por la carpeta montada (nunca API ni links). Obras con copyright de uso personal: solo con decisión expresa de Guido (`FORMATO_DRIVE.md`).
 
 ## Paso 9 — Cierre
 `docs/procesos/CIERRE.md`: `audit` en 0 FALLAS, handoff, CHANGELOG, TODO, commit y push.
 
-## Definición de "colección terminada" (checklist)
+## Después: curaduría de Guido desde Drive
+Guido cura **borrando imágenes** de la carpeta `Galerías` en Drive. Para que el repo lo refleje:
+`node tools/drive-curation.mjs` (dry: lista lo borrado) → `--apply`: cada obra borrada sale del repo con `remove-work` (recuperable en `_dedup_removed/`, motivo `curaduria`), se regenera su `galeria.json` y el registro de candidatas. `export-drive` nunca vuelve a subir lo que Guido borró. Freno: si falta >30% de una galería (Drive a medio sincronizar) se saltea salvo `--force`.
+
+## Definición de "colección terminada"
+- [ ] `tools/targets/NN_nombre.json` aprobado por Guido; galería en `tools/galerias.mjs`.
 - [ ] `audit --col=NN` en 0 FALLAS; avisos justificados.
-- [ ] Revisión visual hecha (hojas de contacto), sin mockups ni fichas corridas.
-- [ ] Todas las obras con ficha en español de una fuente.
-- [ ] `_candidatas.json` generado, con `cobertura` con historial.
-- [ ] `docs/galerias/NN_nombre.md` y entrada en `tools/README.md`.
-- [ ] Imágenes respaldadas en Drive; `export-drive` hecho si se publica.
-- [ ] Handoff/TODO/CHANGELOG al día y commit.
+- [ ] Revisión visual hecha, hallazgos verificados y resueltos.
+- [ ] Todas las obras con ficha en español de una fuente, clavadas por `id`.
+- [ ] `_candidatas.json` regenerado.
+- [ ] `docs/galerias/NN_nombre.md` escrito.
+- [ ] Respaldo en Drive; exportada a `Galerías` si se publica, y aviso a la app.
+- [ ] Handoff/TODO/CHANGELOG al día, commit y push.

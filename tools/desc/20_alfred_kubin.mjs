@@ -5,6 +5,7 @@
 export default [
   {
     "n": 1,
+    "id": "leopold:897",
     "titulo": "La Muerte como jinete",
     "anio": "1906",
     "museo": "Leopold Museum, Viena",
@@ -14,6 +15,7 @@ export default [
   },
   {
     "n": 2,
+    "id": "leopold:902",
     "titulo": "El Horror",
     "anio": "c1902",
     "museo": "Leopold Museum, Viena",
@@ -23,6 +25,7 @@ export default [
   },
   {
     "n": 3,
+    "id": "leopold:933",
     "titulo": "El Hombre",
     "anio": "c1902",
     "museo": "Leopold Museum, Viena",
@@ -32,6 +35,7 @@ export default [
   },
   {
     "n": 4,
+    "id": "leopold:900",
     "titulo": "La hora del nacimiento",
     "anio": "1901",
     "museo": "Leopold Museum, Viena",
@@ -41,6 +45,7 @@ export default [
   },
   {
     "n": 5,
+    "id": "leopold:955",
     "titulo": "Hacia lo desconocido",
     "anio": "1900",
     "museo": "Leopold Museum, Viena",
@@ -50,6 +55,7 @@ export default [
   },
   {
     "n": 6,
+    "id": "leopold:951",
     "titulo": "El mejor médico (La Muerte)",
     "anio": "c1901",
     "museo": "Leopold Museum, Viena",
@@ -59,6 +65,7 @@ export default [
   },
   {
     "n": 7,
+    "id": "leopold:938",
     "titulo": "Peligro",
     "anio": "c1901",
     "museo": "Leopold Museum, Viena",
@@ -68,6 +75,7 @@ export default [
   },
   {
     "n": 8,
+    "id": "leopold:940",
     "titulo": "Hambruna",
     "anio": "c1901",
     "museo": "Leopold Museum, Viena",
@@ -77,6 +85,7 @@ export default [
   },
   {
     "n": 9,
+    "id": "leopold:942",
     "titulo": "La última aventura",
     "anio": "c1901",
     "museo": "Leopold Museum, Viena",
@@ -86,6 +95,7 @@ export default [
   },
   {
     "n": 10,
+    "id": "leopold:925",
     "titulo": "El libro siniestro (La peste en Bérgamo)",
     "anio": "1914",
     "museo": "Leopold Museum, Viena",
@@ -95,6 +105,7 @@ export default [
   },
   {
     "n": 12,
+    "id": "leopold:909",
     "titulo": "Casco en el mar",
     "anio": "1906",
     "museo": "Leopold Museum, Viena",
@@ -104,6 +115,7 @@ export default [
   },
   {
     "n": 13,
+    "id": "leopold:908",
     "titulo": "Animales submarinos",
     "anio": "1905",
     "museo": "Leopold Museum, Viena",
@@ -113,6 +125,7 @@ export default [
   },
   {
     "n": 14,
+    "id": "leopold:910",
     "titulo": "La serpiente marina",
     "anio": "1905",
     "museo": "Leopold Museum, Viena",
@@ -122,6 +135,7 @@ export default [
   },
   {
     "n": 15,
+    "id": "leopold:906",
     "titulo": "Bruja y serpiente de agua",
     "anio": "1906",
     "museo": "Leopold Museum, Viena",
@@ -131,6 +145,7 @@ export default [
   },
   {
     "n": 17,
+    "id": "leopold:932",
     "titulo": "La casa de las ratas",
     "anio": "1902",
     "museo": "Leopold Museum, Viena",
@@ -140,6 +155,7 @@ export default [
   },
   {
     "n": 19,
+    "id": "leopold:899",
     "titulo": "Lugar maldito",
     "anio": "1903",
     "museo": "Leopold Museum, Viena",
@@ -149,6 +165,7 @@ export default [
   },
   {
     "n": 20,
+    "id": "leopold:1042",
     "titulo": "La ciudad hacia el Este",
     "anio": "1903",
     "museo": "Leopold Museum, Viena",
@@ -158,6 +175,7 @@ export default [
   },
   {
     "n": 22,
+    "id": "leopold:1050",
     "titulo": "Fanáticos errantes",
     "anio": "c1904",
     "museo": "Leopold Museum, Viena",
@@ -167,6 +185,7 @@ export default [
   },
   {
     "n": 32,
+    "id": "leopold:927",
     "titulo": "La fertilidad (Segunda versión)",
     "anio": "1909",
     "museo": "Leopold Museum, Viena",
@@ -176,6 +195,7 @@ export default [
   },
   {
     "n": 36,
+    "id": "lenbachhaus:Kub205",
     "titulo": "La Guerra (El gigante de la destrucción)",
     "anio": "1907",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -185,6 +205,7 @@ export default [
   },
   {
     "n": 37,
+    "id": "lenbachhaus:Kub194",
     "titulo": "Después de la batalla",
     "anio": "1904",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -194,6 +215,7 @@ export default [
   },
   {
     "n": 38,
+    "id": "lenbachhaus:Kub461",
     "titulo": "Diseño de portada: La otra parte",
     "anio": "1909",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -203,6 +225,7 @@ export default [
   },
   {
     "n": 39,
+    "id": "lenbachhaus:Kub338",
     "titulo": "El dibujante en la ventana (La otra parte)",
     "anio": "1909",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -212,6 +235,7 @@ export default [
   },
   {
     "n": 40,
+    "id": "commons:Der_Staat_by_Alfred_Kubin_(1899-1900).jpg",
     "titulo": "El Estado",
     "anio": "1900",
     "museo": "Museum of Modern Art, Nueva York",
@@ -221,6 +245,7 @@ export default [
   },
   {
     "n": 41,
+    "id": "commons:Edgar_Allan_Poe_Das_Feuerpferd_Mueller_Muenchen_1910.JPG",
     "titulo": "El caballo de fuego (Metzengerstein - Edgar Allan Poe)",
     "anio": "1910",
     "museo": "Colección privada / Georg Müller Verlag, Múnich",
@@ -230,6 +255,7 @@ export default [
   },
   {
     "n": 42,
+    "id": "artchive:the-witch",
     "titulo": "La Bruja",
     "anio": "1900",
     "museo": "Schlossmuseum Linz / Colección privada",
@@ -239,6 +265,7 @@ export default [
   },
   {
     "n": 43,
+    "id": "christies:lot-6580036",
     "titulo": "El Novio",
     "anio": "1905",
     "museo": "Colección privada (ex subasta Christie's París)",
@@ -248,6 +275,7 @@ export default [
   },
   {
     "n": 44,
+    "id": "christies:lot-ruinen",
     "titulo": "Ruinas",
     "anio": "1905",
     "museo": "Colección privada (ex subasta Christie's París)",
@@ -257,6 +285,7 @@ export default [
   },
   {
     "n": 45,
+    "id": "horten:K-66",
     "titulo": "El ser de Marte",
     "anio": "1906",
     "museo": "Heidi Horten Collection, Viena",
@@ -266,6 +295,7 @@ export default [
   },
   {
     "n": 46,
+    "id": "lenbachhaus:Kub189",
     "titulo": "La Epidemia",
     "anio": "1900",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -275,6 +305,7 @@ export default [
   },
   {
     "n": 47,
+    "id": "lenbachhaus:Kub592",
     "titulo": "Vista auténtica de Perla (La otra parte)",
     "anio": "1909",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -284,6 +315,7 @@ export default [
   },
   {
     "n": 48,
+    "id": "lenbachhaus:Kub190",
     "titulo": "La Peste",
     "anio": "1903",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -293,6 +325,7 @@ export default [
   },
   {
     "n": 49,
+    "id": "lenbachhaus:Kub211",
     "titulo": "La Angustia (El Miedo)",
     "anio": "1899",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -302,6 +335,7 @@ export default [
   },
   {
     "n": 50,
+    "id": "lenbachhaus:Kub392",
     "titulo": "Danza de la noche de Walpurgis",
     "anio": "1923",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -311,6 +345,7 @@ export default [
   },
   {
     "n": 51,
+    "id": "lenbachhaus:Kub349",
     "titulo": "El caballo fantasma (La otra parte)",
     "anio": "1909",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -320,6 +355,7 @@ export default [
   },
   {
     "n": 52,
+    "id": "lenbachhaus:Kub185",
     "titulo": "La hora de la muerte",
     "anio": "1900",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -329,6 +365,7 @@ export default [
   },
   {
     "n": 53,
+    "id": "lenbachhaus:Kub422",
     "titulo": "La dama sobre el caballo",
     "anio": "1900",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -338,6 +375,7 @@ export default [
   },
   {
     "n": 54,
+    "id": "lenbachhaus:Kub586",
     "titulo": "Noche de fantasmas",
     "anio": "1898",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -347,6 +385,7 @@ export default [
   },
   {
     "n": 55,
+    "id": "lenbachhaus:Kub315",
     "titulo": "Nocturno",
     "anio": "1899",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",
@@ -356,6 +395,7 @@ export default [
   },
   {
     "n": 56,
+    "id": "lenbachhaus:Kub367",
     "titulo": "El fin de la guerra",
     "anio": "1920",
     "museo": "Städtische Galerie im Lenbachhaus, Múnich",

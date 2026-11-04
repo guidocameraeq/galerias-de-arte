@@ -1,0 +1,29 @@
+[
+  {
+    "titulo": "La Virgen de la silla",
+    "autor": "Rafael Sanzio",
+    "anio": "c. 1513-1514",
+    "museo": "Galería Palatina, Palacio Pitti, Florencia",
+    "escuela": "Alto Renacimiento",
+    "tecnica": "Óleo sobre tabla",
+    "commons": "File:Raphael Madonna della seggiola.jpg",
+    "fuente": "https://es.wikipedia.org/wiki/Virgen_de_la_silla",
+    "forma": "redonda",
+    "d": "Texto en español de 80-150 palabras, sintetizado de la fuente: qué muestra y qué significa.",
+    "d_fuente": "Wikipedia-es: Virgen de la silla"
+  },
+  {
+    "titulo": "Impresión, sol naciente",
+    "autor": "Claude Monet",
+    "anio": "1872",
+    "qid": "Q328523"
+  },
+  {
+    "titulo": "Obra de un estate sin Commons",
+    "autor": "Artista contemporáneo",
+    "anio": "2010",
+    "url": "https://ejemplo-estate.org/imagenes/obra-alta-resolucion.jpg",
+    "fuente": "https://ejemplo-estate.org/obra",
+    "licencia": "Uso personal"
+  }
+]

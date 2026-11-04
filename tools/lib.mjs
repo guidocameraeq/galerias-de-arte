@@ -220,7 +220,9 @@ export async function loadIndex(colDir) {
 }
 export async function saveIndex(colDir, idx) {
   const p = path.join(colDir, '_index.json');
-  await fs.writeFile(p, JSON.stringify(idx, null, 2));
+  const tmp = `${p}.tmp-${process.pid}`;                    // atómico: un corte a mitad nunca deja el índice truncado
+  await fs.writeFile(tmp, JSON.stringify(idx, null, 2));
+  await fs.rename(tmp, p);
 }
 // Clave de identidad para no rebajar: "museo:id"
 export const idKey = (museum, id) => `${museum}:${id}`;

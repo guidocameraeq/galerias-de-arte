@@ -3,6 +3,7 @@
 export default [
   {
     "n": 1,
+    "id": "local:23_mariusz_lewandowski:esencia_de_la_libertad_mirror_reaper",
     "titulo": "Esencia de la libertad (Mirror Reaper)",
     "anio": "2017",
     "museo": "Colección privada / Bell Witch",
@@ -12,6 +13,7 @@ export default [
   },
   {
     "n": 2,
+    "id": "local:23_mariusz_lewandowski:encuentro_en_el_otro_lado",
     "titulo": "Encuentro en el otro lado",
     "anio": "2015",
     "museo": "Colección de la familia Lewandowski",
@@ -21,6 +23,7 @@ export default [
   },
   {
     "n": 3,
+    "id": "local:23_mariusz_lewandowski:amnesia",
     "titulo": "Amnesia",
     "anio": "2020",
     "museo": "Colección de la familia Lewandowski",
@@ -30,6 +33,7 @@ export default [
   },
   {
     "n": 4,
+    "id": "local:23_mariusz_lewandowski:la_gran_batalla_medieval_grunwald",
     "titulo": "La gran batalla medieval (Grunwald)",
     "anio": "2021",
     "museo": "Colección de la familia Lewandowski",
@@ -39,6 +43,7 @@ export default [
   },
   {
     "n": 5,
+    "id": "local:23_mariusz_lewandowski:el_fuego_que_nunca_se_apaga",
     "titulo": "El fuego que nunca se apaga",
     "anio": "c. 2018",
     "museo": "Colección de la familia Lewandowski",
@@ -48,6 +53,7 @@ export default [
   },
   {
     "n": 6,
+    "id": "local:23_mariusz_lewandowski:acto_de_humildad_stygian",
     "titulo": "Acto de humildad (Stygian)",
     "anio": "c. 2019",
     "museo": "Colección privada / Atramentus",
@@ -57,6 +63,7 @@ export default [
   },
   {
     "n": 7,
+    "id": "local:23_mariusz_lewandowski:la_pregunta_eterna",
     "titulo": "La pregunta eterna",
     "anio": "c. 2018",
     "museo": "Colección de la familia Lewandowski",
@@ -66,6 +73,7 @@ export default [
   },
   {
     "n": 8,
+    "id": "local:23_mariusz_lewandowski:el_convoy_de_la_muerte",
     "titulo": "El convoy de la muerte",
     "anio": "2021",
     "museo": "Colección de la familia Lewandowski",
@@ -75,6 +83,7 @@ export default [
   },
   {
     "n": 9,
+    "id": "local:23_mariusz_lewandowski:noche_fria",
     "titulo": "Noche fría",
     "anio": "2017",
     "museo": "Colección de la familia Lewandowski",
@@ -84,6 +93,7 @@ export default [
   },
   {
     "n": 10,
+    "id": "local:23_mariusz_lewandowski:encantado_en_la_piedra",
     "titulo": "Encantado en la piedra",
     "anio": "c. 2018",
     "museo": "Colección de la familia Lewandowski",
@@ -93,6 +103,7 @@ export default [
   },
   {
     "n": 11,
+    "id": "local:23_mariusz_lewandowski:los_amos_de_la_conciencia",
     "titulo": "Los amos de la conciencia",
     "anio": "c. 2019",
     "museo": "Colección de la familia Lewandowski",
@@ -102,6 +113,7 @@ export default [
   },
   {
     "n": 12,
+    "id": "local:23_mariusz_lewandowski:nocturno",
     "titulo": "Nocturno",
     "anio": "2015",
     "museo": "Colección de la familia Lewandowski",
@@ -111,6 +123,7 @@ export default [
   },
   {
     "n": 13,
+    "id": "local:23_mariusz_lewandowski:la_cruzada_el_ultimo_paso",
     "titulo": "La cruzada: el último paso",
     "anio": "c. 2020",
     "museo": "Colección de la familia Lewandowski",
@@ -120,6 +133,7 @@ export default [
   },
   {
     "n": 14,
+    "id": "local:23_mariusz_lewandowski:los_esplendores_de_la_santa_inquisicion",
     "titulo": "Los esplendores de la Santa Inquisición",
     "anio": "2015",
     "museo": "Colección de la familia Lewandowski",
@@ -129,6 +143,7 @@ export default [
   },
   {
     "n": 15,
+    "id": "local:23_mariusz_lewandowski:aniquilacion",
     "titulo": "Aniquilación",
     "anio": "c. 2019",
     "museo": "Colección de la familia Lewandowski",
@@ -138,6 +153,7 @@ export default [
   },
   {
     "n": 16,
+    "id": "local:23_mariusz_lewandowski:el_despertar",
     "titulo": "El despertar",
     "anio": "c. 2018",
     "museo": "Colección de la familia Lewandowski",
@@ -147,6 +163,7 @@ export default [
   },
   {
     "n": 17,
+    "id": "local:23_mariusz_lewandowski:los_limites_de_la_percepcion",
     "titulo": "Los límites de la percepción",
     "anio": "c. 2019",
     "museo": "Colección de la familia Lewandowski",
@@ -156,6 +173,7 @@ export default [
   },
   {
     "n": 18,
+    "id": "local:23_mariusz_lewandowski:danza_de_la_muerte",
     "titulo": "Danza de la muerte",
     "anio": "c. 2017",
     "museo": "Colección de la familia Lewandowski",
@@ -165,6 +183,7 @@ export default [
   },
   {
     "n": 19,
+    "id": "local:23_mariusz_lewandowski:santuario_oscuro",
     "titulo": "Santuario oscuro",
     "anio": "c. 2018",
     "museo": "Colección de la familia Lewandowski",
@@ -174,6 +193,7 @@ export default [
   },
   {
     "n": 20,
+    "id": "local:23_mariusz_lewandowski:el_demiurgo",
     "titulo": "El demiurgo",
     "anio": "2016",
     "museo": "Colección de la familia Lewandowski",
@@ -183,6 +203,7 @@ export default [
   },
   {
     "n": 21,
+    "id": "local:23_mariusz_lewandowski:isla_desierta",
     "titulo": "Isla desierta",
     "anio": "2021",
     "museo": "Colección de la familia Lewandowski",
@@ -192,6 +213,7 @@ export default [
   },
   {
     "n": 22,
+    "id": "local:23_mariusz_lewandowski:no_temas_al_destino",
     "titulo": "No temas al destino",
     "anio": "2022",
     "museo": "Colección de la familia Lewandowski",
@@ -201,6 +223,7 @@ export default [
   },
   {
     "n": 23,
+    "id": "local:23_mariusz_lewandowski:el_fin_del_camino",
     "titulo": "El fin del camino",
     "anio": "c. 2019",
     "museo": "Colección de la familia Lewandowski",
@@ -210,6 +233,7 @@ export default [
   },
   {
     "n": 24,
+    "id": "local:23_mariusz_lewandowski:el_caminante_eterno",
     "titulo": "El caminante eterno",
     "anio": "2021",
     "museo": "Colección de la familia Lewandowski",
@@ -219,6 +243,7 @@ export default [
   },
   {
     "n": 25,
+    "id": "local:23_mariusz_lewandowski:dualidad_existencial_mordrake",
     "titulo": "Dualidad existencial (Mordrake)",
     "anio": "c. 2020",
     "museo": "Colección privada / Xenobiotic",

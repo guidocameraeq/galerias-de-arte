@@ -20,8 +20,7 @@
 - [ ] **Decisión de Guido — licencias y link público:** ~198 obras con copyright/uso personal (19–23 y modernas). ¿Van a `Galerías/` pública, o solo compartidas con la cuenta de la TV? (`docs/FORMATO_DRIVE.md`). Bloquea el exportador.
 - [ ] **Drive `Galerías`:** las 23 colecciones están exportadas (originales; solo Eakins *Wrestlers* reducido a 3840 px por el límite de 50 MB). Pendiente: confirmar que Drive terminó de subir a la nube y que la app muestra todas; decidir si se pasa a copias de 3840 px (`export-drive --max-side`). Fichas cortas por decisión de Guido; curaduría = él borra después.
 - [ ] **Fichas para la app** (`docs/FICHAS_APP.md`, `node tools/fichas-stats.mjs`): solo una fracción llega a 80 palabras; reescribir primero las `Wikipedia-es` y las <60 palabras de las galerías que Guido elija. Decidir niveles y si se investigan `vida_autor`/`medidas`.
-- [ ] **Parchear los harvesters para que registren sus rechazos** (`logDiscard`): hoy no lo hacen `canon`, `wikiart`, `sculptures` ni `harvest-*`; solo 8 de 23 colecciones tienen historial en `_descartes/` (`_candidatas.json` lo declara en `cobertura`). Y revisar los 37 pendientes de los `_candidatas.json` con Guido.
-- [ ] **Motor genérico de colección nueva:** hoy cada colección se armó copiando `targets-NN` + `harvest-NN` de la anterior (`docs/procesos/NUEVA_COLECCION.md` paso 2). Un `tools/harvest.mjs` que lea un archivo de targets evitaría el copy-paste.
+- [ ] **Revisar con Guido los 37 pendientes de los `_candidatas.json`.** Solo 8 colecciones tienen historial de descartes (las viejas vías `canon`/`wikiart`/`sculptures`/`harvest-NN` no registraban); lo nuevo con `harvest.mjs` sí registra todo.
 - [ ] **Google Drive:** desmarcar "abrir al iniciar el sistema"; confirmar que la subida del Respaldo terminó; probar `images-sync restore` en la otra PC.
 - [ ] **Reorganizar el repo:** mover colecciones a `colecciones/` (las herramientas ya lo toleran) y agrupar `tools/` (56 scripts; varios de una sola pasada). Esperar a ver la app pulida; las obras se referencian por `qid`/`sourceId`.
 - [ ] **Decidir qué hacer con los `.jpg` que en realidad son PNG/WebP** (`node tools/audit.mjs --all` → `W-EXT`). Algunos visores/TV pueden rechazarlos. Renombrar a la extensión real no toca los píxeles pero cambia `file` y exige actualizar el índice. **Decisión del usuario.**
@@ -33,7 +32,6 @@
 - [ ] **Prueba real con otros agentes (te toca a vos, ~1 min c/u):** en Gemini CLI `/memory show` debe mostrar el contenido de `AGENTS.md`; en OpenCode preguntar "¿cuáles son las trampas del proyecto?" debe responderlas sin leer más. Los pasos de carga de contexto de cada agente salieron de guías de terceros (no se pudo probar acá: no hay otro agente instalado).
 
 ## 🟡 Cuando se pueda
-- [ ] **`apply-desc` pega por `n`:** reescribir `tools/desc/NN.mjs` para que se claven por `qid`/`sourceId` (hoy `W-DESC-STALE` solo avisa).
 - [ ] **`qid` genérico repetido en 01–06** (`W-QID-DUP`: p. ej. varias "Madonna and Child" comparten `qid`): revisar si hay duplicados reales y dejar de usar `qid` como clave de dedup para obras `named`/`discovery`.
 - [ ] **Las obras de WikiArt (13–15) no tienen `sourceId` ni `qid`**: su dedup es débil (solo título-apellido dentro de la colección).
 - [ ] **`dore.mjs`**: agregar `r.ok` + validación de contenido, o marcarlo obsoleto/abortar como `gap-desc`. Hoy no hay que re-ejecutarlo.

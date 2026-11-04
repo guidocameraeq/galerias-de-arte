@@ -5,6 +5,7 @@
 export default [
   {
     n: 1,
+    id: "mindysolomon:The-Feast-of-Fire.jpg",
     titulo: 'La fiesta del fuego (Frente)',
     anio: '2026',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -14,6 +15,7 @@ export default [
   },
   {
     n: 2,
+    id: "mindysolomon:he-Feast-of-Fire-back.jpg",
     titulo: 'La fiesta del fuego (Dorso)',
     anio: '2026',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -23,6 +25,7 @@ export default [
   },
   {
     n: 3,
+    id: "mindysolomon:The-witching-hour.jpg",
     titulo: 'La hora de las brujas',
     anio: '2026',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -32,6 +35,7 @@ export default [
   },
   {
     n: 4,
+    id: "File:Iberá - Marcelo Canevari y Marcelo José Canevari.jpg",
     titulo: 'Iberá (Fauna y flora)',
     anio: '2015',
     museo: 'Colección privada / Esteros del Iberá',
@@ -41,6 +45,7 @@ export default [
   },
   {
     n: 5,
+    id: "mindysolomon:opening-night.jpg",
     titulo: 'Noche de estreno',
     anio: '2026',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -50,6 +55,7 @@ export default [
   },
   {
     n: 6,
+    id: "mindysolomon:fairytale.jpg",
     titulo: 'Cuento de hadas',
     anio: '2026',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -59,6 +65,7 @@ export default [
   },
   {
     n: 7,
+    id: "mindysolomon:the-lighthouse.jpg",
     titulo: 'El faro',
     anio: '2026',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -68,6 +75,7 @@ export default [
   },
   {
     n: 8,
+    id: "mindysolomon:El-llamado-de-la-noche.jpg",
     titulo: 'El llamado de la noche',
     anio: '2024',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -77,6 +85,7 @@ export default [
   },
   {
     n: 9,
+    id: "joia:Diecisiete-fantasmas",
     titulo: 'Diecisiete fantasmas',
     anio: '2021',
     museo: 'Colección privada',
@@ -86,6 +95,7 @@ export default [
   },
   {
     n: 10,
+    id: "cott:marcelo-canevari-cott-4",
     titulo: 'El sonido de una flecha',
     anio: '2021',
     museo: 'Galería COTT, Buenos Aires',
@@ -95,6 +105,7 @@ export default [
   },
   {
     n: 11,
+    id: "cott:marcelo-canevari-cott-6",
     titulo: 'La explosión del séptimo día',
     anio: '2021',
     museo: 'Galería COTT, Buenos Aires',
@@ -104,6 +115,7 @@ export default [
   },
   {
     n: 12,
+    id: "cott:fuerza-mayor-3",
     titulo: 'Fuerza Mayor (Pieza III)',
     anio: '2026',
     museo: 'Galería COTT, Buenos Aires',
@@ -113,6 +125,7 @@ export default [
   },
   {
     n: 13,
+    id: "cott:fuerza-mayor-4",
     titulo: 'Fuerza Mayor (Pieza IV)',
     anio: '2026',
     museo: 'Galería COTT, Buenos Aires',
@@ -122,6 +135,7 @@ export default [
   },
   {
     n: 14,
+    id: "cott:fuerza-mayor-5",
     titulo: 'Fuerza Mayor (Pieza V)',
     anio: '2026',
     museo: 'Galería COTT, Buenos Aires',
@@ -131,6 +145,7 @@ export default [
   },
   {
     n: 15,
+    id: "cott:fuerza-mayor-6",
     titulo: 'Fuerza Mayor (Pieza VI)',
     anio: '2026',
     museo: 'Galería COTT, Buenos Aires',
@@ -140,6 +155,7 @@ export default [
   },
   {
     n: 16,
+    id: "mindysolomon:Night-buttefly.jpeg",
     titulo: 'Mariposa nocturna',
     anio: '2023',
     museo: 'Mindy Solomon Gallery, Miami',
@@ -149,6 +165,7 @@ export default [
   },
   {
     n: 17,
+    id: "indiehoy:dillom-post-mortem",
     titulo: 'Post Mortem (Tapa Dillom, con Pocetti)',
     anio: '2021',
     museo: 'Colección privada / Portada de disco',
@@ -158,6 +175,7 @@ export default [
   },
   {
     n: 18,
+    id: "indiehoy:las-ofrendas",
     titulo: 'Las ofrendas (2º Salón Nacional)',
     anio: '2019',
     museo: 'Palais de Glace / Salón Nacional de Artes Visuales, Buenos Aires',
@@ -167,6 +185,7 @@ export default [
   },
   {
     n: 19,
+    id: "indiehoy:nuestro-ultimo-campamento",
     titulo: 'Nuestro último campamento',
     anio: '2021',
     museo: 'Colección privada',
@@ -176,6 +195,7 @@ export default [
   },
   {
     n: 20,
+    id: "booooooom:afternoon-on-the-bridge",
     titulo: 'Tarde en el puente',
     anio: '2022',
     museo: 'Colección privada',
@@ -185,6 +205,7 @@ export default [
   },
   {
     n: 21,
+    id: "booooooom:the-last-cherry-blossoms",
     titulo: 'Los últimos cerezos en flor',
     anio: '2022',
     museo: 'Colección privada',
@@ -194,6 +215,7 @@ export default [
   },
   {
     n: 22,
+    id: "booooooom:the-silence-of-the-river",
     titulo: 'El silencio del río',
     anio: '2022',
     museo: 'Colección privada',
@@ -203,6 +225,7 @@ export default [
   },
   {
     n: 23,
+    id: "booooooom:the-prey-",
     titulo: 'La presa',
     anio: '2022',
     museo: 'Colección privada',
@@ -212,6 +235,7 @@ export default [
   },
   {
     n: 24,
+    id: "booooooom:hunting-season",
     titulo: 'Temporada de caza',
     anio: '2022',
     museo: 'Colección privada',
@@ -221,6 +245,7 @@ export default [
   },
   {
     n: 25,
+    id: "booooooom:the-hunger-of-fire",
     titulo: 'El hambre del fuego',
     anio: '2022',
     museo: 'Colección privada',

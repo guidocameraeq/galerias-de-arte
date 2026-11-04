@@ -36,14 +36,14 @@ for (const c of cols) {
 const yaEntro = (o) => (o.qid && have.qid.has(o.qid)) || (o.sourceId && have.src.has(o.sourceId)) || (o.titulo && have.key.has(tkey(o.titulo, o.autor)));
 
 // 1) Descartes registrados por los scripts
-const MOTIVO = { no_match: 'no_encontrada', low_res: 'baja_resolucion', download_error: 'error_descarga', dup: 'duplicada', dup_visual: 'duplicada', baja_calidad: 'baja_calidad', too_modern: 'fuera_de_periodo', junk_title: 'fuera_de_tema', excluded: 'fuera_de_tema' };
+const MOTIVO = { curaduria: 'curaduria_guido', otro: 'otro', fuera_de_tema: 'fuera_de_tema', error: 'error', no_match: 'no_encontrada', low_res: 'baja_resolucion', download_error: 'error_descarga', dup: 'duplicada', dup_visual: 'duplicada', baja_calidad: 'baja_calidad', too_modern: 'fuera_de_periodo', junk_title: 'fuera_de_tema', excluded: 'fuera_de_tema' };
 const dDir = path.join(ROOT, '_descartes');
 if (fs.existsSync(dDir)) for (const f of fs.readdirSync(dDir).filter(x => x.endsWith('.jsonl'))) {
   const col = f.replace(/\.jsonl$/, '');
   if (!out[col]) continue;
   for (const l of fs.readFileSync(path.join(dDir, f), 'utf8').split('\n').filter(Boolean)) {
-    const o = JSON.parse(l);
-    const named = o.kind === 'named' || o.reason === 'download_error' && o.kind === 'named';
+    let o; try { o = JSON.parse(l); } catch { console.error(`línea ilegible en ${f}, se saltea`); continue; }
+    const named = o.kind === 'named';
     const e = { estado: named ? 'pendiente' : 'descartada', titulo: o.title || o.file || null, autor: o.artist || null,
       qid: o.qid || null, sourceId: o.sourceId || null, motivo: MOTIVO[o.reason] || o.reason,
       detalle: [o.long && `lado largo ${o.long}px`, o.year && `año ${o.year}`, o.note, o.err && `error: ${o.err}`].filter(Boolean).join(' · ') || null,
@@ -59,6 +59,13 @@ const mp = path.join(ROOT, 'tools/candidatas-manual.json');
 if (fs.existsSync(mp)) for (const m of JSON.parse(fs.readFileSync(mp, 'utf8'))) {
   if (!out[m.col]) { console.error(`manual: colección desconocida ${m.col}`); continue; }
   out[m.col].push({ estado: m.estado || 'pendiente', titulo: m.titulo, autor: m.autor || null, qid: m.qid || null, sourceId: null, motivo: m.motivo, detalle: m.detalle || null, origen: 'manual' });
+}
+
+// 2b) Sin --gap (p. ej. tras drive-curation, sin red): conservar las brechas de Wikidata de la corrida anterior
+if (!GAP) for (const c of cols) {
+  const fp = path.join(base, c, '_candidatas.json');
+  if (!fs.existsSync(fp)) continue;
+  try { for (const e of JSON.parse(fs.readFileSync(fp, 'utf8')).items || []) if (e.origen === 'gap-wikidata' && !yaEntro(e)) out[c].push(e); } catch { }
 }
 
 // 3) Brechas de Wikidata: famosas que NO tenemos, asignadas a la colección más probable (propuesta)

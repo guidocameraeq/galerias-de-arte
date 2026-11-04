@@ -60,7 +60,7 @@ Imagen que no está en la lista → se muestra al final sin ficha. Obra cuyo arc
 | `explicacion` | `description` | ver `docs/FICHAS_APP.md` |
 | `licencia` / `credito` | `license` → texto normalizado | ver política abajo |
 | `fuente` | `source_url` \|\| `image_url` | |
-| `id` | `qid` \|\| `sourceId` | `qid` es mejor (no cambia al reemplazar la imagen). Ojo `W-QID-DUP`: en 01–06 hay `qid` genéricos repetidos → usar `sourceId` o desambiguar |
+| `id` | `qid` → `sourceId` → `source_url` → `image_url` | Regla única en `tools/galerias.mjs` (`idsGaleria`), la usan `export-drive` y `drive-curation`. Si el id ya lo usó otra obra (`qid` genéricos repetidos en 01–06, `W-QID-DUP`) se usa su `sourceId` o se agrega `#n`. Las obras sin identificador tienen `sourceId` `local:…` (`assign-local-ids.mjs`). Estable aunque cambie el `n` o el archivo |
 | `forma` | lista manual de tondos | no existe en el índice |
 | `vida_autor`, `medidas` | **no existen en el índice** | omitir; completar solo donde se investigue |
 
@@ -68,6 +68,9 @@ Imagen que no está en la lista → se muestra al final sin ficha. Obra cuyo arc
 El enlace "cualquiera con el enlace" **no es privado**. Casi todo es dominio público, pero parte tiene copyright y se guarda para uso personal (valores `license` = "Con copyright (uso personal)" / "Uso personal"; cantidades: `node tools/fichas-stats.mjs` / consultar los índices). **Restricción técnica (agente de la app, 2026-11-02):** la app v1 lee Drive solo con una clave de API, o sea **únicamente carpetas "cualquiera con el enlace"**. Leer una carpeta privada compartida con una cuenta exigiría login de Google (OAuth) en la TV: cambio grande, fuera de v1. Por eso la salida "compartir solo con la cuenta de la TV" **hoy no existe**. Opciones para las ~198 obras con copyright de uso personal: (a) publicarlas igual por enlace (no listado, uso personal; riesgo bajo pero no es privado), (b) dejarlas fuera de `Galerías/` hasta que la app soporte login, (c) pedir a la app que sume OAuth. **Decide Guido** antes de exportar la biblioteca real; recomendación: (b) para empezar, exportando primero galerías de dominio público.
 
 **Copias para la app:** la app baja el ORIGINAL de cada obra (~5 MB; a una por minuto son ~7 GB/día) y Drive limita las descargas de enlaces públicos. Propuesta: la exportación sube copias reducidas a 3840 px de lado mayor (los originales quedan intactos en la biblioteca y el Respaldo; la copia es solo un derivado de entrega). **Pendiente de OK de Guido** (choca con la regla dura 2 si se lee sin matiz).
+
+## Curaduría de Guido (borra en Drive)
+Guido poda las galerías **borrando imágenes** en `Galerías`. `export-drive.mjs` detecta lo borrado (estaba en el `galeria.json` anterior y ya no está la imagen): **no lo vuelve a subir** y lo sigue listando (la app lo saltea) para no perder la evidencia; si falta >30% de una galería no la toca (¿Drive sincronizando?). `node tools/drive-curation.mjs --apply` lo saca también del repo (recuperable) y regenera el `galeria.json` y el registro de candidatas. Si una obra cambia de título, `export-drive` renombra su archivo en Drive en vez de duplicarlo; los `id` no cambian.
 
 ## Chequeo antes de entregar (lo corre el exportador)
 JSON válido · cada `archivo` coincide letra por letra con una imagen y no se repite · tondos con `forma` · ningún `id` repetido · sin Markdown en los textos · orden de la lista intencional. Para la prueba: `node tools/check-prueba-json.mjs`.

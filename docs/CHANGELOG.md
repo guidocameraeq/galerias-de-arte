@@ -2,6 +2,26 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-11-03 (b) — Sistema autónomo de colecciones: motor genérico, fichas por id, curaduría desde Drive
+
+### Added
+- `tools/harvest.mjs`: motor genérico de colección nueva desde `tools/targets/<col>.json` (Commons / Wikidata P18 / URL directa), con dedup contra toda la biblioteca, medición real, piso, registro de rechazos y fichas por id. Plantilla `tools/targets/_ejemplo.json`. Probado en sandbox.
+- `tools/drive-curation.mjs`: lo que Guido borra en Drive sale del repo (recuperable) y se regenera su galería y las candidatas. Probado en sandbox.
+- `tools/desc-add-ids.mjs` y `tools/assign-local-ids.mjs`: las 973 fichas quedaron clavadas por id; 50 obras de 22/23 recibieron `sourceId` local.
+- `tools/galerias.mjs`: títulos de galería compartidos.
+
+### Changed
+- `apply-desc.mjs` pega por `id` (fallback `n`), acepta `autor`, avisa por >160 palabras. `audit.mjs` compara fichas por id.
+- `export-drive.mjs`: no re-sube lo borrado en Drive, renombra en vez de duplicar, ids estables también para WikiArt/monografías, usa `forma` del índice.
+- `candidatas.mjs`: conserva las brechas de Wikidata al regenerar sin red; motivo `curaduria`.
+- `NUEVA_COLECCION.md` reescrito alrededor del motor (dos frenos con Guido); agentes y skill ajustados; `METODO.md` vía g.
+
+### Fixed (revisión independiente de código, subagente Sonnet)
+- `apply-desc` no usaba el id (el reemplazo no había pegado) y contaba mal las palabras: corregido y **probado renumerando las 38 obras de Rococó** (38/38 fichas en su obra). Conserva `d_fuente`.
+- `export-drive`: lo borrado en Drive se sigue listando hasta `drive-curation` (antes se perdía la evidencia); freno >30%; busca el archivo anterior por todas las claves. Regla de ids compartida (`galerias.mjs` → `idsGaleria`) que también usa `drive-curation`, para no sacar nunca la obra equivocada.
+- `harvest`: temporal dentro de la biblioteca (rename entre discos) y limpieza ante error; no re-baja obras retiradas con `remove-work`; registra qid y sourceId; agrega fichas validando el módulo.
+- `saveIndex` atómico (tmp + rename). `candidatas` tolera líneas rotas.
+
 ## 2026-11-03 — Proceso de colección nueva, subagentes y registro de candidatas
 
 ### Added

@@ -5,7 +5,7 @@ tools: Read, Grep, Glob, Bash
 model: sonnet
 ---
 
-Sos el **verificador de calidad visual** del proyecto "Arte". `node tools/audit.mjs` NO detecta que una ficha corresponda a su imagen; vos sí. Seguí `docs/procesos/NUEVA_COLECCION.md` **Paso 4.3** y `docs/CALIDAD.md`.
+Sos el **verificador de calidad visual** del proyecto "Arte". `node tools/audit.mjs` NO detecta que una ficha corresponda a su imagen; vos sí. Seguí `docs/procesos/NUEVA_COLECCION.md` **Paso 4.2** y `docs/CALIDAD.md`.
 
 Cómo trabajar:
 - Las hojas se generan con `node tools/contact-sheets.mjs --out=<carpeta temporal> --col=<colección> [--all-items]`. Cada miniatura trae una etiqueta "n  título" / "autor, año". Leé cada hoja con la herramienta Read.

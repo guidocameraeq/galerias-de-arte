@@ -29,7 +29,7 @@ Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso person
 3. **La colección 17 (Doré) es excepcional:** sin `holding_museum`/`year` por grabado, `title_es` = "Infierno · Canto N". No la valides con las reglas de ficha del resto.
 4. **Scripts de UNA pasada, NO re-ejecutar:** `dore.mjs` (baja sin validar; para Doré, `dore-redownload.mjs`), `dore-dedup-apply.mjs` y `gap-desc.mjs` (abortan solos), `move-aphrodite.mjs`, y `prune-canon.mjs`/`prune-modern.mjs` (en dry proponen sacar obras ya aceptadas y renumeran, lo que desfasa las fichas; ahora al menos MUEVEN en vez de borrar). `enrich-es --force` pisa las fichas hechas a mano.
 5. **`n` y `file` no son identificadores estables** (se renumera/renombra). Referenciá obras por `qid`/`sourceId`. `n` puede tener huecos.
-6. **`apply-desc.mjs` pega las fichas POR `n`.** Si podás/renumerás/movés una obra, sacá su entrada de `tools/desc/NN.mjs` (`remove-work` lo hace solo); si no, la ficha cae en otra obra. `audit` lo avisa como `W-DESC-STALE`: no corras `apply-desc` con ese aviso activo.
+6. **Fichas de `tools/desc/NN.mjs`: cada entrada lleva `id`** (qid / sourceId / source_url / image_url de la obra) y `apply-desc` la pega por ese id; `n` es solo respaldo para entradas viejas sin id. Entrada nueva SIN `id` = vuelve el riesgo de fichas corridas (pasó en 10_realismo). Las obras sin ningún identificador reciben un `sourceId` `local:…` con `tools/assign-local-ids.mjs`. `audit` avisa `W-DESC-STALE`: no corras `apply-desc` con ese aviso activo.
 7. Hay archivos `.jpg` cuyo contenido es PNG/WebP (`audit` los lista como `W-EXT`). No renombrar ni convertir sin pedido del usuario.
 8. **`landscape/`, `portrait/` y `_dedup_removed/` son ENLACES** a la biblioteca (Windows junctions, creados por `tools/link-images.mjs`). No los borres ni los reemplaces por carpetas reales; en una PC nueva: `node tools/link-images.mjs --dir=RUTA --save --apply`, o `node tools/images-sync.mjs restore --apply` para bajarlas de Drive. `images-sync` solo copia: nunca borra.
 9. **`<col>/_candidatas.json`** = lo que NO entró (pendientes importantes y descartadas, con motivo). Se regenera con `node tools/candidatas.mjs --gap --apply`; las decisiones del historiador van en `tools/candidatas-manual.json`, no a mano en el JSON.
@@ -45,7 +45,8 @@ Valida forma del índice, que cada archivo exista y sea imagen real, dims reales
 ## Rituales (palabras clave — funcionan en cualquier agente)
 - El usuario dice **"inicio"** (o "retomemos", "¿en qué quedamos?") → seguí `docs/procesos/INICIO.md`. No toques nada hasta su OK.
 - El usuario dice **"cierre"** (o "cierre parcial" si se llena el contexto) → seguí `docs/procesos/CIERRE.md`.
-- El usuario dice **"nueva colección"** (o "ampliar la colección N") → seguí `docs/procesos/NUEVA_COLECCION.md` (en Claude: `/nueva-coleccion`).
+- El usuario dice **"nueva colección"** (o "ampliar la colección N") → seguí `docs/procesos/NUEVA_COLECCION.md` (en Claude: `/nueva-coleccion`). El motor es `tools/harvest.mjs` con la lista `tools/targets/NN.json`.
+- El usuario dice que **curó/borró obras en Drive** → `node tools/drive-curation.mjs` (dry) y, con su OK, `--apply` (NUEVA_COLECCION.md, sección "Después").
 - Una sesión = una misión. Si aparece otra de verdad, proponé cierre y sesión nueva.
 
 ## Mapa de docs (leé por niveles: solo lo que la tarea toque)
