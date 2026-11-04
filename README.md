@@ -30,7 +30,8 @@ Reglas completas y trampas conocidas: [`AGENTS.md`](AGENTS.md).
 ## Cómo está organizado
 
 ```
-01_…/ … 23_…/     Una carpeta por colección
+colecciones/
+  01_…/ … 24_…/   Una carpeta por colección
   ├─ landscape/     Obras horizontales (ancho ≥ alto)
   ├─ portrait/      Obras verticales
   ├─ _index.json    Catálogo: { collection, items: [ficha por obra] }

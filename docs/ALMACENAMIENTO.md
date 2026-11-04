@@ -28,9 +28,9 @@ Instalar Google Drive para escritorio en esa PC (con la cuenta de Guido) y dejar
 
 ## Decisiones (2026-11-02, Guido)
 - **Imágenes fuera del repo** (hecho): biblioteca por PC + respaldo en Drive.
-- **Estructura de colecciones: se mantiene la actual** (`NN_nombre/landscape|portrait`). Mezcla colecciones por autor (19–23) y por época/estilo (el grueso); es provisoria y se reordenará cuando la app esté pulida. Por eso las obras se referencian por `qid`/`sourceId`, no por carpeta ni `n`.
-- **El repo conserva todo lo que no pesa:** índices, fichas, descartes. Falta un registro de obras *candidatas* (entró / pendiente de conseguir / descartada por criterio): propuesta `_candidatas.json`, ver `docs/procesos/FLUJO_AGENTES.md`.
+- **Estructura de colecciones** (`colecciones/NN_nombre/landscape|portrait`; movidas a `colecciones/` el 2026-11-04). Mezcla colecciones por autor (19–23) y por época/estilo (el grueso); es provisoria y se reordenará cuando la app esté pulida. Por eso las obras se referencian por `qid`/`sourceId`, no por carpeta ni `n`.
+- **El repo conserva todo lo que no pesa:** índices, fichas, descartes y el registro de candidatas (`colecciones/NN/_candidatas.json`: lo que no entró y por qué).
 - **Reconstrucción:** cada ficha guarda `image_url` y `sourceId`; casi todo se puede volver a bajar, pero es lento y lo ya podado no vuelve. El Respaldo de Drive es la red de seguridad real.
 
 ## Pendiente
-`tools/export-drive.mjs` (biblioteca → carpeta `Galerías` para la app) · política de licencias para el enlace público (ver `FORMATO_DRIVE.md`) · probar `images-sync restore` en una PC real.
+Probar `images-sync restore` en una PC real (solo se probó el respaldo) · decidir originales vs copias de 3840 px para la app.

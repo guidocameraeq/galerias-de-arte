@@ -1,6 +1,6 @@
 # Galería 03 · Gótico y Baja Edad Media
 
-> **Ubicación en repo:** `03_gotico/`  
+> **Ubicación en repo:** `colecciones/03_gotico/`  
 > **Ficha técnica:** 102 obras · 100% con descripción en español · Resolución media: 3265 × 3277 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 55 (54%) |
 | **Rango de resolución (lado largo)** | 819 px – 10121 px |
 | **Artistas representados** | 45 |
-| **Índice canónico** | [`_index.json`](../../03_gotico/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/03_gotico/_index.json) |
 
 ---
 

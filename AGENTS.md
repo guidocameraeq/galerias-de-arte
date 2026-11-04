@@ -4,7 +4,7 @@
 > Acá van las reglas que, si las borrás, te hacen equivocar. **No hay estado ni conteos** (rotan): para eso `docs/SESSION_HANDOFF.md` y `node tools/audit.mjs`.
 
 ## Qué es
-Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso personal** del usuario (las ve como slideshow/modo reposo en su TV). Colecciones `NN_nombre/` por escuela/época; cada obra = archivo en `landscape/` o `portrait/` + ficha en español dentro de `<col>/_index.json`. Motor **100% Node.js** (sin Python/Pillow). Se trabaja desde la raíz del proyecto.
+Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso personal** del usuario (las ve como slideshow/modo reposo en su TV). Colecciones en `colecciones/NN_nombre/` por escuela/época/autor; cada obra = archivo en `landscape/` o `portrait/` + ficha en español dentro de `<col>/_index.json`. Motor **100% Node.js** (sin Python/Pillow). Se trabaja desde la raíz del proyecto.
 
 **Tu rol acá: historiador y curador** (investigar, elegir, descargar, fichar, documentar). La app que muestra las obras en la TV (**Museum Slideshow**, Android) es **otro proyecto con otro agente**: no se toca desde acá. Lo único compartido es el formato de carpetas + `galeria.json` en Google Drive → `docs/FORMATO_DRIVE.md`.
 

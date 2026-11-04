@@ -1,6 +1,6 @@
 // tools/lib.mjs — motor reutilizable del proyecto "Arte"
 // Node v18+ (usa fetch nativo). Sin dependencias externas.
-import { promises as fs, existsSync } from 'node:fs';
+import { promises as fs, existsSync, readdirSync } from 'node:fs';
 import path from 'node:path';
 
 export const sleep = (ms) => new Promise(r => setTimeout(r, ms));
@@ -210,7 +210,18 @@ export function resolveColDir(rootDir, colName) {
   return inCols;
 }
 
+// Las colecciones viven en <raíz>/colecciones/NN_nombre/ (desde 2026-11-04; antes en la raíz).
+// colsBase: carpeta que las contiene · colPath: nombre "NN_x" → ruta real · listCols: nombres de todas las colecciones.
+export const colsBase = (root = process.cwd()) => existsSync(path.join(root, 'colecciones')) ? path.join(root, 'colecciones') : root;
+export const colPath = (name, root = process.cwd()) =>
+  /^\d\d_[^\\/]+$/.test(name) ? path.join(colsBase(root), name) : name;   // una ruta (con / o \) se respeta tal cual
+export const listCols = (root = process.cwd()) =>
+  readdirSync(colsBase(root), { withFileTypes: true })
+    .filter(d => d.isDirectory() && /^\d\d_/.test(d.name) && existsSync(path.join(colsBase(root), d.name, '_index.json')))
+    .map(d => d.name).sort();
+
 export async function loadIndex(colDir) {
+  colDir = colPath(colDir);                                  // acepta "NN_nombre" o una ruta
   const p = path.join(colDir, '_index.json');
   let txt;
   try { txt = await fs.readFile(p, 'utf8'); }
@@ -219,6 +230,7 @@ export async function loadIndex(colDir) {
   return JSON.parse(txt);
 }
 export async function saveIndex(colDir, idx) {
+  colDir = colPath(colDir);
   const p = path.join(colDir, '_index.json');
   const tmp = `${p}.tmp-${process.pid}`;                    // atómico: un corte a mitad nunca deja el índice truncado
   await fs.writeFile(tmp, JSON.stringify(idx, null, 2));

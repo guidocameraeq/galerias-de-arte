@@ -1,6 +1,6 @@
 # Galería 13 · Vanguardias Históricas
 
-> **Ubicación en repo:** `13_vanguardias/`  
+> **Ubicación en repo:** `colecciones/13_vanguardias/`  
 > **Ficha técnica:** 44 obras · 100% con descripción en español · Resolución media: 1936 × 2035 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 23 (52%) |
 | **Rango de resolución (lado largo)** | 550 px – 7892 px |
 | **Artistas representados** | 11 |
-| **Índice canónico** | [`_index.json`](../../13_vanguardias/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/13_vanguardias/_index.json) |
 
 ---
 

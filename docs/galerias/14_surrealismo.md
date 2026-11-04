@@ -1,6 +1,6 @@
 # Galería 14 · Surrealismo Histórico
 
-> **Ubicación en repo:** `14_surrealismo/`  
+> **Ubicación en repo:** `colecciones/14_surrealismo/`  
 > **Ficha técnica:** 21 obras · 100% con descripción en español · Resolución media: 1532 × 1494 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 9 (43%) |
 | **Rango de resolución (lado largo)** | 927 px – 2402 px |
 | **Artistas representados** | 5 |
-| **Índice canónico** | [`_index.json`](../../14_surrealismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/14_surrealismo/_index.json) |
 
 ---
 

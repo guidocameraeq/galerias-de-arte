@@ -1,6 +1,6 @@
 # Galería 04 · Romanticismo
 
-> **Ubicación en repo:** `04_romanticismo/`  
+> **Ubicación en repo:** `colecciones/04_romanticismo/`  
 > **Ficha técnica:** 102 obras · 100% con descripción en español · Resolución media: 3608 × 2903 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 21 (21%) |
 | **Rango de resolución (lado largo)** | 800 px – 7764 px |
 | **Artistas representados** | 19 |
-| **Índice canónico** | [`_index.json`](../../04_romanticismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/04_romanticismo/_index.json) |
 
 ---
 

@@ -2,6 +2,7 @@
 // Uso: node tools/gen-targets-md.mjs <colDir>
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
+import { colPath } from './lib.mjs';
 
 const SRC = { met: 'MET', cle: 'CLE', wmc: 'WMC' };
 const colDir = process.argv[2];
@@ -26,5 +27,5 @@ md += `- Reglas de calidad: solo dominio público/CC0, lado largo ≥1000px (pis
 md += `  Full HD+ preferido en el descubrimiento, sin recortar, separar landscape/portrait.\n`;
 if (mod[`EXCLUDE_CHRISTIAN_${num}`]) md += `- **Exclusión dura:** temática cristiana/Jesús (crucifixiones, devoción a Cristo).\n`;
 
-await fs.writeFile(path.join(colDir, '_targets.md'), md);
+await fs.writeFile(path.join(colPath(colDir), '_targets.md'), md);
 console.log(`_targets.md generado para ${colDir} (${targets.length} targets).`);

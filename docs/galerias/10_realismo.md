@@ -1,6 +1,6 @@
 # Galería 10 · Realismo
 
-> **Ubicación en repo:** `10_realismo/`  
+> **Ubicación en repo:** `colecciones/10_realismo/`  
 > **Ficha técnica:** 84 obras · 100% con descripción en español · Resolución media: 3414 × 3264 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 35 (42%) |
 | **Rango de resolución (lado largo)** | 750 px – 7885 px |
 | **Artistas representados** | 19 |
-| **Índice canónico** | [`_index.json`](../../10_realismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/10_realismo/_index.json) |
 
 ---
 

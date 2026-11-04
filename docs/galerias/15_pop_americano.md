@@ -1,6 +1,6 @@
 # Galería 15 · Pop Art Americano
 
-> **Ubicación en repo:** `15_pop_americano/`  
+> **Ubicación en repo:** `colecciones/15_pop_americano/`  
 > **Ficha técnica:** 16 obras · 100% con descripción en español · Resolución media: 1864 × 1553 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 6 (38%) |
 | **Rango de resolución (lado largo)** | 800 px – 6001 px |
 | **Artistas representados** | 8 |
-| **Índice canónico** | [`_index.json`](../../15_pop_americano/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/15_pop_americano/_index.json) |
 
 ---
 

@@ -2,6 +2,12 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-11-04 — Colecciones dentro de `colecciones/` y repo listo para publicar
+
+### Changed
+- Las 24 carpetas de colección pasaron a `colecciones/NN_nombre/` (git las registra como movidas). `lib.mjs` centraliza la ruta (`colsBase`, `colPath`, `listCols`; `loadIndex`/`saveIndex` aceptan el nombre) y se adaptaron `canon`, `wikiart`, `sculptures`, `upgrade`, `collect`, `gap`, `gen-targets-md`, `fichas-stats` y los `dore*`. `.gitignore` ignora los enlaces a cualquier profundidad. Links de `docs/galerias/` corregidos.
+- User-Agent con link al repo en vez de mail; sin rutas locales en los docs.
+
 ## 2026-11-03 (c) — Colección 24 Ukiyo-e: primera armada con el sistema nuevo
 
 ### Added

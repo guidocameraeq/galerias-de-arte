@@ -3,7 +3,7 @@
 // Resuelve el slug; si falla, busca en WikiArt. Uso: node tools/wikiart.mjs <colDir> [--apply]
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { imgSize, orientationOf, buildFilename, cleanTitle, cleanArtist, cleanYear, loadIndex, saveIndex, sleep } from './lib.mjs';
+import { imgSize, orientationOf, buildFilename, cleanTitle, cleanArtist, cleanYear, loadIndex, saveIndex, sleep, colPath } from './lib.mjs';
 
 const colDir = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -78,7 +78,7 @@ const have = new Set(idx.items.map(it => norm(it.title) + '|' + norm(it.artist).
 let n = idx.items.length ? Math.max(...idx.items.map(i => i.n)) + 1 : 1;
 let ok = 0, fail = 0;
 console.log(`=== WikiArt: ${cfg.titulo} (${cfg.works.length} obras) ===`);
-if (APPLY) { await fs.mkdir(path.join(colDir, 'landscape'), { recursive: true }); await fs.mkdir(path.join(colDir, 'portrait'), { recursive: true }); }
+if (APPLY) { await fs.mkdir(path.join(colPath(colDir), 'landscape'), { recursive: true }); await fs.mkdir(path.join(colPath(colDir), 'portrait'), { recursive: true }); }
 
 for (const w of cfg.works) {
   if (have.has(norm(w.t) + '|' + norm(w.a).split(' ').pop())) { console.log(`  = ${w.t} (ya está)`); continue; }
@@ -92,7 +92,7 @@ for (const w of cfg.works) {
     const file = buildFilename(n, cTitle, cArtist, cYear);
     const quality = Math.max(img.w, img.h) >= 2400 ? 'alta' : Math.max(img.w, img.h) >= 1500 ? 'media' : 'baja';
     if (APPLY) {
-      await fs.writeFile(path.join(colDir, orient, file), img.buf);
+      await fs.writeFile(path.join(colPath(colDir), orient, file), img.buf);
       idx.items.push({
         n, file, orientation: orient, title: cTitle, artist: cArtist, year: cYear,
         title_es: w.titulo || null, school: cfg.titulo, type: w.tipo || 'Óleo sobre lienzo',

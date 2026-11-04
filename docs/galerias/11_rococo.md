@@ -1,6 +1,6 @@
 # Galería 11 · Rococó
 
-> **Ubicación en repo:** `11_rococo/`  
+> **Ubicación en repo:** `colecciones/11_rococo/`  
 > **Ficha técnica:** 38 obras · 100% con descripción en español · Resolución media: 3449 × 3562 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 22 (58%) |
 | **Rango de resolución (lado largo)** | 1129 px – 7909 px |
 | **Artistas representados** | 8 |
-| **Índice canónico** | [`_index.json`](../../11_rococo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/11_rococo/_index.json) |
 
 ---
 

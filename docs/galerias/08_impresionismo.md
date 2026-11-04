@@ -1,6 +1,6 @@
 # Galería 08 · Impresionismo
 
-> **Ubicación en repo:** `08_impresionismo/`  
+> **Ubicación en repo:** `colecciones/08_impresionismo/`  
 > **Ficha técnica:** 67 obras · 100% con descripción en español · Resolución media: 3625 × 3605 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 32 (48%) |
 | **Rango de resolución (lado largo)** | 1020 px – 7455 px |
 | **Artistas representados** | 9 |
-| **Índice canónico** | [`_index.json`](../../08_impresionismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/08_impresionismo/_index.json) |
 
 ---
 

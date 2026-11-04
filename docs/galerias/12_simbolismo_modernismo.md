@@ -1,6 +1,6 @@
 # Galería 12 · Simbolismo y Art Nouveau
 
-> **Ubicación en repo:** `12_simbolismo_modernismo/`  
+> **Ubicación en repo:** `colecciones/12_simbolismo_modernismo/`  
 > **Ficha técnica:** 70 obras · 100% con descripción en español · Resolución media: 2793 × 2999 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 41 (59%) |
 | **Rango de resolución (lado largo)** | 500 px – 7453 px |
 | **Artistas representados** | 14 |
-| **Índice canónico** | [`_index.json`](../../12_simbolismo_modernismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/12_simbolismo_modernismo/_index.json) |
 
 ---
 

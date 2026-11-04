@@ -1,6 +1,6 @@
 # Galería 22 · Zdzisław Beksiński
 
-> **Ubicación en repo:** `22_zdzislaw_beksinski/`  
+> **Ubicación en repo:** `colecciones/22_zdzislaw_beksinski/`  
 > **Ficha técnica:** 25 obras · 100% con descripción en español · Resolución media: 1507 × 1769 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 22 (88%) |
 | **Rango de resolución (lado largo)** | 1333 px – 2268 px |
 | **Artistas representados** | 1 |
-| **Índice canónico** | [`_index.json`](../../22_zdzislaw_beksinski/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/22_zdzislaw_beksinski/_index.json) |
 
 ---
 

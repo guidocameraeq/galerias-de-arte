@@ -1,6 +1,6 @@
 # Galería 07 · Alto Renacimiento y Manierismo
 
-> **Ubicación en repo:** `07_alto_renacimiento/`  
+> **Ubicación en repo:** `colecciones/07_alto_renacimiento/`  
 > **Ficha técnica:** 94 obras · 100% con descripción en español · Resolución media: 3164 × 3533 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 58 (62%) |
 | **Rango de resolución (lado largo)** | 640 px – 7948 px |
 | **Artistas representados** | 16 |
-| **Índice canónico** | [`_index.json`](../../07_alto_renacimiento/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/07_alto_renacimiento/_index.json) |
 
 ---
 

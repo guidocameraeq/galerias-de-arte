@@ -1,6 +1,6 @@
 # Galería 06 · Macabro & Memento Mori
 
-> **Ubicación en repo:** `06_macabro_memento_mori/`  
+> **Ubicación en repo:** `colecciones/06_macabro_memento_mori/`  
 > **Ficha técnica:** 41 obras · 100% con descripción en español · Resolución media: 3039 × 2714 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 16 (39%) |
 | **Rango de resolución (lado largo)** | 1061 px – 6762 px |
 | **Artistas representados** | 24 |
-| **Índice canónico** | [`_index.json`](../../06_macabro_memento_mori/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/06_macabro_memento_mori/_index.json) |
 
 ---
 

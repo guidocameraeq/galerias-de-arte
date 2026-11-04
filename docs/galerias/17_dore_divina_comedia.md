@@ -1,6 +1,6 @@
 # Galería 17 · Doré: La Divina Comedia
 
-> **Ubicación en repo:** `17_dore_divina_comedia/`  
+> **Ubicación en repo:** `colecciones/17_dore_divina_comedia/`  
 > **Ficha técnica:** 98 obras · 100% con descripción en español · Resolución media: 3882 × 4381 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 69 (70%) |
 | **Rango de resolución (lado largo)** | 2404 px – 7517 px |
 | **Artistas representados** | 1 |
-| **Índice canónico** | [`_index.json`](../../17_dore_divina_comedia/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/17_dore_divina_comedia/_index.json) |
 
 ---
 

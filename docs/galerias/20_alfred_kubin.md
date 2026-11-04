@@ -1,6 +1,6 @@
 # Galería 20 · Alfred Kubin
 
-> **Ubicación en repo:** `20_alfred_kubin/`  
+> **Ubicación en repo:** `colecciones/20_alfred_kubin/`  
 > **Ficha técnica:** 40 obras · 100% con descripción en español · Resolución media: 2694 × 2562 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 15 (38%) |
 | **Rango de resolución (lado largo)** | 1200 px – 5577 px |
 | **Artistas representados** | 1 |
-| **Índice canónico** | [`_index.json`](../../20_alfred_kubin/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/20_alfred_kubin/_index.json) |
 
 ---
 

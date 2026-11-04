@@ -3,7 +3,7 @@
 // in-place (mismo n, re-mide). Uso: node tools/upgrade.mjs [--apply]
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { imgSize, loadIndex, saveIndex, sleep } from './lib.mjs';
+import { imgSize, loadIndex, saveIndex, sleep, colPath } from './lib.mjs';
 
 const APPLY = process.argv.includes('--apply');
 const H = { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120 Safari/537.36' };
@@ -51,7 +51,7 @@ for (const col of Object.keys(byCol)) {
     const verdict = bigger && aspOk ? 'MEJORA' : !aspOk ? 'aspecto≠ (omito)' : 'no más grande';
     console.log(`${col} #${tg.n} ${it.title.slice(0, 26).padEnd(27)} ${it.width}x${it.height} -> ${sz.w}x${sz.h} (${best.split('/').pop().slice(0, 24)}) ${verdict}`);
     if (APPLY && bigger && aspOk) {
-      await fs.writeFile(path.join(col, it.orientation, it.file), buf);
+      await fs.writeFile(path.join(colPath(col), it.orientation, it.file), buf);
       it.width = sz.w; it.height = sz.h; it.bytes = buf.length; it.image_url = base; it.image_quality = newMax >= 2400 ? 'alta' : 'media';
     }
     await sleep(400);

@@ -1,6 +1,6 @@
 # Galería 19 · Marcelo Canevari
 
-> **Ubicación en repo:** `19_marcelo_canevari/`  
+> **Ubicación en repo:** `colecciones/19_marcelo_canevari/`  
 > **Ficha técnica:** 25 obras · 100% con descripción en español · Resolución media: 2310 × 1673 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 2 (8%) |
 | **Rango de resolución (lado largo)** | 1071 px – 5472 px |
 | **Artistas representados** | 3 |
-| **Índice canónico** | [`_index.json`](../../19_marcelo_canevari/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/19_marcelo_canevari/_index.json) |
 
 ---
 

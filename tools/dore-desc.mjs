@@ -1,6 +1,6 @@
 // Pobla la colección 17 (Doré · Divina Comedia): título_es consistente (Cantica · Canto N)
 // + descripción de la escena de Dante por canto. Lee _cantos.json (sourceId -> "Cantica N").
-import { loadIndex, saveIndex, buildFilename } from './lib.mjs';
+import { loadIndex, saveIndex, buildFilename, colPath } from './lib.mjs';
 import { readFileSync, promises as fsp } from 'node:fs';
 import path from 'node:path';
 const COL = '17_dore_divina_comedia';
@@ -94,12 +94,12 @@ idx.items.forEach((it, i) => { it.n = i + 1; });
 // renombrar archivos en disco (doble pasada con temp para evitar colisiones)
 for (let i = 0; i < idx.items.length; i++) {
   const it = idx.items[i]; const tmp = `__tmp${i}.jpg`;
-  await fsp.rename(path.join(COL, it.orientation, it.file), path.join(COL, it.orientation, tmp));
+  await fsp.rename(path.join(colPath(COL), it.orientation, it.file), path.join(colPath(COL), it.orientation, tmp));
   it._tmp = tmp;
 }
 for (const it of idx.items) {
   const nf = buildFilename(it.n, it.title_es || it.title, 'Gustave Doré', '1861');
-  await fsp.rename(path.join(COL, it.orientation, it._tmp), path.join(COL, it.orientation, nf));
+  await fsp.rename(path.join(colPath(COL), it.orientation, it._tmp), path.join(colPath(COL), it.orientation, nf));
   it.file = nf; delete it._tmp;
 }
 await saveIndex(COL, idx);

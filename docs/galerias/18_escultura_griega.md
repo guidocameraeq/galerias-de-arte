@@ -1,6 +1,6 @@
 # Galería 18 · Escultura Griega y Arqueología Clásica
 
-> **Ubicación en repo:** `18_escultura_griega/`  
+> **Ubicación en repo:** `colecciones/18_escultura_griega/`  
 > **Ficha técnica:** 64 obras · 100% con descripción en español · Resolución media: 3700 × 4728 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 47 (73%) |
 | **Rango de resolución (lado largo)** | 1699 px – 11618 px |
 | **Artistas representados** | 34 |
-| **Índice canónico** | [`_index.json`](../../18_escultura_griega/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/18_escultura_griega/_index.json) |
 
 ---
 

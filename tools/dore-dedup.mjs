@@ -2,7 +2,7 @@
 // mucho más discriminante que el aHash 8x8 (los grabados de Doré comparten layout tonal y el
 // hash grueso los confundía). Calibrado con pares conocidos: dup verdadero vs plancha distinta.
 // Uso: node tools/dore-dedup.mjs [--th=N] [--apply]
-import { loadIndex, saveIndex, logDiscard } from './lib.mjs';
+import { loadIndex, saveIndex, logDiscard, colPath } from './lib.mjs';
 import { promises as fsp, existsSync } from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -26,7 +26,7 @@ const ham = (a, b) => { let d = 0; for (let i = 0; i < a.length; i++) if (a[i] !
 const idx = await loadIndex(COL);
 const recs = [];
 for (const it of idx.items) {
-  const fp = path.join(COL, it.orientation, it.file);
+  const fp = path.join(colPath(COL), it.orientation, it.file);
   recs.push({ it, h: existsSync(fp) ? await dHash(fp) : null, px: (it.width || 0) * (it.height || 0) });
 }
 const byN = (n) => recs.find(r => r.it.n === n);
@@ -61,10 +61,10 @@ console.log(`\nA eliminar (si --apply): ${toRemove.length}. Quedarían ${idx.ite
 if (APPLY && toRemove.length) {
   const rm = new Set(toRemove.map(it => it.n));
   // Regla del proyecto: NUNCA borrar. Se MUEVE a _dedup_removed/ (recuperable).
-  await fsp.mkdir(path.join(COL, '_dedup_removed'), { recursive: true });
+  await fsp.mkdir(path.join(colPath(COL), '_dedup_removed'), { recursive: true });
   for (const it of toRemove) {
-    const fp = path.join(COL, it.orientation, it.file);
-    if (existsSync(fp)) await fsp.rename(fp, path.join(COL, '_dedup_removed', it.file));
+    const fp = path.join(colPath(COL), it.orientation, it.file);
+    if (existsSync(fp)) await fsp.rename(fp, path.join(colPath(COL), '_dedup_removed', it.file));
     await logDiscard('.', COL, { reason: 'dup_visual', n: it.n, file: it.file, sourceId: it.sourceId });
   }
   idx.items = idx.items.filter(it => !rm.has(it.n));

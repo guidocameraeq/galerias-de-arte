@@ -1,6 +1,6 @@
 // Genera una hoja de contacto (grid etiquetado con nXX) de los grabados de un canto,
 // para dedup visual eficiente. Uso: node tools/dore-montage.mjs <Infierno|Purgatorio|Paraiso> <canto-num>
-import { loadIndex } from './lib.mjs';
+import { loadIndex, colPath } from './lib.mjs';
 import sharp from 'sharp';
 import path from 'node:path';
 import { mkdirSync } from 'node:fs';
@@ -26,7 +26,7 @@ for (let i = 0; i < items.length; i++) {
   const it = items[i];
   const c = i % COLS, r = Math.floor(i / COLS);
   const x = PAD + c * (CELL + PAD), y = PAD + r * (CELL + LBL + PAD);
-  const src = path.join(COL, it.orientation, it.file);
+  const src = path.join(colPath(COL), it.orientation, it.file);
   const thumb = await sharp(src).resize(CELL, CELL, { fit: 'inside', background: '#fff' })
     .extend({ bottom: 0, background: '#fff' }).jpeg().toBuffer();
   const meta = await sharp(thumb).metadata();

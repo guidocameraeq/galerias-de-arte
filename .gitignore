@@ -17,6 +17,6 @@ _export/
 
 # Enlaces a la biblioteca de imágenes (ver tools/link-images.mjs) y ruta local por PC
 .arte-local.json
-*/landscape
-*/portrait
-*/_dedup_removed
+**/landscape
+**/portrait
+**/_dedup_removed

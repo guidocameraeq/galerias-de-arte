@@ -1,6 +1,6 @@
 # Galería 01 · Mitología Griega y Romana
 
-> **Ubicación en repo:** `01_mitologia_griega_romana/`  
+> **Ubicación en repo:** `colecciones/01_mitologia_griega_romana/`  
 > **Ficha técnica:** 142 obras · 100% con descripción en español · Resolución media: 3458 × 3280 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 57 (40%) |
 | **Rango de resolución (lado largo)** | 1024 px – 7870 px |
 | **Artistas representados** | 83 |
-| **Índice canónico** | [`_index.json`](../../01_mitologia_griega_romana/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/01_mitologia_griega_romana/_index.json) |
 
 ---
 

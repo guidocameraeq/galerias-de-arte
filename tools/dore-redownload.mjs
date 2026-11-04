@@ -3,7 +3,7 @@
 // Robustez: URL autoritativa vía imageinfo, VALIDA magic bytes (rechaza HTML),
 // serial+throttle (evita el 429 que causó el bug), re-mide dims reales.
 // Uso: node tools/dore-redownload.mjs [--apply] [--limit=N] [--force]
-import { loadIndex, saveIndex, getJSON, imgSize, orientationOf, sleep } from './lib.mjs';
+import { loadIndex, saveIndex, getJSON, imgSize, orientationOf, sleep, colPath } from './lib.mjs';
 import { promises as fsp, readFileSync, existsSync } from 'node:fs';
 import path from 'node:path';
 
@@ -60,7 +60,7 @@ async function fetchImg(url, tries = 4) {
 }
 
 const idx = await loadIndex(COL);
-let items = idx.items.filter(it => FORCE || !fileIsValid(path.join(COL, it.orientation, it.file)));
+let items = idx.items.filter(it => FORCE || !fileIsValid(path.join(colPath(COL), it.orientation, it.file)));
 items = items.slice(0, LIMIT);
 console.log(`Colección ${COL}: ${idx.items.length} obras. A re-descargar: ${items.length}${LIM ? ` (limit ${LIMIT})` : ''}. APPLY=${APPLY}`);
 
@@ -78,14 +78,14 @@ for (const it of items) {
     const buf = await fetchImg(meta.url);
     const sz = imgSize(buf) || { w: meta.width, h: meta.height };
     const ori = orientationOf(sz.w, sz.h);
-    const destDir = path.join(COL, ori);
+    const destDir = path.join(colPath(COL), ori);
     const dest = path.join(destDir, it.file);
     if (APPLY) {
       await fsp.mkdir(destDir, { recursive: true });
       await fsp.writeFile(dest, buf);
       // si cambió la orientación respecto a la carpeta vieja, borrar el error-page viejo
       if (ori !== it.orientation) {
-        const old = path.join(COL, it.orientation, it.file);
+        const old = path.join(colPath(COL), it.orientation, it.file);
         if (existsSync(old)) await fsp.rm(old).catch(() => {});
         it.orientation = ori; moved++;
       }

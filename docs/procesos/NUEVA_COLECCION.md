@@ -30,7 +30,7 @@
 ## Paso 3 — Cosechador: descargar con el motor genérico
 *(agente principal)*
 1. `node tools/harvest.mjs NN_nombre` → **dry-run**: resuelve cada imagen, mide el tamaño declarado y avisa qué ya existe en otra colección, qué está bajo el piso y qué no tiene imagen. **Freno 2:** mostrárselo a Guido y esperar su OK.
-2. `node tools/harvest.mjs NN_nombre --apply`. Crea `NN_nombre/_index.json` si no existe. **Antes**, en una PC con biblioteca externa: `node tools/link-images.mjs --apply` (el motor se niega a bajar si `landscape/`/`portrait/` no son enlaces, para no meter imágenes en el repo).
+2. `node tools/harvest.mjs NN_nombre --apply`. Crea `colecciones/NN_nombre/_index.json` si no existe. **Antes**, en una PC con biblioteca externa: `node tools/link-images.mjs --apply` (el motor se niega a bajar si `landscape/`/`portrait/` no son enlaces, para no meter imágenes en el repo).
    El motor: descarga serial con validación de contenido, **mide el archivo real**, aplica el piso (1000 px; 800 en 13–15), clasifica orientación, nombra, escribe el índice incremental, **registra cada rechazo** en `_descartes/`, y si el objetivo trae `d` crea/agrega `tools/desc/NN_nombre.mjs` clavado por id. Es idempotente: se puede volver a correr tras un corte.
 3. ¿Fuente rara que el motor no cubre (WikiArt, tiles, serie de grabados)? Usar la vía específica (`docs/METODO.md` §3: `wikiart.mjs`, `canon.mjs`, `dore*.mjs`) o copiar un `harvest-NN-*.mjs`; en ese caso, anotar a mano los rechazos en `tools/candidatas-manual.json`.
 

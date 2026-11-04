@@ -3,7 +3,7 @@
 // Hasheo y descarga EN PARALELO + timeout por request. Uso: node tools/dore.mjs [--apply]
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { imgSize, orientationOf, buildFilename, loadIndex, saveIndex } from './lib.mjs';
+import { imgSize, orientationOf, buildFilename, loadIndex, saveIndex, colPath } from './lib.mjs';
 import sharp from 'sharp';
 
 const APPLY = process.argv.includes('--apply');
@@ -80,8 +80,8 @@ console.log(`\n=== Doré · Divina Comedia: ${list.length} grabados únicos full
 if (!APPLY) { console.log('[DRY] sin --apply no baja.'); process.exit(0); }
 
 // 3) descargar EN PARALELO (n pre-asignado para nombre determinista)
-await fs.mkdir(path.join(COL, 'landscape'), { recursive: true });
-await fs.mkdir(path.join(COL, 'portrait'), { recursive: true });
+await fs.mkdir(path.join(colPath(COL), 'landscape'), { recursive: true });
+await fs.mkdir(path.join(colPath(COL), 'portrait'), { recursive: true });
 const idx = await loadIndex(COL);
 const startN = idx.items.length ? Math.max(...idx.items.map(i => i.n)) + 1 : 1;
 console.log(`Descargando ${list.length} grabados (5 en paralelo)...`);
@@ -101,7 +101,7 @@ const items = await pool(list, 5, async (x, i) => {
   const s = imgSize(buf) || { w: x.ii.width, h: x.ii.height };
   const orient = orientationOf(s.w, s.h);
   const file = buildFilename(n, title, 'Gustave Doré', '1861');
-  await fs.writeFile(path.join(COL, orient, file), buf);
+  await fs.writeFile(path.join(colPath(COL), orient, file), buf);
   return { n, file, orientation: orient, title, title_es: title, artist: 'Gustave Doré', year: '1861', school: 'Romanticismo (ilustración)', type: 'Grabado', holding_museum: null, museum: 'Wikimedia/Commons', license: 'Dominio público', source_url: `https://commons.wikimedia.org/wiki/${enc(x.f)}`, image_url: src, width: s.w, height: s.h, bytes: buf.length, sourceId: x.f, kind: 'dore-dante' };
 });
 const got = items.filter(Boolean).sort((a, b) => a.n - b.n);

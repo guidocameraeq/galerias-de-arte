@@ -1,6 +1,6 @@
 # Galería 24 · Ukiyo-e
 
-> **Ubicación en repo:** `24_ukiyo_e/` · Lista de objetivos: `tools/targets/24_ukiyo_e.json` · Fichas: `tools/desc/24_ukiyo_e.mjs`
+> **Ubicación en repo:** `colecciones/24_ukiyo_e/` · Lista de objetivos: `tools/targets/24_ukiyo_e.json` · Fichas: `tools/desc/24_ukiyo_e.mjs`
 > **Primera colección armada con el motor genérico** (`tools/harvest.mjs`) siguiendo `docs/procesos/NUEVA_COLECCION.md` (2026-11-03). Métricas vivas: `node tools/audit.mjs --col=24`.
 
 ---

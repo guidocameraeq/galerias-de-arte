@@ -4,10 +4,7 @@
 // Config en tools/canon/<colDir>.mjs. Uso: node tools/canon.mjs <colDir> [--apply] [--limit=N]
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import {
-  getJSON, downloadTo, imgSize, orientationOf, buildFilename,
-  cleanTitle, cleanArtist, cleanYear, loadIndex, saveIndex, sleep,
-} from './lib.mjs';
+import { getJSON, downloadTo, imgSize, orientationOf, buildFilename, cleanTitle, cleanArtist, cleanYear, loadIndex, saveIndex, sleep, colPath, listCols } from './lib.mjs';
 
 const colDir = process.argv[2];
 const APPLY = process.argv.includes('--apply');
@@ -74,7 +71,7 @@ async function commonsBest(filename) {
 }
 
 // ---- dedup: claves de TODO lo ya bajado (todas las carpetas NN_ del proyecto) ----
-const allDirs = (await fs.readdir('.', { withFileTypes: true })).filter(d => d.isDirectory() && /^\d\d_/.test(d.name)).map(d => d.name);
+const allDirs = listCols();
 const ALL_COLS = [...new Set([...allDirs, colDir])];
 const haveQID = new Set(), haveTA = new Set();
 for (const c of [...new Set(ALL_COLS)]) {
@@ -104,8 +101,8 @@ keepers.forEach((k, i) => console.log(`${String(i + 1).padStart(2)} ${String(k.f
 if (!APPLY) { console.log('\n[DRY] no se descarga. Repasá la lista y corré con --apply.'); process.exit(0); }
 
 // ---- 2) descargar + indexar ----
-await fs.mkdir(path.join(colDir, 'landscape'), { recursive: true });
-await fs.mkdir(path.join(colDir, 'portrait'), { recursive: true });
+await fs.mkdir(path.join(colPath(colDir), 'landscape'), { recursive: true });
+await fs.mkdir(path.join(colPath(colDir), 'portrait'), { recursive: true });
 const idx = await loadIndex(colDir);
 let n = idx.items.length ? Math.max(...idx.items.map(i => i.n)) + 1 : 1;
 let ok = 0, fail = 0;
@@ -118,11 +115,11 @@ for (const k of keepers) {
     const cTitle = cleanTitle(k.title), cArtist = k.artistCurated, cYear = cleanYear(String(k.year));
     let orient = orientationOf(best.w, best.h);
     const file = buildFilename(n, cTitle, cArtist, cYear);
-    let dest = path.join(colDir, orient, file);
+    let dest = path.join(colPath(colDir), orient, file);
     const buf = await downloadTo(best.url, dest, { ua: UA });
     const sz = imgSize(buf) || { w: best.w, h: best.h };
     const realOrient = orientationOf(sz.w, sz.h);
-    if (realOrient !== orient) { const nd = path.join(colDir, realOrient, file); await fs.rename(dest, nd); orient = realOrient; dest = nd; }
+    if (realOrient !== orient) { const nd = path.join(colPath(colDir), realOrient, file); await fs.rename(dest, nd); orient = realOrient; dest = nd; }
     idx.items.push({
       n, file, orientation: orient, title: cTitle, artist: cArtist, year: cYear,
       school: cfg.titulo, type: null, holding_museum: k.museum || null, museum_confidence: k.museum ? 'wikidata' : 'falta',

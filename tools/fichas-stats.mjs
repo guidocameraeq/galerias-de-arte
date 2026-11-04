@@ -2,12 +2,13 @@
 // Solo lectura. Uso: node tools/fichas-stats.mjs
 import fs from 'fs';
 const root = process.cwd();
-const cols = fs.readdirSync(root).filter(d => /^\d\d_/.test(d));
+const base = fs.existsSync(`${root}/colecciones`) ? `${root}/colecciones` : root;
+const cols = fs.readdirSync(base).filter(d => /^\d\d_/.test(d));
 const wc = s => (s || '').trim() ? s.trim().split(/\s+/).length : 0;
 const rows = [];
 let T = { n: 0, d80: 0, d40: 0, short: 0, wiki: 0, hand: 0, museum: 0, type: 0, year: 0, tes: 0, qid: 0, lic: 0 };
 for (const c of cols) {
-  const j = JSON.parse(fs.readFileSync(`${root}/${c}/_index.json`, 'utf8'));
+  const j = JSON.parse(fs.readFileSync(`${base}/${c}/_index.json`, 'utf8'));
   const r = { c, n: j.items.length, w: [], d80: 0, wiki: 0, hand: 0, museum: 0, type: 0, year: 0, tes: 0, qid: 0 };
   for (const it of j.items) {
     const w = wc(it.description); r.w.push(w);

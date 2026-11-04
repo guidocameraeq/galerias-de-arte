@@ -1,6 +1,6 @@
 # Galería 02 · Barroco
 
-> **Ubicación en repo:** `02_barroco/`  
+> **Ubicación en repo:** `colecciones/02_barroco/`  
 > **Ficha técnica:** 127 obras · 100% con descripción en español · Resolución media: 3760 × 3899 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 79 (62%) |
 | **Rango de resolución (lado largo)** | 1200 px – 13086 px |
 | **Artistas representados** | 37 |
-| **Índice canónico** | [`_index.json`](../../02_barroco/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/02_barroco/_index.json) |
 
 ---
 

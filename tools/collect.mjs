@@ -12,11 +12,7 @@ import { TARGETS_05, MET_SUBJECTS_05, MET_DEPTS_PREF_05, MET_DATE_05, WMC_CATEGO
 import { TARGETS_06, MET_SUBJECTS_06, MET_DEPTS_PREF_06, MET_DATE_06, WMC_CATEGORIES_06, EXCLUDE_CHRISTIAN_06, MAX_YEAR_06 } from './targets-06.mjs';
 import { resolveTarget, UA } from './resolve.mjs';
 import { discoverMet, discoverWMC } from './discover.mjs';
-import {
-  buildFilename, orientationOf, downloadTo, loadIndex, saveIndex, alreadyHave,
-  idKey, logDiscard, sleep, MIN_LONG_SIDE, imgSize,
-  cleanTitle, cleanArtist, cleanYear,
-} from './lib.mjs';
+import { buildFilename, orientationOf, downloadTo, loadIndex, saveIndex, alreadyHave, idKey, logDiscard, sleep, MIN_LONG_SIDE, imgSize, cleanTitle, cleanArtist, cleanYear, colPath, colsBase } from './lib.mjs';
 
 // Registro de colecciones: targets + config de descubrimiento (Met/Wikimedia).
 const COLLECTIONS = {
@@ -56,7 +52,7 @@ const COL = args.col || '01_mitologia_griega_romana';
 const CFG = COLLECTIONS[COL];
 if (!CFG) { console.error('Colección desconocida:', COL, '— opciones:', Object.keys(COLLECTIONS).join(', ')); process.exit(1); }
 const TARGETS = CFG.targets;
-const colDir = path.join(ROOT, COL);
+const colDir = colPath(COL);
 const MAX_TOTAL = parseInt(args.max) || CFG.max || 65;
 const DRY = !!args.dry;
 const NAMED_FLOOR = MIN_LONG_SIDE;     // 1000: piso anti-basura; los nombrados entran aunque no lleguen a FullHD
@@ -73,11 +69,11 @@ function interleave(a, b) { // round-robin para mezclar Met y Wikimedia
 async function loadExternalKeys(rootDir, exceptCol) {
   const keys = new Set();
   let dirs = [];
-  try { dirs = (await fs.readdir(rootDir, { withFileTypes: true })).filter(d => d.isDirectory() && /^\d\d_/.test(d.name) && d.name !== exceptCol); }
+  try { dirs = (await fs.readdir(colsBase(rootDir), { withFileTypes: true })).filter(d => d.isDirectory() && /^\d\d_/.test(d.name) && d.name !== exceptCol); }
   catch { return keys; }
   for (const d of dirs) {
     try {
-      const j = JSON.parse(await fs.readFile(path.join(rootDir, d.name, '_index.json'), 'utf8'));
+      const j = JSON.parse(await fs.readFile(path.join(colsBase(rootDir), d.name, '_index.json'), 'utf8'));
       for (const it of j.items || []) keys.add(idKey(it.museum, it.sourceId));
     } catch { /* sin índice todavía */ }
   }

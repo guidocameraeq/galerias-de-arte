@@ -1,6 +1,6 @@
 # Galería 05 · Arte del Antiguo Egipto
 
-> **Ubicación en repo:** `05_egipcio/`  
+> **Ubicación en repo:** `colecciones/05_egipcio/`  
 > **Ficha técnica:** 36 obras · 100% con descripción en español · Resolución media: 3118 × 2876 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 17 (47%) |
 | **Rango de resolución (lado largo)** | 1976 px – 5472 px |
 | **Artistas representados** | 3 |
-| **Índice canónico** | [`_index.json`](../../05_egipcio/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/05_egipcio/_index.json) |
 
 ---
 

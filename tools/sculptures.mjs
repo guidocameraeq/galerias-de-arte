@@ -2,7 +2,7 @@
 // baja P18 de Commons, indexa en la carpeta de época indicada. Dedup contra todo. Uso: [--apply]
 import { promises as fs } from 'node:fs';
 import path from 'node:path';
-import { getJSON, downloadTo, imgSize, orientationOf, buildFilename, cleanTitle, loadIndex, saveIndex, sleep } from './lib.mjs';
+import { getJSON, downloadTo, imgSize, orientationOf, buildFilename, cleanTitle, loadIndex, saveIndex, sleep, colPath, listCols } from './lib.mjs';
 
 const APPLY = process.argv.includes('--apply');
 const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
@@ -61,7 +61,7 @@ async function commonsBest(filename) {
 async function museumLabel(qid) { if (!qid) return null; try { const e = await getJSON(`${WD}?action=wbgetentities&format=json&props=labels&languages=es|en&ids=${qid}`, { ua: UA }); const l = e.entities?.[qid]?.labels; return l?.es?.value || l?.en?.value || null; } catch { return null; } }
 
 // dedup global
-const allDirs = (await fs.readdir('.', { withFileTypes: true })).filter(d => d.isDirectory() && /^\d\d_/.test(d.name)).map(d => d.name);
+const allDirs = listCols();
 const haveQID = new Set(), haveTA = new Set();
 for (const c of allDirs) { try { const idx = await loadIndex(c); for (const it of idx.items) { if (it.qid) haveQID.add(it.qid); haveTA.add(taKey(it.title, it.artist)); if (it.title_es) haveTA.add(taKey(it.title_es, it.artist)); } } catch {} }
 
@@ -90,11 +90,11 @@ for (const col of Object.keys(byCol)) {
       const cTitle = cleanTitle(it.label);
       let orient = orientationOf(best.w, best.h);
       const file = buildFilename(n, cTitle, it.artist, yr);
-      let dest = path.join(col, orient, file);
+      let dest = path.join(colPath(col), orient, file);
       const buf = await downloadTo(best.url, dest, { ua: UA });
       const sz = imgSize(buf) || { w: best.w, h: best.h };
       const ro = orientationOf(sz.w, sz.h);
-      if (ro !== orient) { const nd = path.join(col, ro, file); await fs.rename(dest, nd); orient = ro; dest = nd; }
+      if (ro !== orient) { const nd = path.join(colPath(col), ro, file); await fs.rename(dest, nd); orient = ro; dest = nd; }
       idx.items.push({ n, file, orientation: orient, title: it.label, title_es: cTitle, artist: it.artist, year: yr, school: it.school, type: it.tipo, holding_museum: museo, canon_rank: it.fame, qid: it.qid, museum: 'Wikidata/Commons', license: 'Dominio público', source_url: `https://www.wikidata.org/wiki/${it.qid}`, image_url: best.url, width: sz.w, height: sz.h, bytes: buf.length, sourceId: 'File:' + it.file, kind: 'escultura-canon' });
       console.log(`✓ ${col} #${n} [${orient[0]}] ${sz.w}x${sz.h} — ${file}`);
       n++; await saveIndex(col, idx); await sleep(200);

@@ -1,6 +1,6 @@
 # Galería 21 · Rob Gonsalves
 
-> **Ubicación en repo:** `21_rob_gonsalves/`  
+> **Ubicación en repo:** `colecciones/21_rob_gonsalves/`  
 > **Ficha técnica:** 25 obras · 100% con descripción en español · Resolución media: 1340 × 1181 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 10 (40%) |
 | **Rango de resolución (lado largo)** | 1000 px – 3000 px |
 | **Artistas representados** | 1 |
-| **Índice canónico** | [`_index.json`](../../21_rob_gonsalves/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/21_rob_gonsalves/_index.json) |
 
 ---
 

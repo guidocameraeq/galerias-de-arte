@@ -1,6 +1,6 @@
 # Galería 09 · Postimpresionismo
 
-> **Ubicación en repo:** `09_postimpresionismo/`  
+> **Ubicación en repo:** `colecciones/09_postimpresionismo/`  
 > **Ficha técnica:** 55 obras · 100% con descripción en español · Resolución media: 3830 × 3478 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 22 (40%) |
 | **Rango de resolución (lado largo)** | 1008 px – 8000 px |
 | **Artistas representados** | 6 |
-| **Índice canónico** | [`_index.json`](../../09_postimpresionismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/09_postimpresionismo/_index.json) |
 
 ---
 

@@ -12,7 +12,7 @@ Ver también: `AGENTS.md`, `docs/METODO.md`, `docs/FUENTES.md`, `docs/DESCRIPCIO
 
 ```
 <raíz>/
-├── NN_nombre/                  colecciones 01..23
+├── colecciones/NN_nombre/      colecciones 01..24 (desde 2026-11-04 dentro de colecciones/)
 │   ├── _index.json             LA fuente de verdad de la colección: {collection, items:[...]}
 │   ├── landscape/  portrait/   los JPG; carpeta = campo `orientation` de cada obra
 │   ├── _candidatas.json        lo que NO entró (pendientes/descartadas con motivo); lo genera tools/candidatas.mjs

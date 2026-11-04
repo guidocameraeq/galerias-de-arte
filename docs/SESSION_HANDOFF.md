@@ -2,46 +2,36 @@
 
 > Save game del proyecto. `cierre` lo SOBREESCRIBE ENTERO en cada sesión — acá nunca se apila historia (eso vive en CHANGELOG). Los números de estado se copian de `node tools/audit.mjs`, nunca de memoria. No guarda SHA: `git log` lo da.
 
-**Cierre**: 2026-11-03
+**Cierre**: 2026-11-04
 
-## Misión de la sesión
-Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local + respaldo en Drive), acordar con el agente de la app **Museum Slideshow** el formato de entrega y publicar las galerías.
+## Misión de la sesión (2026-11-02 → 04)
+Ordenar el repo y los procesos, sacar las imágenes del repo, acordar con la app **Museum Slideshow** el formato de entrega, publicar las galerías en Drive y dejar un **sistema autónomo** para agregar colecciones (probado con una colección real).
 
 ## Qué se hizo
-- **Rol:** este repo/agente = historiador y curador; la app (Android, TV de Guido) es otro proyecto/agente. Comparten solo el formato (`docs/FORMATO_DRIVE.md`).
-- **Repo ordenado:** `README.md` con banner, `AGENTS.md` actualizado, docs nuevos (`FORMATO_DRIVE`, `FICHAS_APP`, `ALMACENAMIENTO`, `procesos/FLUJO_AGENTES`), `CIERRE.md` ahora hace push.
-- **Imágenes fuera del repo:** biblioteca en un disco local de la PC principal; `link-images.mjs` (junctions); ruta en `.arte-local.json`. Respaldo en Drive `Galerías de arte/Respaldo` con `images-sync.mjs` (6,86 GB, sin errores).
-- **Publicación:** Guido aprobó publicar todo por enlace público (incluye ~198 obras con copyright). `export-drive.mjs` exportó las **23 colecciones** (1382 obras, originales; solo la de Eakins reducida a 3840 px por el límite de 50 MB) a `Mi unidad/Galerías de arte/Galerías`. Los 23 `galeria.json` validan. Rococó se vio bien en la TV.
-- **Errores de fichas corregidos:** `10_realismo` n30–40 estaban corridos un lugar (y *Los luchadores* tenía la ficha de otra obra); corregido en el repo y en Drive (10 archivos renombrados, sin duplicar). Barrido título-vs-Wikidata de las 835 obras con `qid`: sin otro desfase.
-- **Herramientas nuevas:** `link-images`, `images-sync`, `export-drive`, `fichas-stats`, `contact-sheets`, `make-prueba-*`, `check-prueba-json` (`tools/README.md` §0b).
-
-- **Sistema de colecciones (2026-11-03):** `docs/procesos/NUEVA_COLECCION.md` alrededor del motor genérico `tools/harvest.mjs` (lista `tools/targets/NN.json`); dos frenos con Guido (aprobar la lista y el dry-run). Subagentes Sonnet en `.claude/agents/` (`investigador-curatorial`, `verificador-visual`, `redactor-fichas`) y skill `/nueva-coleccion`. Curaduría de vuelta desde Drive con `tools/drive-curation.mjs`. Fichas clavadas por id (973). Todo probado en sandbox; ninguna colección nueva real bajada todavía.
-- **Registro de candidatas hecho para las 23 colecciones:** `<col>/_candidatas.json` (37 pendientes importantes, 607 descartadas, con motivo) generado por `tools/candidatas.mjs --gap --apply`; decisiones manuales en `tools/candidatas-manual.json`. Solo 8 colecciones tienen historial de descartes (cada archivo lo dice en `cobertura`).
-
-- **Colección 24 Ukiyo-e (prueba real del sistema):** 14 obras, de punta a punta con el proceso nuevo; publicada en Drive `Galerías/Ukiyo-e`. Aviso: Cleveland cataloga *Nieve nocturna en Kanbara* (n8) como impresión "según Hiroshige" (posible copia): decisión de Guido.
+- **Rol:** este repo/agente = historiador y curador; la app (Android, TV de Guido) es otro proyecto con otro agente. Comparten solo el formato (`docs/FORMATO_DRIVE.md`, `galeria.json` v1, confirmado en la TV).
+- **Repo prolijo:** colecciones movidas a **`colecciones/NN_nombre/`** (raíz limpia: `docs/`, `tools/`, `_descartes/`, README); `lib.mjs` centraliza la ruta (`colsBase`/`colPath`/`listCols`) y se adaptaron los scripts que la buscaban en la raíz. README con banner; `AGENTS.md`/`CLAUDE.md` al día; docs nuevos `FORMATO_DRIVE`, `FICHAS_APP`, `ALMACENAMIENTO`, `procesos/NUEVA_COLECCION`, `procesos/FLUJO_AGENTES`. Sin mail ni rutas locales en el código (User-Agent con link al repo).
+- **Imágenes fuera del repo:** biblioteca local por PC (ruta en `.arte-local.json`, enlaces con `link-images.mjs`); respaldo privado en Drive (`images-sync.mjs`).
+- **Publicación:** las 24 colecciones exportadas a Drive `Galerías` (compartida por enlace, aprobado por Guido incluyendo copyright de uso personal), con `export-drive.mjs` (no re-sube lo que Guido borra, renombra en vez de duplicar, freno 30%).
+- **Sistema de colecciones:** motor genérico `tools/harvest.mjs` (lista `tools/targets/NN.json`), subagentes Sonnet `investigador-curatorial` / `verificador-visual` / `redactor-fichas`, skill `/nueva-coleccion`, registro de lo que no entró `colecciones/NN/_candidatas.json` (`candidatas.mjs`), curaduría desde Drive `drive-curation.mjs`. Fichas clavadas por **id** (973 + nuevas; probado renumerando una colección). Revisión de código independiente: bugs corregidos y re-probados en sandbox.
+- **Prueba real:** colección **24 Ukiyo-e** (14 obras de museo) armada de punta a punta con el proceso; publicada en Drive. Guido la aprobó.
+- **Calidad:** fichas de Realismo n30–40 que estaban corridas, corregidas; revisión visual de las obras sin `qid` (hallazgos en `docs/TODO.md`).
 
 ## Estado verificado (salida de `node tools/audit.mjs`)
 - `TOTAL: 24 colecciones · 1396 obras · 1396 con ficha · 7.42 GB · 0 FALLAS · 62 AVISOS`
-- Fichas: `node tools/fichas-stats.mjs` (solo 39 de 1382 explicaciones llegan a 80 palabras; 293 son `Wikipedia-es`).
-- Drive: **no verificado** que Drive para escritorio haya terminado de subir los ~7 GB a la nube.
+- Tras mover a `colecciones/`: `link-images` 72 enlaces existentes; `export-drive --all` contra Drive sin borrados ni cambios; `harvest`, `candidatas`, `apply-desc`, `drive-curation`, `contact-sheets`, `remove-work` (dry) y `gap` leen bien la carpeta nueva.
+- Candidatas: 41 pendientes · 610 descartadas (`node tools/candidatas.mjs`).
 
 ## En curso
-- **Revisión visual de fichas vs imagen (obras sin `qid`): TERMINADA**, resultados en `docs/TODO.md` (error real en `15 n12` Rothko; fotos rotadas en 18; mockups en 19/23; metadatos basura en `artist`). Nada se modificó.
-- **Bloqueo de la app:** la 1ª sincronización masiva chocó con el anti-abuso de Google (403) al bajar ~7 GB por enlace público. El agente de la app la hace más lenta; si persiste, exportar copias reducidas (`export-drive --max-side=3840`).
+- Nada a medias. El repo sigue **privado**: hacerlo público lo hace Guido desde GitHub → Settings → Change visibility (8 commits viejos tienen `eq.chatgpt@gmail.com` como autor).
 
 ## Próximo paso CONCRETO
-1. Con Guido: revisar los 37 pendientes de `_candidatas.json` y los hallazgos de la revisión visual (`docs/TODO.md`); corregir `15 n12` y el campo `artist` de todo el catálogo; si se corrige algo, re-exportar esa galería con `export-drive.mjs`.
-2. Con el agente de la app (sesión "Galerías de arte y protector de pantalla"): confirmar que bajan las 23 galerías y si hace falta pasar a copias de 3840 px.
-3. Decidir con Guido: originales vs 3840 px; qué fichas reescribir primero (`docs/FICHAS_APP.md`); OK al formato `_candidatas.json`; qué hacer con las candidatas a sacar.
+1. Guido: decidir originales vs copias de 3840 px para la app (alivia el bloqueo anti-abuso de Drive) y confirmar en la TV que aparecen las 24 galerías.
+2. Elegir la próxima colección y correr `/nueva-coleccion` (o ampliar una existente), o atacar los pendientes de calidad: *Kanbara* (24 n8, "según Hiroshige"), Rothko 15 n12, mockups de 19/23, fotos rotadas de 18.
+3. Reescribir fichas a 80–150 palabras en las galerías que Guido elija (`redactor-fichas`).
 
 ## Bloqueos
-- Ninguno técnico. De Guido: desmarcar el arranque automático de Google Drive; confirmar que la subida a la nube terminó; probar `images-sync restore` en la otra PC.
-
-## Archivos tocados
-- Creados: `tools/{link-images,images-sync,export-drive,fichas-stats,contact-sheets,make-prueba-drive,make-prueba-json,check-prueba-json}.mjs`, `tools/forma-tondos.json`, `docs/{FORMATO_DRIVE,FICHAS_APP,ALMACENAMIENTO}.md`, `docs/procesos/FLUJO_AGENTES.md`, `README.md`, `docs/assets/banner.svg`.
-- Modificados: `AGENTS.md`, `docs/{INVENTARIO,TODO,CHANGELOG,SESSION_HANDOFF}.md`, `docs/procesos/CIERRE.md`, `tools/README.md`, `tools/desc/10_realismo.mjs`, `10_realismo/_index.json`, `.gitignore`, `package.json`. Eliminado: `START_HERE.md`. Fuera de git: `_export/`, `.arte-local.json`.
+- Ninguno técnico. De Guido: desmarcar el arranque automático de Google Drive; confirmar que la subida a la nube terminó.
 
 ## Contexto que no está en otro doc
-- El agente de la app se llama "Galerías de arte y protector de pantalla" (antes "Inicio"). Sus mensajes llegan solos.
-- La carpeta Drive `Galerías` ya está compartida (Lector) y su ID lo tiene la app. `Respaldo` es privada.
-- Las cifras del `README.md` y del banner (23 / 1.382) están duplicadas: actualizarlas a mano si cambian.
+- El agente de la app es la sesión "Galerías de arte y protector de pantalla"; sus mensajes llegan solos. Ya sabe del cambio de ids (13–15, 22–23) y de la galería Ukiyo-e.
+- Las cifras públicas del `README.md` y del banner (24 / 1.396) están duplicadas: actualizarlas a mano si cambian.

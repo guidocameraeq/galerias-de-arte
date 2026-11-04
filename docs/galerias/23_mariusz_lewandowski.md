@@ -1,6 +1,6 @@
 # Galería 23 · Mariusz Lewandowski
 
-> **Ubicación en repo:** `23_mariusz_lewandowski/`  
+> **Ubicación en repo:** `colecciones/23_mariusz_lewandowski/`  
 > **Ficha técnica:** 25 obras · 100% con descripción en español · Resolución media: 1368 × 1268 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 13 (52%) |
 | **Rango de resolución (lado largo)** | 1162 px – 2048 px |
 | **Artistas representados** | 1 |
-| **Índice canónico** | [`_index.json`](../../23_mariusz_lewandowski/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/23_mariusz_lewandowski/_index.json) |
 
 ---
 

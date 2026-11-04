@@ -1,7 +1,7 @@
 // Análisis de brechas: cruza TODO lo que tenemos contra el top de obras más famosas de
 // Wikidata (sitelinks). Reporta las famosas que NOS FALTAN, con fama/año/museo/¿imagen?.
 // Uso: node tools/gap.mjs [minFame] [tipo=painting|sculpture]
-import { loadIndex } from './lib.mjs';
+import { loadIndex, listCols } from './lib.mjs';
 import { promises as fs } from 'node:fs';
 
 const MINFAME = Number(process.argv[2]) || 28;
@@ -11,7 +11,7 @@ const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-d
 const norm = (s) => String(s || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const key = (title, artist) => norm(title).split(' ').filter(w => w.length > 2).slice(0, 4).join(' ') + '|' + norm(artist).split(' ').filter(Boolean).pop();
 
-const COLS = (await fs.readdir('.', { withFileTypes: true })).filter(d => d.isDirectory() && /^\d\d_/.test(d.name)).map(d => d.name).sort();
+const COLS = listCols();
 const haveQID = new Set(), haveKey = new Set();
 let total = 0;
 for (const c of COLS) {

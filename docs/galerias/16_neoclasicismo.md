@@ -1,6 +1,6 @@
 # Galería 16 · Neoclasicismo
 
-> **Ubicación en repo:** `16_neoclasicismo/`  
+> **Ubicación en repo:** `colecciones/16_neoclasicismo/`  
 > **Ficha técnica:** 41 obras · 100% con descripción en español · Resolución media: 3268 × 3521 px
 
 ---
@@ -14,7 +14,7 @@
 | **Distribución vertical (portrait)** | 26 (63%) |
 | **Rango de resolución (lado largo)** | 1000 px – 7903 px |
 | **Artistas representados** | 8 |
-| **Índice canónico** | [`_index.json`](../../16_neoclasicismo/_index.json) |
+| **Índice canónico** | [`_index.json`](../../colecciones/16_neoclasicismo/_index.json) |
 
 ---
 
