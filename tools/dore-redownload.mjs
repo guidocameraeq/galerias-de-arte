@@ -12,7 +12,7 @@ const APPLY = process.argv.includes('--apply');
 const FORCE = process.argv.includes('--force');
 const LIM = (process.argv.find(a => a.startsWith('--limit=')) || '').split('=')[1];
 const LIMIT = LIM ? +LIM : Infinity;
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 
 const isImg = (buf) => buf && buf.length > 1000 &&
   ((buf[0] === 0xFF && buf[1] === 0xD8) ||                                   // JPEG

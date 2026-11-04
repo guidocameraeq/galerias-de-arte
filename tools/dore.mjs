@@ -8,7 +8,7 @@ import sharp from 'sharp';
 
 const APPLY = process.argv.includes('--apply');
 const COL = '17_dore_divina_comedia';
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const C = 'https://commons.wikimedia.org/w/api.php';
 const enc = encodeURIComponent;
 const MINLONG = 2400;

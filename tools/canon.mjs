@@ -12,7 +12,7 @@ import {
 const colDir = process.argv[2];
 const APPLY = process.argv.includes('--apply');
 const LIMover = Number((process.argv.find(a => a.startsWith('--limit=')) || '').split('=')[1]) || 0;
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const WD = 'https://www.wikidata.org/w/api.php';
 const SPARQL = 'https://query.wikidata.org/sparql';
 const COMMONS = 'https://commons.wikimedia.org/w/api.php';

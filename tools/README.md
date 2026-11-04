@@ -9,7 +9,7 @@ Pensado para **retomar el proyecto sin leer el código**. Para el panorama compl
 > - **Motor 100% Node.js** (v26, `fetch` nativo). Sin Python/Pillow. Deps npm: `sharp` (revisión visual/dedup de Doré: `dore*.mjs`); `jimp` está instalado y sin uso.
 > - **`_index.json` es `{collection, items:[...]}`** (objeto, no array). Las obras están en `.items`.
 > - **Dry-run por defecto:** casi todos los scripts de escritura **NO tocan disco/`_index.json` salvo `--apply`**. Idempotentes.
-> - **User-Agent identificable** `Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)`, **salvo** `wikiart.mjs`/`upgrade.mjs` que usan UA de navegador (WikiArt rechaza UAs no-browser).
+> - **User-Agent identificable** `Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)`, **salvo** `wikiart.mjs`/`upgrade.mjs` que usan UA de navegador (WikiArt rechaza UAs no-browser).
 > - Las rutas `<colDir>` son la carpeta de colección, p.ej. `02_barroco`.
 
 ---

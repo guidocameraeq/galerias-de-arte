@@ -4,7 +4,7 @@
 import { getJSON, measureRemote, sleep, MIN_LONG_SIDE } from './lib.mjs';
 import { MET_DEPTS_PREF } from './targets-01.mjs';
 
-const UA = 'Arte-PublicDomain-Project/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PublicDomain-Project/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const norm = (s) => (s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 const surname = (a) => norm(a).split(/\s+/).filter(Boolean).pop() || '';
 const tokens = (t) => norm(t).match(/[a-z0-9]{4,}/g) || [];

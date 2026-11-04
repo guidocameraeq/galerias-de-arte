@@ -12,7 +12,7 @@ const ROOT = process.cwd();
 const args = process.argv.slice(2);
 const APPLY = args.includes('--apply'), GAP = args.includes('--gap');
 const MINFAME = Number((args.find(a => a.startsWith('--min-fame=')) || '').slice(11)) || 28;
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const base = fs.existsSync(path.join(ROOT, 'colecciones')) ? path.join(ROOT, 'colecciones') : ROOT;
 const cols = fs.readdirSync(base).filter(d => /^\d\d_/.test(d) && fs.existsSync(path.join(base, d, '_index.json'))).sort();
 const norm = (s) => String(s || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();

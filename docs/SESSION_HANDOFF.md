@@ -10,7 +10,7 @@ Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local +
 ## Qué se hizo
 - **Rol:** este repo/agente = historiador y curador; la app (Android, TV de Guido) es otro proyecto/agente. Comparten solo el formato (`docs/FORMATO_DRIVE.md`).
 - **Repo ordenado:** `README.md` con banner, `AGENTS.md` actualizado, docs nuevos (`FORMATO_DRIVE`, `FICHAS_APP`, `ALMACENAMIENTO`, `procesos/FLUJO_AGENTES`), `CIERRE.md` ahora hace push.
-- **Imágenes fuera del repo:** biblioteca `E:\Guido\Fotos & Videos\Banco_Galerias_De_Arte`; `link-images.mjs` (junctions); ruta en `.arte-local.json`. Respaldo en Drive `Galerías de arte/Respaldo` con `images-sync.mjs` (6,86 GB, sin errores).
+- **Imágenes fuera del repo:** biblioteca en un disco local de la PC principal; `link-images.mjs` (junctions); ruta en `.arte-local.json`. Respaldo en Drive `Galerías de arte/Respaldo` con `images-sync.mjs` (6,86 GB, sin errores).
 - **Publicación:** Guido aprobó publicar todo por enlace público (incluye ~198 obras con copyright). `export-drive.mjs` exportó las **23 colecciones** (1382 obras, originales; solo la de Eakins reducida a 3840 px por el límite de 50 MB) a `Mi unidad/Galerías de arte/Galerías`. Los 23 `galeria.json` validan. Rococó se vio bien en la TV.
 - **Errores de fichas corregidos:** `10_realismo` n30–40 estaban corridos un lugar (y *Los luchadores* tenía la ficha de otra obra); corregido en el repo y en Drive (10 archivos renombrados, sin duplicar). Barrido título-vs-Wikidata de las 835 obras con `qid`: sin otro desfase.
 - **Herramientas nuevas:** `link-images`, `images-sync`, `export-drive`, `fichas-stats`, `contact-sheets`, `make-prueba-*`, `check-prueba-json` (`tools/README.md` §0b).

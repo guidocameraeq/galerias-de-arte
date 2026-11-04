@@ -14,7 +14,7 @@ import path from 'path';
 import { pathToFileURL } from 'url';
 import { getJSON, downloadTo, imgSize, measureRemote, orientationOf, buildFilename, loadIndex, saveIndex, logDiscard, sleep, MIN_LONG_SIDE } from './lib.mjs';
 
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const COMMONS = 'https://commons.wikimedia.org/w/api.php';
 const CAP = 8000;                                   // techo de lado largo (render de Commons, sin upscalear)
 const args = process.argv.slice(2);

@@ -7,7 +7,7 @@ import { promises as fs } from 'node:fs';
 const MINFAME = Number(process.argv[2]) || 28;
 const TIPO = process.argv[3] || 'painting';
 const TYPE_QID = TIPO === 'sculpture' ? 'wd:Q860861' : 'wd:Q3305213';
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const norm = (s) => String(s || '').normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const key = (title, artist) => norm(title).split(' ').filter(w => w.length > 2).slice(0, 4).join(' ') + '|' + norm(artist).split(' ').filter(Boolean).pop();
 

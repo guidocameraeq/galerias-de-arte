@@ -21,7 +21,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const COL_DIR = '18_escultura_griega';
 const APPLY = process.argv.includes('--apply');
 const CHECK_API = process.argv.includes('--check');
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const COMMONS = 'https://commons.wikimedia.org/w/api.php';
 const WMC_LONG_CAP = 8000;
 

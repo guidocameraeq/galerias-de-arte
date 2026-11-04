@@ -6,7 +6,7 @@ import { getJSON, loadIndex, saveIndex, sleep } from './lib.mjs';
 const colDir = process.argv[2];
 const APPLY = process.argv.includes('--apply');
 const FORCE = process.argv.includes('--force');
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const stripHtml = (s) => String(s || '').replace(/<[^>]+>/g, ' ').replace(/&amp;/g, '&').replace(/&[a-z]+;/gi, ' ').replace(/\s+/g, ' ').trim();
 function shorten(s, max = 500) {
   s = stripHtml(s); if (s.length <= max) return s;

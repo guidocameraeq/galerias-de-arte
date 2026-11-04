@@ -5,7 +5,7 @@
 ## Tres copias, tres funciones
 | Copia | Dónde | Para qué |
 |---|---|---|
-| **Biblioteca local** | Una carpeta por PC, fuera del repo. En la PC principal: `E:\Guido\Fotos & Videos\Banco_Galerias_De_Arte\` (`<col>\landscape`, `portrait`, `_dedup_removed`) | Trabajar: todos los scripts la ven dentro del repo por enlaces |
+| **Biblioteca local** | Una carpeta por PC, fuera del repo. En cada PC, la ruta que guarda `.arte-local.json` (`<col>\landscape`, `portrait`, `_dedup_removed`) | Trabajar: todos los scripts la ven dentro del repo por enlaces |
 | **Respaldo en Drive** | `Mi unidad\Galerías de arte\Respaldo` (PRIVADA) | Copia espejo; si una PC no tiene la biblioteca, se restaura de acá |
 | **Galerías para la app** | `Mi unidad\Galerías de arte\Galerías` y `Galerías-prueba` (compartidas, Lector) | Lo que lee la app Museum Slideshow (otra estructura y nombres: no sirve para reconstruir la biblioteca) |
 

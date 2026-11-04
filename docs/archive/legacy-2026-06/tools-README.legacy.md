@@ -8,7 +8,7 @@ reglas, calibraciones de API) ver `CLAUDE.md`; para el estado por colección, `P
 > - **Motor 100% Node.js** (v26, `fetch` nativo). Sin Python/Pillow. Única dep npm usada: `sharp` (solo `dore.mjs`).
 > - **`_index.json` es `{collection, items:[...]}`** (objeto, no array). Las obras están en `.items`.
 > - **Dry-run por defecto:** casi todos los scripts de escritura **NO tocan disco/`_index.json` salvo `--apply`**. Idempotentes.
-> - **User-Agent identificable** `Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)`, **salvo** `wikiart.mjs`/`upgrade.mjs` que usan UA de navegador (WikiArt rechaza UAs no-browser).
+> - **User-Agent identificable** `Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)`, **salvo** `wikiart.mjs`/`upgrade.mjs` que usan UA de navegador (WikiArt rechaza UAs no-browser).
 > - Las rutas `<colDir>` son la carpeta de colección, p.ej. `02_barroco`.
 
 ---

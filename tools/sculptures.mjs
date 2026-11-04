@@ -5,7 +5,7 @@ import path from 'node:path';
 import { getJSON, downloadTo, imgSize, orientationOf, buildFilename, cleanTitle, loadIndex, saveIndex, sleep } from './lib.mjs';
 
 const APPLY = process.argv.includes('--apply');
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const WD = 'https://www.wikidata.org/w/api.php';
 const COMMONS = 'https://commons.wikimedia.org/w/api.php';
 const enc = encodeURIComponent;

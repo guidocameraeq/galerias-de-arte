@@ -7,7 +7,7 @@ import { getJSON, loadIndex, saveIndex, sleep } from './lib.mjs';
 const colDir = process.argv[2] || '01_mitologia_griega_romana';
 const APPLY = process.argv.includes('--apply');
 const LIMIT = Number((process.argv.find(a => a.startsWith('--limit=')) || '').split('=')[1]) || 0;
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const WD = 'https://www.wikidata.org/w/api.php';
 // tipos de obra de arte (painting, sculpture, fresco, print, drawing, statue, work of art, artwork series, mural)
 const ARTWORK = new Set(['Q3305213','Q860861','Q3184121','Q11060274','Q93184','Q179700','Q838948','Q4502142','Q15709879','Q21281546','Q2293009']);

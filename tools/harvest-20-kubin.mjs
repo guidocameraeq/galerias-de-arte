@@ -22,7 +22,7 @@ const APPLY = process.argv.includes('--apply');
 
 function getUA(url) {
   if (url.includes('wikimedia.org')) {
-    return 'Arte-Collection/1.0 (eq.chatgpt@gmail.com)';
+    return 'Arte-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
   }
   return 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36';
 }

@@ -10,7 +10,7 @@ const APPLY = process.argv.includes('--apply');
 const FORCE = process.argv.includes('--force');
 const LIMIT = (process.argv.find(a => a.startsWith('--limit=')) || '').split('=')[1];
 const ONLY = (process.argv.find(a => a.startsWith('--only=')) || '').split('=')[1];
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 
 const stripHtml = (s) => String(s || '')
   .replace(/<[^>]+>/g, ' ')

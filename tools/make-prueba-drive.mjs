@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { getJSON, downloadTo, imgSize, sleep } from './lib.mjs';
 
-const UA = 'Arte-PD-Collection/1.0 (eq.chatgpt@gmail.com)';
+const UA = 'Arte-PD-Collection/1.0 (+https://github.com/guidocameraeq/galerias-de-arte)';
 const OUT = path.resolve('_export/Galerías-prueba/Sana');
 const WANT = [
   ['monet-impresion-sol-naciente', 'File:Monet - Impression, Sunrise.jpg'],
