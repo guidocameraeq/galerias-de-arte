@@ -321,3 +321,4 @@
 {"kind":"discovery","stage":"wmc-discovery","reason":"low_res","long":800,"title":"File:Bartolomé Esteban Murillo (1617-1682) (school of) - The Visitation - GUELI , GMAG 1973 - Guernsey Museum and Art Gallery.jpg"}
 {"kind":"discovery","stage":"wmc-discovery","reason":"low_res","long":1200,"title":"File:Bartolomé Esteban Murillo (1617-1682) (attributed to) - The Presentation in the Temple - P45-76 - The New Art Gallery Walsall.jpg"}
 {"kind":"discovery","stage":"wmc-discovery","reason":"low_res","long":650,"title":"File:Georges de la Tour - Diogenes.jpg"}
+{"reason":"baja_calidad","n":26,"file":"26_The_Anatomy_Lesson_of_Dr_Nicolaes_Tulp_Rembrandt_1632.jpg","sourceId":"File:Rembrandt - The Anatomy Lesson of Dr. Nicolaes Tulp.jpg","qid":"Q661378","title":"La lección de anatomía del Dr. Tulp","note":"reemplazada por version de mayor resolucion (carpeta de Guido, 2026-11-04)","moved_to":"_dedup_removed"}

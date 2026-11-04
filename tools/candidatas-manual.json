@@ -126,5 +126,37 @@
     "autor": "Tōshūsai Sharaku",
     "motivo": "reimpresion_moderna",
     "detalle": "Reimpresión del siglo XX; se usó la impresión del Met DP130228."
+  },
+  {
+    "col": "04_romanticismo",
+    "estado": "descartada",
+    "titulo": "Calvario (Calvary)",
+    "autor": "John Martin",
+    "motivo": "replica",
+    "detalle": "Yale Center for British Art lo cataloga como \"The Crucifixion, after John Martin\" (artista desconocido): copia, no autógrafo. Commons: Calvary - Google Art Project.jpg."
+  },
+  {
+    "col": "04_romanticismo",
+    "estado": "pendiente",
+    "titulo": "Josué ordenando al sol detenerse sobre Gabaón (1816)",
+    "autor": "John Martin",
+    "motivo": "revisar",
+    "detalle": "El original de 1816 está en la NGA de Washington (Commons: File:Joshua Commanding the Sun to Stand Still upon Gibeon (1816) John Martin - NGA 2004.64.1.jpg, 5103x3353). En la galería entra por ahora la versión menor c. 1840 de Yale."
+  },
+  {
+    "col": "04_romanticismo",
+    "estado": "pendiente",
+    "titulo": "El festín de Baltasar (versión final, 1821)",
+    "autor": "John Martin",
+    "motivo": "coleccion_privada",
+    "detalle": "El óleo final está en colección privada; solo se consigue el boceto de Yale (ya incluido)."
+  },
+  {
+    "col": "04_romanticismo",
+    "estado": "descartada",
+    "titulo": "Luz de luna sobre el castillo de Chepstow; Vista de Arkona con la luna naciente; El Juicio Final (estudio)",
+    "autor": "John Martin / Friedrich",
+    "motivo": "boceto_menor",
+    "detalle": "Acuarela pequeña, dibujo y estudio inacabado, sin fuente para ficha. Siguen en la carpeta personal de Guido; se pueden sumar si él lo decide."
   }
 ]

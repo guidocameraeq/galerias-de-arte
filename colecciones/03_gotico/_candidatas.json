@@ -4,21 +4,10 @@
   "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
   "resumen": {
     "entraron": 102,
-    "pendientes": 1,
+    "pendientes": 0,
     "descartadas": 70
   },
   "items": [
-    {
-      "estado": "pendiente",
-      "titulo": "Theotokos of Vladimir",
-      "autor": null,
-      "qid": "Q546241",
-      "sourceId": null,
-      "motivo": "no_conseguida",
-      "detalle": "fama 32 · año 1125 · museo Tretyakov Gallery · colección propuesta por época",
-      "origen": "gap-wikidata",
-      "fuente": "https://www.wikidata.org/wiki/Q546241"
-    },
     {
       "estado": "descartada",
       "titulo": "File:03-atl2021 arma-fogo-portatil-5 - Image 207958.jpg",

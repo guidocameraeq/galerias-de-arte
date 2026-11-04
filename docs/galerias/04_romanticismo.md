@@ -1,7 +1,7 @@
 # Galería 04 · Romanticismo
 
 > **Ubicación en repo:** `colecciones/04_romanticismo/`  
-> **Ficha técnica:** 102 obras · 100% con descripción en español · Resolución media: 3608 × 2903 px
+> **Ficha técnica:** 116 obras · 100% con descripción en español · Resolución media: 3608 × 2903 px
 
 ---
 
@@ -9,7 +9,7 @@
 
 | Parámetro | Valor |
 |---|---|
-| **Total de obras** | 102 piezas |
+| **Total de obras** | 116 piezas (el resto de las métricas son de antes de 2026-11-04: +14 obras de la carpeta personal de Guido, ver `tools/targets/04_romanticismo.json`; Turner reemplazado por versión de 2152 px) |
 | **Distribución apaisada (landscape)** | 81 (79%) |
 | **Distribución vertical (portrait)** | 21 (21%) |
 | **Rango de resolución (lado largo)** | 800 px – 7764 px |

@@ -3,43 +3,9 @@
   "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
   "cobertura": "SIN historial de descartes (el script que la armó no los registraba): solo brechas de Wikidata y lista manual",
   "resumen": {
-    "entraron": 94,
-    "pendientes": 3,
+    "entraron": 95,
+    "pendientes": 0,
     "descartadas": 0
   },
-  "items": [
-    {
-      "estado": "pendiente",
-      "titulo": "Self-Portrait with Fur-Trimmed Robe",
-      "autor": "Q5580",
-      "qid": "Q2546309",
-      "sourceId": null,
-      "motivo": "no_conseguida",
-      "detalle": "fama 29 · año 1500 · museo Bavarian State Painting Collections · colección propuesta por época",
-      "origen": "gap-wikidata",
-      "fuente": "https://www.wikidata.org/wiki/Q2546309"
-    },
-    {
-      "estado": "pendiente",
-      "titulo": "The Tempest",
-      "autor": "Giorgione",
-      "qid": "Q930137",
-      "sourceId": null,
-      "motivo": "no_conseguida",
-      "detalle": "fama 35 · año 1506 · museo Gallerie dell'Accademia · colección propuesta por época",
-      "origen": "gap-wikidata",
-      "fuente": "https://www.wikidata.org/wiki/Q930137"
-    },
-    {
-      "estado": "pendiente",
-      "titulo": "The Three Philosophers",
-      "autor": "Giorgione",
-      "qid": "Q877191",
-      "sourceId": null,
-      "motivo": "no_conseguida",
-      "detalle": "fama 28 · año 1500 · museo Kunsthistorisches Museum · colección propuesta por época",
-      "origen": "gap-wikidata",
-      "fuente": "https://www.wikidata.org/wiki/Q877191"
-    }
-  ]
+  "items": []
 }

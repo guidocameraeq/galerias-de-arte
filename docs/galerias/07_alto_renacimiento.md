@@ -1,7 +1,7 @@
 # Galería 07 · Alto Renacimiento y Manierismo
 
 > **Ubicación en repo:** `colecciones/07_alto_renacimiento/`  
-> **Ficha técnica:** 94 obras · 100% con descripción en español · Resolución media: 3164 × 3533 px
+> **Ficha técnica:** 95 obras · 100% (+ Las bodas de Caná, 2026-11-04) con descripción en español · Resolución media: 3164 × 3533 px
 
 ---
 

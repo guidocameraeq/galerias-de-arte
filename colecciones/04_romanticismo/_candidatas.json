@@ -3,21 +3,30 @@
   "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
   "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
   "resumen": {
-    "entraron": 102,
-    "pendientes": 2,
-    "descartadas": 210
+    "entraron": 116,
+    "pendientes": 3,
+    "descartadas": 213
   },
   "items": [
     {
       "estado": "pendiente",
-      "titulo": "The Abbey in the Oakwood",
-      "autor": "Caspar David Friedrich",
-      "qid": "Q334360",
+      "titulo": "El festín de Baltasar (versión final, 1821)",
+      "autor": "John Martin",
+      "qid": null,
       "sourceId": null,
-      "motivo": "no_conseguida",
-      "detalle": "fama 28 · año 1809 · museo Alte Nationalgalerie · colección por autor ya presente",
-      "origen": "gap-wikidata",
-      "fuente": "https://www.wikidata.org/wiki/Q334360"
+      "motivo": "coleccion_privada",
+      "detalle": "El óleo final está en colección privada; solo se consigue el boceto de Yale (ya incluido).",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Josué ordenando al sol detenerse sobre Gabaón (1816)",
+      "autor": "John Martin",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "revisar",
+      "detalle": "El original de 1816 está en la NGA de Washington (Commons: File:Joshua Commanding the Sun to Stand Still upon Gibeon (1816) John Martin - NGA 2004.64.1.jpg, 5103x3353). En la galería entra por ahora la versión menor c. 1840 de Yale.",
+      "origen": "manual"
     },
     {
       "estado": "pendiente",
@@ -28,6 +37,26 @@
       "motivo": "no_encontrada",
       "detalle": null,
       "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Calvario (Calvary)",
+      "autor": "John Martin",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "replica",
+      "detalle": "Yale Center for British Art lo cataloga como \"The Crucifixion, after John Martin\" (artista desconocido): copia, no autógrafo. Commons: Calvary - Google Art Project.jpg.",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "El barco de esclavos",
+      "autor": null,
+      "qid": "Q219344",
+      "sourceId": "File:J.M.W. Turner Slave Ship ( Slavers Throwing Overboard the Dead and Dying, Typhoon Coming On). 1840.png",
+      "motivo": "baja_calidad",
+      "detalle": "reemplazada por version de mayor resolucion (carpeta de Guido, 2026-11-04)",
+      "origen": "descarte:remove-work"
     },
     {
       "estado": "descartada",
@@ -2128,6 +2157,16 @@
       "motivo": "fuera_de_tema",
       "detalle": null,
       "origen": "descarte:wmc-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Luz de luna sobre el castillo de Chepstow; Vista de Arkona con la luna naciente; El Juicio Final (estudio)",
+      "autor": "John Martin / Friedrich",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "boceto_menor",
+      "detalle": "Acuarela pequeña, dibujo y estudio inacabado, sin fuente para ficha. Siguen en la carpeta personal de Guido; se pueden sumar si él lo decide.",
+      "origen": "manual"
     }
   ]
 }

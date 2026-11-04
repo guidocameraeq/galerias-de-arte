@@ -4,7 +4,7 @@
   "cobertura": "con historial de descartes (_descartes) + brechas de Wikidata + lista manual",
   "resumen": {
     "entraron": 142,
-    "pendientes": 2,
+    "pendientes": 1,
     "descartadas": 61
   },
   "items": [
@@ -17,17 +17,6 @@
       "motivo": "no_encontrada",
       "detalle": null,
       "origen": "descarte:target-nombrado"
-    },
-    {
-      "estado": "pendiente",
-      "titulo": "The Wedding at Cana",
-      "autor": "Paolo Veronese",
-      "qid": "Q185255",
-      "sourceId": null,
-      "motivo": "no_conseguida",
-      "detalle": "fama 32 · año 1562 · museo Department of Paintings of the Louvre · colección por autor ya presente",
-      "origen": "gap-wikidata",
-      "fuente": "https://www.wikidata.org/wiki/Q185255"
     },
     {
       "estado": "descartada",

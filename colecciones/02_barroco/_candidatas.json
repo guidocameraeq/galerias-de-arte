@@ -5,7 +5,7 @@
   "resumen": {
     "entraron": 127,
     "pendientes": 1,
-    "descartadas": 115
+    "descartadas": 116
   },
   "items": [
     {
@@ -1167,6 +1167,16 @@
       "motivo": "baja_resolucion",
       "detalle": "lado largo 1903px",
       "origen": "descarte:met-discovery"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "La lección de anatomía del Dr. Tulp",
+      "autor": null,
+      "qid": "Q661378",
+      "sourceId": "File:Rembrandt - The Anatomy Lesson of Dr. Nicolaes Tulp.jpg",
+      "motivo": "baja_calidad",
+      "detalle": "reemplazada por version de mayor resolucion (carpeta de Guido, 2026-11-04)",
+      "origen": "descarte:remove-work"
     }
   ]
 }

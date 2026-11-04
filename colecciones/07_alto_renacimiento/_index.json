@@ -2368,6 +2368,30 @@
       "qid": "Q97377044",
       "description": "Parte del monumental ciclo sobre el Juicio Final en la capilla de San Brizio, el fresco muestra a una masa de almas torturadas por demonios polícromos bajo la mirada de arcángeles armados. Signorelli realiza un audaz estudio anatómico del desnudo masculino en movimiento y escorzos extremos. Su potencia dramática y crudeza influyeron directamente en el Juicio Final de Miguel Ángel.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)"
+    },
+    {
+      "n": 96,
+      "file": "96_Las_bodas_de_Cana_Paolo_Veronese_1562_1563.jpg",
+      "orientation": "landscape",
+      "title": "Las bodas de Caná",
+      "title_es": "Las bodas de Caná",
+      "artist": "Paolo Veronese",
+      "year": "1562-1563",
+      "school": "Alto Renacimiento",
+      "type": "Óleo sobre lienzo",
+      "holding_museum": "Museo del Louvre, París, Francia",
+      "qid": "Q185255",
+      "museum": "Wikimedia/Commons",
+      "license": "Dominio público",
+      "source_url": "https://es.wikipedia.org/wiki/Las_bodas_de_Can%C3%A1_(Veronese)",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cb/Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg/3840px-Les_Noces_de_Cana_-_Paolo_Veronese_-_Mus%C3%A9e_du_Louvre_Peintures_INV_142_%3B_MR_384.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "width": 3840,
+      "height": 2571,
+      "bytes": 3093222,
+      "sourceId": "File:Les Noces de Cana - Paolo Veronese - Musée du Louvre Peintures INV 142 ; MR 384.jpg",
+      "kind": "harvest",
+      "description": "Obra colosal de Veronés, de unos 6,7 × 9,9 metros, pintada al óleo entre 1562 y 1563 para el refectorio del convento benedictino de San Giorgio Maggiore, en Venecia, proyectado por Palladio. Representa el episodio evangélico de las bodas de Caná. Veronés, de 34 años, cobró 324 ducados más la manutención y un barril de vino; trabajó quince meses, probablemente con ayuda de su hermano Benedetto Caliari. El cuadro permaneció en Venecia 235 años, hasta que Napoleón lo hizo llevar a París en 1797. Canova, convencido por Vivant Denon de su fragilidad, dejó que se quedara en Francia a cambio de una obra de Le Brun. Hoy cuelga en el Louvre frente a la Mona Lisa y es el lienzo más imponente de las colecciones nacionales francesas.",
+      "description_source": "Wikipedia-es: Las bodas de Caná (Veronese)"
     }
   ]
 }

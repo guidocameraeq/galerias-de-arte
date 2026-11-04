@@ -5,7 +5,7 @@
   "resumen": {
     "entraron": 41,
     "pendientes": 5,
-    "descartadas": 59
+    "descartadas": 60
   },
   "items": [
     {
@@ -58,6 +58,16 @@
       "motivo": "no_encontrada",
       "detalle": null,
       "origen": "descarte:target-nombrado"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "El jardín de las delicias",
+      "autor": null,
+      "qid": "Q321303",
+      "sourceId": "File:The Garden of Earthly Delights by Bosch High Resolution.jpg",
+      "motivo": "baja_calidad",
+      "detalle": "reemplazada por version de mayor resolucion (carpeta de Guido, 2026-11-04)",
+      "origen": "descarte:remove-work"
     },
     {
       "estado": "descartada",
