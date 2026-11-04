@@ -2,6 +2,11 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-11-03 (c) — Colección 24 Ukiyo-e: primera armada con el sistema nuevo
+
+### Added
+- `24_ukiyo_e` (14 xilografías: Hokusai, Hiroshige, Utamaro, Sharaku, Harunobu, Kuniyoshi), de punta a punta con `NUEVA_COLECCION.md`: investigador (lista verificada en Commons, descartó reimpresiones modernas) → OK de Guido → `harvest.mjs` 14/14 → revisión visual (14 OK) → redactor (fichas 80–125 palabras, con fuente y años corregidos) → candidatas (4 pendientes, 3 descartadas) → `docs/galerias/24_ukiyo_e.md` → exportada a Drive `Galerías/Ukiyo-e` y respaldada.
+
 ## 2026-11-03 (b) — Sistema autónomo de colecciones: motor genérico, fichas por id, curaduría desde Drive
 
 ### Added

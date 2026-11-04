@@ -8,6 +8,7 @@
 - [ ] Ninguno abierto. (El riesgo de pérdida irreversible por `prune-*`/`dore-dedup` se cerró: ahora mueven en vez de borrar y existe `remove-work.mjs`.)
 
 ## 🟠 Importante
+- [ ] **24 Ukiyo-e, n8 *Nieve nocturna en Kanbara*:** Cleveland la cataloga "after Hiroshige" (posible impresión posterior o copia). Decidir si queda o se reemplaza por una impresión de época (Met/Rijksmuseum).
 - [ ] **Resultado de la revisión visual de fichas vs imagen (547 obras sin `qid`, 2026-11-02, 3 subagentes + verificación propia; Doré excluido). Nada se modificó; decide Guido.**
   - **Error real:** `15 n12` — la imagen es *Violet, Black, Orange, Yellow on White and Red* (1949), no *Orange Red Yellow* (1961) como dice la ficha (WikiArt, 700×865). Corregir la ficha a la obra real o conseguir la correcta.
   - **Dato dudoso:** `04 n55` Friedrich (Turgenev/Zhukovsky): año de la ficha c1799, su archivo Commons dice 1827; la imagen no parece un retrato.

@@ -1,0 +1,82 @@
+{
+  "collection": "24_ukiyo_e",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "SIN historial de descartes (el script que la armó no los registraba): solo brechas de Wikidata y lista manual",
+  "resumen": {
+    "entraron": 14,
+    "pendientes": 4,
+    "descartadas": 3
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "Bajo el puente Mannen en Fukagawa",
+      "autor": "Katsushika Hokusai",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "suplente",
+      "detalle": "Treinta y seis vistas del monte Fuji; impresión del Met DP141017. Suplente si se reemplaza alguna Hokusai.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Ejiri en la provincia de Suruga",
+      "autor": "Katsushika Hokusai",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "suplente",
+      "detalle": "Treinta y seis vistas del monte Fuji; impresión del Met DP140977.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Minamoto no Raikō y la araña de tierra",
+      "autor": "Utagawa Kuniyoshi",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "baja_resolucion",
+      "detalle": "British Museum en Commons a 1126–1542 px; buscar mejor versión.",
+      "origen": "manual"
+    },
+    {
+      "estado": "pendiente",
+      "titulo": "Tres bellezas de la época",
+      "autor": "Kitagawa Utamaro",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "sin_impresion_de_museo",
+      "detalle": "Solo hay un archivo grande de Google Art Project sin museo confirmado (5621×8231). Suplente si aparece una impresión de museo.",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Fuji rojo / Tormenta bajo la cumbre (ediciones visipix)",
+      "autor": "Katsushika Hokusai",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "reimpresion_moderna",
+      "detalle": "\"Red Fuji southern wind clear morning.jpg\" y \"Lightnings below the summit.jpg\": ediciones c. 1930.",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "La gran ola de Kanagawa (reimpresiones y versión restaurada)",
+      "autor": "Katsushika Hokusai",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "reimpresion_moderna",
+      "detalle": "\"Great Wave off Kanagawa2.jpg\" (restaurada de una reimpresión Shōwa/Adachi) y \"The Great Wave off Kanagawa.jpg\" (copia moderna recortada). Se usó la impresión del Met DP141063.",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Ōtani Oniji III (reimpresión Adachi, 6307×9177)",
+      "autor": "Tōshūsai Sharaku",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "reimpresion_moderna",
+      "detalle": "Reimpresión del siglo XX; se usó la impresión del Met DP130228.",
+      "origen": "manual"
+    }
+  ]
+}

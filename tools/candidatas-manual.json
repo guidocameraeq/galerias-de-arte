@@ -1,11 +1,130 @@
 [
-  { "col": "05_egipcio", "estado": "pendiente", "titulo": "Busto de Nefertiti", "autor": "Thutmose (atribuido)", "motivo": "licencia_restringida", "detalle": "La foto del Neues Museum de Berlín es de licencia restringida y Wikidata no tiene P18 usable. Buscar alternativa libre o aceptar que no entra." },
-  { "col": "14_surrealismo", "estado": "pendiente", "titulo": "Obras de Frida Kahlo (a definir)", "autor": "Frida Kahlo", "motivo": "copyright_sin_alta_res", "detalle": "Sin versión de alta resolución accesible. Best-effort con navegador, obra por obra." },
-  { "col": "14_surrealismo", "estado": "pendiente", "titulo": "Cristo de San Juan de la Cruz", "autor": "Salvador Dalí", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
-  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "¡Whaam!", "autor": "Roy Lichtenstein", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
-  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Chica ahogándose (Drowning Girl)", "autor": "Roy Lichtenstein", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
-  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Marilyn (Marilyn Diptych)", "autor": "Andy Warhol", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
-  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Ritmo de otoño (Autumn Rhythm)", "autor": "Jackson Pollock", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
-  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Cráneo de carnero (Ram Skull)", "autor": "Georgia O'Keeffe", "motivo": "copyright_sin_alta_res", "detalle": "Copyright; sin alta resolución accesible." },
-  { "col": "15_pop_americano", "estado": "pendiente", "titulo": "Naranja, rojo, amarillo (1961)", "autor": "Mark Rothko", "motivo": "ficha_con_imagen_equivocada", "detalle": "El n12 de la colección muestra en realidad 'Violet, Black, Orange, Yellow on White and Red' (1949). Conseguir la de 1961 o corregir la ficha a la obra real (revisión visual 2026-11-02)." }
+  {
+    "col": "05_egipcio",
+    "estado": "pendiente",
+    "titulo": "Busto de Nefertiti",
+    "autor": "Thutmose (atribuido)",
+    "motivo": "licencia_restringida",
+    "detalle": "La foto del Neues Museum de Berlín es de licencia restringida y Wikidata no tiene P18 usable. Buscar alternativa libre o aceptar que no entra."
+  },
+  {
+    "col": "14_surrealismo",
+    "estado": "pendiente",
+    "titulo": "Obras de Frida Kahlo (a definir)",
+    "autor": "Frida Kahlo",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Sin versión de alta resolución accesible. Best-effort con navegador, obra por obra."
+  },
+  {
+    "col": "14_surrealismo",
+    "estado": "pendiente",
+    "titulo": "Cristo de San Juan de la Cruz",
+    "autor": "Salvador Dalí",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Copyright; sin alta resolución accesible."
+  },
+  {
+    "col": "15_pop_americano",
+    "estado": "pendiente",
+    "titulo": "¡Whaam!",
+    "autor": "Roy Lichtenstein",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Copyright; sin alta resolución accesible."
+  },
+  {
+    "col": "15_pop_americano",
+    "estado": "pendiente",
+    "titulo": "Chica ahogándose (Drowning Girl)",
+    "autor": "Roy Lichtenstein",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Copyright; sin alta resolución accesible."
+  },
+  {
+    "col": "15_pop_americano",
+    "estado": "pendiente",
+    "titulo": "Marilyn (Marilyn Diptych)",
+    "autor": "Andy Warhol",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Copyright; sin alta resolución accesible."
+  },
+  {
+    "col": "15_pop_americano",
+    "estado": "pendiente",
+    "titulo": "Ritmo de otoño (Autumn Rhythm)",
+    "autor": "Jackson Pollock",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Copyright; sin alta resolución accesible."
+  },
+  {
+    "col": "15_pop_americano",
+    "estado": "pendiente",
+    "titulo": "Cráneo de carnero (Ram Skull)",
+    "autor": "Georgia O'Keeffe",
+    "motivo": "copyright_sin_alta_res",
+    "detalle": "Copyright; sin alta resolución accesible."
+  },
+  {
+    "col": "15_pop_americano",
+    "estado": "pendiente",
+    "titulo": "Naranja, rojo, amarillo (1961)",
+    "autor": "Mark Rothko",
+    "motivo": "ficha_con_imagen_equivocada",
+    "detalle": "El n12 de la colección muestra en realidad 'Violet, Black, Orange, Yellow on White and Red' (1949). Conseguir la de 1961 o corregir la ficha a la obra real (revisión visual 2026-11-02)."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "pendiente",
+    "titulo": "Tres bellezas de la época",
+    "autor": "Kitagawa Utamaro",
+    "motivo": "sin_impresion_de_museo",
+    "detalle": "Solo hay un archivo grande de Google Art Project sin museo confirmado (5621×8231). Suplente si aparece una impresión de museo."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "pendiente",
+    "titulo": "Bajo el puente Mannen en Fukagawa",
+    "autor": "Katsushika Hokusai",
+    "motivo": "suplente",
+    "detalle": "Treinta y seis vistas del monte Fuji; impresión del Met DP141017. Suplente si se reemplaza alguna Hokusai."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "pendiente",
+    "titulo": "Ejiri en la provincia de Suruga",
+    "autor": "Katsushika Hokusai",
+    "motivo": "suplente",
+    "detalle": "Treinta y seis vistas del monte Fuji; impresión del Met DP140977."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "pendiente",
+    "titulo": "Minamoto no Raikō y la araña de tierra",
+    "autor": "Utagawa Kuniyoshi",
+    "motivo": "baja_resolucion",
+    "detalle": "British Museum en Commons a 1126–1542 px; buscar mejor versión."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "descartada",
+    "titulo": "La gran ola de Kanagawa (reimpresiones y versión restaurada)",
+    "autor": "Katsushika Hokusai",
+    "motivo": "reimpresion_moderna",
+    "detalle": "\"Great Wave off Kanagawa2.jpg\" (restaurada de una reimpresión Shōwa/Adachi) y \"The Great Wave off Kanagawa.jpg\" (copia moderna recortada). Se usó la impresión del Met DP141063."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "descartada",
+    "titulo": "Fuji rojo / Tormenta bajo la cumbre (ediciones visipix)",
+    "autor": "Katsushika Hokusai",
+    "motivo": "reimpresion_moderna",
+    "detalle": "\"Red Fuji southern wind clear morning.jpg\" y \"Lightnings below the summit.jpg\": ediciones c. 1930."
+  },
+  {
+    "col": "24_ukiyo_e",
+    "estado": "descartada",
+    "titulo": "Ōtani Oniji III (reimpresión Adachi, 6307×9177)",
+    "autor": "Tōshūsai Sharaku",
+    "motivo": "reimpresion_moderna",
+    "detalle": "Reimpresión del siglo XX; se usó la impresión del Met DP130228."
+  }
 ]

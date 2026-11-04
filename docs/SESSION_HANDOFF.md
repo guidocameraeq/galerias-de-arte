@@ -18,8 +18,10 @@ Ordenar el repo y los procesos, sacar las imágenes del repo (biblioteca local +
 - **Sistema de colecciones (2026-11-03):** `docs/procesos/NUEVA_COLECCION.md` alrededor del motor genérico `tools/harvest.mjs` (lista `tools/targets/NN.json`); dos frenos con Guido (aprobar la lista y el dry-run). Subagentes Sonnet en `.claude/agents/` (`investigador-curatorial`, `verificador-visual`, `redactor-fichas`) y skill `/nueva-coleccion`. Curaduría de vuelta desde Drive con `tools/drive-curation.mjs`. Fichas clavadas por id (973). Todo probado en sandbox; ninguna colección nueva real bajada todavía.
 - **Registro de candidatas hecho para las 23 colecciones:** `<col>/_candidatas.json` (37 pendientes importantes, 607 descartadas, con motivo) generado por `tools/candidatas.mjs --gap --apply`; decisiones manuales en `tools/candidatas-manual.json`. Solo 8 colecciones tienen historial de descartes (cada archivo lo dice en `cobertura`).
 
+- **Colección 24 Ukiyo-e (prueba real del sistema):** 14 obras, de punta a punta con el proceso nuevo; publicada en Drive `Galerías/Ukiyo-e`. Aviso: Cleveland cataloga *Nieve nocturna en Kanbara* (n8) como impresión "según Hiroshige" (posible copia): decisión de Guido.
+
 ## Estado verificado (salida de `node tools/audit.mjs`)
-- `TOTAL: 23 colecciones · 1382 obras · 1382 con ficha · 7.37 GB · 0 FALLAS · 62 AVISOS`
+- `TOTAL: 24 colecciones · 1396 obras · 1396 con ficha · 7.42 GB · 0 FALLAS · 62 AVISOS`
 - Fichas: `node tools/fichas-stats.mjs` (solo 39 de 1382 explicaciones llegan a 80 palabras; 293 son `Wikipedia-es`).
 - Drive: **no verificado** que Drive para escritorio haya terminado de subir los ~7 GB a la nube.
 

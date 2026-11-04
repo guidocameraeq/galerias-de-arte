@@ -53,6 +53,9 @@ Cada documento detalla el alcance temático, los criterios de curaduría y canon
 - [22. Zdzisław Beksiński](22_zdzislaw_beksinski.md) — 25 obras (18 MB). Surrealismo distópico polaco: arquitecturas óseas, crucifixiones místicas y figuras espectrales.
 - [23. Mariusz Lewandowski](23_mariusz_lewandowski.md) — 25 obras (15 MB). Paisajes cósmicos colosales, titanes oceánicos y simbolismo metafísico contemporáneo.
 
+### F. Arte asiático
+- [24. Ukiyo-e](24_ukiyo_e.md) — 14 obras. Xilografías japonesas del período Edo: Hokusai, Hiroshige, Utamaro, Sharaku, Harunobu y Kuniyoshi. Primera colección armada con el motor genérico.
+
 ---
 
 ## 3. Estructura de Documentación de cada Galería
