@@ -79,6 +79,9 @@ Hay obras *bajo* los pisos por motivos históricos (p.ej. Puvis de Chavannes en 
 9. Registrar `license`, `image_quality` si <1500 o con copyright, y la ficha (`docs/DESCRIPCIONES.md`).
 10. Correr `node tools/audit.mjs`: debe terminar sin FALLAS.
 
+## 5b. Excepción al "no recortar": planchas de Doré en páginas de libro (2026-11-04)
+Guido autorizó recortar **solo el margen de papel y el fondo** de las planchas de la colección 17 que en Commons existen únicamente como foto de página (edición Moeser/Polona). Reglas: (1) solo con `tools/dore-crop.mjs` (detecta el grabado como la mayor zona no-papel y corta el rectángulo; sin retoque, sin reescalado, sin cambio de color); (2) nunca si hay una versión limpia ≥2000 px; (3) cada obra recortada lleva `processing: "recorte de margen (dore-crop.mjs)"` y `source_page` con el archivo original de Commons; (4) revisión visual de TODAS las recortadas antes de dar la colección por buena. No se extiende a otras colecciones sin nueva decisión.
+
 ## 6. Qué NO garantizamos
 
 - **Relevancia = proxy por fama de Wikidata** (sitelinks), no juicio curatorial; puede colar obras menores o dejar afuera una importante sin P18.

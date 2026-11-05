@@ -12,7 +12,7 @@ Biblioteca **curada** de obras de arte en **ALTA RESOLUCIÓN** para **uso person
 
 ## Reglas duras (no negociables)
 1. **Pocas obras excelentes > muchas mediocres.** Calidad y relevancia mandan sobre tamaño o formato.
-2. **Las imágenes NO se editan, recortan, retocan ni convierten.** Tampoco se filtra por aspect ratio (vertical y cuadrada entran igual: `w>=h` → `landscape/`, si no `portrait/`).
+2. **Las imágenes NO se editan, recortan, retocan ni convierten.** Tampoco se filtra por aspect ratio (vertical y cuadrada entran igual: `w>=h` → `landscape/`, si no `portrait/`). **Única excepción (Guido, 2026-11-04):** colección 17 (Doré), planchas que solo existen como foto de página de libro: se recorta **solo el margen de papel y el fondo** con `tools/dore-crop.mjs` (determinístico; los píxeles del grabado no se tocan ni se reescalan). Se registra en el campo `processing` de la obra y en `docs/CALIDAD.md` §5b.
 3. **El archivo en disco es la verdad, no la API.** Medí siempre el archivo descargado (Wikimedia clampea renders y promete más de lo que entrega).
 4. **Piso de resolución: lado largo ≥1000 px (≥800 en 13–15).** Una obra **NUEVA** por debajo se descarta (salvo que el usuario la acepte: icónica sin versión mejor; anotarlo en `docs/CALIDAD.md` §4). Las **existentes** por debajo salen como AVISO `W-RES` en `audit`: se justifican o se corrigen.
 5. **Dry-run por defecto**: casi todo script escribe solo con `--apply`. Excepciones: `collect.mjs` baja salvo `--dry`; `dore-desc.mjs` no tiene dry-run y renombra archivos. **Antes de una descarga o poda masiva, mostrale al usuario el dry-run (o la lista de targets) y esperá su OK.**

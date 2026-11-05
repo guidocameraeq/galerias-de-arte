@@ -8,6 +8,11 @@
 - [ ] Ninguno abierto. (El riesgo de pérdida irreversible por `prune-*`/`dore-dedup` se cerró: ahora mueven en vez de borrar y existe `remove-work.mjs`.)
 
 ## 🟠 Importante
+- [ ] **Exportar a Drive lo nuevo del 2026-11-04** (`export-drive --col=…`, unidad `I:` no montada en esta PC): 02 (Rembrandt reemplazado), 04 (+14 y Turner), 06 (Bosch reemplazado), 07 (+Caná) y **17 reconstruida (135 planchas; ojo: ids/archivos nuevos, las 98 viejas salen de la galería)**. Después `images-sync backup`.
+- [ ] **Colección nueva "El resto de Doré"** (Biblia, Paraíso perdido, Marinero, Cuervo, Londres, España, Perrault…): selección de 98 obras con archivo Commons en `tools/targets/_dore_otras_seleccion.json` (sin confirmar a ojo); requiere `/nueva-coleccion` con aprobación de la lista. Guido tiene ~70 grabados no-Dante de ~1000–2000 px en su carpeta personal (sirven solo si no hay versión mejor).
+- [ ] **Revisión de datos de TODAS las galerías (Guido, 2026-11-04):** museo con **ciudad y país** ("Museo del Prado, Madrid, España"), años y ficha vs imagen. Hoy `holding_museum` viene de Wikidata sin ciudad/país en las colecciones viejas; las 15 obras nuevas del 04/07 ya lo traen.
+- [ ] **Carpeta personal de Guido (`1. Arte`):** ya se incorporaron 15 obras + 3 reemplazos; falta que Guido borre esas 18 (el agente no pudo borrar fuera del proyecto) y decida el resto. Bocetos que quedaron afuera: Chepstow, Arkona, *Juicio Final (estudio)*.
+- [ ] **17: revisar a 100%** el borde de la plancha 46 y las fichas `dudoso` (74, 125, 126, 132, 133); varias fichas están algo bajo las 80 palabras (74–79).
 - [ ] **24 Ukiyo-e, n8 *Nieve nocturna en Kanbara*:** Cleveland la cataloga "after Hiroshige" (posible impresión posterior o copia). Decidir si queda o se reemplaza por una impresión de época (Met/Rijksmuseum).
 - [ ] **Resultado de la revisión visual de fichas vs imagen (547 obras sin `qid`, 2026-11-02, 3 subagentes + verificación propia; Doré excluido). Nada se modificó; decide Guido.**
   - **Error real:** `15 n12` — la imagen es *Violet, Black, Orange, Yellow on White and Red* (1949), no *Orange Red Yellow* (1961) como dice la ficha (WikiArt, 700×865). Corregir la ficha a la obra real o conseguir la correcta.

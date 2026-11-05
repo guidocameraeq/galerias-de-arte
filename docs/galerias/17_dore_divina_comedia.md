@@ -1,60 +1,17 @@
 # Galería 17 · Doré: La Divina Comedia
 
-> **Ubicación en repo:** `colecciones/17_dore_divina_comedia/`  
-> **Ficha técnica:** 98 obras · 100% con descripción en español · Resolución media: 3882 × 4381 px
+> **Ubicación en repo:** `colecciones/17_dore_divina_comedia/`
+> **Ficha técnica:** 135 planchas (Infierno 75 · Purgatorio 42 · Paraíso 18) · 100% con ficha en español · lado largo 2670–5717 px · 37 apaisadas / 98 verticales
 
----
+## Fundamento
+La Divina Comedia completa ilustrada por Gustave Doré, **una versión limpia por plancha** (numeración del Dover: Infierno 1–75, Purgatorio 76–117, Paraíso 118–135). Título = `Libro · Canto N — escena`; el pie de grabado original (Dover 1976, trad. Longfellow) queda en `caption_en` / `caption_es`. Año: Infierno 1861; Purgatorio y Paraíso 1868 (edición Hachette).
 
-## 1. Métricas de la Galería
+## Fuentes y procesamiento (2026-11-04, reconstrucción completa)
+- Wikimedia Commons. 21 planchas vienen ya limpias (recortes de voluntarios de Commons). **114 vienen de la edición Moeser (Berlín 1870/71), escaneada por la Biblioteca Nacional de Polonia, y se recortó solo el margen de papel** con `tools/dore-crop.mjs` (excepción autorizada por Guido a la regla 2: `docs/CALIDAD.md` §5b). Cada una lleva `processing` y `source_page`.
+- Pies, cantos y erratas del Dover: `tools/targets/17_dante_planchas.json` (123 confirmadas, 12 con canto dudoso). Fichas: `tools/desc/17_dore_divina_comedia.mjs` (fuente: pie del Dover + resumen del canto en Wikipedia).
+- Reconstrucción: `tools/dore-dante-import.mjs`. Las 98 entradas anteriores (fotos de libro con margen, duplicados, un cuadro reescalado con IA) se movieron a `_dedup_removed/` (recuperables).
+- Falta la plancha 76 del Infierno (la edición Moeser numera hasta 75).
 
-| Parámetro | Valor |
-|---|---|
-| **Total de obras** | 98 piezas |
-| **Distribución apaisada (landscape)** | 29 (30%) |
-| **Distribución vertical (portrait)** | 69 (70%) |
-| **Rango de resolución (lado largo)** | 2404 px – 7517 px |
-| **Artistas representados** | 1 |
-| **Índice canónico** | [`_index.json`](../../colecciones/17_dore_divina_comedia/_index.json) |
-
----
-
-## 2. Fundamento Curatorial y Período
-
-**Período / Contexto:** 1861 – 1868 (Grabados en madera)
-
-Colección excepcional monográfica de 98 grabados monumentales de Gustave Doré ilustrando el *Infierno*, *Purgatorio* y *Paraíso* de Dante Alighieri. Títulos estandarizados como `Infierno · Canto N` para una experiencia inmersiva serial en TV.
-
----
-
-## 3. Fuentes e Ingesta
-
-- **Plataformas consultadas:** Wikimedia Commons (categorías de Dante / Doré a máxima fidelidad en madera).
-- **Herramientas de adquisición:** `tools/dore-redownload.mjs`, `tools/dore-dedup.mjs` (algoritmo dHash 16x16 de 256 bits), `tools/dore-desc.mjs`. Usa `sharp` para deduplicación perceptual y hojas de contacto.
-
-Todas las imágenes fueron auditadas y medidas directamente desde los bytes reales almacenados en disco (nunca desde las declaraciones de las APIs).
-
----
-
-## 4. Criterios de Selección y Descartes
-
-57 registros en `_descartes/17_dore_divina_comedia.jsonl`. Enorme proceso de depuración: 155 archivos que originalmente eran páginas de error HTML guardadas como .jpg fueron re-descargados con validación estricta de magic bytes; y planchas duplicadas entre cantos fueron detectadas mediante dHash (umbral ≤11) y movidas a `_dedup_removed/`.
-
-El inventario respeta el principio central de curaduría: **pocas obras excelentes > muchas mediocres**.
-
----
-
-## 5. Obras Cumbre de la Galería
-
-- **Infierno · Canto I (Dante perdido en la selva oscura y la aparición de Virgilio)**
-- **Infierno · Canto III (La barca de Caronte cruzando el Aqueronte)**
-- **Infierno · Canto XXXIV (Lucifer aprisionado en el hielo del Cocito)**
-- **Purgatorio · Canto IX (El ángel guardián con la espada flamígera)**
-- **Paraíso · Canto XXXI (La Rosa Celeste de los bienaventurados)**
-
----
-
-## 6. Estado Técnico y Verificación
-
-- **Fichas en español:** Redactadas y sintetizadas de fuentes documentales (Wikipedia en español y catálogos de museos) con foco en **qué muestra la obra y qué significa**.
-- **Auditoría de integridad:** Verificada mediante `node tools/audit.mjs --col=17`.
-- **Garantía:** 0 imágenes huérfanas, dimensiones reales idénticas al índice, carpetas correspondientes a la orientación real.
+## Pendiente
+- Revisar a 100% algunos bordes finos (p. ej. plancha 46) y las fichas marcadas `dudoso` (74, 125, 126, 132, 133).
+- "El resto de Doré" (Biblia, Paraíso perdido, Marinero, Cuervo, Londres…) irá en otra colección: ver `docs/TODO.md`.
