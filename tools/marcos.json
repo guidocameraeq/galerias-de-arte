@@ -1,0 +1,98 @@
+{
+  "formato": 1,
+  "marcos": [
+    {
+      "nombre": "dorado",
+      "archivo": "dorado.jpg",
+      "ancho": 1833,
+      "alto": 2056,
+      "fuente": "https://commons.wikimedia.org/wiki/File:Louis_XIV-style_frame_MET_86RR_254r2m.jpg",
+      "licencia": "CC0",
+      "museo": "The Metropolitan Museum of Art, Nueva York",
+      "nota": "Marco estilo Luis XIV, madera tallada y dorada (Francia). Hueco blanco.",
+      "hueco_interior": {
+        "x": 496,
+        "y": 513,
+        "ancho": 861,
+        "alto": 1013,
+        "color_fondo": "rgb(254,254,244)",
+        "metodo": "medido desde el centro hasta el borde del fondo liso (aprox. ±10 px)"
+      }
+    },
+    {
+      "nombre": "dorado-redondo",
+      "archivo": "dorado-redondo.jpg",
+      "ancho": 2560,
+      "alto": 2625,
+      "fuente": "https://commons.wikimedia.org/wiki/File:Tondo_MET_86A_027R2m.jpg",
+      "licencia": "CC0",
+      "museo": "The Metropolitan Museum of Art, Nueva York",
+      "nota": "Marco tondo (redondo) italiano, tallado y dorado. Hueco blanco.",
+      "hueco_interior": {
+        "x": 517,
+        "y": 533,
+        "ancho": 1468,
+        "alto": 1552,
+        "color_fondo": "rgb(255,255,255)",
+        "metodo": "medido desde el centro hasta el borde del fondo liso (aprox. ±10 px)"
+      }
+    },
+    {
+      "nombre": "madera",
+      "archivo": "madera.jpg",
+      "ancho": 2828,
+      "alto": 2083,
+      "fuente": "https://commons.wikimedia.org/wiki/File:Cassetta_frame_MET_86C_030r2m.jpg",
+      "licencia": "CC0",
+      "museo": "The Metropolitan Museum of Art, Nueva York",
+      "nota": "Marco cassetta italiano, madera oscura con adornos tallados y dorados. Hueco blanco con sombra suave.",
+      "hueco_interior": {
+        "x": 530,
+        "y": 462,
+        "ancho": 1758,
+        "alto": 1203,
+        "color_fondo": "rgb(255,255,255)",
+        "metodo": "medido desde el centro hasta el borde del fondo liso (aprox. ±10 px)"
+      }
+    },
+    {
+      "nombre": "negro-filete",
+      "archivo": "negro-filete.jpg",
+      "ancho": 2101,
+      "alto": 2279,
+      "fuente": "https://commons.wikimedia.org/wiki/File:Cassetta_frame_MET_86K_088r3.jpg",
+      "licencia": "CC0",
+      "museo": "The Metropolitan Museum of Art, Nueva York",
+      "nota": "APROXIMADO: cassetta con banda oscura (negro verdoso) entre molduras doradas. No hay un negro con filete dorado limpio en acceso abierto.",
+      "hueco_interior": {
+        "x": 507,
+        "y": 503,
+        "ancho": 1092,
+        "alto": 1271,
+        "color_fondo": "rgb(255,255,255)",
+        "metodo": "medido desde el centro hasta el borde del fondo liso (aprox. ±10 px)"
+      }
+    },
+    {
+      "nombre": "dorado-alt",
+      "archivo": "dorado-alt.jpg",
+      "ancho": 4852,
+      "alto": 5560,
+      "fuente": "https://commons.wikimedia.org/wiki/File:Vergulde_lijst_met_p%C3%A2te-ornamenten_in_Lodewijk_XV_stijl.,_SK-L-374.jpg",
+      "licencia": "CC0",
+      "museo": "Rijksmuseum, Ámsterdam",
+      "nota": "Alternativa: marco Luis XV dorado (Rijksmuseum). Hueco gris plano; tiene una plaquita \"J. Vermeer\" arriba y algo de perspectiva.",
+      "hueco_interior": {
+        "x": 1213,
+        "y": 1256,
+        "ancho": 2553,
+        "alto": 3201,
+        "color_fondo": "rgb(173,174,178)",
+        "metodo": "medido desde el centro hasta el borde del fondo liso (aprox. ±10 px)"
+      }
+    }
+  ],
+  "faltan": [
+    "negro-fino: no hay marco negro fino vacío fotografiado de frente en acceso abierto (Met, Rijksmuseum, Commons). Recomendado dibujarlo en la app (es un rectángulo negro liso)."
+  ]
+}

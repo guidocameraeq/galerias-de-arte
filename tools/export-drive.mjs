@@ -133,7 +133,9 @@ for (const col of cols) {
     }
     fs.copyFileSync(p.src, p.dest); hechos++;
   }
-  fs.writeFileSync(path.join(dir, 'galeria.json'), json, 'utf8');
-  console.log(`    escrito: ${hechos} imágenes nuevas, ${renombradas} renombradas + galeria.json`);
+  const gj = path.join(dir, 'galeria.json');
+  const igual = fs.existsSync(gj) && fs.readFileSync(gj, 'utf8') === json;   // la app baja fichas solo si cambia: no tocar fecha/md5 si el contenido es el mismo
+  if (!igual) fs.writeFileSync(gj, json, 'utf8');
+  console.log(`    escrito: ${hechos} imágenes nuevas, ${renombradas} renombradas${igual ? ' · galeria.json sin cambios (no se tocó)' : ' + galeria.json'}`);
 }
 console.log(`\nTOTAL: ${cols.length} colección(es) · ${totObras} obras · ${(totBytes / 1e9).toFixed(2)} GB origen · problemas: ${totProblemas}${APPLY ? '' : '\nDry-run: agregá --apply para escribir.'}`);

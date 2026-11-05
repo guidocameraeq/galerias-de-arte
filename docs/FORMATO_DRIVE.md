@@ -17,7 +17,10 @@ Mi unidad/Galerías de arte/          PRIVADA (trabajo)
   Galerías-prueba/                   compartida por link (Lector) — solo pruebas técnicas
   Galerías/                          compartida por link (Lector) — la que lee la app (pendiente: exportador)
   Respaldo/                          PRIVADA — copia de la biblioteca de imágenes (ver docs/ALMACENAMIENTO.md)
+  _retiradas/                        PRIVADA — lo que export-drive saca de una galería (nunca borra)
 ```
+**Marcos de cuadro** (pedido de la app, 2026-11-05): NO van por Drive; la app los empaqueta. Fotos CC0 (Met/Rijksmuseum) en la biblioteca local `_marcos/` + `marcos.json` (registro en `tools/marcos.json`). `negro-fino` lo dibuja la app.
+
 **Nunca "Editor".** Solo `Galerías` y `Galerías-prueba` se comparten por enlace; `Respaldo` jamás.
 Una colección de este repo = una subcarpeta de `Galerías/` (entera; Guido la poda a mano después). El nombre es el de la colección sin el prefijo numérico y con acentos (p. ej. `02_barroco` → `Barroco`).
 

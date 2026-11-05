@@ -9,6 +9,10 @@
 - `export-drive.mjs`: (1) una versión vieja con el mismo nombre (obra reemplazada por una de más resolución) ahora se reemplaza; antes se salteaba y en la TV quedaba la imagen vieja con la ficha nueva (44 planchas de la 17); (2) los archivos que ya no están en la galería se MUEVEN a `Galerías de arte/_retiradas/<Título>/` (nunca se borran); (3) encuentra Drive solo en cualquier letra; (4) rechaza títulos con caracteres que Windows no acepta en carpetas.
 - Galería 25 renombrada a "Doré, el resto de su obra" (los dos puntos rompían la carpeta).
 
+### Added
+- Marcos de cuadro para la app (5 fotos CC0 del Met/Rijksmuseum + `marcos.json` con hueco medido) en la biblioteca `_marcos/`; registro `tools/marcos.json`. La app los empaqueta (no van por Drive).
+- `export-drive`: no reescribe un `galeria.json` cuyo contenido no cambió (la app compara md5).
+
 ### Changed
 - `docs/procesos/CIERRE.md` paso 7b: publicar a Drive + respaldo es obligatorio en toda sesión que tocó obras/fichas; si Drive no aparece se avisa, no se deja de pendiente callado.
 
