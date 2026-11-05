@@ -1,0 +1,858 @@
+[
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 1,
+  "id": "Q1212861",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Orsay, París, Francia"
+ },
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 3,
+  "id": "Q1988152",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo del Prado, Madrid, España"
+ },
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 16,
+  "id": "Q21743202",
+  "actual": "Galería de los Uffizi, Florencia, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Crawford Art Gallery, Cork, Irlanda"
+ },
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 17,
+  "id": "Q3900153",
+  "actual": "Colección Wallace, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 28,
+  "id": "Q140053192",
+  "actual": "Museo del Prado, Madrid, España",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Bellas Artes de Ruan, Ruan, Francia"
+ },
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 39,
+  "id": "Q18572424",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "01_mitologia_griega_romana",
+  "n": 51,
+  "id": "Q22116969",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Colecciones de Pinturas del Estado de Baviera, Múnich, Alemania"
+ },
+ {
+  "col": "02_barroco",
+  "n": 34,
+  "id": "Q1134250",
+  "actual": "Art Gallery of Ontario, Toronto, Canadá",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Royal Collection, Reino Unido"
+ },
+ {
+  "col": "02_barroco",
+  "n": 46,
+  "id": "Q16167060",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Arte de Indianápolis, Indianápolis, Estados Unidos"
+ },
+ {
+  "col": "02_barroco",
+  "n": 50,
+  "id": "Q1131110",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ {
+  "col": "02_barroco",
+  "n": 56,
+  "id": "Q27898479",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Arte de Indianápolis, Indianápolis, Estados Unidos"
+ },
+ {
+  "col": "02_barroco",
+  "n": 60,
+  "id": "Q28952743",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "02_barroco",
+  "n": 62,
+  "id": "Q65215583",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "02_barroco",
+  "n": 66,
+  "id": "Q490312",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Escuela Grande de San Roque, Venecia, Italia"
+ },
+ {
+  "col": "02_barroco",
+  "n": 89,
+  "id": "Q700251",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "02_barroco",
+  "n": 93,
+  "id": "Q969367",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "02_barroco",
+  "n": 98,
+  "id": "Q63692",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "02_barroco",
+  "n": 121,
+  "id": "Q571416",
+  "actual": "Colecciones Estatales de Pintura de Baviera, Múnich, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Electoral Gallery Dusseldorf, Düsseldorf, Alemania"
+ },
+ {
+  "col": "03_gotico",
+  "n": 1,
+  "id": "File:Duccio maesta1021.jpg",
+  "actual": "Museo dell’Opera del Duomo, Siena, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Uffizi, Florencia, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 2,
+  "id": "438754",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "State Gallery of Contemporary Art, Nicosia, Chipre"
+ },
+ {
+  "col": "03_gotico",
+  "n": 4,
+  "id": "Q546297",
+  "actual": "Capilla de los Scrovegni, Padua, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Pinacoteca de Brera, Milán, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 6,
+  "id": "Q107176704",
+  "actual": "Palazzo Pubblico, Siena, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Uffizi, Florencia, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 8,
+  "id": "Q121502758",
+  "actual": "Galería de los Uffizi, Florencia, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "The Phoebus Foundation, Saint Helier, Jersey"
+ },
+ {
+  "col": "03_gotico",
+  "n": 9,
+  "id": "File:Fra Angelico - Annunciation.jpg",
+  "actual": "Museo del Prado, Madrid, España",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Uffizi, Florencia, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 10,
+  "id": "Q3873243",
+  "actual": "Museo dell’Opera del Duomo, Siena, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Santísima Anunciada, Florencia, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 20,
+  "id": "Q2734881",
+  "actual": "National Gallery of Art, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "03_gotico",
+  "n": 25,
+  "id": "Q2422889",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo Czartoryski, Cracovia, Polonia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 26,
+  "id": "437490",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Uffizi, Florencia, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 27,
+  "id": "436052",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "State Gallery of Contemporary Art, Nicosia, Chipre"
+ },
+ {
+  "col": "03_gotico",
+  "n": 31,
+  "id": "437892",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "State Gallery of Contemporary Art, Nicosia, Chipre"
+ },
+ {
+  "col": "03_gotico",
+  "n": 36,
+  "id": "Q27044135",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "National Museum of Art of Romania, Bucarest, Rumania"
+ },
+ {
+  "col": "03_gotico",
+  "n": 38,
+  "id": "436311",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "State Gallery of Contemporary Art, Nicosia, Chipre"
+ },
+ {
+  "col": "03_gotico",
+  "n": 48,
+  "id": "438761",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Uffizi, Florencia, Italia"
+ },
+ {
+  "col": "03_gotico",
+  "n": 74,
+  "id": "Q2439462",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "03_gotico",
+  "n": 84,
+  "id": "Q2400652",
+  "actual": "Museo Boijmans Van Beuningen, Róterdam, Países Bajos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Jacques Goudstikker collection, Países Bajos"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 6,
+  "id": "Q232087",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 26,
+  "id": "Q20475372",
+  "actual": "Smithsonian American Art Museum, Washington, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo Smithsoniano de Arte Americano, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 35,
+  "id": "Q18748474",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo Walters, Baltimore, Estados Unidos"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 41,
+  "id": "Q398973",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Victoria y Alberto, Kensington y Chelsea, Reino Unido"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 43,
+  "id": "Q20189937",
+  "actual": "National Gallery of Art, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 81,
+  "id": "Q884782",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 95,
+  "id": "Q3646554",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "04_romanticismo",
+  "n": 99,
+  "id": "Q1652056",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "05_egipcio",
+  "n": 36,
+  "id": "Q57267746",
+  "actual": "Museo de Grenoble, Grenoble, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo Africano de Lyon, Lyon, Francia"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 9,
+  "id": "Q1755464",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 10,
+  "id": "Q2438357",
+  "actual": "Kunstmuseum Basel, Basilea, Suiza",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Belvedere, Viena, Austria"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 15,
+  "id": "File:Harmen Steenwijck - Vanitas Still-Life - WGA21768.jpg",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Mauritshuis, La Haya, Países Bajos"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 16,
+  "id": "Q4008601",
+  "actual": "Museo de Historia del Arte, Viena, Austria",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Colecciones de Pinturas del Estado de Baviera, Múnich, Alemania"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 18,
+  "id": "Q3925598",
+  "actual": "Museo de Capodimonte, Nápoles, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Kroměříž Archdiocesan Museum, Kroměříž, República Checa"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 20,
+  "id": "Q50744201",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Australia, Canberra, Australia"
+ },
+ {
+  "col": "06_macabro_memento_mori",
+  "n": 22,
+  "id": "436485",
+  "actual": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Mauritshuis, La Haya, Países Bajos"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 4,
+  "id": "Q179900",
+  "actual": "Galería de la Academia, Florencia, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Plaza de la Señoría, Florencia, Italia"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 6,
+  "id": "Q186953",
+  "actual": "Palacio Apostólico Vaticano",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museos Vaticanos, Ciudad del Vaticano"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 9,
+  "id": "Q474338",
+  "actual": "Museo Czartoryski, Cracovia, Polonia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Munich Central Collecting Point, Múnich, ocupación aliada en Alemania"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 11,
+  "id": "Q567861",
+  "actual": "Capilla Sixtina, Ciudad del Vaticano",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museos Vaticanos, Ciudad del Vaticano"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 13,
+  "id": "Q1267893",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 16,
+  "id": "Q328079",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 18,
+  "id": "Q500812",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 39,
+  "id": "Q254923",
+  "actual": "Museo del Hermitage, San Petersburgo, Rusia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 54,
+  "id": "Q867403",
+  "actual": "Galería de los Uffizi, Florencia, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Palatina, Florencia, Italia"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 55,
+  "id": "Q15008032",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "07_alto_renacimiento",
+  "n": 78,
+  "id": "Q2415504",
+  "actual": "Museo Nacional del Bargello, Florencia, Italia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Uffizi, Florencia, Italia"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 2,
+  "id": "Q152509",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 3,
+  "id": "Q683274",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 4,
+  "id": "Q737062",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 13,
+  "id": "Q2395218",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 22,
+  "id": "Q26250",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 23,
+  "id": "Q1212098",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 31,
+  "id": "Q59815",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 36,
+  "id": "Q731639",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 41,
+  "id": "Q1857132",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 43,
+  "id": "Q3640080",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 58,
+  "id": "Q2734209",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "08_impresionismo",
+  "n": 67,
+  "id": "Q3794660",
+  "actual": "Museo de Bellas Artes de Pau, Pau, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Bellas Artes de Pau, Pau, Francia"
+ },
+ {
+  "col": "09_postimpresionismo",
+  "n": 19,
+  "id": "Q3869871",
+  "actual": "Staechelin collection",
+  "motivo": "Wikidata sin ciudad/país",
+  "wd": "Staechelin collection"
+ },
+ {
+  "col": "09_postimpresionismo",
+  "n": 51,
+  "id": "Q4354644",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "09_postimpresionismo",
+  "n": 52,
+  "id": "Q4528214",
+  "actual": "Galería Nacional de Dinamarca, Copenhague, Dinamarca",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Gliptoteca Ny Carlsberg, Copenhague, Dinamarca"
+ },
+ {
+  "col": "10_realismo",
+  "n": 13,
+  "id": "Q2914912",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "10_realismo",
+  "n": 20,
+  "id": "Q3203447",
+  "actual": "Museo de Bellas Artes y Arqueología de Besanzón, Besanzón, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Orsay, París, Francia"
+ },
+ {
+  "col": "10_realismo",
+  "n": 36,
+  "id": "Q4960357",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "10_realismo",
+  "n": 41,
+  "id": "Q1283024",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "10_realismo",
+  "n": 56,
+  "id": "Q1560719",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "10_realismo",
+  "n": 65,
+  "id": "Q369810",
+  "actual": "Museo Nacional de Bellas Artes, Buenos Aires, Argentina",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo Nacional de Bellas Artes, Buenos Aires, Argentina"
+ },
+ {
+  "col": "10_realismo",
+  "n": 67,
+  "id": "Q970968",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "10_realismo",
+  "n": 72,
+  "id": "Q2909909",
+  "actual": "Castillo Hearst",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "California State Parks, Sacramento, Estados Unidos"
+ },
+ {
+  "col": "11_rococo",
+  "n": 3,
+  "id": "Q2629423",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "11_rococo",
+  "n": 13,
+  "id": "Q7712851",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "11_rococo",
+  "n": 19,
+  "id": "Q3212142",
+  "actual": "Real Academia de Pintura y Escultura",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "11_rococo",
+  "n": 27,
+  "id": "Q12860070",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "11_rococo",
+  "n": 33,
+  "id": "Q6929863",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 5,
+  "id": "Q669994",
+  "actual": "Berlín",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo de Bellas Artes de Leipzig, Leipzig, Alemania"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 20,
+  "id": "Q3432673",
+  "actual": "Museo Nacional de Arte, Arquitectura y Diseño",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Noruega, Oslo, Noruega"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 32,
+  "id": "Q1194961",
+  "actual": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 46,
+  "id": "Q960157",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 47,
+  "id": "Q2712679",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 58,
+  "id": "Q470541",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 59,
+  "id": "Q822541",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 60,
+  "id": "Q2425901",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 64,
+  "id": "Q18689510",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 65,
+  "id": "Q6411359",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate, Londres, Reino Unido"
+ },
+ {
+  "col": "12_simbolismo_modernismo",
+  "n": 66,
+  "id": "Q7737113",
+  "actual": "National Gallery, Londres, Reino Unido",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Tate Britain, Londres, Reino Unido"
+ },
+ {
+  "col": "13_vanguardias",
+  "n": 25,
+  "id": "Q3877556",
+  "actual": "Long Museum",
+  "motivo": "Wikidata sin ciudad/país",
+  "wd": "Riccardo Gualino Collection (1910-1930)"
+ },
+ {
+  "col": "13_vanguardias",
+  "n": 33,
+  "id": "Q1523466",
+  "actual": "Brett Gorvy",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Museo Stedelijk, Amsterdam, Países Bajos"
+ },
+ {
+  "col": "16_neoclasicismo",
+  "n": 7,
+  "id": "Q1215604",
+  "actual": "Museo de Orsay, París, Francia",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "16_neoclasicismo",
+  "n": 12,
+  "id": "Q1282840",
+  "actual": "Musée de l'Armée",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ },
+ {
+  "col": "16_neoclasicismo",
+  "n": 13,
+  "id": "Q1313605",
+  "actual": "Galería Nacional de Arte, Washington D. C., Estados Unidos",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ {
+  "col": "16_neoclasicismo",
+  "n": 29,
+  "id": "Q1282978",
+  "actual": "Palacio de Compiègne",
+  "motivo": "Wikidata discrepa del museo actual (puede ser ubicación histórica)",
+  "wd": "Departamento de Pinturas del Museo del Louvre, Francia"
+ }
+]

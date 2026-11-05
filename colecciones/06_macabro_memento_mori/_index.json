@@ -27,7 +27,7 @@
       "school": "Renacimiento flamenco",
       "canon_rank": 31,
       "title_es": "El triunfo de la muerte",
-      "holding_museum": "Museo del Prado, Madrid"
+      "holding_museum": "Museo del Prado, Madrid, España"
     },
     {
       "n": 2,
@@ -50,7 +50,7 @@
       "description": "Una mujer enloquecida, armada y cargada de botín, marcha hacia la boca del Infierno entre un caos de monstruos y saqueo. Bruegel crea una alegoría feroz de la codicia y la locura humanas. Una pesadilla de furia y avaricia.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "Dulle Griet (Margarita la Loca)",
-      "holding_museum": "Museo Mayer van den Bergh, Amberes",
+      "holding_museum": "Museo Mayer van den Bergh, Amberes, Bélgica",
       "school": "Renacimiento flamenco",
       "type": "Óleo sobre tabla"
     },
@@ -75,7 +75,7 @@
       "description": "El titán Saturno devora a uno de sus hijos para escapar a la profecía de ser destronado por ellos. Goya lo pintó directo en los muros de su casa, sin encargo ni público: una imagen brutal del miedo y el poder que se devora a sí mismo. Cumbre de las Pinturas Negras.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q1150997",
-      "holding_museum": "Museo del Prado, Madrid",
+      "holding_museum": "Museo del Prado, Madrid, España",
       "museum_confidence": "wikidata?",
       "type": "Óleo sobre revoco trasladado a lienzo",
       "school": "Romanticismo (España)",
@@ -103,7 +103,7 @@
       "description": "El Diablo en forma de macho cabrío preside un aquelarre de brujas viejas y deformes en la noche. Goya satiriza la superstición y el fanatismo con una masa oscura y grotesca. El terror y la sinrazón de las Pinturas Negras.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "El aquelarre (El gran cabrón)",
-      "holding_museum": "Museo del Prado, Madrid",
+      "holding_museum": "Museo del Prado, Madrid, España",
       "school": "Romanticismo (España)",
       "type": "Óleo (pintura negra)"
     },
@@ -131,7 +131,7 @@
       "museum_confidence": "falta",
       "canon_rank": 0,
       "title_es": "Aquelarre",
-      "holding_museum": "Museo Lázaro Galdiano, Madrid",
+      "holding_museum": "Museo Lázaro Galdiano, Madrid, España",
       "school": "Romanticismo (España)",
       "type": "Óleo sobre lienzo"
     },
@@ -156,7 +156,7 @@
       "description": "Tres brujas elevan por el aire a un hombre semidesnudo mientras otro huye tapándose los oídos y cubriéndose con una sábana. Goya envuelve la escena en un terror onírico y ambiguo. Pesadilla y superstición.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "Vuelo de brujas",
-      "holding_museum": "Museo del Prado, Madrid",
+      "holding_museum": "Museo del Prado, Madrid, España",
       "school": "Romanticismo (España)",
       "type": "Óleo sobre lienzo"
     },
@@ -180,7 +180,7 @@
       "kind": "named",
       "description": "Un hombre dormido sobre su mesa es asediado por búhos y murciélagos que surgen de la oscuridad. Goya advierte: cuando la razón duerme, despiertan los monstruos de la sinrazón. El grabado más célebre de los Caprichos.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
-      "holding_museum": "Museo Metropolitano de Arte, Nueva York",
+      "holding_museum": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
       "museum_confidence": "fuente",
       "title_es": "El sueño de la razón produce monstruos (Capricho 43)",
       "school": "Romanticismo (España)",
@@ -207,7 +207,7 @@
       "description": "Un caballero cristiano avanza imperturbable por un desfiladero pese a la Muerte, que le muestra un reloj de arena, y al Diablo que lo acecha. Durero pinta la firmeza de la fe ante la tentación y el fin. Maestría absoluta del grabado.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q1755464",
-      "holding_museum": "Museo Metropolitano de Arte, Nueva York",
+      "holding_museum": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
       "museum_confidence": "fuente",
       "type": "Grabado a buril",
       "school": "Renacimiento alemán",
@@ -240,7 +240,7 @@
       "school": "Renacimiento alemán",
       "canon_rank": 8,
       "title_es": "La muerte y la doncella",
-      "holding_museum": "Kunstmuseum Basel"
+      "holding_museum": "Kunstmuseum Basel, Basilea, Suiza"
     },
     {
       "n": 11,
@@ -268,7 +268,7 @@
       "school": "Renacimiento alemán",
       "canon_rank": 11,
       "title_es": "Las tres edades del hombre y la muerte",
-      "holding_museum": "Museo del Prado, Madrid"
+      "holding_museum": "Museo del Prado, Madrid, España"
     },
     {
       "n": 12,
@@ -296,7 +296,7 @@
       "school": "Renacimiento alemán",
       "canon_rank": 34,
       "title_es": "Los embajadores",
-      "holding_museum": "National Gallery, Londres"
+      "holding_museum": "National Gallery de Londres, Londres, Reino Unido"
     },
     {
       "n": 13,
@@ -305,7 +305,7 @@
       "title": "Erasmus of Rotterdam",
       "artist": "Hans Holbein the Younger",
       "artist_museum": "Hans Holbein the Younger",
-      "year": "c1532",
+      "year": "c. 1532",
       "classification": "Paintings",
       "museum": "The Met",
       "license": "Public Domain",
@@ -319,7 +319,7 @@
       "description": "El gran humanista Erasmo escribe concentrado, de perfil, con una serenidad intelectual absoluta. Holbein capta la mente del hombre más que su mera apariencia. El retrato del humanismo europeo.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q20181435",
-      "holding_museum": "Museo Metropolitano de Arte, Nueva York",
+      "holding_museum": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
       "museum_confidence": "fuente",
       "type": "Óleo sobre tabla",
       "canon_rank": 1,
@@ -347,7 +347,7 @@
       "description": "Una calavera, un reloj y una copa volcada sobre una mesa recuerdan que el tiempo pasa y todo placer es efímero. Claesz domina el reflejo y la materia en tonos sobrios. La filosofía del \"memento mori\" hecha bodegón.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q17276208",
-      "holding_museum": "Mauritshuis",
+      "holding_museum": "Mauritshuis, La Haya, Países Bajos",
       "museum_confidence": "wikidata?",
       "type": "Óleo sobre tabla",
       "school": "Barroco holandés",
@@ -380,7 +380,7 @@
       "school": "Barroco holandés",
       "canon_rank": 2,
       "title_es": "Bodegón de vanitas",
-      "holding_museum": "National Gallery, Londres"
+      "holding_museum": "National Gallery, Londres, Reino Unido"
     },
     {
       "n": 16,
@@ -407,8 +407,8 @@
       "type": "Óleo sobre lienzo",
       "school": "Barroco español",
       "canon_rank": 11,
-      "title_es": "Vanitas",
-      "holding_museum": "Kunsthistorisches Museum, Viena"
+      "title_es": "Vanidad",
+      "holding_museum": "Museo de Historia del Arte, Viena, Austria"
     },
     {
       "n": 17,
@@ -435,7 +435,7 @@
       "type": "Óleo sobre lienzo",
       "canon_rank": 7,
       "title_es": "Et in Arcadia ego (Los pastores de Arcadia)",
-      "holding_museum": "Museo del Louvre, París",
+      "holding_museum": "Museo del Louvre, París, Francia",
       "school": "Clasicismo barroco"
     },
     {
@@ -464,7 +464,7 @@
       "school": "Barroco español (tenebrismo)",
       "canon_rank": 13,
       "title_es": "Apolo y Marsias",
-      "holding_museum": "Museo de Capodimonte, Nápoles"
+      "holding_museum": "Museo de Capodimonte, Nápoles, Italia"
     },
     {
       "n": 19,
@@ -487,7 +487,7 @@
       "description": "La Muerte, esqueleto montado en un caballo espectral, dispara flechas a ricos y poderosos mientras los pobres le piden en vano que los lleve. Gran fresco gótico de un dramatismo sobrecogedor. Nadie escapa a su flecha.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "El triunfo de la muerte (Palermo)",
-      "holding_museum": "Palazzo Abatellis, Palermo",
+      "holding_museum": "Palazzo Abatellis, Palermo, Italia",
       "school": "Gótico tardío",
       "type": "Fresco"
     },
@@ -512,7 +512,7 @@
       "description": "Una barca lleva una figura blanca y un ataúd hacia una isla rocosa y silenciosa coronada de cipreses, árboles de los cementerios. Böcklin crea una imagen del más allá tan enigmática que obsesionó a media Europa. El viaje final hacia el reposo.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q50744201",
-      "holding_museum": "Museo Metropolitano de Arte, Nueva York",
+      "holding_museum": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
       "museum_confidence": "fuente",
       "canon_rank": 0,
       "title_es": "La isla de los muertos",
@@ -540,7 +540,7 @@
       "description": "El pintor se retrata trabajando mientras la Muerte, un esqueleto, le toca al oído un violín de una sola cuerda. Böcklin convierte el viejo tema del memento mori en confesión personal del artista. La muerte como musa y recordatorio.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q1523789",
-      "holding_museum": "Alte Nationalgalerie, Berlín",
+      "holding_museum": "Alte Nationalgalerie, Berlín, Alemania",
       "museum_confidence": "wikidata?",
       "type": "Óleo sobre lienzo",
       "school": "Simbolismo",
@@ -567,7 +567,7 @@
       "description": "Una gran burbuja flota sobre una calavera entre flores marchitas, humo y monedas: \"homo bulla\", el hombre es como una pompa de jabón. De Gheyn pintó una de las primeras vanitas independientes. La fragilidad de la vida.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q17276208",
-      "holding_museum": "Museo Metropolitano de Arte, Nueva York",
+      "holding_museum": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
       "museum_confidence": "fuente",
       "type": "Óleo sobre lienzo",
       "school": "Barroco holandés",
@@ -621,7 +621,8 @@
       "type": "Óleo sobre lienzo",
       "canon_rank": 0,
       "title_es": "La Muerte",
-      "school": "Barroco"
+      "school": "Barroco",
+      "holding_museum": "Collection Marianne van der Heijden, Países Bajos"
     },
     {
       "n": 25,
@@ -643,7 +644,7 @@
       "description": "Cupido viaja en un carro conducido por la Muerte hacia el más allá, perseguido por un espectro: hasta el amor sucumbe al tiempo. Alegoría grabada del triunfo de la muerte sobre el deseo. Ni el amor es eterno.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "El amor en un carro conducido por la muerte",
-      "holding_museum": "Rijksmuseum, Ámsterdam",
+      "holding_museum": "Rijksmuseum, Ámsterdam, Países Bajos",
       "school": "Grabado (s. XIX)",
       "type": "Grabado"
     },
@@ -667,7 +668,7 @@
       "description": "Alegoría en que el Arte de la Pintura vence a la Muerte: la obra perdura cuando el cuerpo perece. El viejo ideal de la inmortalidad por la fama artística. El arte contra el olvido.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "La victoria de la Pintura sobre la Muerte",
-      "holding_museum": "Rijksmuseum, Ámsterdam",
+      "holding_museum": "Rijksmuseum, Ámsterdam, Países Bajos",
       "school": "Grabado barroco",
       "type": "Grabado"
     },
@@ -700,7 +701,7 @@
       "orientation": "landscape",
       "title": "Anton Romako - Totentanz auf dem Schlachtfeld vor brennenden Ruinen - 5033 - Österreichische Galerie Belvedere",
       "artist": "Anton Romako",
-      "year": "c1882",
+      "year": "c. 1882",
       "classification": "painting",
       "museum": "Wikimedia",
       "license": "Public domain",
@@ -714,7 +715,7 @@
       "description": "Esqueletos danzan macabros sobre un campo de batalla ante ruinas en llamas. Romako fusiona la vieja \"danza de la muerte\" medieval con el horror moderno de la guerra. La muerte como fiesta sombría.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "Danza de la muerte en el campo de batalla",
-      "holding_museum": "Belvedere, Viena",
+      "holding_museum": "Galería Belvedere, Viena, Austria",
       "school": "Simbolismo",
       "type": "Óleo sobre lienzo"
     },
@@ -742,7 +743,8 @@
       "type": "Óleo sobre lienzo",
       "canon_rank": 0,
       "title_es": "Alegoría del amor y la muerte",
-      "school": "Manierismo"
+      "school": "Manierismo",
+      "holding_museum": "Museum Bredius, La Haya, Países Bajos"
     },
     {
       "n": 30,
@@ -764,7 +766,7 @@
       "description": "La Muerte cabalga blandiendo su guadaña, esparciendo el terror a su paso. Böcklin da forma a la peste o la guerra como jinete implacable. El viejo terror medieval renacido en el siglo XIX.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q29897410",
-      "holding_museum": "Colecciones de Pinturas del Estado de Baviera",
+      "holding_museum": "Colecciones de Pinturas del Estado de Baviera, Múnich, Alemania",
       "museum_confidence": "wikidata?",
       "type": "Óleo sobre lienzo",
       "canon_rank": 0,
@@ -777,7 +779,7 @@
       "orientation": "portrait",
       "title": "Allégorie de la mort MB593",
       "artist": "Anonimo",
-      "year": "c1701",
+      "year": "c. 1701",
       "classification": "painting",
       "museum": "Wikimedia",
       "license": "CC0",
@@ -814,7 +816,7 @@
       "description": "Miniatura medieval que ilustra la \"danza de la muerte\", donde esqueletos arrastran a los vivos sin distinción de rango. Acompaña un poema de Pierre Michault. El tópico medieval de la igualdad ante la muerte.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "title_es": "La danza de los ciegos (la muerte)",
-      "holding_museum": "Bibliothèque de l’Arsenal, París",
+      "holding_museum": "Bibliothèque de l’Arsenal, París, Francia",
       "school": "Gótico (manuscrito)",
       "type": "Iluminación sobre vitela"
     },
@@ -884,7 +886,7 @@
       "description": "Objetos cotidianos —papeles, plumas, cintas— pintados con tal ilusionismo que parecen reales. Plasschaert despliega el virtuosismo del trampantojo. El engaño de los sentidos y lo efímero.",
       "description_source": "Síntesis (Claude, fundada en Wikipedia/curatoría)",
       "qid": "Q118998772",
-      "holding_museum": "Bowes Museum",
+      "holding_museum": "Bowes Museum, Barnard Castle, Reino Unido",
       "museum_confidence": "wikidata?",
       "type": "Óleo sobre lienzo",
       "canon_rank": 0,
@@ -920,7 +922,7 @@
       "orientation": "portrait",
       "title": "Dance-trois-aveugles-michault",
       "artist": "The artist is unknown.",
-      "year": "Late 15th century.",
+      "year": "finales del siglo XV",
       "classification": "painting",
       "museum": "Wikimedia",
       "license": "Public domain",
@@ -943,7 +945,7 @@
       "orientation": "landscape",
       "title": "Dance of Death",
       "artist": "Henri Charles Guérard",
-      "year": "c1888",
+      "year": "c. 1888",
       "classification": "painting",
       "museum": "Wikimedia",
       "license": "Public domain",
@@ -961,7 +963,8 @@
       "type": "Aguafuerte",
       "canon_rank": 0,
       "title_es": "Danza de la muerte",
-      "school": "Grabado (s. XIX)"
+      "school": "Grabado (s. XIX)",
+      "holding_museum": "Regional Museum of Koper, Koper, Eslovenia"
     },
     {
       "n": 39,
@@ -995,7 +998,7 @@
       "artist": "Francisco de Goya",
       "year": "1823",
       "museum": "Wikimedia",
-      "holding_museum": "Museo del Prado, Madrid",
+      "holding_museum": "Museo del Prado, Madrid, España",
       "museum_confidence": "wikidata",
       "license": "Dominio público",
       "source_url": "https://commons.wikimedia.org/wiki/File:Dos_viejos_comiendo_sopa.jpg",
@@ -1016,11 +1019,11 @@
       "file": "41_El_jardin_de_las_delicias_Panel_del_Infierno_Hieronymus_Bosch_1505.jpg",
       "orientation": "portrait",
       "title": "El jardín de las delicias (Panel del Infierno)",
-      "title_es": "El jardín de las delicias (Panel del Infierno)",
+      "title_es": "El jardín de las delicias",
       "artist": "Hieronymus Bosch",
       "year": "1505",
       "museum": "Wikimedia",
-      "holding_museum": "Museo del Prado, Madrid",
+      "holding_museum": "Museo del Prado, Madrid, España",
       "museum_confidence": "wikidata",
       "license": "Dominio público",
       "source_url": "https://commons.wikimedia.org/wiki/File:The_Garden_of_Earthly_Delights_by_Bosch_High_Resolution.jpg",

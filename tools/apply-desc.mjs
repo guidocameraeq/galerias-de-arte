@@ -3,7 +3,7 @@
 // Cada entrada se clava a su obra por `id` (qid / sourceId / source_url / image_url); `n` es solo el respaldo para entradas viejas sin id.
 // Si una entrada tiene id y no aparece en el índice, NO cae en otra obra: se avisa y se saltea.
 // Uso: node tools/apply-desc.mjs <colDir> [--apply]
-import { readdirSync, statSync, existsSync } from 'node:fs';
+import { readdirSync, statSync, existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadIndex, saveIndex } from './lib.mjs';
@@ -45,6 +45,21 @@ for (const d of data) {
   if (d.tipo) it.type = d.tipo;
   if (d.autor) it.artist = d.autor;        // corrige autores con basura de metadatos
   n++;
+}
+// Overlay de metadatos normalizados (tools/meta-fix.mjs): museo "Museo, Ciudad, País", título es y año; gana sobre lo anterior.
+const metaPath = path.join(ROOT, 'tools', 'meta', `${colDir}.json`);
+if (existsSync(metaPath)) {
+  const ov = JSON.parse(readFileSync(metaPath, 'utf8'));
+  let m = 0;
+  for (const [id, o] of Object.entries(ov)) {
+    const it = byId.get(id) || null;
+    if (!it) { console.log(`!! meta: id ${id} no existe/ambiguo`); continue; }
+    if ('museo' in o) { if (o.museo) it.holding_museum = o.museo; else delete it.holding_museum; }
+    if (o.titulo) it.title_es = o.titulo;
+    if (o.anio) it.year = o.anio;
+    m++;
+  }
+  console.log(`   meta: ${m} obras con metadatos normalizados`);
 }
 const conDesc = idx.items.filter(i => i.description).length;
 console.log(`${APPLY ? 'APLICADO' : 'DRY'}: ${n} fichas autoradas, ${warn} avisos. Total con descripción: ${conDesc}/${idx.items.length}`);

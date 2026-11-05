@@ -1,0 +1,548 @@
+{
+ "204504": {
+  "n": 41,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1515"
+ },
+ "208568": {
+  "n": 45,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1550"
+ },
+ "257864": {
+  "n": 59,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 120"
+ },
+ "361888": {
+  "n": 57,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1547"
+ },
+ "437891": {
+  "n": 2,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "761114": {
+  "n": 47,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q1212861": {
+  "n": 1,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q1988152": {
+  "n": 3,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q19911410": {
+  "n": 4,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q17305067": {
+  "n": 5,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1890"
+ },
+ "Q680075": {
+  "n": 6,
+  "museo": "Museo de Arte de Cleveland, Cleveland, Estados Unidos",
+  "anio": "350 a. C."
+ },
+ "Q3201883": {
+  "n": 7,
+  "museo": "Museo de Arte de Cleveland, Cleveland, Estados Unidos"
+ },
+ "Q151047": {
+  "n": 8,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q549847": {
+  "n": 9,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q1206860": {
+  "n": 11,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q3632485": {
+  "n": 12,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q2011510": {
+  "n": 13,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q3731236": {
+  "n": 14,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q3731225": {
+  "n": 15,
+  "museo": "Bargello, Florencia, Italia"
+ },
+ "Q21743202": {
+  "n": 16,
+  "museo": "Galería de los Uffizi, Florencia, Italia"
+ },
+ "Q3900153": {
+  "n": 17,
+  "museo": "Colección Wallace, Londres, Reino Unido"
+ },
+ "Q2426058": {
+  "n": 18,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q2528177": {
+  "n": 19,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q18761379": {
+  "n": 20,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q18002417": {
+  "n": 21,
+  "museo": "museo Isabella Stewart Gardner, Boston, Estados Unidos"
+ },
+ "Q97378803": {
+  "n": 22,
+  "museo": "Palacio del Té, Mantua, Italia"
+ },
+ "Q16944352": {
+  "n": 23,
+  "museo": "Museo de Arte de Filadelfia, Filadelfia, Estados Unidos"
+ },
+ "Q5332757": {
+  "n": 24,
+  "museo": "Walker Art Gallery, Liverpool, Reino Unido"
+ },
+ "Q1247110": {
+  "n": 25,
+  "museo": "Museos Reales de Bellas Artes de Bélgica, Región de Bruselas-Capital, Bélgica"
+ },
+ "Q871812": {
+  "n": 26,
+  "museo": "Tate, Londres, Reino Unido"
+ },
+ "Q140053192": {
+  "n": 28,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q117834559": {
+  "n": 29,
+  "museo": "Museo de Orsay, París, Francia"
+ },
+ "Q3555076": {
+  "n": 30,
+  "museo": "Instituto de Arte Clark, Massachusetts, Estados Unidos"
+ },
+ "Q599034": {
+  "n": 31,
+  "museo": "Loggia della Signoria, Florencia, Italia"
+ },
+ "Q945850": {
+  "n": 32,
+  "museo": "Galería Borghese, Roma, Italia"
+ },
+ "Q2352789": {
+  "n": 33,
+  "museo": "Colección Borghese, Italia"
+ },
+ "File:Psyche Revived by Cupid's Kiss, Louvre 22 July 2017.jpg": {
+  "n": 34,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q19911412": {
+  "n": 35,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1565"
+ },
+ "Q18602282": {
+  "n": 36,
+  "museo": "Museo Nacional de Estocolmo, municipio de Estocolmo, Suecia"
+ },
+ "Q116289882": {
+  "n": 37,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "4 a. C."
+ },
+ "Q43225675": {
+  "n": 38,
+  "museo": "Museo Nacional de Estocolmo, municipio de Estocolmo, Suecia"
+ },
+ "Q18572424": {
+  "n": 39,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "mediados del siglo XVII"
+ },
+ "Q79173133": {
+  "n": 40,
+  "museo": "Museo de Arte de Dallas, Dallas, Estados Unidos"
+ },
+ "Q19911988": {
+  "n": 43,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q63716160": {
+  "n": 44,
+  "museo": "Museo de arte de Carolina del Norte, Raleigh, Estados Unidos"
+ },
+ "Q4009580": {
+  "n": 46,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q655705": {
+  "n": 49,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q20810155": {
+  "n": 50,
+  "museo": "Museo de Arte de Filadelfia, Filadelfia, Estados Unidos",
+  "anio": "c. 1564"
+ },
+ "Q22116969": {
+  "n": 51,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1532"
+ },
+ "Q20179995": {
+  "n": 52,
+  "museo": "Museo J. Paul Getty, Los Ángeles, Estados Unidos"
+ },
+ "Q19912110": {
+  "n": 53,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q17335878": {
+  "n": 54,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q19911452": {
+  "n": 55,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1528"
+ },
+ "File:Bacchus and Silenus BM 1899.2-15.1 n01.jpg": {
+  "n": 56,
+  "museo": "Museo Británico, Londres, Reino Unido",
+  "anio": "30 a. C."
+ },
+ "File:Bacchus and Silenus BM 1899.2-15.1 n02.jpg": {
+  "n": 60,
+  "museo": "Museo Británico, Londres, Reino Unido",
+  "anio": "30 a. C."
+ },
+ "File:ChampaigneSinCerere.jpg": {
+  "n": 62,
+  "museo": "Musée du Grand Siècle, Saint-Cloud, Francia",
+  "anio": "c. 1665"
+ },
+ "Q20267653": {
+  "n": 63,
+  "museo": "Instituto de Arte de Chicago, Chicago, Estados Unidos",
+  "anio": "c. 1690"
+ },
+ "File:The Birth of Bacchus by Giulio Pippi, Getty Center.JPG": {
+  "n": 64,
+  "museo": "Museo J. Paul Getty, Los Ángeles, Estados Unidos",
+  "anio": "c. 1530"
+ },
+ "Q408623": {
+  "n": 70,
+  "museo": "Museos Capitolinos, Roma, Italia",
+  "anio": "500 a. C."
+ },
+ "File:Venus and Mars National Gallery.jpg": {
+  "n": 75,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:Jacopo Tintoretto - The Origin of the Milky Way - Google Art Project.jpg": {
+  "n": 78,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:Angelo Bronzino - Venus, Cupid, Folly and Time - National Gallery, London.jpg": {
+  "n": 79,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:Narcissus-Caravaggio (1594-96).jpg": {
+  "n": 80,
+  "museo": "Galleria Nazionale d'Arte Antica (Palazzo Barberini), Roma, Italia"
+ },
+ "File:Peter Paul Rubens - The Judgement of Paris - Google Art Project.jpg": {
+  "n": 81,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:Peter Paul Rubens - The Fall of Phaeton (National Gallery of Art).jpg": {
+  "n": 82,
+  "museo": "National Gallery of Art, Washington D. C., Estados Unidos"
+ },
+ "File:Rubens saturn.jpg": {
+  "n": 83,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Velázquez - Dios Marte (Museo del Prado, 1639-41).jpg": {
+  "n": 84,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Fábula de Mercurio y Argos, by Diego Velázquez.jpg": {
+  "n": 85,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Nicolas Poussin - The Empire of Flora - Google Art Project.jpg": {
+  "n": 86,
+  "museo": "Galería de Pinturas de los Maestros Antiguos, Dresde, Alemania"
+ },
+ "File:The dance to the music of time c. 1640.jpg": {
+  "n": 87,
+  "museo": "Colección Wallace, Londres, Reino Unido"
+ },
+ "File:Guido Reni, Atalanta e Ippomene, Madrid, Museo del Prado.jpg": {
+  "n": 88,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Rembrandt - The Abduction of Ganymede - Google Art Project.jpg": {
+  "n": 89,
+  "museo": "Galería de Pinturas de los Maestros Antiguos, Dresde, Alemania"
+ },
+ "File:Alexandre Cabanel Phèdre.jpg": {
+  "n": 90,
+  "museo": "Musée Fabre, Montpellier, Francia"
+ },
+ "File:Frederic Lord, Leighton - The Bath of Psyche - Google Art Project.jpg": {
+  "n": 91,
+  "museo": "Tate Britain, Londres, Reino Unido"
+ },
+ "File:John William Waterhouse - Hylas and the Nymphs (1896).jpg": {
+  "n": 92,
+  "museo": "Manchester Art Gallery, Mánchester, Reino Unido"
+ },
+ "File:The Baleful Head - Edward Burne-Jones.jpg": {
+  "n": 93,
+  "museo": "Staatsgalerie Stuttgart, Stuttgart, Alemania"
+ },
+ "File:Jupiter and Semele by Gustave Moreau.jpg": {
+  "n": 94,
+  "museo": "Musée Gustave Moreau, París, Francia"
+ },
+ "File:Jacques-louis david, combattimento di minerva e marte, schizzo.jpg": {
+  "n": 95,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:Granet011 Ingres Jupiter & Thétis.jpg": {
+  "n": 96,
+  "museo": "Musée Granet, Aix-en-Provence, Francia"
+ },
+ "File:Rubens Vía Láctea.jpg": {
+  "n": 97,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Caravaggio - Cupid as Victor - Google Art Project.jpg": {
+  "n": 98,
+  "museo": "Gemäldegalerie, Berlín, Alemania"
+ },
+ "File:Annibale Carracci, Hercules at the Crossroads, brighter.jpg": {
+  "n": 99,
+  "museo": "Museo de Capodimonte, Nápoles, Italia"
+ },
+ "File:The Triumph of Bacchus and Ariadne - Annibale Carracci - 1597 - Farnese Gallery, Rome.jpg": {
+  "n": 100,
+  "museo": "Palacio Farnese, Roma, Italia"
+ },
+ "File:Mars and Venus Surprised by Vulcan - Tintoretto.jpg": {
+  "n": 101,
+  "museo": "Alte Pinakothek, Múnich, Alemania"
+ },
+ "File:Nicolas Poussin - Cephalus and Aurora - Google Art Project.jpg": {
+  "n": 102,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:The Sleep of Endymion - Girodet (Louvre INV 4935).jpg": {
+  "n": 103,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:The Love of Paris and Helen by Jacques-Louis David.jpg": {
+  "n": 104,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:Circe Offering the Cup to Odysseus (2457 x 4023px ed.).jpg": {
+  "n": 105,
+  "museo": "Gallery Oldham, Gran Mánchester, Reino Unido"
+ },
+ "File:Circe Invidiosa - John William Waterhouse.jpg": {
+  "n": 106,
+  "museo": "Art Gallery of South Australia, Adelaida, Australia"
+ },
+ "File:Herbert James Draper, Ulysses and the Sirens, 1909.jpg": {
+  "n": 107,
+  "museo": "Ferens Art Gallery, Kingston upon Hull, Reino Unido"
+ },
+ "File:Burne-Jones, Edward - The Mirror of Venus - 1875 - hi res.jpg": {
+  "n": 108,
+  "museo": "Museo Calouste Gulbenkian, Lisboa, Portugal"
+ },
+ "File:Helen of Troy.jpg": {
+  "n": 109,
+  "museo": "The De Morgan Foundation, Londres, Reino Unido"
+ },
+ "File:Ceiling of the Room of the giants in Palazzo Te, Mantua.jpg": {
+  "n": 110,
+  "museo": "Palacio del Té, Mantua, Italia"
+ },
+ "File:Cornelis Cornelisz. van Haarlem - The Fall of the Titans - Google Art Project.jpg": {
+  "n": 111,
+  "museo": "Statens Museum for Kunst, Copenhague, Dinamarca"
+ },
+ "File:Joachim Antonisz. Wtewael - The Battle between the Gods and the Giants - 1986.426 - Art Institute of Chicago.jpg": {
+  "n": 112,
+  "museo": "Instituto de Arte de Chicago, Chicago, Estados Unidos"
+ },
+ "File:The fall of the giants by Peter Paul Rubens.jpg": {
+  "n": 113,
+  "museo": "Museos Reales de Bellas Artes de Bélgica, Bruselas, Bélgica"
+ },
+ "File:Le Combat de l'Amour et de la Chasteté - Le Pérugin - Musée du Louvre Peintures INV 722 ; MR 401.jpg": {
+  "n": 114,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:Heinrich fueger 1817 prometheus brings fire to mankindFXD.jpg": {
+  "n": 115,
+  "museo": "Museo Liechtenstein, Viena, Austria"
+ },
+ "File:Perino Caida de los gigantes.jpg": {
+  "n": 116,
+  "museo": "Villa del Principe (Palacio Doria), Génova, Italia"
+ },
+ "File:Hércules lucha con el león de Nemea, por Zurbarán.jpg": {
+  "n": 118,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules lucha con la hidra de Lerna, por Zurbarán.jpg": {
+  "n": 119,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules y el jabalí de Erimanto, por Zurbarán.jpg": {
+  "n": 120,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules y el toro de Creta, por Zurbarán.jpg": {
+  "n": 121,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules desvía el curso del río Alfeo, por Zurbarán.jpg": {
+  "n": 122,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules y el Cancerbero, por Zurbarán.jpg": {
+  "n": 123,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules separa los montes Calpe y Abyla, por Zurbarán.jpg": {
+  "n": 124,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules luchando con Anteo, por Zurbarán.jpg": {
+  "n": 125,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Hércules vence al rey Gerión, por Zurbarán.jpg": {
+  "n": 126,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Muerte de Hércules, por Zurbarán.jpg": {
+  "n": 127,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Guido reni, storie di ercole,deianira rapita da nesso, 1617-21.JPG": {
+  "n": 128,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:Antonio del Pollaiolo - Ercole e Anteo.jpg": {
+  "n": 129,
+  "museo": "Galería de los Uffizi, Florencia, Italia"
+ },
+ "File:Reni - Hercule sur le bûcher, INV 538 ; MR 287.jpg": {
+  "n": 130,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:Gustave Moreau - Diomède dévoré par ses chevaux.jpg": {
+  "n": 131,
+  "museo": "Musée des Beaux-Arts, Ruan, Francia"
+ },
+ "File:Peter Paul Rubens - Perseus and Andromeda (Hermitage Museum).jpg": {
+  "n": 132,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ "File:Peter Paul Rubens, , Kunsthistorisches Museum Wien, Gemäldegalerie - Haupt der Medusa - GG 3834 - Kunsthistorisches Museum.jpg": {
+  "n": 133,
+  "museo": "Museo de Historia del Arte, Viena, Austria"
+ },
+ "File:Luca giordano, perseo pietrifica phineas e i suoi seguaci, 1680-84 ca. 01.jpg": {
+  "n": 134,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:Piero di Cosimo, Perseus frees Andromeda, 1536, Uffizi-wfr.jpg": {
+  "n": 135,
+  "museo": "Galería de los Uffizi, Florencia, Italia"
+ },
+ "File:George Frederic Watts - The Minotaur - Google Art Project.jpg": {
+  "n": 137,
+  "museo": "Tate Britain, Londres, Reino Unido"
+ },
+ "File:Titian - Tityus, 1548-1549.jpg": {
+  "n": 138,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Titian - Sisyphus - Madrid - Prado.jpg": {
+  "n": 139,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Ixion by Jusepe de Ribera (1632).jpg": {
+  "n": 140,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "File:Aeneas and the Sibyl in the Underworld MET DP234687.jpg": {
+  "n": 141,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "File:Giovanni Battista Tiepolo - The Sacrifice of Iphigenia - Villa Valmarana.jpg": {
+  "n": 143,
+  "museo": "Villa Valmarana ai Nani, Vicenza, Italia"
+ },
+ "File:The Procession of the Trojan Horse in Troy by Giovanni Domenico Tiepolo (cropped).jpg": {
+  "n": 144,
+  "museo": "National Gallery, Londres, Reino Unido"
+ },
+ "File:Jacques-louis david, i funerali di patrocolo, 1778, 02.jpg": {
+  "n": 145,
+  "museo": "Galería Nacional de Irlanda, Dublín, Irlanda"
+ },
+ "File:Jacques-Louis David - The Grief of Andromache.JPG": {
+  "n": 146,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "File:Peter Paul Rubens - Achille vainqueur d'Hector 01.jpg": {
+  "n": 148,
+  "museo": "Musée des Beaux-Arts, Pau, Francia"
+ },
+ "File:Henri-Paul Motte - Le Cheval de Troie.jpg": {
+  "n": 149,
+  "museo": "Wadsworth Atheneum, Hartford, Estados Unidos"
+ },
+ "File:Joseph Mallord William Turner - Glaucus and Scylla - Google Art Project.jpg": {
+  "n": 150,
+  "museo": "Kimbell Art Museum, Fort Worth, Estados Unidos"
+ },
+ "File:Arnold Böcklin 008.jpg": {
+  "n": 151,
+  "museo": "Kunstmuseum Basel, Basilea, Suiza"
+ },
+ "File:John Flaxman - Apollo Preceding Hector with His Aegis, and Dispersing the Greeks, Fuseli's Lectures - Google Art Project.jpg": {
+  "n": 42,
+  "anio": "sin fecha"
+ },
+ "File:Prometheus and Apollo (Hansen).jpg": {
+  "n": 61,
+  "anio": "c. 1850"
+ }
+}

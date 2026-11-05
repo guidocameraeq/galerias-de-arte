@@ -1,0 +1,481 @@
+{
+ "437531": {
+  "n": 42,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1625"
+ },
+ "437869": {
+  "n": 18,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "437881": {
+  "n": 31,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1662"
+ },
+ "Q969377": {
+  "n": 1,
+  "museo": "iglesia de San Luis de los Franceses, Roma, Italia"
+ },
+ "Q2470123": {
+  "n": 2,
+  "museo": "Galería Nacional de Arte Antiguo, Roma, Italia"
+ },
+ "Q318947": {
+  "n": 3,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q2273517": {
+  "n": 4,
+  "museo": "basílica de Santa María del Popolo, Roma, Italia"
+ },
+ "Q3221991": {
+  "n": 5,
+  "museo": "Museo de Arte de Cleveland, Cleveland, Estados Unidos"
+ },
+ "Q2270778": {
+  "n": 6,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q2627056": {
+  "n": 7,
+  "museo": "Galería Borghese, Roma, Italia"
+ },
+ "Q541376": {
+  "n": 8,
+  "museo": "Galería Nacional de Irlanda, Dublin City, Irlanda"
+ },
+ "Q2247406": {
+  "n": 9,
+  "museo": "Museo Nacional de Capodimonte, Nápoles, Italia"
+ },
+ "Q3630745": {
+  "n": 10,
+  "museo": "Royal Collection, Reino Unido"
+ },
+ "Q3210251": {
+  "n": 11,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1640"
+ },
+ "Q379906": {
+  "n": 12,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q8774031": {
+  "n": 13,
+  "museo": "Museo de Bellas Artes de Rennes, Rennes, Francia"
+ },
+ "Q24118": {
+  "n": 14,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q728027": {
+  "n": 15,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q1527541": {
+  "n": 16,
+  "museo": "Staatliche Kunstsammlungen Dresden, Dresde, Alemania"
+ },
+ "Q208758": {
+  "n": 17,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q1133420": {
+  "n": 19,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q1240092": {
+  "n": 20,
+  "museo": "Galería Doria-Pamphili, Roma, Italia"
+ },
+ "Q2627810": {
+  "n": 21,
+  "museo": "Museo de Victoria y Alberto, Kensington y Chelsea, Reino Unido"
+ },
+ "Q4693305": {
+  "n": 22,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q26708292": {
+  "n": 23,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q27751761": {
+  "n": 24,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q219831": {
+  "n": 25,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q2404992": {
+  "n": 27,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q1167932": {
+  "n": 28,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q185372": {
+  "n": 29,
+  "museo": "Mauritshuis, La Haya, Países Bajos"
+ },
+ "Q167605": {
+  "n": 30,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q965124": {
+  "n": 32,
+  "museo": "Colección Wallace, Londres, Reino Unido"
+ },
+ "Q2667782": {
+  "n": 33,
+  "museo": "Catedral de Amberes, Amberes, Bélgica"
+ },
+ "Q1134250": {
+  "n": 34,
+  "museo": "Art Gallery of Ontario, Toronto, Canadá"
+ },
+ "Q3937485": {
+  "n": 35,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q19860036": {
+  "n": 36,
+  "museo": "Casino Rospigliosi, Roma, Italia"
+ },
+ "Q19911545": {
+  "n": 37,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q3948947": {
+  "n": 38,
+  "museo": "Galería Spada, Roma, Italia"
+ },
+ "Q259012": {
+  "n": 39,
+  "museo": "Galería Nacional de Arte Antiguo, Roma, Italia"
+ },
+ "Q70595592": {
+  "n": 41,
+  "museo": "Museo Lázaro Galdiano, Madrid, España"
+ },
+ "Q3949246": {
+  "n": 44,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q16167060": {
+  "n": 46,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1620"
+ },
+ "File:Diego Velazquez - Завтрак - Google Art Project.jpg": {
+  "n": 47,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia",
+  "anio": "c. 1617"
+ },
+ "File:Bartolomé Esteban Murillo (1617 - 1682) - Saint Anthony of Padua with Christ as a child - 414 - Gemäldegalerie.jpg": {
+  "n": 48,
+  "museo": "Gemäldegalerie, Berlín, Alemania",
+  "anio": "c. 1670"
+ },
+ "File:Bartolomé Esteban Murillo (1617 - 1682) - Adoration of the Sheperds - 414C - Gemäldegalerie.jpg": {
+  "n": 49,
+  "museo": "Gemäldegalerie, Berlín, Alemania",
+  "anio": "c. 1650"
+ },
+ "Q1131110": {
+  "n": 50,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q19911518": {
+  "n": 52,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1595"
+ },
+ "Q21598351": {
+  "n": 53,
+  "museo": "Instituto de Arte Clark, Massachusetts, Estados Unidos"
+ },
+ "Q19911493": {
+  "n": 54,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q27898479": {
+  "n": 56,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1665"
+ },
+ "File:Bartolomé Esteban Murillo (1617 - 1682) - The Baptism of Christ - 68.2 - Gemäldegalerie.jpg": {
+  "n": 57,
+  "museo": "Gemäldegalerie, Berlín, Alemania"
+ },
+ "Q684935": {
+  "n": 58,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1656"
+ },
+ "Q28952743": {
+  "n": 60,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q65215583": {
+  "n": 62,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q17609277": {
+  "n": 64,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1625"
+ },
+ "Q490312": {
+  "n": 66,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1675"
+ },
+ "Q17355822": {
+  "n": 68,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q19911610": {
+  "n": 69,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos",
+  "anio": "c. 1650"
+ },
+ "Q3784800": {
+  "n": 70,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q1333433": {
+  "n": 71,
+  "museo": "iglesia de Santa María de la Victoria, Roma, Italia"
+ },
+ "Q523974": {
+  "n": 72,
+  "museo": "Mauritshuis, La Haya, Países Bajos"
+ },
+ "Q544315": {
+  "n": 74,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q766782": {
+  "n": 75,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q2246489": {
+  "n": 76,
+  "museo": "museo Isabella Stewart Gardner, Boston, Estados Unidos"
+ },
+ "Q586035": {
+  "n": 77,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q588695": {
+  "n": 78,
+  "museo": "Museo de Historia del Arte de Viena, Viena, Austria"
+ },
+ "Q275349": {
+  "n": 79,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q2727560": {
+  "n": 80,
+  "museo": "Concatedral de San Juan, La Valeta, Malta"
+ },
+ "Q512755": {
+  "n": 81,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ "Q984058": {
+  "n": 82,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q94802": {
+  "n": 83,
+  "museo": "iglesia de Santo Tomé, Toledo, España"
+ },
+ "Q474024": {
+  "n": 85,
+  "museo": "Gemäldegalerie de Berlín, Berlín, Alemania"
+ },
+ "Q2293905": {
+  "n": 86,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q2293936": {
+  "n": 87,
+  "museo": "Galería Borghese, Roma, Italia"
+ },
+ "Q883994": {
+  "n": 88,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q700251": {
+  "n": 89,
+  "museo": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania"
+ },
+ "Q597114": {
+  "n": 90,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q2294441": {
+  "n": 91,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ "Q969367": {
+  "n": 93,
+  "museo": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ "Q2610675": {
+  "n": 94,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q45130": {
+  "n": 95,
+  "museo": "Städel Museum, Fráncfort del Meno, Alemania"
+ },
+ "Q1169395": {
+  "n": 96,
+  "museo": "museo Isabella Stewart Gardner, Boston, Estados Unidos"
+ },
+ "Q2336984": {
+  "n": 97,
+  "museo": "Royal Collection, Reino Unido"
+ },
+ "Q63692": {
+  "n": 98,
+  "museo": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania"
+ },
+ "Q166937": {
+  "n": 99,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q663133": {
+  "n": 100,
+  "museo": "Museo de Arte Kimbell, Fort Worth, Estados Unidos"
+ },
+ "Q685916": {
+  "n": 101,
+  "museo": "basílica de Santa María del Popolo, Roma, Italia"
+ },
+ "Q2338417": {
+  "n": 102,
+  "museo": "Iglesia de San Luis de los Franceses, Roma, Italia"
+ },
+ "Q2653851": {
+  "n": 103,
+  "museo": "Catedral de Amberes, Amberes, Bélgica"
+ },
+ "Q766487": {
+  "n": 104,
+  "museo": "Galería Borghese, Roma, Italia"
+ },
+ "Q2471800": {
+  "n": 105,
+  "museo": "Galerías nacionales de Escocia, City de Edimburgo, Reino Unido"
+ },
+ "Q1170480": {
+  "n": 106,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q123935": {
+  "n": 107,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q247282": {
+  "n": 108,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q2714617": {
+  "n": 109,
+  "museo": "catedral de Toledo, Castilla-La Mancha, España"
+ },
+ "Q644936": {
+  "n": 110,
+  "museo": "Colecciones de Pinturas del Estado de Baviera, Múnich, Alemania"
+ },
+ "Q2052008": {
+  "n": 112,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q1220013": {
+  "n": 113,
+  "museo": "Museo Metropolitano de Arte, Nueva York, Estados Unidos"
+ },
+ "Q6402081": {
+  "n": 114,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q650635": {
+  "n": 115,
+  "museo": "Rijksmuseum, Amsterdam, Países Bajos"
+ },
+ "Q4945054": {
+  "n": 116,
+  "museo": "Colección Borghese, Italia"
+ },
+ "Q3716086": {
+  "n": 117,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q32496": {
+  "n": 118,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q2528741": {
+  "n": 119,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q3500414": {
+  "n": 120,
+  "museo": "Museo de Bellas Artes de Budapest, Zugló, Hungría"
+ },
+ "Q571416": {
+  "n": 121,
+  "museo": "Colecciones Estatales de Pintura de Baviera, Múnich, Alemania"
+ },
+ "Q2268524": {
+  "n": 122,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q2594673": {
+  "n": 123,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q325267": {
+  "n": 125,
+  "museo": "Gemäldegalerie de Berlín, Berlín, Alemania"
+ },
+ "Q1213151": {
+  "n": 126,
+  "museo": "Pinacoteca Vaticana, Ciudad del Vaticano",
+  "titulo": "Santo Entierro"
+ },
+ "Q931837": {
+  "n": 127,
+  "museo": "Museo de Bellas Artes de Ruan, Ruan, Francia",
+  "titulo": "Cristo en la columnaca"
+ },
+ "Q2318325": {
+  "n": 128,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "File:Ritratto di Carlo II d'Asburgo di Spagna da Bambino.jpg": {
+  "n": 45,
+  "anio": "siglo XVII"
+ },
+ "File:Circle of Josefa de Óbidos – Penitent Magdalene – c. 1665–1680 – Oil on copper.jpg": {
+  "n": 55,
+  "anio": "c. 1665"
+ },
+ "File:Franz de Paula Ferg 001.jpg": {
+  "n": 59,
+  "anio": "primer tercio del siglo XVIII"
+ },
+ "File:Französischer Meister um 1675 002.jpg": {
+  "n": 63,
+  "anio": "c. 1675"
+ }
+}

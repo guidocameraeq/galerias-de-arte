@@ -1,0 +1,350 @@
+{
+ "Q12418": {
+  "n": 1,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q128910": {
+  "n": 2,
+  "museo": "Santa Maria delle Grazie, Milán, Italia"
+ },
+ "Q2943": {
+  "n": 3,
+  "anio": "1481-1512"
+ },
+ "Q179900": {
+  "n": 4,
+  "museo": "Galería de la Academia, Florencia, Italia"
+ },
+ "Q215486": {
+  "n": 5,
+  "museo": "Galería de la Academia de Venecia, Venecia, Italia"
+ },
+ "Q500242": {
+  "n": 7,
+  "museo": "Museos Vaticanos, Ciudad del Vaticano"
+ },
+ "Q235242": {
+  "n": 8,
+  "museo": "basílica de San Pedro, Ciudad del Vaticano"
+ },
+ "Q474338": {
+  "n": 9,
+  "museo": "Museo Czartoryski, Cracovia, Polonia"
+ },
+ "Q1892745": {
+  "n": 10,
+  "museo": "Louvre Abu Dabi, Abu Dhabi, Emiratos Árabes Unidos"
+ },
+ "Q567861": {
+  "n": 11,
+  "museo": "Capilla Sixtina, Ciudad del Vaticano"
+ },
+ "Q1267893": {
+  "n": 13,
+  "museo": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ "Q727875": {
+  "n": 14,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q563727": {
+  "n": 15,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q328079": {
+  "n": 16,
+  "museo": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania"
+ },
+ "Q1142058": {
+  "n": 17,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ "Q500812": {
+  "n": 18,
+  "museo": "Colecciones Estatales de Arte de Dresde, Dresde, Alemania"
+ },
+ "Q656434": {
+  "n": 19,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q783215": {
+  "n": 20,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q1638622": {
+  "n": 21,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q844675": {
+  "n": 23,
+  "museo": "Museos Vaticanos, Ciudad del Vaticano"
+ },
+ "Q567833": {
+  "n": 24,
+  "museo": "Iglesia de Nuestra Señora, Brujas, Bélgica"
+ },
+ "Q153441": {
+  "n": 26,
+  "museo": "Galería Nacional de Arte Antiguo, Roma, Italia"
+ },
+ "Q1473546": {
+  "n": 27,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q698015": {
+  "n": 28,
+  "museo": "Colecciones de Pinturas del Estado de Baviera, Múnich, Alemania"
+ },
+ "Q1059211": {
+  "n": 29,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q1327676": {
+  "n": 30,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ "Q2344505": {
+  "n": 31,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q2030685": {
+  "n": 32,
+  "museo": "Pinacoteca de Brera, Milán, Italia"
+ },
+ "Q2338404": {
+  "n": 33,
+  "museo": "Pinacoteca Ambrosiana, Milán, Italia"
+ },
+ "Q549953": {
+  "n": 34,
+  "museo": "Museos Vaticanos, Ciudad del Vaticano"
+ },
+ "Q1899740": {
+  "n": 35,
+  "museo": "basílica de Santa María dei Frari, Venecia, Italia"
+ },
+ "Q2045726": {
+  "n": 36,
+  "museo": "Palazzo Vecchio, Florencia, Italia"
+ },
+ "Q794077": {
+  "n": 37,
+  "museo": "Galería Borghese, Roma, Italia"
+ },
+ "Q2344368": {
+  "n": 38,
+  "museo": "Villa Farnesina, Roma, Italia"
+ },
+ "Q254923": {
+  "n": 39,
+  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+ },
+ "Q948034": {
+  "n": 40,
+  "museo": "Galería Palatina, Florencia, Italia"
+ },
+ "Q2035209": {
+  "n": 41,
+  "museo": "Galería Palatina, Florencia, Italia"
+ },
+ "Q2344437": {
+  "n": 42,
+  "museo": "Pinacoteca Vaticana, Ciudad del Vaticano"
+ },
+ "Q2360329": {
+  "n": 43,
+  "museo": "Museo Condé, Chantilly, Francia"
+ },
+ "Q552040": {
+  "n": 44,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q1144620": {
+  "n": 45,
+  "museo": "Bargello, Florencia, Italia"
+ },
+ "Q2327759": {
+  "n": 46,
+  "museo": "Museo de Arte Kimbell, Fort Worth, Estados Unidos"
+ },
+ "Q1123378": {
+  "n": 47,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q2046100": {
+  "n": 48,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q83862": {
+  "n": 49,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q735085": {
+  "n": 51,
+  "museo": "Bargello, Florencia, Italia"
+ },
+ "Q2293953": {
+  "n": 52,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q488825": {
+  "n": 53,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q867403": {
+  "n": 54,
+  "museo": "Galería de los Uffizi, Florencia, Italia"
+ },
+ "Q15008032": {
+  "n": 55,
+  "museo": "Galería Nacional de Arte, Washington D. C., Estados Unidos"
+ },
+ "Q1212920": {
+  "n": 56,
+  "museo": "Galería Nacional de las Marcas, Urbino, Italia"
+ },
+ "Q1213160": {
+  "n": 57,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q2528145": {
+  "n": 58,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q700834": {
+  "n": 59,
+  "museo": "Museo de Historia del Arte de Viena, Viena, Austria"
+ },
+ "Q697208": {
+  "n": 60,
+  "museo": "Museo de Historia del Arte de Viena, Viena, Austria"
+ },
+ "Q2551625": {
+  "n": 61,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q572697": {
+  "n": 63,
+  "museo": "basílica de Santa María dei Frari, Venecia, Italia"
+ },
+ "Q1217187": {
+  "n": 64,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q23922": {
+  "n": 66,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q3545179": {
+  "n": 67,
+  "museo": "Loggia della Signoria, Florencia, Italia"
+ },
+ "Q1796098": {
+  "n": 68,
+  "museo": "Pinacoteca de Brera, Milán, Italia"
+ },
+ "Q2632688": {
+  "n": 69,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q2268725": {
+  "n": 70,
+  "museo": "Capilla Sixtina, Ciudad del Vaticano"
+ },
+ "Q4373363": {
+  "n": 71,
+  "museo": "Städel Museum, Fráncfort del Meno, Alemania"
+ },
+ "Q2529899": {
+  "n": 73,
+  "museo": "Palacio Ducal de Mantua, Mantua, Italia"
+ },
+ "Q430293": {
+  "n": 74,
+  "museo": "Museo Civico di Sansepolcro, Sansepolcro, Italia"
+ },
+ "Q1227359": {
+  "n": 75,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q974674": {
+  "n": 76,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q2280593": {
+  "n": 77,
+  "museo": "Baptisterio de San Juan, Florencia, Italia"
+ },
+ "Q2415504": {
+  "n": 78,
+  "museo": "Museo Nacional del Bargello, Florencia, Italia"
+ },
+ "Q1235695": {
+  "n": 79,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q1115613": {
+  "n": 80,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q1759759": {
+  "n": 81,
+  "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q2269343": {
+  "n": 82,
+  "museo": "iglesia de San Zacarías, Venecia, Italia"
+ },
+ "Q3910087": {
+  "n": 83,
+  "museo": "Pinacoteca de Brera, Milán, Italia"
+ },
+ "Q1131272": {
+  "n": 84,
+  "museo": "Capilla Sixtina, Ciudad del Vaticano"
+ },
+ "Q2268688": {
+  "n": 85,
+  "museo": "Capilla Sixtina, Ciudad del Vaticano"
+ },
+ "Q2269291": {
+  "n": 86,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q2714237": {
+  "n": 87,
+  "museo": "Galería Uffizi, Florencia, Italia"
+ },
+ "Q699319": {
+  "n": 88,
+  "museo": "Museo de Historia del Arte de Viena, Viena, Austria"
+ },
+ "Q1246440": {
+  "n": 89,
+  "museo": "Palazzo Vecchio, Florencia, Italia"
+ },
+ "Q959537": {
+  "n": 90,
+  "museo": "Museo del Prado, Madrid, España"
+ },
+ "Q965822": {
+  "n": 91,
+  "museo": "Museo del Louvre, París, Francia"
+ },
+ "Q939962": {
+  "n": 92,
+  "museo": "Museo de Historia del Arte de Viena, Viena, Austria"
+ },
+ "Q1408753": {
+  "n": 93,
+  "museo": "Galería Borghese, Roma, Italia"
+ },
+ "Q3829339": {
+  "n": 94,
+  "museo": "Gemäldegalerie de Berlín, Berlín, Alemania"
+ },
+ "Q97377044": {
+  "n": 95,
+  "museo": "Catedral de Orvieto, Orvieto, Italia"
+ }
+}
