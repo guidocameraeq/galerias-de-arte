@@ -1,7 +1,9 @@
 // Exporta colecciones de la biblioteca a carpetas para la app Museum Slideshow (formato en docs/FORMATO_DRIVE.md).
 // Una colección = una subcarpeta <OUT>/<Título>/ con las imágenes y un galeria.json (formato 1). Las imágenes de la biblioteca
 // NO se tocan: por defecto se COPIAN tal cual (con la extensión real del contenido); con --max-side=N se escribe una copia reducida
-// (derivado de entrega; el original queda intacto). Dry-run por defecto; --apply escribe. Nunca borra nada.
+// (derivado de entrega; el original queda intacto). Dry-run por defecto; --apply escribe. Nunca borra nada: lo que ya no está en la
+// galería (obra reemplazada, versión vieja con el mismo nombre) se MUEVE a <Drive>/Galerías de arte/_retiradas/<Título>/.
+// Sin --out busca solo la carpeta de Drive en cualquier letra (<X>:My Drive|Mi unidadGalerías de arteGalerías).
 // Uso: node tools/export-drive.mjs (--col=11_rococo[,08_impresionismo] | --all) [--out=RUTA] [--max-side=3840] [--big-max-side=3840] [--apply]
 // Respeta la curaduría hecha en Drive: si una obra estaba en el galeria.json anterior y su imagen ya no está en la carpeta,
 // se la considera BORRADA por Guido: NO se vuelve a copiar, y se sigue listando (la app la saltea) hasta que
@@ -17,7 +19,14 @@ const ROOT = process.cwd();
 const args = process.argv.slice(2);
 const flag = (n) => args.find(a => a.startsWith(`--${n}=`))?.slice(n.length + 3);
 const APPLY = args.includes('--apply');
-const OUT = path.resolve(flag('out') || '_export/Galerías');
+const detectDrive = () => {
+  for (const L of 'DEFGHIJKLMNOPQRSTUVWXYZ') for (const my of ['My Drive', 'Mi unidad']) {
+    const p = path.join(`${L}:\\`, my, 'Galerías de arte', 'Galerías');
+    if (fs.existsSync(p)) return p;
+  }
+  return null;
+};
+const OUT = path.resolve(flag('out') || detectDrive() || (console.error('No encuentro "Galerías de arte/Galerías" en Drive (¿Drive para escritorio abierto?). Pasá --out=RUTA.'), process.exit(2)));
 const MAXSIDE = flag('max-side') ? Number(flag('max-side')) : 0;
 const FORCE = args.includes('--force');
 const BIGSIDE = flag('big-max-side') ? Number(flag('big-max-side')) : 0;   // reduce SOLO los archivos >50 MB (límite de la app)
@@ -49,6 +58,7 @@ for (const col of cols) {
   if (!fs.existsSync(path.join(colDir, '_index.json'))) { console.log(`✗ ${col}: no existe`); totProblemas++; continue; }
   const idx = JSON.parse(fs.readFileSync(path.join(colDir, '_index.json'), 'utf8'));
   const titulo = tituloDe(col);
+  if (/[<>:"/\\|?*]/.test(titulo)) { console.log(`✗ ${col}: el título "${titulo}" tiene un carácter que Windows/Drive no acepta en carpetas (: / \\ ? * " < > |). Cambialo en tools/galerias.mjs.`); totProblemas++; continue; }
   const dir = path.join(OUT, titulo);
   const usedFiles = new Set(), obras = [], plan = [], problemas = [], borradas = [];
   const ids = idsGaleria(idx.items, col);
@@ -94,11 +104,23 @@ for (const col of cols) {
   if (borradas.length) console.log(`    🗑 ${borradas.length} borrada(s) en Drive (no se re-suben): ${borradas.slice(0, 4).join(' · ')}${borradas.length > 4 ? ' …' : ''} → sacalas del repo con: node tools/drive-curation.mjs`);
   totObras += obras.length; totBytes += bytes; totProblemas += problemas.length;
   if (borradas.length && borradas.length > 0.3 * idx.items.length && !FORCE) { console.log(`    ✗ faltan ${borradas.length}/${idx.items.length} imágenes en Drive (>30%): ¿Drive sincronizando? No se toca esta galería (--force si es a propósito).`); totProblemas++; continue; }
+  // Versión vieja con el mismo nombre (obra reemplazada por una de más resolución): mismo nombre, otro tamaño, sin reducción de por medio
+  const sideDe = (p) => MAXSIDE || (BIGSIDE && p.size > 50e6 ? BIGSIDE : 0);
+  const viejas = plan.filter(p => !sideDe(p) && fs.existsSync(p.dest) && fs.statSync(p.dest).size !== p.size);
+  // Archivos en Drive que ya no están en la galería (obra reemplazada o colección reconstruida): se MUEVEN a _retiradas, nunca se borran
+  const listados = new Set(obras.map(o => o.archivo));
+  const sobrantes = fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => /\.(jpe?g|png|webp)$/i.test(f) && !listados.has(f) && !plan.some(p => p.prev && path.basename(p.prev) === f)) : [];
+  if (viejas.length) console.log(`    ↻ ${viejas.length} versión(es) vieja(s) con el mismo nombre: se reemplazan (la vieja va a _retiradas)`);
+  if (sobrantes.length) console.log(`    ⇢ ${sobrantes.length} archivo(s) que ya no están en la galería: se mueven a _retiradas`);
   if (!APPLY) continue;
   fs.mkdirSync(dir, { recursive: true });
+  const ret = path.join(path.dirname(OUT), '_retiradas', titulo);
+  const retirar = (f) => { fs.mkdirSync(ret, { recursive: true }); let d = path.join(ret, f); if (fs.existsSync(d)) d = path.join(ret, `${Date.now()}-${f}`); fs.renameSync(path.join(dir, f), d); };
+  for (const p of viejas) retirar(path.basename(p.dest));
+  for (const f of sobrantes) retirar(f);
   let hechos = 0, renombradas = 0;
   for (const p of plan) {
-    if (fs.existsSync(p.dest)) continue;                       // idempotente: no pisa
+    if (fs.existsSync(p.dest) && !viejas.includes(p)) continue;   // idempotente: no pisa (salvo la versión vieja ya apartada; Drive puede tardar en reflejar el movimiento)
     if (p.prev && fs.existsSync(p.prev)) { fs.renameSync(p.prev, p.dest); renombradas++; continue; }   // cambió el título: renombrar, no duplicar
     const side = MAXSIDE || (BIGSIDE && p.size > 50e6 ? BIGSIDE : 0);
     if (side) {

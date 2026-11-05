@@ -52,8 +52,8 @@
 - `docs/galerias/NN_nombre.md` (copiar el formato de una existente) + línea en `docs/galerias/README.md`.
 - Si la colección tiene reglas propias (exclusión temática, ficha distinta): una línea en `AGENTS.md` "Trampas" y en `docs/INVENTARIO.md`.
 
-## Paso 8 — Publicar a la app y respaldar (cuando Guido decida)
-1. `node tools/export-drive.mjs --col=NN_nombre --out="<Drive>/Galerías de arte/Galerías" --big-max-side=3840` (dry) → `--apply`. Valida JSON, archivos, ids, 50 MB, Markdown; usa la `forma` de los tondos (`tools/forma-tondos.json` o el objetivo).
+## Paso 8 — Publicar a la app y respaldar (siempre, antes del cierre)
+1. `node tools/export-drive.mjs --col=NN_nombre --big-max-side=3840` (dry; encuentra Drive solo) → `--apply`. Es obligatorio antes del cierre (CIERRE.md paso 7b). Valida JSON, archivos, ids, 50 MB, Markdown; usa la `forma` de los tondos (`tools/forma-tondos.json` o el objetivo).
 2. Respaldo de originales: `node tools/images-sync.mjs backup --apply`.
 3. Avisar al agente de la app con el nombre exacto de la carpeta. Drive solo por la carpeta montada (nunca API ni links). Obras con copyright de uso personal: solo con decisión expresa de Guido (`FORMATO_DRIVE.md`).
 

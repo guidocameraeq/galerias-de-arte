@@ -1,4 +1,4 @@
-# Galería 25 · Doré: el resto de su obra
+# Galería 25 · Doré, el resto de su obra
 
 > **Ubicación en repo:** `colecciones/25_dore_otras_obras/`
 > **Ficha técnica:** 78 obras · 100% con ficha en español · lado largo 1816–6667 px

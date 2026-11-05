@@ -2,6 +2,16 @@
 
 > Historia permanente. `cierre` agrega una entrada AL TOPE en cada sesión. Orden descendente estricto. Los números de estado NO se repiten acá: salen de `node tools/audit.mjs`. El detalle fino de las sesiones anteriores está íntegro en `docs/archive/legacy-2026-06/` (CLAUDE.md y PLAN.md viejos).
 
+## 2026-11-05 — Drive al día y publicar pasa a ser paso fijo del cierre
+
+### Fixed
+- Las 25 galerías publicadas en Drive `Galerías` (estaban pendientes desde el 2026-11-04 porque Drive cambió de letra, I: → H:): 17 reconstruida (135 planchas), 25 nueva, reemplazos de Rembrandt/Turner/Bosch y obras nuevas de 04/07. Respaldo de originales actualizado.
+- `export-drive.mjs`: (1) una versión vieja con el mismo nombre (obra reemplazada por una de más resolución) ahora se reemplaza; antes se salteaba y en la TV quedaba la imagen vieja con la ficha nueva (44 planchas de la 17); (2) los archivos que ya no están en la galería se MUEVEN a `Galerías de arte/_retiradas/<Título>/` (nunca se borran); (3) encuentra Drive solo en cualquier letra; (4) rechaza títulos con caracteres que Windows no acepta en carpetas.
+- Galería 25 renombrada a "Doré, el resto de su obra" (los dos puntos rompían la carpeta).
+
+### Changed
+- `docs/procesos/CIERRE.md` paso 7b: publicar a Drive + respaldo es obligatorio en toda sesión que tocó obras/fichas; si Drive no aparece se avisa, no se deja de pendiente callado.
+
 ## 2026-11-04 — Colecciones dentro de `colecciones/` y repo listo para publicar
 
 ### Changed
