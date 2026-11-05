@@ -158,5 +158,37 @@
     "autor": "John Martin / Friedrich",
     "motivo": "boceto_menor",
     "detalle": "Acuarela pequeña, dibujo y estudio inacabado, sin fuente para ficha. Siguen en la carpeta personal de Guido; se pueden sumar si él lo decide."
+  },
+  {
+    "col": "25_dore_otras_obras",
+    "estado": "pendiente",
+    "titulo": "La Libertad (dibujo)",
+    "autor": "Gustave Doré",
+    "motivo": "formato_no_usable",
+    "detalle": "Cleveland Museum of Art: en Commons solo hay un TIFF de 61 MB (3837x5332). Conseguir JPEG desde Cleveland Open Access y sumarla."
+  },
+  {
+    "col": "25_dore_otras_obras",
+    "estado": "descartada",
+    "titulo": "Cuadros colgados (Cristo abandonando el pretorio, etc.) y fotos de sala",
+    "autor": "Gustave Doré",
+    "motivo": "foto_de_sala",
+    "detalle": "Dos fotos de cuadros en pared con marco; buscar reproducción limpia del Cristo abandonando el pretorio (Doré, 1867-72)."
+  },
+  {
+    "col": "25_dore_otras_obras",
+    "estado": "descartada",
+    "titulo": "Láminas duplicadas (Milton ed. española 1873; El gato con botas, versión baja)",
+    "autor": "Gustave Doré",
+    "motivo": "duplicada",
+    "detalle": "Misma plancha que la versión inglesa/limpia ya incluida."
+  },
+  {
+    "col": "25_dore_otras_obras",
+    "estado": "descartada",
+    "titulo": "La Cenicienta (PDF italiano 1891) y \"Après la bataille\"",
+    "autor": "Gustave Doré (atribución dudosa)",
+    "motivo": "revisar",
+    "detalle": "Atribución a Doré o título no verificados en fuente."
   }
 ]

@@ -6,11 +6,11 @@ import sharp from 'sharp';
 
 const paperFn = (minRB) => (r, g, b) => r > 165 && g > 145 && b > 105 && r - b > minRB && r - b < 80 && (r - g) < 40;
 
-export async function detectPlate(file, { work = 900, inset = 0.006, minRB = 10, mode = 'paper', texThr = 7, dilate = 2 } = {}) {
+export async function detectPlate(file, { work = 900, inset = 0.006, minRB = 10, mode = 'paper', texThr = 7, dilate = 2, lumThr = 205 } = {}) {
   // mode 'paper': grabado = lo que no es papel crema (grabados oscuros, caso normal)
   // mode 'texture': además cuenta como grabado lo que tiene trama (cielos claros que se parecen al papel)
   // mode 'white': margen blanco puro (series 'Plate N' de Commons): grabado = lo que no es blanco
-  const isPaper = mode === 'white' ? ((r, g, b) => (r + g + b) / 3 >= 244) : mode === 'dark' ? ((r, g, b) => (r + g + b) / 3 >= 205) : paperFn(minRB);
+  const isPaper = mode === 'white' ? ((r, g, b) => (r + g + b) / 3 >= 244) : mode === 'dark' ? ((r, g, b) => (r + g + b) / 3 >= lumThr) : paperFn(minRB);
   const meta = await sharp(file, { limitInputPixels: false }).metadata();
   const scale = work / Math.max(meta.width, meta.height);
   const w = Math.round(meta.width * scale), h = Math.round(meta.height * scale);

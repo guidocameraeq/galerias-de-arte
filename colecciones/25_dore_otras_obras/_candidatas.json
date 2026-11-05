@@ -1,0 +1,52 @@
+{
+  "collection": "25_dore_otras_obras",
+  "nota": "Lo que NO entró (las que entraron están en _index.json). Se regenera con tools/candidatas.mjs; las decisiones manuales van en tools/candidatas-manual.json.",
+  "cobertura": "SIN historial de descartes (el script que la armó no los registraba): solo brechas de Wikidata y lista manual",
+  "resumen": {
+    "entraron": 78,
+    "pendientes": 1,
+    "descartadas": 3
+  },
+  "items": [
+    {
+      "estado": "pendiente",
+      "titulo": "La Libertad (dibujo)",
+      "autor": "Gustave Doré",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "formato_no_usable",
+      "detalle": "Cleveland Museum of Art: en Commons solo hay un TIFF de 61 MB (3837x5332). Conseguir JPEG desde Cleveland Open Access y sumarla.",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Cuadros colgados (Cristo abandonando el pretorio, etc.) y fotos de sala",
+      "autor": "Gustave Doré",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "foto_de_sala",
+      "detalle": "Dos fotos de cuadros en pared con marco; buscar reproducción limpia del Cristo abandonando el pretorio (Doré, 1867-72).",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "La Cenicienta (PDF italiano 1891) y \"Après la bataille\"",
+      "autor": "Gustave Doré (atribución dudosa)",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "revisar",
+      "detalle": "Atribución a Doré o título no verificados en fuente.",
+      "origen": "manual"
+    },
+    {
+      "estado": "descartada",
+      "titulo": "Láminas duplicadas (Milton ed. española 1873; El gato con botas, versión baja)",
+      "autor": "Gustave Doré",
+      "qid": null,
+      "sourceId": null,
+      "motivo": "duplicada",
+      "detalle": "Misma plancha que la versión inglesa/limpia ya incluida.",
+      "origen": "manual"
+    }
+  ]
+}

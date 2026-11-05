@@ -9,6 +9,7 @@ export const TITULOS = {
   '18_escultura_griega': 'Escultura griega', '19_marcelo_canevari': 'Marcelo Canevari', '20_alfred_kubin': 'Alfred Kubin',
   '21_rob_gonsalves': 'Rob Gonsalves', '22_zdzislaw_beksinski': 'Zdzisław Beksiński', '23_mariusz_lewandowski': 'Mariusz Lewandowski',
   '24_ukiyo_e': 'Ukiyo-e',
+  '25_dore_otras_obras': 'Doré: el resto de su obra',
 };
 export const tituloDe = (col) => TITULOS[col] || col.replace(/^d+_/, '').replace(/_/g, ' ');
 

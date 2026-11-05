@@ -44,7 +44,7 @@ Cada documento detalla el alcance temático, los criterios de curaduría y canon
 
 ### D. Temáticas Especiales & Grabado
 - [06. Macabro & Memento Mori](06_macabro_memento_mori.md) — 41 obras (143 MB). Vanitas secular, danzas de la muerte y brujería (exclusión estricta de imaginería devocional cristiana).
-- [17. Doré: Divina Comedia](17_dore_divina_comedia.md) — 98 obras (1.176 MB). Grabados monumentales de Gustave Doré para el *Infierno*, *Purgatorio* y *Paraíso* de Dante.
+- [17. Doré: Divina Comedia](17_dore_divina_comedia.md) — 135 planchas. Grabados monumentales de Gustave Doré para el *Infierno*, *Purgatorio* y *Paraíso* de Dante.
 
 ### E. Monográficas Contemporáneas & Arte Oscuro
 - [19. Marcelo Canevari](19_marcelo_canevari.md) — 25 obras (37 MB). Naturalismo mágico y fauna salvaje argentina contemporánea.
@@ -67,3 +67,4 @@ Cada archivo individual en esta carpeta responde al estándar:
 4. **Criterios de Exclusión y Descartes:** qué se rechazó y por qué (baja resolución, mockups con paredes, marcas de agua, duplicados).
 5. **Obras Maestras de Referencia:** lista de piezas cumbre de la galería.
 6. **Integridad Técnica:** correspondencia con `_index.json` y `tools/desc/`.
+- [25. Doré: el resto de su obra](25_dore_otras_obras.md) — 78 obras. Biblia, Marinero, Paraíso perdido, Atala, Perrault, Londres, España, pinturas y dibujos de Gustave Doré (fuera de la Divina Comedia).

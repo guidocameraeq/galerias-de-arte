@@ -2,7 +2,7 @@
 
 # Galerías de Arte
 
-Biblioteca **curada** de obras de arte en **alta resolución**, organizada en 24 colecciones por escuela, época o artista. Cada obra tiene su imagen original (sin editar) y una **ficha en español** sintetizada de una fuente verificable (Wikipedia, museos).
+Biblioteca **curada** de obras de arte en **alta resolución**, organizada en 25 colecciones por escuela, época o artista. Cada obra tiene su imagen original (sin editar) y una **ficha en español** sintetizada de una fuente verificable (Wikipedia, museos).
 
 > Repositorio privado, de uso personal. Alimenta una app de galería de arte (modo reposo / slideshow para TV) que vive en **otro proyecto**: este repo es el lado de la **curaduría y la historia del arte**; la app solo consume lo que acá se produce.
 
@@ -10,8 +10,8 @@ Biblioteca **curada** de obras de arte en **alta resolución**, organizada en 24
 
 | | |
 |---|---|
-| **Colecciones** | 24 (`01_…` a `24_…`), del Antiguo Egipto a Beksiński y el ukiyo-e |
-| **Obras** | 1.396, todas con ficha en español |
+| **Colecciones** | 25 (`01_…` a `25_…`), del Antiguo Egipto a Beksiński y el ukiyo-e |
+| **Obras** | 1.526, todas con ficha en español |
 | **Volumen** | ~7,4 GB de imágenes (**no** están en git) |
 | **Motor** | Node.js 18+, sin Python |
 
