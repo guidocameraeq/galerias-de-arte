@@ -55,6 +55,7 @@ if (existsSync(metaPath)) {
     const it = byId.get(id) || null;
     if (!it) { console.log(`!! meta: id ${id} no existe/ambiguo`); continue; }
     if ('museo' in o) { if (o.museo) it.holding_museum = o.museo; else delete it.holding_museum; }
+    if (o.autor) it.artist = o.autor;
     if (o.titulo) it.title_es = o.titulo;
     if (o.anio) it.year = o.anio;
     m++;

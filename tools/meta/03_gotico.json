@@ -368,7 +368,8 @@
  },
  "File:Claeissens - Portrait of Robert Holman, abbot of Onze-Lieve-Vrouw ter Duinen, kneeling in front of Christ .jpg": {
   "n": 45,
-  "anio": "c. 1550"
+  "anio": "c. 1550",
+  "autor": "Pieter Claeissens el Viejo y Gillis Claeissens"
  },
  "File:Master of the Embroidered Foliage - Nursing Madonna - c 1400s.jpg": {
   "n": 47,
@@ -393,5 +394,10 @@
  "File:Friedrich Herlin 002.jpg": {
   "n": 56,
   "anio": "c. 1462"
+ },
+ "File:Guariento di Arpo - The Virgin and Blessing Child Enthroned with a Donor.jpg": {
+  "n": 37,
+  "autor": "Guariento di Arpo",
+  "anio": "c. 1350"
  }
 }
