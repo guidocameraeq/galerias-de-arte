@@ -127,7 +127,7 @@
  },
  "Q140053192": {
   "n": 28,
-  "museo": "Museo del Prado, Madrid, España"
+  "museo": "Museo de Capodimonte, Nápoles, Italia"
  },
  "Q117834559": {
   "n": 29,
@@ -147,7 +147,7 @@
  },
  "Q2352789": {
   "n": 33,
-  "museo": "Colección Borghese, Italia"
+  "museo": "Galería Borghese, Roma, Italia"
  },
  "File:Psyche Revived by Cupid's Kiss, Louvre 22 July 2017.jpg": {
   "n": 34,
@@ -548,5 +548,17 @@
  "File:Mercury, Flora & Dis Pater (Pluto).jpg": {
   "n": 58,
   "autor": "Sebastiano Galeotti"
+ },
+ "File:Apollo leads Beatrice of Burgundy as a bride to Frederick I, Holy Roman Emperor, Giovanni Battista Tiepolo, 1751, fresco - Mainfränkisches Museum - Würzburg, Germany - DSC04585.jpg": {
+  "n": 48,
+  "museo": "Residencia de Wurzburgo, Wurzburgo, Alemania"
+ },
+ "File:Tizian - Apollón a Marsyas, zámek Kroměříž 1.jpg": {
+  "n": 77,
+  "museo": "Palacio Arzobispal de Kroměříž, Kroměříž, República Checa"
+ },
+ "File:Edward Burne-Jones (1833-1898) - The Doom Fulfilled - SOTAG , 106 - Southampton City Art Gallery.jpg": {
+  "n": 136,
+  "museo": "Galería de Arte de la Ciudad de Southampton, Southampton, Reino Unido"
  }
 }

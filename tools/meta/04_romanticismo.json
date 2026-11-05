@@ -263,7 +263,7 @@
  },
  "Q3181999": {
   "n": 77,
-  "museo": "Museo de Bellas Artes de Burdeos, Francia"
+  "museo": "Museo de Bellas Artes de Burdeos, Burdeos, Francia"
  },
  "Q3119110": {
   "n": 78,
@@ -295,7 +295,7 @@
  },
  "Q1772871": {
   "n": 85,
-  "museo": "Royal Museums Greenwich, Reino Unido"
+  "museo": "Royal Museums Greenwich, Londres, Reino Unido"
  },
  "Q4531523": {
   "n": 86,
@@ -335,7 +335,7 @@
  },
  "Q3646554": {
   "n": 95,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q6494773": {
   "n": 98,
@@ -343,7 +343,7 @@
  },
  "Q1652056": {
   "n": 99,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q3412132": {
   "n": 100,
@@ -417,5 +417,9 @@
  "File:Géricault - Le Sommeil Des Paysans, ca. 1808–12.jpg": {
   "n": 59,
   "anio": "c. 1808"
+ },
+ "File:Cayambe by Frederic Edwin Church, New York Historical Society.JPG": {
+  "n": 47,
+  "museo": "New-York Historical Society, Nueva York, Estados Unidos"
  }
 }

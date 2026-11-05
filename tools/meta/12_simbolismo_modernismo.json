@@ -145,7 +145,7 @@
  },
  "Q499643": {
   "n": 43,
-  "museo": "museum collection of the Prague City Gallery, República Checa"
+  "museo": "Galería de la Ciudad de Praga, Praga, República Checa"
  },
  "Q477764": {
   "n": 44,
@@ -157,11 +157,11 @@
  },
  "Q960157": {
   "n": 46,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q2712679": {
   "n": 47,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q1757920": {
   "n": 48,
@@ -205,15 +205,15 @@
  },
  "Q470541": {
   "n": 58,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q822541": {
   "n": 59,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q2425901": {
   "n": 60,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q949567": {
   "n": 61,
@@ -229,15 +229,15 @@
  },
  "Q18689510": {
   "n": 64,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q6411359": {
   "n": 65,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q7737113": {
   "n": 66,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q4198276": {
   "n": 67,
@@ -258,5 +258,13 @@
  "Q7263012": {
   "n": 71,
   "museo": "Museo y Galería de Arte de Birmingham, Birmingham, Reino Unido"
+ },
+ "Q669994": {
+  "n": 5,
+  "museo": "Alte Nationalgalerie, Berlín, Alemania"
+ },
+ "Q3432673": {
+  "n": 20,
+  "museo": "Museo Nacional de Noruega, Oslo, Noruega"
  }
 }

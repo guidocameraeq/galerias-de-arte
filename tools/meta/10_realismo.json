@@ -217,7 +217,7 @@
  },
  "Q1560719": {
   "n": 56,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q1782583": {
   "n": 57,
@@ -314,5 +314,9 @@
  "Q19826371": {
   "n": 84,
   "museo": "Museo Nacional de Arte Occidental, Tokio, Japón"
+ },
+ "Q2909909": {
+  "n": 72,
+  "museo": "Castillo Hearst, San Simeón, Estados Unidos"
  }
 }

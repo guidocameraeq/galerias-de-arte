@@ -137,7 +137,7 @@
  },
  "Q254923": {
   "n": 39,
-  "museo": "Museo del Hermitage, San Petersburgo, Rusia"
+  "museo": "National Gallery of Art, Washington D. C., Estados Unidos"
  },
  "Q948034": {
   "n": 40,
@@ -346,5 +346,9 @@
  "Q97377044": {
   "n": 95,
   "museo": "Catedral de Orvieto, Orvieto, Italia"
+ },
+ "Q186953": {
+  "n": 6,
+  "museo": "Estancias de Rafael, Museos Vaticanos, Ciudad del Vaticano"
  }
 }

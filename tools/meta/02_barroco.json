@@ -414,7 +414,7 @@
  },
  "Q4945054": {
   "n": 116,
-  "museo": "Colección Borghese, Italia"
+  "museo": "Galería Borghese, Roma, Italia"
  },
  "Q3716086": {
   "n": 117,
@@ -481,5 +481,9 @@
  "File:Govert Flinck (Sibilla, G. J.) (1615-1660) - Bathseba im Bade - 1337 - Führermuseum.jpg": {
   "n": 61,
   "autor": "Círculo de Rembrandt (atribuido a Govert Flinck)"
+ },
+ "File:La Cena de Emaús - 1639 - Francisco de Zurbarán - Museo Nacional de San Carlos.jpg": {
+  "n": 65,
+  "museo": "Museo Nacional de San Carlos, Ciudad de México, México"
  }
 }

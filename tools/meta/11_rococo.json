@@ -45,7 +45,7 @@
  },
  "Q7712851": {
   "n": 13,
-  "museo": "National Gallery, Londres, Reino Unido"
+  "museo": "Tate Britain, Londres, Reino Unido"
  },
  "Q5916308": {
   "n": 14,
@@ -142,5 +142,9 @@
  "Q6106762": {
   "n": 38,
   "museo": "National Gallery de Londres, Londres, Reino Unido"
+ },
+ "Q3212142": {
+  "n": 19,
+  "museo": "Museo del Louvre, París, Francia"
  }
 }
